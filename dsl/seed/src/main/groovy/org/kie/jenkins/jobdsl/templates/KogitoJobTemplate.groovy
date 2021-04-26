@@ -1,6 +1,8 @@
 package org.kie.jenkins.jobdsl.templates
 
+import org.kie.jenkins.jobdsl.KogitoConstants
 import org.kie.jenkins.jobdsl.Utils
+import org.kie.jenkins.jobdsl.RegexUtils
 
 /**
 * PR job template
@@ -62,6 +64,11 @@ class KogitoJobTemplate {
         jobParams.triggers = [:] // Reset triggers
         jobParams.pr = jobParams.pr ?: [:] // Setup default config for pr to avoid NullPointerException
 
+        if (!jobParams.job.folder) {
+            script.folder(KogitoConstants.KOGITO_DSL_PULLREQUEST_FOLDER)
+            jobParams.job.folder = KogitoConstants.KOGITO_DSL_PULLREQUEST_FOLDER
+        }
+
         return createPipelineJob(script, jobParams).with {
             // Redefine to keep days instead of number of builds
             logRotator {
@@ -74,14 +81,38 @@ class KogitoJobTemplate {
                     scm {
                         git {
                             remote {
+                                name('source')
                                 url(jobParams.git.repo_url ?: Utils.createRepositoryUrl('${ghprbPullAuthorLogin}', jobParams.git.repository))
                                 credentials(jobParams.git.credentials)
                             }
-                            branch(jobParams.pr.checkout_branch ?: '${ghprbSourceBranch}')
+                            if (jobParams.pr.downstream_repo) {
+                                remote {
+                                    name('target')
+                                    url(jobParams.git.repo_url ?: Utils.createRepositoryUrl(jobParams.git.author, jobParams.git.repository))
+                                    credentials(jobParams.git.credentials)
+                                }
+                            }
+
+                            // If downstream repo, checkout target branch for Jenkinsfile
+                            // For now there is a problem of matching when putting both branch
+                            // Sometimes it takes the source, sometimes the target ...
+                            String defaultCheckoutBranch = jobParams.pr.downstream_repo ? 'target/${ghprbTargetBranch}' : 'source/${ghprbSourceBranch}'
+                            branch(jobParams.pr.checkout_branch ?: defaultCheckoutBranch)
+
                             extensions {
                                 cleanBeforeCheckout()
                                 if (jobParams.git.useRelativeTargetDirectory) {
                                     relativeTargetDirectory(repository)
+                                }
+                                if (jobParams.pr.merge_repo) {
+                                    mergeOptions {
+                                        remote('target')
+                                        branch('${ghprbTargetBranch}')
+                                    }
+                                    userIdentity {
+                                        name(jobParams.git.credentials)
+                                        email("${jobParams.git.credentials}@jenkins.com")
+                                    }
                                 }
                             }
                         }
@@ -105,7 +136,7 @@ class KogitoJobTemplate {
                     gitHubAuthId(jobParams.git.credentials)
                     adminlist('')
                     useGitHubHooks(true)
-                    triggerPhrase(jobParams.pr.trigger_phrase ?: '.*[j|J]enkins,?.*(retest|test) this.*')
+                    triggerPhrase(jobParams.pr.trigger_phrase ?: KogitoConstants.KOGITO_DEFAULT_PR_TRIGGER_PHRASE)
                     onlyTriggerPhrase(jobParams.pr.trigger_phrase_only ?: false)
                     autoCloseFailedPullRequests(false)
                     skipBuildPhrase(".*\\[skip\\W+ci\\].*")
@@ -113,8 +144,8 @@ class KogitoJobTemplate {
                     cron('')
                     whitelist(jobParams.git.author)
                     orgslist(jobParams.git.author)
-                    blackListLabels('')
-                    whiteListLabels('')
+                    blackListLabels(jobParams.pr.ignore_for_labels ? jobParams.pr.ignore_for_labels.join('\n') : '')
+                    whiteListLabels(jobParams.pr.run_only_for_labels ? jobParams.pr.run_only_for_labels.join('\n') : '')
                     allowMembersOfWhitelistedOrgsAsAdmin(true)
                     buildDescTemplate('')
                     blackListCommitAuthor('')
@@ -175,11 +206,14 @@ class KogitoJobTemplate {
 
         jobParams.job.description = "Run on demand tests from ${jobParams.job.name} repository against quarkus LTS"
         jobParams.job.name += '.quarkus-lts'
-        jobParams.pr = [
-            trigger_phrase : '.*[j|J]enkins,? run LTS[ tests]?.*',
+
+        jobParams.pr = jobParams.pr ?: [:]
+        jobParams.pr.putAll([
+            trigger_phrase : KogitoConstants.KOGITO_LTS_PR_TRIGGER_PHRASE,
             trigger_phrase_only: true,
             commitContext: "LTS (${quarkusLtsVersion})"
-        ]
+        ])
+
         jobParams.env = jobParams.env ?: [:]
         jobParams.env.put('QUARKUS_BRANCH', quarkusLtsVersion)
 
@@ -189,15 +223,100 @@ class KogitoJobTemplate {
     static def createNativePRJob(def script, Map jobParams = [:]) {
         jobParams.job.description = "Run on demand native tests from ${jobParams.job.name} repository"
         jobParams.job.name += '.native'
-        jobParams.pr = [
-            trigger_phrase : '.*[j|J]enkins,? run native[ tests]?.*',
+
+        jobParams.pr = jobParams.pr ?: [:]
+        jobParams.pr.putAll([
+            trigger_phrase : KogitoConstants.KOGITO_NATIVE_PR_TRIGGER_PHRASE,
             trigger_phrase_only: true,
             commitContext: 'Native'
-        ]
+        ])
+
         jobParams.env = jobParams.env ?: [:]
         jobParams.env.put('NATIVE', true)
 
         return createPRJob(script, jobParams)
+    }
+
+    static def createMultijobPRJobs(def script, Map multijobConfig, Closure defaultParamsGetter) {
+        String testTypeId = multijobConfig.testType ? multijobConfig.testType.toLowerCase() : 'tests'
+        String testTypeName = multijobConfig.testType ?: 'default'
+        String triggerPhraseTestType = RegexUtils.getRegexMultipleCase(testTypeId)
+
+        multijobConfig.jobs.each { jobCfg ->
+            def jobParams = defaultParamsGetter()
+            jobParams.job.folder = KogitoConstants.KOGITO_DSL_PULLREQUEST_FOLDER
+            jobParams.env = jobParams.env ?: [:]
+
+            jobParams.job.name += testTypeId ? ".${testTypeId}" : ''
+            if (jobCfg.repository) {
+                // Downstream job
+                jobParams.env.put('DOWNSTREAM', true)
+                jobParams.job.description = "Run ${testTypeName} tests of ${jobCfg.repository} due to changes in ${jobParams.git.repository} repository"
+                jobParams.job.name += '.downstream'
+                jobParams.git.project_url = "https://github.com/${jobParams.git.author}/${jobParams.git.repository}/"
+                jobParams.git.repository = jobCfg.repository
+            } else {
+                jobParams.job.description = "Run tests from ${jobParams.git.repository} repository"
+            }
+            jobParams.job.name += ".${jobCfg.id.toLowerCase()}"
+
+            // Set PR config
+            jobParams.pr = [
+                commitContext: getTypedId(testTypeName, jobCfg.id),
+                run_only_for_labels: [ KogitoConstants.KOGITO_PR_MULTIJOB_LABEL ]
+            ]
+            if (jobCfg.repository) {
+                jobParams.pr.downstream_repo = true
+            }
+
+            if (jobCfg.primary) {
+                jobParams.pr.trigger_phrase_only = multijobConfig.optional
+
+                jobParams.pr.trigger_phrase = "(${multijobConfig.primaryTriggerPhrase ?: KogitoConstants.KOGITO_DEFAULT_PR_TRIGGER_PHRASE})"
+                jobParams.pr.trigger_phrase += '|' + generateMultiJobTriggerPhrasePattern(triggerPhraseTestType)
+            } else if (jobCfg.waitForId) {
+                jobParams.pr.trigger_phrase_only = true
+                jobParams.pr.trigger_phrase = "(.*${getTypedId(testTypeName, jobCfg.waitForId, true)}.*successful.*)"
+                jobParams.pr.trigger_phrase += '|' + generateMultiJobTriggerPhrasePattern(triggerPhraseTestType, RegexUtils.getRegexFirstLetterCase(jobCfg.id))
+            } else {
+                error 'You need to define `primary` or `waitForId`. Else your job will never be launched...'
+            }
+
+            if (multijobConfig.extraEnv) {
+                jobParams.env.putAll(multijobConfig.extraEnv)
+            }
+            jobParams.env.put('MULTIJOB_PR_CHECK', true)
+
+            createPRJob(script, jobParams)
+        }
+    }
+
+    static def createMultijobLTSPRJobs(def script, Map multijobConfig, Closure defaultParamsGetter) {
+        multijobConfig.testType = 'LTS'
+        multijobConfig.extraEnv = [ QUARKUS_BRANCH: Utils.getQuarkusLTSVersion(script) ]
+        multijobConfig.optional = true
+        multijobConfig.primaryTriggerPhrase = KogitoConstants.KOGITO_LTS_PR_TRIGGER_PHRASE
+        createMultijobPRJobs(script, multijobConfig, defaultParamsGetter)
+    }
+
+    static def createMultijobNativePRJobs(def script, Map multijobConfig, Closure defaultParamsGetter) {
+        multijobConfig.testType = 'native'
+        multijobConfig.extraEnv = [ NATIVE: true ]
+        multijobConfig.optional = true
+        multijobConfig.primaryTriggerPhrase = KogitoConstants.KOGITO_NATIVE_PR_TRIGGER_PHRASE
+        createMultijobPRJobs(script, multijobConfig, defaultParamsGetter)
+    }
+
+    static String getTypedId(String prefix, String id, boolean regex = false) {
+        if (regex) {
+            return "\\(${prefix}\\) ${id}"
+        }
+        return "(${prefix}) ${id}"
+    }
+
+    static String generateMultiJobTriggerPhrasePattern(String testType, String id = '') {
+        String idStr = id ? id + ' ' : ''
+        return "(.*${RegexUtils.getRegexFirstLetterCase('jenkins')},?.*(rerun|run) multijob ${idStr}${testType}.*)"
     }
 
 }
