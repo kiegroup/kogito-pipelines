@@ -1,0 +1,252 @@
+import org.jenkinsci.plugins.workflow.libs.Library
+
+@Library('jenkins-pipeline-shared-libraries')_
+
+OPTAPLANNER_DEPLOY = 'optaplanner-deploy'
+APPS_DEPLOY = 'kogito-apps-deploy'
+EXAMPLES_DEPLOY = 'kogito-examples-deploy'
+
+// Map of executed jobs
+// See https://javadoc.jenkins.io/plugin/workflow-support/org/jenkinsci/plugins/workflow/support/steps/build/RunWrapper.html
+// for more options on built job entity
+JOBS = [:]
+
+FAILED_STAGES = [:]
+UNSTABLE_STAGES = [:]
+
+pipeline {
+    agent {
+        label 'kie-rhel7 && !master'
+    }
+
+    options {
+        timeout(time: 720, unit: 'MINUTES')
+    }
+
+    parameters {
+        string(name: 'KOGITO_VERSION', defaultValue: '', description: 'Kogito version to be set as Major.minor.micro')
+        string(name: 'OPTAPLANNER_VERSION', defaultValue: '', description: 'Optaplanner version of OptaPlanner as Major.minor.micro')
+    }
+
+    environment {
+        KOGITO_CI_EMAIL_TO = credentials('KOGITO_CI_EMAIL_TO')
+    }
+
+    stages {
+        stage('Initialize') {
+            steps {
+                script {
+                    currentBuild.displayName = getDisplayName()
+                    currentBuild.description = getDescription()
+
+                    assert getKogitoVersion()
+                    assert getOptaPlannerVersion()
+
+                    sendNotification("Updating master with those version:\nKogito version: ${getKogitoVersion()}\nOptaplanner version: ${getOptaplannerVersion()}=> ${env.BUILD_URL}")
+
+                    // Safety measure to not publish to main JBoss
+                    if (getGitAuthor() != 'kiegroup' && !getArtifactsRepositoryParam()) {
+                        sendNotification("Git Author is different from `kiegroup` and no `ARTIFACTS_REPOSITORY` parameter has been provided. Are you sure you want to continue ? => ${env.BUILD_URL}input")
+                        input message: 'Should the pipeline continue with no `ARTIFACTS_REPOSITORY` defined ?', ok: 'Yes'
+                    }
+                }
+            }
+        }
+
+        stage('Update OptaPlanner') {
+            steps {
+                script {
+                    sendStageNotification()
+
+                    def buildParams = getDefaultBuildParams(getOptaPlannerVersion())
+                    addStringParam(buildParams, 'KOGITO_VERSION', getKogitoVersion())
+
+                    buildJob(OPTAPLANNER_DEPLOY, buildParams)
+                }
+            }
+        }
+
+        stage('Update Kogito Apps') {
+            when {
+                expression { return !isCreateReleaseBranchesOnly() && isArtifactsDeploy() }
+            }
+            steps {
+                script {
+                    sendStageNotification()
+
+                    def buildParams = getDefaultBuildParams()
+                    addStringParam(buildParams, 'OPTAPLANNER_VERSION', getOptaPlannerVersion())
+
+                    buildJob(APPS_DEPLOY, buildParams)
+                }
+            }
+        }
+
+        stage('Update Kogito Examples') {
+            when {
+                expression { return !isCreateReleaseBranchesOnly() && isArtifactsDeploy() }
+            }
+            steps {
+                script {
+                    sendStageNotification()
+
+                    def buildParams = getDefaultBuildParams()
+                    addStringParam(buildParams, 'OPTAPLANNER_VERSION', getOptaPlannerVersion())
+
+                    buildJob(EXAMPLES_DEPLOY, buildParams)
+                }
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            script {
+                sendSuccessfulNotification()
+            }
+        }
+        unsuccessful {
+            sendErrorNotification()
+        }
+    }
+}
+
+def buildJob(String jobName, List buildParams) {
+    echo "Build ${jobName} with params ${buildParams}"
+
+    def job = build(job: "${jobName}", wait: true, parameters: buildParams, propagate: false)
+    registerJob(jobName, job)
+
+    // Set Unstable if we don't propagate and job failed
+    if (!propagate && !isJobSucceeded(jobName)) {
+        addUnstableStage(jobName)
+        unstable("Job ${jobName} finished with result ${job.getResult()}")
+    }
+    return job
+}
+
+def registerJob(String jobName, def job) {
+    JOBS[jobName] = job
+}
+
+def getJob(String jobName) {
+    return JOBS[jobName]
+}
+
+String getJobUrl(String jobName) {
+    echo "getJobUrl for ${jobName}"
+    def job = getJob(jobName)
+    return job ? job.getAbsoluteUrl() : ''
+}
+
+boolean isJobSucceeded(String jobName) {
+    def job = getJob(jobName)
+    return job ? job.getResult() == 'SUCCESS' : false
+}
+
+void addFailedStage(String jobName = '') {
+    FAILED_STAGES.put("${STAGE_NAME}", jobName)
+}
+
+void addUnstableStage(String jobName = '') {
+    UNSTABLE_STAGES.put("${STAGE_NAME}", jobName)
+}
+
+void sendSuccessfulNotification() {
+    String bodyMsg = 'Update versions is successful\nPlease review the successful PRs:'
+    sendNotification(bodyMsg)
+}
+
+void sendErrorNotification() {
+    String bodyMsg = "Update master version(s) job #${BUILD_NUMBER} was: ${currentBuild.currentResult}\nPlease look here: ${BUILD_URL}"
+    bodyMsg += '\n\nConfiguration:'
+    bodyMsg += "\n- Kogito version = ${getKogitoVersion()}"
+    bodyMsg += "\n- Optaplanner version = ${getOptaplannerVersion()}"
+    bodyMsg += '\n'
+
+    if (FAILED_STAGES.size() > 0) {
+        bodyMsg += '\nFailed stages: \n- '
+        bodyMsg += FAILED_STAGES.collect { "${it.key} => ${getJobUrl(it.value)}" }.join('\n- ')
+    }
+    bodyMsg += '\n'
+    if (UNSTABLE_STAGES.size() > 0) {
+        bodyMsg += '\nUnstable stages: \n- '
+        bodyMsg += UNSTABLE_STAGES.collect { "${it.key} => ${getJobUrl(it.value)}" }.join('\n- ')
+    }
+    bodyMsg += '\n'
+    bodyMsg += "\nPlease look here: ${BUILD_URL}"
+    sendNotification(bodyMsg)
+}
+
+void sendStageNotification() {
+    sendNotification("${env.STAGE_NAME}")
+}
+
+void sendNotification(String body) {
+    echo 'Send Notification'
+    echo body
+    emailext body: body, subject: '[master] Update versions',
+                to: env.KOGITO_CI_EMAIL_TO
+}
+
+def readDeployProperties(String buildUrl) {
+    def deployProperties = [:]
+    if (buildUrl != '') {
+        if (!buildUrl.endsWith('/')) {
+            buildUrl += '/'
+        }
+        sh "wget ${buildUrl}artifact/deployment.properties -O deployment.properties"
+        deployProperties = readProperties file: 'deployment.properties'
+        echo deployProperties.collect { entry -> "${entry.key}=${entry.value}" }.join('\n')
+    }
+    return deployProperties
+}
+
+List getDefaultBuildParams(String version = '') {
+    version = version ?: getKogitoVersion()
+
+    List buildParams = []
+    addStringParam(buildParams, 'DISPLAY_NAME', getDisplayName(version))
+    addStringParam(buildParams, 'BUILD_BRANCH_NAME', 'master')
+    addBooleanParam(buildParams, 'CREATE_PR', true)
+    addStringParam(buildParams, 'PROJECT_VERSION', version)
+    addBooleanParam(buildParams, 'SKIP_TESTS', true)
+    return buildParams
+}
+
+void addStringParam(List params, String key, String value) {
+    params.add(string(name: key, value: value))
+}
+
+void addBooleanParam(List params, String key, boolean value) {
+    params.add(booleanParam(name: key, value: value))
+}
+
+String getDisplayName() {
+    return "Update master with Kogito version ${getKogitoVersion()} and Optp"
+}
+
+String getDescription() {
+    return """
+        Kogito = ${getKogitoVersion()}
+        Optplanner = ${getOptaplannerVersion()}
+    """
+}
+
+String getKogitoVersion() {
+    return params.KOGITO_VERSION
+}
+
+String getOptaPlannerVersion() {
+    return params.OPTAPLANNER_VERSION
+}
+
+String getGitAuthor() {
+    return env.GIT_AUTHOR
+}
+
+String getArtifactsRepositoryParam() {
+    return env.ARTIFACTS_REPOSITORY
+}
