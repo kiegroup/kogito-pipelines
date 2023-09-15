@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-15T08:13:29.995Z",
+    "date": "2023-09-15T10:11:22.402Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines-mirror/actions/runs/6195597720"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines-mirror/actions/runs/6196758699"
   },
   "projects": [
     {
@@ -6709,7 +6709,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-09-14T20:25:02Z",
-          "updated_at": "2023-09-14T20:28:02Z",
+          "updated_at": "2023-09-15T08:40:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7340,10 +7340,10 @@
               "id": 16820460071,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
               "html_url": "https://github.com/asf-transfer/kogito-apps/actions/runs/6195542541/job/16820460071",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-15T08:07:46Z",
-              "completed_at": null,
+              "completed_at": "2023-09-15T09:30:31Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7351,10 +7351,10 @@
               "id": 16820459865,
               "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
               "html_url": "https://github.com/asf-transfer/kogito-apps/actions/runs/6195542541/job/16820459865",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-09-15T08:07:47Z",
-              "completed_at": null,
+              "completed_at": "2023-09-15T09:25:29Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7362,10 +7362,10 @@
               "id": 16820459682,
               "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
               "html_url": "https://github.com/asf-transfer/kogito-apps/actions/runs/6195542541/job/16820459682",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-09-15T08:07:46Z",
-              "completed_at": null,
+              "completed_at": "2023-09-15T09:07:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16206,12 +16206,431 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1968,
+          "title": "NO-ISSUE: Bump `karma` to `6.7.4` version ",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1968",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/1968",
+          "state": "open",
+          "labels": [
+            "Foundation",
+            "dependencies",
+            "javascript"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-09-15T09:35:56Z",
+          "updated_at": "2023-09-15T09:45:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "64a1d6b6081b245d04e4d9484babf1f12439ce62",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "update_karma_6.4.2",
+            "sha": "902511405fa97a33c12e9d58528b7a80124c6aa5",
+            "label": "yesamer:update_karma_6.4.2"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 16823220101,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/16823220101",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:42:06Z",
+              "completed_at": "2023-09-15T09:42:10Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054694,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432641/job/16823054694",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:36:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054435,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432641/job/16823054435",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:36:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054351,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432655/job/16823054351",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:36:08Z",
+              "completed_at": "2023-09-15T09:42:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054186,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432641/job/16823054186",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:36:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054103,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432644/job/16823054103",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:36:10Z",
+              "completed_at": "2023-09-15T09:44:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823054099,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432650/job/16823054099",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:36:07Z",
+              "completed_at": "2023-09-15T09:40:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823053987,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196432655/job/16823053987",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:36:09Z",
+              "completed_at": "2023-09-15T09:45:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1967,
+          "title": "NO-ISSUE: Bump `semver` to `7.5.4` version",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1967",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/1967",
+          "state": "open",
+          "labels": [
+            "Foundation",
+            "dependencies",
+            "javascript"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-09-15T09:17:23Z",
+          "updated_at": "2023-09-15T09:44:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "64a1d6b6081b245d04e4d9484babf1f12439ce62",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "update_semver_7.5.4",
+            "sha": "d579ccf400da343c0b5a3857237e318fd9df9893",
+            "label": "yesamer:update_semver_7.5.4"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 16823308740,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/16823308740",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:45:22Z",
+              "completed_at": "2023-09-15T09:45:26Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134829,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459016/job/16823134829",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:39:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134623,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459017/job/16823134623",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:39:01Z",
+              "completed_at": "2023-09-15T09:45:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134615,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459016/job/16823134615",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:39:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134399,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459016/job/16823134399",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-15T09:39:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134354,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459015/job/16823134354",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:39:04Z",
+              "completed_at": "2023-09-15T09:43:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134344,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459013/job/16823134344",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:39:02Z",
+              "completed_at": "2023-09-15T09:43:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16823134266,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6196459017/job/16823134266",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T09:39:01Z",
+              "completed_at": "2023-09-15T09:46:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1966,
+          "title": "NO-ISSUE: Update `go` to `1.21.1` follow-up",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1966",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/1966",
+          "state": "open",
+          "labels": [
+            "waiting-for-qe",
+            "waiting-for-review",
+            "waiting-for-ci",
+            "Foundation",
+            "Serverless Workflow",
+            "go"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2023-09-15T08:47:10Z",
+          "updated_at": "2023-09-15T08:48:09Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "64a1d6b6081b245d04e4d9484babf1f12439ce62",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "go-1.21.1-follow-up",
+            "sha": "2f595b35b64a865631bdb8bd5d0a72aadaff26e7",
+            "label": "zdrapela:go-1.21.1-follow-up"
+          },
+          "user": {
+            "login": "zdrapela",
+            "avatar_url": "https://avatars.githubusercontent.com/u/61500440?v=4",
+            "html_url": "https://github.com/zdrapela"
+          },
+          "checks": [
+            {
+              "id": 16821778986,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/16821778986",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:53:30Z",
+              "completed_at": "2023-09-15T08:53:33Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821603312,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939308/job/16821603312",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:34Z",
+              "completed_at": "2023-09-15T09:42:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821603103,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939318/job/16821603103",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:28Z",
+              "completed_at": "2023-09-15T08:53:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821603098,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939308/job/16821603098",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:36Z",
+              "completed_at": "2023-09-15T09:40:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821602876,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939308/job/16821602876",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:32Z",
+              "completed_at": "2023-09-15T09:54:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821602816,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939311/job/16821602816",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:29Z",
+              "completed_at": "2023-09-15T08:51:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821602777,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939310/job/16821602777",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:28Z",
+              "completed_at": "2023-09-15T09:01:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16821602699,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6195939318/job/16821602699",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-15T08:47:29Z",
+              "completed_at": "2023-09-15T08:54:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 1965,
           "title": "NO-ISSUE: Bump `commons-codec` to `1.16.0` version",
           "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1965",
           "html_url": "https://github.com/kiegroup/kie-tools/pull/1965",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "dependencies",
+            "java",
+            "DashBuilder"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -16236,7 +16655,7 @@
             }
           ],
           "created_at": "2023-09-15T06:46:36Z",
-          "updated_at": "2023-09-15T06:46:48Z",
+          "updated_at": "2023-09-15T08:49:03Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16340,144 +16759,6 @@
               "conclusion": "success",
               "started_at": "2023-09-15T06:46:47Z",
               "completed_at": "2023-09-15T06:53:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1964,
-          "title": "Bump org.apache.commons:commons-compress from 1.22 to 1.24.0 in /packages/serverless-logic-web-tools-swf-deployment-quarkus-app",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1964",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/1964",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ederign",
-              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
-              "html_url": "https://github.com/ederign"
-            },
-            {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            },
-            {
-              "login": "tiagobento",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
-              "html_url": "https://github.com/tiagobento"
-            }
-          ],
-          "created_at": "2023-09-14T19:36:15Z",
-          "updated_at": "2023-09-15T06:11:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "64a1d6b6081b245d04e4d9484babf1f12439ce62",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/packages/serverless-logic-web-tools-swf-deployment-quarkus-app/org.apache.commons-commons-compress-1.24.0",
-            "sha": "264db221beeb6cd1d0bd830c08fd2a93ab9e58dc",
-            "label": "kiegroup:dependabot/maven/packages/serverless-logic-web-tools-swf-deployment-quarkus-app/org.apache.commons-commons-compress-1.24.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 16805744316,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/16805744316",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:43:24Z",
-              "completed_at": "2023-09-14T19:43:28Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805557596,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082950/job/16805557596",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:43:45Z",
-              "completed_at": "2023-09-14T19:58:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805557293,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082950/job/16805557293",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:43:44Z",
-              "completed_at": "2023-09-14T20:13:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805557227,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082954/job/16805557227",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:37:50Z",
-              "completed_at": "2023-09-14T19:43:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805557028,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082950/job/16805557028",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:42:50Z",
-              "completed_at": "2023-09-14T19:53:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805557019,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082951/job/16805557019",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:40:26Z",
-              "completed_at": "2023-09-14T19:45:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805556944,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082948/job/16805556944",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:41:31Z",
-              "completed_at": "2023-09-14T19:47:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16805556809,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6190082954/job/16805556809",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T19:36:37Z",
-              "completed_at": "2023-09-14T19:43:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
