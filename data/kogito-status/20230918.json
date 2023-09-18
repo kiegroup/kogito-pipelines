@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-18T18:13:34.445Z",
+    "date": "2023-09-18T20:10:58.908Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6226373578"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6227494591"
   },
   "projects": [
     {
@@ -13483,7 +13483,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-09-11T20:43:29Z",
-          "updated_at": "2023-09-14T21:11:12Z",
+          "updated_at": "2023-09-18T19:43:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13493,7 +13493,7 @@
           },
           "head": {
             "ref": "kogito-9265",
-            "sha": "f1b9c8f97ac678022b648a00461e6c12a71761be",
+            "sha": "c2295589be205b8a9d2937b8d355753a73366d68",
             "label": "ricardozanini:kogito-9265"
           },
           "user": {
@@ -13501,52 +13501,7 @@
             "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
             "html_url": "https://github.com/ricardozanini"
           },
-          "checks": [
-            {
-              "id": 16807916439,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/actions/runs/6190834869/job/16807916439",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-09-14T21:04:18Z",
-              "completed_at": "2023-09-14T21:07:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16807916201,
-              "name": "Check headers",
-              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/actions/runs/6190834869/job/16807916201",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T21:01:59Z",
-              "completed_at": "2023-09-14T21:02:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16807915920,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/actions/runs/6190834871/job/16807915920",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-09-14T21:04:14Z",
-              "completed_at": "2023-09-14T21:24:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16807915907,
-              "name": "Check files generation",
-              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/actions/runs/6190834869/job/16807915907",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-14T21:02:29Z",
-              "completed_at": "2023-09-14T21:05:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
+          "checks": []
         },
         {
           "number": 247,
@@ -15416,10 +15371,15 @@
               "login": "tiagobento",
               "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
               "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "handreyrc",
+              "avatar_url": "https://avatars.githubusercontent.com/u/47090342?v=4",
+              "html_url": "https://github.com/handreyrc"
             }
           ],
           "created_at": "2023-09-08T16:01:57Z",
-          "updated_at": "2023-09-08T16:01:58Z",
+          "updated_at": "2023-09-18T19:07:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
