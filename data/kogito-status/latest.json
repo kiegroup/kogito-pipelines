@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-19T08:13:59.149Z",
+    "date": "2023-09-19T10:11:32.516Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6232919740"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234171090"
   },
   "projects": [
     {
@@ -354,6 +354,36 @@
       "repo_url": "https://github.com/apache/incubator-kie-kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3231,
+          "title": "[kie-issues-249] Data Index Events changes for allowing historical data",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/pulls/3231",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3231",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T09:47:05Z",
+          "updated_at": "2023-09-19T09:48:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "91497cce2b7b79ee1c0a4fbcd6bf38bc22a0a280",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "kie-issues-249",
+            "sha": "301f841a5ca0278b1f7aec5897eebfc91ffee803",
+            "label": "elguardian:kie-issues-249"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": []
+        },
         {
           "number": 3229,
           "title": "[KOGITO-9810] Supporting nested properties",
@@ -1698,36 +1728,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
-        },
-        {
-          "number": 3158,
-          "title": "[kie-issues-249] Data index improvements",
-          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/pulls/3158",
-          "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3158",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-08-02T10:40:32Z",
-          "updated_at": "2023-09-17T07:50:23Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "91497cce2b7b79ee1c0a4fbcd6bf38bc22a0a280",
-            "label": "apache:main"
-          },
-          "head": {
-            "ref": "kie-issues-249",
-            "sha": "2124cda5048bac26542237c29dcae345f1b430da",
-            "label": "elguardian:kie-issues-249"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
-          },
-          "checks": []
         },
         {
           "number": 3140,
@@ -5215,6 +5215,36 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1881,
+          "title": "[kie-issues-249] Data Index Events changes for allowing historical data",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls/1881",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-apps/pull/1881",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T09:47:34Z",
+          "updated_at": "2023-09-19T09:48:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cb9f9219c026f75bfce78db97b0526ecc6828267",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "kie-issues-249",
+            "sha": "cb382c506b9450f7e75aafbe73e421002473e6dd",
+            "label": "elguardian:kie-issues-249"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": []
+        },
+        {
           "number": 1880,
           "title": "Remove jsonpath@1.1.1 (CVE-2023-26115)",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls/1880",
@@ -5222,9 +5252,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
           "created_at": "2023-09-14T20:25:02Z",
-          "updated_at": "2023-09-18T20:15:00Z",
+          "updated_at": "2023-09-19T08:45:50Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5714,36 +5750,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
-        },
-        {
-          "number": 1823,
-          "title": "[kie-issues-249] Data index improvements",
-          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls/1823",
-          "html_url": "https://github.com/apache/incubator-kie-kogito-apps/pull/1823",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-08-07T09:03:57Z",
-          "updated_at": "2023-09-17T18:17:11Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "cb9f9219c026f75bfce78db97b0526ecc6828267",
-            "label": "apache:main"
-          },
-          "head": {
-            "ref": "kie-issues-249",
-            "sha": "cb382c506b9450f7e75aafbe73e421002473e6dd",
-            "label": "elguardian:kie-issues-249"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
-          },
-          "checks": []
         },
         {
           "number": 1806,
@@ -13483,7 +13489,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-09-11T20:43:29Z",
-          "updated_at": "2023-09-19T05:41:50Z",
+          "updated_at": "2023-09-19T08:54:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -14524,10 +14530,10 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 1970,
-          "title": "KOGITO-9824: Update Cypress version to 13.2.0",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1970",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/1970",
+          "number": 1971,
+          "title": "NO-ISSUE: `jQuery` CVE resolution",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1971",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/1971",
           "state": "open",
           "labels": [],
           "draft": false,
@@ -14546,6 +14552,149 @@
               "login": "tiagobento",
               "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
               "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-09-19T09:32:53Z",
+          "updated_at": "2023-09-19T09:39:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "219907d4a65de2a8bcdffd165521c3a3228f7ca2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "jquery-fix",
+            "sha": "9589c4016aae83b43cc9125a70d71a66dc3c8b90",
+            "label": "yesamer:jquery-fix"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 16919873238,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/16919873238",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T09:39:34Z",
+              "completed_at": "2023-09-19T09:39:39Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919667663,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667663",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-19T09:33:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919667328,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667328",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-19T09:34:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919667210,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779494/job/16919667210",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T09:33:05Z",
+              "completed_at": "2023-09-19T09:39:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919667043,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667043",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-19T09:33:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919666872,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779490/job/16919666872",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T09:33:05Z",
+              "completed_at": "2023-09-19T09:39:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919666857,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779507/job/16919666857",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T09:33:06Z",
+              "completed_at": "2023-09-19T09:37:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16919666732,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779494/job/16919666732",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T09:33:04Z",
+              "completed_at": "2023-09-19T09:39:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1970,
+          "title": "KOGITO-9824: Update Cypress version to 13.2.0",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1970",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/1970",
+          "state": "open",
+          "labels": [
+            "DO NOT MERGE",
+            "wip"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "yesamer",
+              "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+              "html_url": "https://github.com/yesamer"
             },
             {
               "login": "zdrapela",
@@ -14554,7 +14703,7 @@
             }
           ],
           "created_at": "2023-09-19T07:15:13Z",
-          "updated_at": "2023-09-19T07:19:07Z",
+          "updated_at": "2023-09-19T09:35:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
