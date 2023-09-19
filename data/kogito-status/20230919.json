@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-19T12:20:14.793Z",
+    "date": "2023-09-19T13:13:22.380Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6235460288"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6236000839"
   },
   "projects": [
     {
@@ -26,16 +26,10 @@
           "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/3",
           "state": "open",
           "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
+          "draft": true,
+          "requested_reviewers": [],
           "created_at": "2023-09-19T11:25:51Z",
-          "updated_at": "2023-09-19T11:25:51Z",
+          "updated_at": "2023-09-19T12:45:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -319,11 +313,6 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
               "login": "jstastny-cz",
               "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
               "html_url": "https://github.com/jstastny-cz"
@@ -335,7 +324,7 @@
             }
           ],
           "created_at": "2023-09-19T10:14:01Z",
-          "updated_at": "2023-09-19T10:18:42Z",
+          "updated_at": "2023-09-19T12:21:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -11214,7 +11203,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-09-19T10:31:17Z",
-          "updated_at": "2023-09-19T10:54:36Z",
+          "updated_at": "2023-09-19T13:09:34Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -11233,6 +11222,39 @@
             "html_url": "https://github.com/bacciotti"
           },
           "checks": [
+            {
+              "id": 16926291596,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6234388663/job/16926291596",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T13:09:53Z",
+              "completed_at": "2023-09-19T13:09:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16926291441,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6234388663/job/16926291441",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T13:09:52Z",
+              "completed_at": "2023-09-19T13:09:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16926291302,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6234388663/job/16926291302",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T13:09:54Z",
+              "completed_at": "2023-09-19T13:10:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 25150416135,
               "name": "continuous-integration/jenkins/pr-merge",
@@ -14120,7 +14142,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-09-11T20:43:29Z",
-          "updated_at": "2023-09-19T12:12:29Z",
+          "updated_at": "2023-09-19T13:06:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
