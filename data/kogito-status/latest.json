@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-19T10:11:32.516Z",
+    "date": "2023-09-19T12:20:14.793Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234171090"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6235460288"
   },
   "projects": [
     {
@@ -19,6 +19,596 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3,
+          "title": "disabled PRs on main branch",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/3",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/3",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2023-09-19T11:25:51Z",
+          "updated_at": "2023-09-19T11:25:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9833a5ebaa291ced92aab63267957879f2b2cf9b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "disable-PRs",
+            "sha": "3b677b10dc16f59870f08215f2a3a0903edc3e09",
+            "label": "mbiarnes:disable-PRs"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 16923081950,
+              "name": "Drools DSL Downstream tests - mbiarnes/kie-jpmml-integration",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923081950",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:27:47Z",
+              "completed_at": "2023-09-19T11:29:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923081760,
+              "name": "Drools DSL Downstream tests - mbiarnes/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923081760",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:36Z",
+              "completed_at": "2023-09-19T11:28:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923081562,
+              "name": "Drools DSL Downstream tests - mbiarnes/drools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923081562",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:27:46Z",
+              "completed_at": "2023-09-19T11:29:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923081381,
+              "name": "Drools DSL Downstream tests - mbiarnes/drools-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923081381",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:27:48Z",
+              "completed_at": "2023-09-19T11:29:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923080250,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923080250",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:30Z",
+              "completed_at": "2023-09-19T11:28:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923080082,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner-quickstarts",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923080082",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:30Z",
+              "completed_at": "2023-09-19T11:28:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923079734,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923079734",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:30Z",
+              "completed_at": "2023-09-19T11:28:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923079282,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923079282",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:31Z",
+              "completed_at": "2023-09-19T11:28:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923075150,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-serverless-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923075150",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:19Z",
+              "completed_at": "2023-09-19T11:27:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923074934,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-runtimes",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923074934",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:18Z",
+              "completed_at": "2023-09-19T11:28:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923074583,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-pipelines",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923074583",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:17Z",
+              "completed_at": "2023-09-19T11:28:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923074368,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923074368",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:16Z",
+              "completed_at": "2023-09-19T11:27:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923074153,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-images",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923074153",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:19Z",
+              "completed_at": "2023-09-19T11:28:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923073919,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-examples",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923073919",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:17Z",
+              "completed_at": "2023-09-19T11:27:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923073719,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923073719",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:16Z",
+              "completed_at": "2023-09-19T11:27:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923073489,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-apps",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923073489",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:18Z",
+              "completed_at": "2023-09-19T11:28:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923073281,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kie-tools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923073281",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:20Z",
+              "completed_at": "2023-09-19T11:28:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923073059,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kie-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923073059",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:18Z",
+              "completed_at": "2023-09-19T11:27:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923067331,
+              "name": "Get OptaPlanner DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923067331",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:04Z",
+              "completed_at": "2023-09-19T11:26:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923067091,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919317/job/16923067091",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:03Z",
+              "completed_at": "2023-09-19T11:28:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923067085,
+              "name": "Get Kogito DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923067085",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:02Z",
+              "completed_at": "2023-09-19T11:26:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923066873,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919317/job/16923066873",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:06Z",
+              "completed_at": "2023-09-19T11:28:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16923066854,
+              "name": "Get Drools DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234919323/job/16923066854",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T11:26:06Z",
+              "completed_at": "2023-09-19T11:26:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Add configuration parameter to disable nexus deploy",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/2",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/2",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "jstastny-cz",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+              "html_url": "https://github.com/jstastny-cz"
+            },
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            }
+          ],
+          "created_at": "2023-09-19T10:14:01Z",
+          "updated_at": "2023-09-19T10:18:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9833a5ebaa291ced92aab63267957879f2b2cf9b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "disable-deploy",
+            "sha": "d88120df2e6bebb08870c25500a3a196794fc9bb",
+            "label": "mbiarnes:disable-deploy"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 16920965090,
+              "name": "Drools DSL Downstream tests - mbiarnes/kie-jpmml-integration",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920965090",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:25Z",
+              "completed_at": "2023-09-19T10:18:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920964908,
+              "name": "Drools DSL Downstream tests - mbiarnes/drools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920964908",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:28Z",
+              "completed_at": "2023-09-19T10:18:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920964691,
+              "name": "Drools DSL Downstream tests - mbiarnes/drools-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920964691",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:23Z",
+              "completed_at": "2023-09-19T10:17:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920964385,
+              "name": "Drools DSL Downstream tests - mbiarnes/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920964385",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:22Z",
+              "completed_at": "2023-09-19T10:17:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920960259,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920960259",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:25Z",
+              "completed_at": "2023-09-19T10:18:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920960059,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner-quickstarts",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920960059",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:16:03Z",
+              "completed_at": "2023-09-19T10:18:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920959792,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/optaplanner",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920959792",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:45Z",
+              "completed_at": "2023-09-19T10:16:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920959561,
+              "name": "OptaPlanner DSL Downstream tests - mbiarnes/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920959561",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:15:59Z",
+              "completed_at": "2023-09-19T10:17:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920958994,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-serverless-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920958994",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:36Z",
+              "completed_at": "2023-09-19T10:15:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920958751,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-runtimes",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920958751",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:32Z",
+              "completed_at": "2023-09-19T10:16:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920958481,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-pipelines",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920958481",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:31Z",
+              "completed_at": "2023-09-19T10:15:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920958230,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920958230",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:32Z",
+              "completed_at": "2023-09-19T10:16:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920958001,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-images",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920958001",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:33Z",
+              "completed_at": "2023-09-19T10:16:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920957762,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-examples",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920957762",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:32Z",
+              "completed_at": "2023-09-19T10:16:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920957552,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920957552",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:31Z",
+              "completed_at": "2023-09-19T10:16:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920957245,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kogito-apps",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920957245",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:31Z",
+              "completed_at": "2023-09-19T10:15:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920956969,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kie-tools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920956969",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:33Z",
+              "completed_at": "2023-09-19T10:16:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920956719,
+              "name": "Kogito DSL Downstream tests - mbiarnes/kie-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920956719",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:33Z",
+              "completed_at": "2023-09-19T10:16:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920947568,
+              "name": "Get Kogito DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920947568",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:14Z",
+              "completed_at": "2023-09-19T10:14:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920947314,
+              "name": "Get OptaPlanner DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920947314",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:13Z",
+              "completed_at": "2023-09-19T10:14:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920947052,
+              "name": "Get Drools DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201416/job/16920947052",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:15Z",
+              "completed_at": "2023-09-19T10:14:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920947042,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201419/job/16920947042",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:14Z",
+              "completed_at": "2023-09-19T10:16:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920946826,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6234201419/job/16920946826",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:14Z",
+              "completed_at": "2023-09-19T10:16:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.1 to 2.401.3 in /.ci/jenkins/tests",
@@ -10615,6 +11205,47 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1702,
+          "title": "Set OpenShift Serverless Logic productized images to version 1.31.0",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls/1702",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-images/pull/1702",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T10:31:17Z",
+          "updated_at": "2023-09-19T10:54:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d0a297186332bf9033469f275fa899fc4b037ca3",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "osl_1.31",
+            "sha": "cb9c7705bb90331ee7468bdfb447a75d0502a89c",
+            "label": "bacciotti:osl_1.31"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 25150416135,
+              "name": "continuous-integration/jenkins/pr-merge",
+              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/apache_migration/job/pullrequest_jobs/job/kogito-images-pr/job/PR-1702/1/display/redirect",
+              "conclusion": "pending",
+              "started_at": "2023-09-19T10:31:39Z",
+              "completed_at": "2023-09-19T10:31:39Z",
+              "slug": false,
+              "avatar_url": "https://avatars.githubusercontent.com/u/40367165?v=4"
+            }
+          ]
+        },
+        {
           "number": 1699,
           "title": "[1.44.x] Tests: Fix discovery test",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls/1699",
@@ -13489,7 +14120,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-09-11T20:43:29Z",
-          "updated_at": "2023-09-19T08:54:00Z",
+          "updated_at": "2023-09-19T12:12:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -14535,7 +15166,9 @@
           "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1971",
           "html_url": "https://github.com/kiegroup/kie-tools/pull/1971",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "dependencies"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -14555,7 +15188,7 @@
             }
           ],
           "created_at": "2023-09-19T09:32:53Z",
-          "updated_at": "2023-09-19T09:39:38Z",
+          "updated_at": "2023-09-19T11:41:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -14565,7 +15198,7 @@
           },
           "head": {
             "ref": "jquery-fix",
-            "sha": "9589c4016aae83b43cc9125a70d71a66dc3c8b90",
+            "sha": "60ad17a07eb88b55b18ef2736a2e10d50c7ed105",
             "label": "yesamer:jquery-fix"
           },
           "user": {
@@ -14575,90 +15208,90 @@
           },
           "checks": [
             {
-              "id": 16919873238,
+              "id": 16921148910,
               "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/16919873238",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/16921148910",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-09-19T09:39:34Z",
-              "completed_at": "2023-09-19T09:39:39Z",
+              "started_at": "2023-09-19T10:20:39Z",
+              "completed_at": "2023-09-19T10:20:43Z",
               "slug": "github-code-scanning",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16919667663,
+              "id": 16920952435,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667663",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-09-19T09:33:11Z",
-              "completed_at": null,
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199029/job/16920952435",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:14:30Z",
+              "completed_at": "2023-09-19T11:50:08Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16919667328,
+              "id": 16920952205,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667328",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-09-19T09:34:32Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16919667210,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779494/job/16919667210",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199029/job/16920952205",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-09-19T09:33:05Z",
-              "completed_at": "2023-09-19T09:39:45Z",
+              "started_at": "2023-09-19T10:14:30Z",
+              "completed_at": "2023-09-19T11:37:00Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16919667043,
+              "id": 16920951928,
               "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779495/job/16919667043",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-09-19T09:33:09Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16919666872,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779490/job/16919666872",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-09-19T09:33:05Z",
-              "completed_at": "2023-09-19T09:39:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16919666857,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779507/job/16919666857",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199029/job/16920951928",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-09-19T09:33:06Z",
-              "completed_at": "2023-09-19T09:37:49Z",
+              "started_at": "2023-09-19T10:14:25Z",
+              "completed_at": "2023-09-19T11:37:56Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16919666732,
+              "id": 16920939425,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199017/job/16920939425",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:13:59Z",
+              "completed_at": "2023-09-19T10:22:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920939363,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199020/job/16920939363",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:13:57Z",
+              "completed_at": "2023-09-19T10:17:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920939313,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199027/job/16920939313",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T10:13:58Z",
+              "completed_at": "2023-09-19T10:18:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16920939158,
               "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6233779494/job/16919666732",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6234199017/job/16920939158",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-09-19T09:33:04Z",
-              "completed_at": "2023-09-19T09:39:49Z",
+              "started_at": "2023-09-19T10:13:57Z",
+              "completed_at": "2023-09-19T10:20:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
