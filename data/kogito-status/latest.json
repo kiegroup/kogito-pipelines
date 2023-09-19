@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-19T16:13:42.155Z",
+    "date": "2023-09-19T18:13:24.554Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6238188833"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6239366786"
   },
   "projects": [
     {
@@ -310,7 +310,7 @@
           "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/2",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
             {
               "login": "jstastny-cz",
@@ -324,7 +324,7 @@
             }
           ],
           "created_at": "2023-09-19T10:14:01Z",
-          "updated_at": "2023-09-19T15:21:01Z",
+          "updated_at": "2023-09-19T16:20:32Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -933,6 +933,124 @@
       "repo_url": "https://github.com/apache/incubator-kie-kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3233,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-runtimes/pulls/3233",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3233",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:26:19Z",
+          "updated_at": "2023-09-19T16:58:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "91497cce2b7b79ee1c0a4fbcd6bf38bc22a0a280",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "af9f30e05295bd18dce9f1a86670fb2e7dfeb442",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16934906839,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636746/job/16934906839",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:04Z",
+              "completed_at": "2023-09-19T16:59:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906591,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636746/job/16934906591",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:03Z",
+              "completed_at": "2023-09-19T16:59:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906370,
+              "name": "kogito-apps (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636746/job/16934906370",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:04Z",
+              "completed_at": "2023-09-19T16:59:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906341,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636744/job/16934906341",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:59:03Z",
+              "completed_at": "2023-09-19T17:02:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906074,
+              "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636745/job/16934906074",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:06Z",
+              "completed_at": "2023-09-19T16:59:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906065,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636746/job/16934906065",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:05Z",
+              "completed_at": "2023-09-19T16:59:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934906035,
+              "name": "DSL",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-runtimes/actions/runs/6238636744/job/16934906035",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:59:04Z",
+              "completed_at": "2023-09-19T17:01:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25158831398,
+              "name": "continuous-integration/jenkins/pr-merge",
+              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/apache_migration/job/pullrequest_jobs/job/kogito-runtimes-pr/job/PR-3233/3/display/redirect",
+              "conclusion": "error",
+              "started_at": "2023-09-19T16:59:22Z",
+              "completed_at": "2023-09-19T16:59:22Z",
+              "slug": false,
+              "avatar_url": "https://avatars.githubusercontent.com/u/40367165?v=4"
+            }
+          ]
+        },
         {
           "number": 3232,
           "title": "[kie-issues#511] Migrate from jboss-parent to apache parent pom.",
@@ -5824,6 +5942,58 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1882,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls/1882",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-apps/pull/1882",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:28:11Z",
+          "updated_at": "2023-09-19T16:39:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cb9f9219c026f75bfce78db97b0526ecc6828267",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "6ec99c0aa843e51bda6ec03d4ea91f7c9f1be63b",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16933966815,
+              "name": "DSL",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-apps/actions/runs/6238338385/job/16933966815",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-19T16:28:28Z",
+              "completed_at": "2023-09-19T16:28:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25158174081,
+              "name": "continuous-integration/jenkins/pr-merge",
+              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/apache_migration/job/pullrequest_jobs/job/kogito-apps-pr/job/PR-1882/1/display/redirect",
+              "conclusion": "error",
+              "started_at": "2023-09-19T16:28:58Z",
+              "completed_at": "2023-09-19T16:28:58Z",
+              "slug": false,
+              "avatar_url": "https://avatars.githubusercontent.com/u/40367165?v=4"
+            }
+          ]
+        },
+        {
           "number": 1881,
           "title": "[kie-issues-249] Data Index Events changes for allowing historical data",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-apps/pulls/1881",
@@ -9231,6 +9401,47 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-examples/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1810,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-examples/pulls/1810",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-examples/pull/1810",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:29:11Z",
+          "updated_at": "2023-09-19T16:39:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6ac7572cf43d496751ca71ec82fd3cd7ef4ec2c0",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "9152f7454f35922e10b04339d6597ad0c3435445",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 25158196490,
+              "name": "continuous-integration/jenkins/pr-merge",
+              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/apache_migration/job/pullrequest_jobs/job/kogito-examples-pr/job/PR-1810/1/display/redirect",
+              "conclusion": "error",
+              "started_at": "2023-09-19T16:29:54Z",
+              "completed_at": "2023-09-19T16:29:54Z",
+              "slug": false,
+              "avatar_url": "https://avatars.githubusercontent.com/u/40367165?v=4"
+            }
+          ]
+        },
+        {
           "number": 1786,
           "title": "[kie-issues#533] Jakarta: Update to Quarkus 3.2.5.Final",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-examples/pulls/1786",
@@ -11103,6 +11314,80 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1703,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls/1703",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-images/pull/1703",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:29:39Z",
+          "updated_at": "2023-09-19T16:39:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d0a297186332bf9033469f275fa899fc4b037ca3",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "84aa8b76937de5044378113d19ba06b44a5af938",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16934012543,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6238351685/job/16934012543",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:29:55Z",
+              "completed_at": "2023-09-19T16:30:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934012340,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6238351685/job/16934012340",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:29:54Z",
+              "completed_at": "2023-09-19T16:30:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934012078,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-images/actions/runs/6238351685/job/16934012078",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:29:52Z",
+              "completed_at": "2023-09-19T16:30:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25158208543,
+              "name": "continuous-integration/jenkins/pr-merge",
+              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/apache_migration/job/pullrequest_jobs/job/kogito-images-pr/job/PR-1703/1/display/redirect",
+              "conclusion": "error",
+              "started_at": "2023-09-19T16:30:24Z",
+              "completed_at": "2023-09-19T16:30:24Z",
+              "slug": false,
+              "avatar_url": "https://avatars.githubusercontent.com/u/40367165?v=4"
+            }
+          ]
+        },
+        {
           "number": 1702,
           "title": "Set OpenShift Serverless Logic productized images to version 1.31.0",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-images/pulls/1702",
@@ -12849,6 +13134,59 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-operator/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1530,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-operator/pulls/1530",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-operator/pull/1530",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:30:08Z",
+          "updated_at": "2023-09-19T16:40:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ad8e9139ff32af759c6128180561db0bb1e833ef",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "f66f747038d71f53ccc88748106d7a78abdfd7f6",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16934028169,
+              "name": "Lint",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-operator/actions/runs/6238356569/job/16934028169",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:30:26Z",
+              "completed_at": "2023-09-19T16:36:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934027660,
+              "name": "Bats Test",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-operator/actions/runs/6238356569/job/16934027660",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:30:24Z",
+              "completed_at": "2023-09-19T16:31:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 1510,
           "title": "KOGITO-9681 CI: Use cloud shared libraries",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-operator/pulls/1510",
@@ -14042,6 +14380,59 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
         {
+          "number": 257,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-serverless-operator/pulls/257",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/pull/257",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-19T16:34:55Z",
+          "updated_at": "2023-09-19T16:40:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "bedb0e816347a6e56a0a94d70489cc19f29c747f",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "d2feb9fb242fe90bc9d1ec699d903ec5eddff217",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16934446449,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/runs/16934446449",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:43:28Z",
+              "completed_at": "2023-09-19T16:43:31Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16934179136,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-serverless-operator/actions/runs/6238406451/job/16934179136",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:35:07Z",
+              "completed_at": "2023-09-19T16:43:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 256,
           "title": "[KOGITO-8692] - :sunflower: Refactor profiles package APIs",
           "url": "https://api.github.com/repos/apache/incubator-kie-kogito-serverless-operator/pulls/256",
@@ -15185,10 +15576,10 @@
               "id": 16930245097,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237199567/job/16930245097",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T14:46:32Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T17:05:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -15196,10 +15587,10 @@
               "id": 16930244744,
               "name": "run (macos-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237199567/job/16930244744",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T14:46:35Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T16:50:07Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -15229,10 +15620,10 @@
               "id": 16930244353,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237199567/job/16930244353",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T14:46:28Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T17:51:41Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -15432,7 +15823,7 @@
             }
           ],
           "created_at": "2023-09-14T14:51:37Z",
-          "updated_at": "2023-09-19T14:58:05Z",
+          "updated_at": "2023-09-19T16:46:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -15466,10 +15857,10 @@
               "id": 16930703880,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237330164/job/16930703880",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T14:58:32Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T16:21:22Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -15488,10 +15879,10 @@
               "id": 16930703254,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237330164/job/16930703254",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T14:58:28Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T16:17:00Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16648,10 +17039,10 @@
               "id": 16930714946,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237334952/job/16930714946",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T15:03:29Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T17:57:50Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16659,10 +17050,10 @@
               "id": 16930714659,
               "name": "run (macos-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6237334952/job/16930714659",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-09-19T15:04:13Z",
-              "completed_at": null,
+              "completed_at": "2023-09-19T17:05:17Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -18020,6 +18411,54 @@
       "repo_url": "https://github.com/apache/incubator-kie-kogito-docs",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-kogito-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 504,
+          "title": "kie-issues#574 Initial ASF Jenkins CI Setup",
+          "url": "https://api.github.com/repos/apache/incubator-kie-kogito-docs/pulls/504",
+          "html_url": "https://github.com/apache/incubator-kie-kogito-docs/pull/504",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            }
+          ],
+          "created_at": "2023-09-19T16:30:32Z",
+          "updated_at": "2023-09-19T16:40:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "41b9f093ab436baae25cbb281d00845abfdec23b",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "apache_migration",
+            "sha": "9c71981f0134fcca0e23848764c0e856c5968d15",
+            "label": "apache:apache_migration"
+          },
+          "user": {
+            "login": "jstastny-cz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+            "html_url": "https://github.com/jstastny-cz"
+          },
+          "checks": [
+            {
+              "id": 16934039779,
+              "name": "Building Serverless Workflow Documentation with Antora",
+              "html_url": "https://github.com/apache/incubator-kie-kogito-docs/actions/runs/6238360152/job/16934039779",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-19T16:30:43Z",
+              "completed_at": "2023-09-19T16:31:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 503,
           "title": "[KOGITO-9800] Add minikube registry addon",
