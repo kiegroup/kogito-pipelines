@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-09-20T19:08:53.233Z",
+    "date": "2023-09-20T20:11:07.270Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6253020003"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6253588057"
   },
   "projects": [
     {
@@ -5250,138 +5250,6 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 1973,
-          "title": "kie-issues#575: standalone-editors doesn't load the new Boxed Expression Editor",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/1973",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/1973",
-          "state": "open",
-          "labels": [
-            "DMN"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ederign",
-              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
-              "html_url": "https://github.com/ederign"
-            },
-            {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            }
-          ],
-          "created_at": "2023-09-20T10:23:29Z",
-          "updated_at": "2023-09-20T12:52:52Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bb306b63281a96a9e11960cbc94159e9ee796c2e",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "kie-issues#575",
-            "sha": "e6a80c261215867c23b76e42dfdf18bf15d28749",
-            "label": "yesamer:kie-issues#575"
-          },
-          "user": {
-            "login": "yesamer",
-            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
-            "html_url": "https://github.com/yesamer"
-          },
-          "checks": [
-            {
-              "id": 16973145374,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251705/job/16973145374",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:48Z",
-              "completed_at": "2023-09-20T11:33:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16973145119,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251705/job/16973145119",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T16:45:44Z",
-              "completed_at": "2023-09-20T18:07:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16973144858,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251705/job/16973144858",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:46Z",
-              "completed_at": "2023-09-20T11:56:50Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16959687612,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/16959687612",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:30:34Z",
-              "completed_at": "2023-09-20T10:30:38Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16959469933,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251699/job/16959469933",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:42Z",
-              "completed_at": "2023-09-20T10:28:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16959469880,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251712/job/16959469880",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:43Z",
-              "completed_at": "2023-09-20T10:33:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16959469808,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251695/job/16959469808",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:41Z",
-              "completed_at": "2023-09-20T10:31:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16959469494,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6247251695/job/16959469494",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:23:41Z",
-              "completed_at": "2023-09-20T10:30:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 1970,
           "title": "KOGITO-9824: Update Cypress version to 13.2.0",
