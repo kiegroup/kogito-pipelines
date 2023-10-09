@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-09T19:08:36.232Z",
+    "date": "2023-10-09T20:10:30.695Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6460742327"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6461249051"
   },
   "projects": [
     {
@@ -4399,61 +4399,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 1,
-          "title": "[1.13.x] Update Kogito bundle for CVE respin",
-          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/1",
-          "html_url": "https://github.com/kiegroup/kogito-operator/pull/1",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-09T17:00:32Z",
-          "updated_at": "2023-10-09T17:28:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.13.x",
-            "sha": "125264430c8243168619e7b2f0dc749fceeab569",
-            "label": "kiegroup:1.13.x"
-          },
-          "head": {
-            "ref": "1.13.x_respin",
-            "sha": "96503a23a9e05850cdd04865d1822d9d08d57781",
-            "label": "rgdoliveira:1.13.x_respin"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 17535738686,
-              "name": "Bats Test",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6459608625/job/17535738686",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-09T17:00:48Z",
-              "completed_at": "2023-10-09T17:01:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17535738446,
-              "name": "Lint",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6459608625/job/17535738446",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-09T17:00:46Z",
-              "completed_at": "2023-10-09T17:05:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -5017,7 +4963,7 @@
               "sha": "ebcf0736f46461d4edfe6add9acbecc632b48a51"
             },
             {
-              "sha": "e49984bc52e289cc8e252aadf40a29f4a623c256"
+              "sha": "b9c26008a1c1cb3c39d2568c5eb2eb5e5d1887e0"
             },
             {
               "sha": "cdee8219164e10be2ca031f7b7095f8258036c4d"
@@ -5269,7 +5215,7 @@
               "sha": "4a34676541d44c7a6e3ac715d68586e0d1e514ad"
             },
             {
-              "sha": "c9274fda8c657dbf4d2fce2b8ed1e21bf79a2f23"
+              "sha": "07aba18d42b8ee7998dd8a94106226b1435e17f8"
             }
           ]
         }
