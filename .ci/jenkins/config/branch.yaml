@@ -4,85 +4,60 @@ environments:
       NATIVE: true
       BUILD_MVN_OPTS_CURRENT: -Dnative -Dquarkus.native.container-build=true
       ADDITIONAL_TIMEOUT: 720
+      BUILD_MVN_OPTS: '-Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral '
     ids:
     - native
-  native-lts:
-    env_vars:
-      NATIVE: true
-      BUILD_MVN_OPTS: -Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral
-      BUILD_MVN_OPTS_CURRENT: -Dnative -Dquarkus.native.container-build=true
-      QUARKUS_BRANCH: '2.13'
-      ADDITIONAL_TIMEOUT: 720
-      BUILD_ENVIRONMENT: quarkus-lts
-    ids:
-    - native
-    - prod
-    - lts
-  quarkus-main:
-    enabled: false
-    env_vars:
-      QUARKUS_BRANCH: main
-    ids:
-    - quarkus
+    enabled: true
   quarkus-branch:
     env_vars:
       QUARKUS_BRANCH: '2.16'
+      BUILD_MVN_OPTS: '-Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral '
     ids:
     - quarkus
-  quarkus-3:
-    pull_request_default_check: false
+    enabled: true
+  default:
+    enabled: true
     env_vars:
-      BUILD_MAVEN_TOOL: kie-maven-3.9.1
-      BUILD_JDK_TOOL: kie-jdk17
-      BUILD_MVN_OPTS: -Denforcer.skip
-    ids:
-    - quarkus
-    - quarkus3
-  quarkus-lts:
-    pull_request_default_check: false
-    env_vars:
-      BUILD_MVN_OPTS: -Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral
-      QUARKUS_BRANCH: '2.13'
-    ids:
-    - quarkus
-    - lts
-    - prod
-  sonarcloud:
-    auto_generation: false
-    env_vars:
-      ENABLE_SONARCLOUD: true
-    ids:
-    - sonarcloud
-    - coverage
-  ecosystem:
-    auto_generation: false
-    ids:
-    - ecosystem
+      BUILD_MVN_OPTS: '-Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral '
 productized_branch: true
 disable:
-  triggers: false
+  triggers: true
   deploy: true
 repositories:
 - name: kogito-pipelines
+  branch: 1.44.2.x-prod
 - name: kogito-runtimes
+  branch: 1.44.2.x-prod
 - name: kogito-apps
+  branch: 1.44.2.x-prod
 - name: kogito-examples
+  branch: 1.44.2.x-prod
 - name: kogito-images
+  branch: 1.44.2.x-prod
 - name: kogito-operator
+  branch: 1.44.2.x-prod
 - name: kogito-serverless-operator
+  branch: 1.44.2.x-prod
 - name: kie-tools
+  branch: 1.44.2.x-prod
 - name: kogito-docs
+  branch: 1.44.2.x-prod
 - name: kie-docs
-  branch: main-kogito
+  branch: 1.44.2.x-prod
 productized_repositories:
 - name: kogito-pipelines
+  branch: 1.44.2.x-prod
+  is_branch_config_repo: true
 - name: kogito-runtimes
+  branch: 1.44.2.x-prod
 - name: kogito-apps
+  branch: 1.44.2.x-prod
 - name: kogito-examples
+  branch: 1.44.2.x-prod
 - name: kogito-images
+  branch: 1.44.2.x-prod
 - name: kogito-serverless-operator
-- name: kogito-operator
-- name: kogito-docs
+  branch: 1.44.2.x-prod
 git:
   author:
     name: kiegroup
@@ -109,10 +84,10 @@ maven:
     staging_profile_url: https://repository.jboss.org/nexus/content/groups/kogito-public/
     staging_profile_id: 1976dd1c18392a
     build_promotion_profile_id: ea49ccd6f174
-  artifacts_repository: ''
+  artifacts_repository: https://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8443/nexus/content/repositories/osl-prod-nightly/
   artifacts_upload_repository:
-    url: https://repository.jboss.org/nexus/content/repositories/snapshots/
-    creds_id: kogito-snapshots-upload
+    url: https://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8443/nexus/content/repositories/osl-prod-nightly/
+    creds_id: unpacks-zip-on-qa-nexus
   quarkus_platform_repository:
     url: https://repository.jboss.org/nexus/content/repositories/kogito-internal-repository/
     creds_id: kogito-internal-nexus-creds
@@ -123,6 +98,7 @@ cloud:
     registry: quay.io
     namespace: kiegroup
     latest_git_branch: main
+  images: kogito-data-index-ephemeral,kogito-swf-builder,kogito-swf-devmode
 jenkins:
   email_creds_id: KOGITO_CI_EMAIL_TO
   default_tools:
@@ -130,3 +106,5 @@ jenkins:
     maven: kie-maven-3.8.7
     sonar_jdk: kie-jdk17
   jobs_definition_file: .ci/jenkins/dsl/jobs.groovy
+generation_config:
+  missing_environment: ignore
