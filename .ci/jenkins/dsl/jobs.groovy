@@ -24,7 +24,7 @@ if (isMainStream()) {
     }
 
     KogitoJobUtils.createMainQuarkusUpdateToolsJob(this,
-        [ 'kogito-runtimes', 'kogito-examples', 'kogito-docs', 'kogito-images' ],
+        [ 'kogito-runtimes', 'kogito-examples', 'kogito-images' ],
         [ 'radtriste', 'cristianonicolai' ]
     )
 }
