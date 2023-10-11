@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-11T10:11:41.870Z",
+    "date": "2023-10-11T11:09:08.755Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6481079564"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6481664059"
   },
   "projects": [
     {
@@ -20,26 +20,26 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
         {
-          "number": 5,
+          "number": 6,
           "title": "[1.44.2.x-prod] Bump quarkus version to 2.13.8.Final",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/5",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/5",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/6",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/6",
           "state": "open",
           "labels": [],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2023-10-10T17:52:50Z",
-          "updated_at": "2023-10-10T17:52:50Z",
+          "created_at": "2023-10-11T10:50:11Z",
+          "updated_at": "2023-10-11T10:50:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "1.44.2.x-prod",
-            "sha": "a405f77fc36ab4cefdfb4c1fe818f4c6f9077ca1",
+            "sha": "387080500dd9730e62414d2d890b26f4c0b95d6f",
             "label": "kiegroup:1.44.2.x-prod"
           },
           "head": {
             "ref": "bump_quarkus_2_13_8-seed",
-            "sha": "8488821d8d0e627e7d39e0f40bc72ae1fcc11584",
+            "sha": "b71f838bb0495a73f8850cc489fa88a202187f36",
             "label": "kiegroup:bump_quarkus_2_13_8-seed"
           },
           "user": {
@@ -49,24 +49,24 @@
           },
           "checks": [
             {
-              "id": 17574792946,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6473005607/job/17574792946",
+              "id": 17599066155,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6481479577/job/17599066155",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-10-10T17:53:04Z",
-              "completed_at": "2023-10-10T17:54:09Z",
+              "started_at": "2023-10-11T10:50:24Z",
+              "completed_at": "2023-10-11T10:52:03Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17574792740,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6473005607/job/17574792740",
+              "id": 17599065899,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6481479577/job/17599065899",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-10-10T17:53:04Z",
-              "completed_at": "2023-10-10T17:55:19Z",
+              "started_at": "2023-10-11T10:50:26Z",
+              "completed_at": "2023-10-11T10:52:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -407,6 +407,92 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 7,
+          "title": "[1.44.2.x-prod] Bump Quarkus version to 2.13.8.Final",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/7",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/7",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-11T10:58:23Z",
+          "updated_at": "2023-10-11T10:58:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.44.2.x-prod",
+            "sha": "479f5805f8ee24f9954a105600365ffa26377774",
+            "label": "kiegroup:1.44.2.x-prod"
+          },
+          "head": {
+            "ref": "bump_quarkus_2_13_8",
+            "sha": "57e45fe2363a6747dbbac9c41fb91dce4b42a0a5",
+            "label": "kiegroup:bump_quarkus_2_13_8"
+          },
+          "user": {
+            "login": "kie-ci3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
+            "html_url": "https://github.com/kie-ci3"
+          },
+          "checks": [
+            {
+              "id": 17599294727,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6481551180/job/17599294727",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599294523,
+              "name": "kogito-apps (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6481551180/job/17599294523",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599294292,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6481551180/job/17599294292",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599293996,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6481551180/job/17599293996",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599293668,
+              "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6481551177/job/17599293668",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:35Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 6,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.334 to 2.414.2 in /.ci/jenkins/tests",
@@ -2307,6 +2393,70 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
       "pullRequests": [
         {
+          "number": 11,
+          "title": "[1.44.2.x-prod] Bump Quarkus version to 2.13.8.Final",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/11",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/11",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-11T10:58:26Z",
+          "updated_at": "2023-10-11T10:58:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.44.2.x-prod",
+            "sha": "6ac7572cf43d496751ca71ec82fd3cd7ef4ec2c0",
+            "label": "kiegroup:1.44.2.x-prod"
+          },
+          "head": {
+            "ref": "bump_quarkus_2_13_8",
+            "sha": "37d1112bc9c2919e7d8ea042d4d5a76e8b3d75f9",
+            "label": "kiegroup:bump_quarkus_2_13_8"
+          },
+          "user": {
+            "login": "kie-ci3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
+            "html_url": "https://github.com/kie-ci3"
+          },
+          "checks": [
+            {
+              "id": 17599295727,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/6481551586/job/17599295727",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599295468,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/6481551586/job/17599295468",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599295234,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/6481551586/job/17599295234",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-11T10:58:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 10,
           "title": "Bump com.github.tomakehurst:wiremock-jre8 from 2.33.2 to 2.35.1 in /serverless-workflow-examples/serverless-workflow-functions-quarkus",
           "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/10",
@@ -4138,7 +4288,72 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 3,
+          "title": "[1.44.2.x-prod] Bump Quarkus version to 2.13.8.Final",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/3",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/3",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-11T10:52:13Z",
+          "updated_at": "2023-10-11T10:52:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.44.2.x-prod",
+            "sha": "2e22ecbb2978841e666e1df4a08b34215142726d",
+            "label": "kiegroup:1.44.2.x-prod"
+          },
+          "head": {
+            "ref": "bump_quarkus_2_13_8",
+            "sha": "86ebe718a4eb91c3a6f2bfcf852a475fc494fdb4",
+            "label": "kiegroup:bump_quarkus_2_13_8"
+          },
+          "user": {
+            "login": "kie-ci3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
+            "html_url": "https://github.com/kie-ci3"
+          },
+          "checks": [
+            {
+              "id": 17599125841,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6481498455/job/17599125841",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-11T10:52:26Z",
+              "completed_at": "2023-10-11T10:52:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599125628,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6481498455/job/17599125628",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-11T10:52:27Z",
+              "completed_at": "2023-10-11T10:52:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17599125383,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6481498455/job/17599125383",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-11T10:52:28Z",
+              "completed_at": "2023-10-11T10:53:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
