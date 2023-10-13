@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-13T14:10:08.089Z",
+    "date": "2023-10-13T15:11:06.939Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6509306794"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6509959395"
   },
   "projects": [
     {
@@ -5989,144 +5989,6 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2012,
-          "title": "build(deps): bump golang.org/x/net from 0.15.0 to 0.17.0 in /packages/kn-plugin-workflow",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2012",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/2012",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "go"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ederign",
-              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
-              "html_url": "https://github.com/ederign"
-            },
-            {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            },
-            {
-              "login": "tiagobento",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
-              "html_url": "https://github.com/tiagobento"
-            }
-          ],
-          "created_at": "2023-10-11T23:14:04Z",
-          "updated_at": "2023-10-13T14:10:07Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7aa885b73950d6ec79d2c44d200aa4a0ba2a52c4",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/go_modules/packages/kn-plugin-workflow/golang.org/x/net-0.17.0",
-            "sha": "abbe2b26f4230afb20bc42aa6e140b85e897ae49",
-            "label": "kiegroup:dependabot/go_modules/packages/kn-plugin-workflow/golang.org/x/net-0.17.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 17622780779,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/17622780779",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:20:42Z",
-              "completed_at": "2023-10-11T23:20:44Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622601,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050645/job/17622622601",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:22Z",
-              "completed_at": "2023-10-11T23:38:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622403,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050645/job/17622622403",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:22Z",
-              "completed_at": "2023-10-11T23:38:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622234,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050642/job/17622622234",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:15Z",
-              "completed_at": "2023-10-11T23:20:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622135,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050645/job/17622622135",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:18Z",
-              "completed_at": "2023-10-11T23:35:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622116,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050627/job/17622622116",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:15Z",
-              "completed_at": "2023-10-11T23:18:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622622089,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050638/job/17622622089",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:16Z",
-              "completed_at": "2023-10-11T23:19:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622621950,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6489050642/job/17622621950",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T23:14:15Z",
-              "completed_at": "2023-10-11T23:21:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 1990,
           "title": "KOGITO-9831: SWF Editor - final migration to j2cl",
