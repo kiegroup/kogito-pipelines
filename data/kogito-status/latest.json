@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-16T18:14:26.715Z",
+    "date": "2023-10-16T19:09:03.016Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6537609967"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6538166019"
   },
   "projects": [
     {
@@ -5543,544 +5543,42 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
         {
-          "number": 8,
-          "title": "[KOGITO-9896] Upgrade golang.org/x/net to fix CVE-2023-44487",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/8",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/8",
+          "number": 10,
+          "title": "[1.44.2.x] [KOGITO-9896] Upgrade golang.org/x/net to fix CVE-2023-44487",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/10",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/10",
           "state": "open",
           "labels": [
-            "backport-1.44.2.x",
-            "backport-1.44.2.x-prod"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-13T19:37:12Z",
-          "updated_at": "2023-10-16T12:59:11Z",
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2023-10-16T18:27:14Z",
+          "updated_at": "2023-10-16T18:27:50Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "e99dc0286ad91d78bd51a295882148964b8377aa",
-            "label": "kiegroup:main"
+            "ref": "1.44.2.x",
+            "sha": "6c70c4cbfa805aad96e491e7f2e0699c2214b0ed",
+            "label": "kiegroup:1.44.2.x"
           },
           "head": {
-            "ref": "kogito-9896",
-            "sha": "2aebd3b34c9be81309b94d8bf30ef03192cb0ab4",
-            "label": "ricardozanini:kogito-9896"
+            "ref": "1.44.2.x_kogito-9896",
+            "sha": "3b36828885d2fde2a825ad961fa0c9b4e7657abe",
+            "label": "kiegroup:1.44.2.x_kogito-9896"
           },
           "user": {
-            "login": "ricardozanini",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-            "html_url": "https://github.com/ricardozanini"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
-            {
-              "id": 17740191530,
-              "name": "Integration tests (docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939926/job/17740191530",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T13:01:41Z",
-              "completed_at": "2023-10-16T13:04:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740191189,
-              "name": "Integration tests (kaniko-docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939926/job/17740191189",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T13:01:42Z",
-              "completed_at": "2023-10-16T13:05:51Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740104448,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939934/job/17740104448",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T12:59:23Z",
-              "completed_at": "2023-10-16T13:03:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740104085,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939934/job/17740104085",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T12:59:23Z",
-              "completed_at": "2023-10-16T12:59:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740103737,
-              "name": "Unit Tests",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939926/job/17740103737",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T12:59:24Z",
-              "completed_at": "2023-10-16T13:01:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740103673,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939934/job/17740103673",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T12:59:24Z",
-              "completed_at": "2023-10-16T13:02:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17740103658,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6533939925/job/17740103658",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-16T12:59:23Z",
-              "completed_at": "2023-10-16T13:14:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4,
-          "title": "Bump golang.org/x/net from 0.10.0 to 0.17.0 in /api",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/4",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/4",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-11T22:47:25Z",
-          "updated_at": "2023-10-11T22:47:26Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bedb0e816347a6e56a0a94d70489cc19f29c747f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/go_modules/api/golang.org/x/net-0.17.0",
-            "sha": "29057db4c04b944363181af35d8fc980bf0bd6e9",
-            "label": "kiegroup:dependabot/go_modules/api/golang.org/x/net-0.17.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 17622011125,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835504/job/17622011125",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:47:37Z",
-              "completed_at": "2023-10-11T22:56:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622010982,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835504/job/17622010982",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:47:37Z",
-              "completed_at": "2023-10-11T22:47:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622010924,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835518/job/17622010924",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:47:30Z",
-              "completed_at": "2023-10-11T22:47:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622010857,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835506/job/17622010857",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:47:37Z",
-              "completed_at": "2023-10-11T23:05:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622010829,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835504/job/17622010829",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:47:38Z",
-              "completed_at": "2023-10-11T22:50:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622010738,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488835518/job/17622010738",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:47:29Z",
-              "completed_at": "2023-10-11T22:47:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "title": "Bump golang.org/x/net from 0.10.0 to 0.17.0",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/3",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/3",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-11T22:46:16Z",
-          "updated_at": "2023-10-11T22:46:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bedb0e816347a6e56a0a94d70489cc19f29c747f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/go_modules/golang.org/x/net-0.17.0",
-            "sha": "3f807de07e11f2c0124316f824bdf80fbd934c77",
-            "label": "kiegroup:dependabot/go_modules/golang.org/x/net-0.17.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 17621986954,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827417/job/17621986954",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:46:28Z",
-              "completed_at": "2023-10-11T22:49:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621986791,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827417/job/17621986791",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:46:26Z",
-              "completed_at": "2023-10-11T22:50:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621986747,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827450/job/17621986747",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:46:20Z",
-              "completed_at": "2023-10-11T22:46:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621986628,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827417/job/17621986628",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:46:28Z",
-              "completed_at": "2023-10-11T22:46:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621986589,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827416/job/17621986589",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:46:27Z",
-              "completed_at": "2023-10-11T23:05:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621986505,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488827450/job/17621986505",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:46:20Z",
-              "completed_at": "2023-10-11T22:46:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "title": "Bump golang.org/x/net from 0.10.0 to 0.17.0 in /workflowproj",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/2",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/2",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-11T22:45:40Z",
-          "updated_at": "2023-10-11T22:45:41Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bedb0e816347a6e56a0a94d70489cc19f29c747f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/go_modules/workflowproj/golang.org/x/net-0.17.0",
-            "sha": "9e17df9878f0c56ec41b537b8c075fc0a2ce70f4",
-            "label": "kiegroup:dependabot/go_modules/workflowproj/golang.org/x/net-0.17.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 17621974510,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822818/job/17621974510",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:53Z",
-              "completed_at": "2023-10-11T22:49:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621974303,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822818/job/17621974303",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:52Z",
-              "completed_at": "2023-10-11T22:45:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621974038,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822817/job/17621974038",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:45:45Z",
-              "completed_at": "2023-10-11T22:45:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621974003,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822816/job/17621974003",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:54Z",
-              "completed_at": "2023-10-11T23:06:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621973986,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822818/job/17621973986",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:45:53Z",
-              "completed_at": "2023-10-11T22:48:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621973694,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488822817/job/17621973694",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:45:44Z",
-              "completed_at": "2023-10-11T22:45:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1,
-          "title": "Bump golang.org/x/net from 0.10.0 to 0.17.0 in /container-builder",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/1",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/1",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-11T22:45:08Z",
-          "updated_at": "2023-10-11T22:45:09Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bedb0e816347a6e56a0a94d70489cc19f29c747f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/go_modules/container-builder/golang.org/x/net-0.17.0",
-            "sha": "dab91ff12e0ca6b077b6a2580cd294f0aa6ae0d4",
-            "label": "kiegroup:dependabot/go_modules/container-builder/golang.org/x/net-0.17.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 17622055035,
-              "name": "Integration tests (docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819324/job/17622055035",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:49:46Z",
-              "completed_at": "2023-10-11T22:50:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17622054873,
-              "name": "Integration tests (kaniko-docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819324/job/17622054873",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:49:46Z",
-              "completed_at": "2023-10-11T22:50:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962970,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819325/job/17621962970",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:23Z",
-              "completed_at": "2023-10-11T22:45:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962805,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819325/job/17621962805",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-11T22:45:21Z",
-              "completed_at": "2023-10-11T22:48:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962669,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819329/job/17621962669",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:45:14Z",
-              "completed_at": "2023-10-11T22:45:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962597,
-              "name": "Unit Tests",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819324/job/17621962597",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:23Z",
-              "completed_at": "2023-10-11T22:49:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962588,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819336/job/17621962588",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:22Z",
-              "completed_at": "2023-10-11T23:02:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962583,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819325/job/17621962583",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-11T22:45:25Z",
-              "completed_at": "2023-10-11T22:49:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17621962301,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6488819329/job/17621962301",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-11T22:45:13Z",
-              "completed_at": "2023-10-11T22:45:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
+          "checks": []
         }
       ],
       "branchesComparison": {
@@ -6175,10 +5673,10 @@
               "id": 17744910560,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6533602548/job/17744910560",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-10-16T14:58:47Z",
-              "completed_at": null,
+              "completed_at": "2023-10-16T18:25:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
