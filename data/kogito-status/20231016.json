@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-16T09:11:49.154Z",
+    "date": "2023-10-16T10:11:56.389Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6531474414"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6532133543"
   },
   "projects": [
     {
@@ -19,6 +19,59 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 7,
+          "title": "Disable SonarCloud",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/7",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/7",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-16T09:21:10Z",
+          "updated_at": "2023-10-16T09:31:19Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4cf92a6ba2f1eca027031e43fa414688858695e2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "disable_sonarcloud",
+            "sha": "c0fd1667d07a2ffacd63e8526c500e66d27ba3db",
+            "label": "radtriste:disable_sonarcloud"
+          },
+          "user": {
+            "login": "radtriste",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+            "html_url": "https://github.com/radtriste"
+          },
+          "checks": [
+            {
+              "id": 17733095584,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6531589449/job/17733095584",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-16T09:21:25Z",
+              "completed_at": "2023-10-16T09:23:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17733095376,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6531589449/job/17733095376",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-16T09:21:24Z",
+              "completed_at": "2023-10-16T09:23:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 4,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.1 to 2.414.2 in /.ci/jenkins/tests",
@@ -354,6 +407,59 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 8,
+          "title": "Disable SonarCloud",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/8",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/8",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-16T09:22:16Z",
+          "updated_at": "2023-10-16T09:31:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "91497cce2b7b79ee1c0a4fbcd6bf38bc22a0a280",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "disable_sonarcloud",
+            "sha": "b85b3704629069c7013a956292f33f538e2a5046",
+            "label": "radtriste:disable_sonarcloud"
+          },
+          "user": {
+            "login": "radtriste",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+            "html_url": "https://github.com/radtriste"
+          },
+          "checks": [
+            {
+              "id": 17733130091,
+              "name": "DSL",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6531601129/job/17733130091",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-16T09:22:30Z",
+              "completed_at": "2023-10-16T09:24:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17733129825,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/6531601129/job/17733129825",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-16T09:22:29Z",
+              "completed_at": "2023-10-16T09:25:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 6,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.334 to 2.414.2 in /.ci/jenkins/tests",
@@ -1991,6 +2097,48 @@
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3,
+          "title": "Disable SonarCloud",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/3",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/3",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-16T09:23:22Z",
+          "updated_at": "2023-10-16T09:31:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cb9f9219c026f75bfce78db97b0526ecc6828267",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "disable_sonarcloud",
+            "sha": "6476b3156d6c5f835f8ff79540bbbe4ca3152b94",
+            "label": "radtriste:disable_sonarcloud"
+          },
+          "user": {
+            "login": "radtriste",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+            "html_url": "https://github.com/radtriste"
+          },
+          "checks": [
+            {
+              "id": 17733167940,
+              "name": "DSL",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/6531614862/job/17733167940",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-16T09:23:37Z",
+              "completed_at": "2023-10-16T09:25:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2,
           "title": "Bump zulip/github-actions-zulip from e71e15b429b0e79cc7b63e4e3dad0146443fab6f to b62d5a0e48a4d984ea4fce5dd65ba691963d4db4",
