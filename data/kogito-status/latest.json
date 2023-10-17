@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-17T19:08:31.533Z",
+    "date": "2023-10-17T20:11:23.963Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6551718928"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6552304517"
   },
   "projects": [
     {
@@ -5640,121 +5640,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 11,
-          "title": "[1.44.2.x-prod][KOGITO-9896] Upgrade golang.org/x/net to fix CVE-2023-44487",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/11",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/11",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2023-10-17T11:28:07Z",
-          "updated_at": "2023-10-17T11:30:00Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.44.2.x-prod",
-            "sha": "2063e63b38b403ceaacca013b67178cf8c12b147",
-            "label": "kiegroup:1.44.2.x-prod"
-          },
-          "head": {
-            "ref": "KOGITO-9896",
-            "sha": "4564efb98144a83b4dc6493a3544d545dd633bfe",
-            "label": "rgdoliveira:KOGITO-9896"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 17777142906,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6546519783/job/17777142906",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-17T11:28:21Z",
-              "completed_at": "2023-10-17T11:29:08Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17777142732,
-              "name": "End-to-end tests (Minikube)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6546519913/job/17777142732",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-17T11:28:22Z",
-              "completed_at": "2023-10-17T11:33:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17777142673,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6546519783/job/17777142673",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-17T11:28:21Z",
-              "completed_at": "2023-10-17T11:29:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17777142387,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6546519783/job/17777142387",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-17T11:28:24Z",
-              "completed_at": "2023-10-17T11:28:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 10,
-          "title": "[1.44.2.x] [KOGITO-9896] Upgrade golang.org/x/net to fix CVE-2023-44487",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/10",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/10",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-16T18:27:14Z",
-          "updated_at": "2023-10-17T11:30:13Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.44.2.x",
-            "sha": "6c70c4cbfa805aad96e491e7f2e0699c2214b0ed",
-            "label": "kiegroup:1.44.2.x"
-          },
-          "head": {
-            "ref": "1.44.2.x_kogito-9896",
-            "sha": "3b36828885d2fde2a825ad961fa0c9b4e7657abe",
-            "label": "kiegroup:1.44.2.x_kogito-9896"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
