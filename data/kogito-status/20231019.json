@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-19T18:13:45.584Z",
+    "date": "2023-10-19T19:08:38.799Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6578599807"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6579137298"
   },
   "projects": [
     {
@@ -5658,6 +5658,144 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2018,
+          "title": "kie-issue#206: Enable autocomplete suggestions for Literal Expressions and Decision Table input cells on DMN Editor's Boxed Expression Editor",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2018",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2018",
+          "state": "open",
+          "labels": [
+            "waiting-for-review",
+            "DMN"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-10-19T18:59:07Z",
+          "updated_at": "2023-10-19T19:02:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "fe4f6ef1838966941cdcc22a579241bd6a905776",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "feel-autocomplete",
+            "sha": "488a6959531463da52989a40dd91b264ad935e38",
+            "label": "danielzhe:feel-autocomplete"
+          },
+          "user": {
+            "login": "danielzhe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7305741?v=4",
+            "html_url": "https://github.com/danielzhe"
+          },
+          "checks": [
+            {
+              "id": 17874259350,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/17874259350",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T19:05:14Z",
+              "completed_at": "2023-10-19T19:05:18Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874062317,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874062317",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-19T18:59:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874062075,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874062075",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-19T18:59:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874062045,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040217/job/17874062045",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T18:59:20Z",
+              "completed_at": "2023-10-19T19:05:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874061844,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040218/job/17874061844",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T18:59:22Z",
+              "completed_at": "2023-10-19T19:03:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874061837,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874061837",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-19T18:59:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874061803,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040221/job/17874061803",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T18:59:21Z",
+              "completed_at": "2023-10-19T19:05:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874061649,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040217/job/17874061649",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T18:59:20Z",
+              "completed_at": "2023-10-19T19:05:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1990,
           "title": "KOGITO-9831: SWF Editor - final migration to j2cl",
