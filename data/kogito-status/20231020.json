@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-20T06:14:24.885Z",
+    "date": "2023-10-20T07:10:09.688Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6584086892"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6584550937"
   },
   "projects": [
     {
@@ -5707,20 +5707,9 @@
           },
           "checks": [
             {
-              "id": 17874259350,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/17874259350",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-19T19:05:14Z",
-              "completed_at": "2023-10-19T19:05:18Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17874062317,
+              "id": 17889063959,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874062317",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17889063959",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2023-10-19T18:59:29Z",
@@ -5729,14 +5718,36 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17874062075,
+              "id": 17889063725,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874062075",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-19T18:59:24Z",
-              "completed_at": "2023-10-20T00:59:41Z",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17889063725",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-20T07:00:18Z",
+              "completed_at": null,
               "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17889063527,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17889063527",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T18:59:23Z",
+              "completed_at": "2023-10-19T21:08:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17874259350,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/17874259350",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-19T19:05:14Z",
+              "completed_at": "2023-10-19T19:05:18Z",
+              "slug": "github-advanced-security",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
@@ -5758,17 +5769,6 @@
               "conclusion": "success",
               "started_at": "2023-10-19T18:59:22Z",
               "completed_at": "2023-10-19T19:03:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17874061837,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6579040224/job/17874061837",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-19T18:59:23Z",
-              "completed_at": "2023-10-19T21:08:40Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -5851,6 +5851,17 @@
           },
           "checks": [
             {
+              "id": 17888254021,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/17888254021",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-20T06:20:52Z",
+              "completed_at": "2023-10-20T06:20:56Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
               "id": 17888112331,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6584088791/job/17888112331",
@@ -5876,10 +5887,10 @@
               "id": 17888112149,
               "name": "Analyze (javascript)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6584088792/job/17888112149",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-10-20T06:14:18Z",
-              "completed_at": null,
+              "completed_at": "2023-10-20T06:21:05Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -5898,10 +5909,10 @@
               "id": 17888111951,
               "name": "check",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6584088785/job/17888111951",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-10-20T06:14:19Z",
-              "completed_at": null,
+              "completed_at": "2023-10-20T06:20:29Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -5909,10 +5920,10 @@
               "id": 17888111943,
               "name": "check",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6584088784/job/17888111943",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-10-20T06:14:19Z",
-              "completed_at": null,
+              "completed_at": "2023-10-20T06:21:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -5920,10 +5931,10 @@
               "id": 17888111900,
               "name": "Analyze (go)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6584088792/job/17888111900",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-10-20T06:14:19Z",
-              "completed_at": null,
+              "completed_at": "2023-10-20T06:21:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
