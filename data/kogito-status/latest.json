@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-24T09:11:13.763Z",
+    "date": "2023-10-24T10:11:36.452Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6624751174"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6625404200"
   },
   "projects": [
     {
@@ -5658,6 +5658,144 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2023,
+          "title": "NO-ISSUE: Bump `eslint` and related dependencies versions",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2023",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2023",
+          "state": "open",
+          "labels": [
+            "DO NOT MERGE",
+            "dependencies"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-10-24T09:49:20Z",
+          "updated_at": "2023-10-24T09:51:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2e612da1947a1d0ec7f49d83d3996a56d82ee39b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "eslint_update",
+            "sha": "7cc77839c7e823e4a0fce3052e9981d829ef0081",
+            "label": "yesamer:eslint_update"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 17995826135,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/17995826135",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-24T09:56:18Z",
+              "completed_at": "2023-10-24T09:56:21Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995617209,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175113/job/17995617209",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-24T09:49:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995617139,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175119/job/17995617139",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-24T09:49:36Z",
+              "completed_at": "2023-10-24T09:54:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995617126,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175122/job/17995617126",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-24T09:49:36Z",
+              "completed_at": "2023-10-24T09:55:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995616954,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175114/job/17995616954",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-24T09:49:33Z",
+              "completed_at": "2023-10-24T09:56:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995616952,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175113/job/17995616952",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-24T09:49:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995616741,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175113/job/17995616741",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-24T09:49:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17995616679,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6625175114/job/17995616679",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-24T09:49:35Z",
+              "completed_at": "2023-10-24T09:57:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2022,
           "title": "Upgrade NodeJS version of cors-proxy-image Containerfile",
