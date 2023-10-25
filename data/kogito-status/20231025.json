@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-25T06:14:12.981Z",
+    "date": "2023-10-25T07:10:01.720Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6636478169"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6636956746"
   },
   "projects": [
     {
@@ -5658,6 +5658,130 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2026,
+          "title": "NO-ISSUE: Bump `webdriver` to version 5.5.3",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2026",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2026",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-10-25T07:03:31Z",
+          "updated_at": "2023-10-25T07:03:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "43e463ace621804657aca105220863a91af397d2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "bump_webdriver",
+            "sha": "090d00c8d401e73e7e9b70d1eeb7767ad0443bf7",
+            "label": "kiegroup:bump_webdriver"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 18030164490,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894896/job/18030164490",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030164131,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894896/job/18030164131",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:55Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030163865,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894900/job/18030163865",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030163706,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894896/job/18030163706",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:46Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030163595,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894926/job/18030163595",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-25T07:03:43Z",
+              "completed_at": "2023-10-25T07:08:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030163562,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894893/job/18030163562",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18030163480,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6636894900/job/18030163480",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-25T07:03:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2025,
           "title": "Update gen-manifest verb description",
