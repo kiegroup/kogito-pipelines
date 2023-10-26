@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-26T11:08:34.419Z",
+    "date": "2023-10-26T12:19:39.339Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6653233045"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6653955210"
   },
   "projects": [
     {
@@ -4499,6 +4499,75 @@
       "repo_url": "https://github.com/kiegroup/kogito-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 9,
+          "title": "[1.13.x] Update Kogito bundle for CVE respin (CVE-2023-44487)",
+          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/9",
+          "html_url": "https://github.com/kiegroup/kogito-operator/pull/9",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "spolti",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1863987?v=4",
+              "html_url": "https://github.com/spolti"
+            },
+            {
+              "login": "jakubschwan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
+              "html_url": "https://github.com/jakubschwan"
+            }
+          ],
+          "created_at": "2023-10-26T11:09:07Z",
+          "updated_at": "2023-10-26T11:12:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x",
+            "sha": "aed327485a855d4d90cfd8b40e79fc44259da542",
+            "label": "kiegroup:1.13.x"
+          },
+          "head": {
+            "ref": "1.13.x_respin_http2",
+            "sha": "bbc60034bde5ca37638e3248d172fcc728e74b18",
+            "label": "rgdoliveira:1.13.x_respin_http2"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 18078818983,
+              "name": "Bats Test",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6653242601/job/18078818983",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-26T11:09:18Z",
+              "completed_at": "2023-10-26T11:09:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18078818741,
+              "name": "Lint",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6653242601/job/18078818741",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-26T11:09:22Z",
+              "completed_at": "2023-10-26T11:14:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 8,
           "title": "Bump google.golang.org/grpc from 1.42.0 to 1.56.3",
