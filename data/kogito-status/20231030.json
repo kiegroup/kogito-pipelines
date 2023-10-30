@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-10-30T17:09:27.756Z",
+    "date": "2023-10-30T18:13:42.646Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6696285777"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6697007886"
   },
   "projects": [
     {
@@ -12,7 +12,7 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2023-10-08T10:59:36Z",
+      "updated_at": "2023-10-30T18:10:43Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
@@ -2378,7 +2378,7 @@
       "name": "kogito-examples",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-examples",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2023-10-30T13:38:48Z",
+      "updated_at": "2023-10-30T18:11:24Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -5979,6 +5979,145 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2033,
+          "title": "KOGITO-9701: Implement Workflow Instances section",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2033",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2033",
+          "state": "open",
+          "labels": [
+            "waiting-for-qe",
+            "waiting-for-review",
+            "Serverless Workflow"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "caponetto",
+              "avatar_url": "https://avatars.githubusercontent.com/u/638737?v=4",
+              "html_url": "https://github.com/caponetto"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-10-30T17:27:08Z",
+          "updated_at": "2023-10-30T17:28:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "de5794f6d6437e083b649d9e3dc9662257a2b5c9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9701-Implement-Workflow-Instances-section",
+            "sha": "7dbcf31f54c8e290f461adc1e5e146ddae478666",
+            "label": "fantonangeli:KOGITO-9701-Implement-Workflow-Instances-section"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 18194640785,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18194640785",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-30T17:34:40Z",
+              "completed_at": "2023-10-30T17:34:43Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374986,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509510/job/18194374986",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-30T17:27:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374622,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509510/job/18194374622",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-30T17:27:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374582,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509492/job/18194374582",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-30T17:27:22Z",
+              "completed_at": "2023-10-30T17:34:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374335,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509504/job/18194374335",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-30T17:27:22Z",
+              "completed_at": "2023-10-30T17:33:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374302,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509510/job/18194374302",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-30T17:27:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374293,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509499/job/18194374293",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-30T17:27:21Z",
+              "completed_at": "2023-10-30T17:33:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18194374114,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6696509492/job/18194374114",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-10-30T17:27:22Z",
+              "completed_at": "2023-10-30T17:36:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2031,
           "title": "kie-issues#633: Change the Extended Services Go App for the new Extended Services Java in the Extended Services Images",
           "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2031",
@@ -6004,7 +6143,7 @@
             }
           ],
           "created_at": "2023-10-30T16:31:39Z",
-          "updated_at": "2023-10-30T16:58:01Z",
+          "updated_at": "2023-10-30T18:10:40Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
