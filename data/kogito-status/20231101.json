@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-01T19:08:27.644Z",
+    "date": "2023-11-01T20:11:14.332Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6723999570"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6724587140"
   },
   "projects": [
     {
@@ -5828,6 +5828,110 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 13,
+          "title": "[1.44.2.x] - Critical bugs and CVEs cherry-picks",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/13",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/13",
+          "state": "open",
+          "labels": [
+            "backport-1.44.2.x-prod"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "jakubschwan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
+              "html_url": "https://github.com/jakubschwan"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2023-11-01T19:34:17Z",
+          "updated_at": "2023-11-01T19:50:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.44.2.x",
+            "sha": "f47fb73d86342974812193a83830be3c499f253c",
+            "label": "kiegroup:1.44.2.x"
+          },
+          "head": {
+            "ref": "cherry-pick-kogito9908",
+            "sha": "27acebc6522e8e28ec8342020d0e032b79d89c5a",
+            "label": "ricardozanini:cherry-pick-kogito9908"
+          },
+          "user": {
+            "login": "ricardozanini",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+            "html_url": "https://github.com/ricardozanini"
+          },
+          "checks": [
+            {
+              "id": 18276561646,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6724396079/job/18276561646",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-01T19:51:07Z",
+              "completed_at": "2023-11-01T19:53:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18276561421,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6724396079/job/18276561421",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-01T19:51:08Z",
+              "completed_at": "2023-11-01T19:51:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18276561121,
+              "name": "End-to-end tests (Minikube)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6724396094/job/18276561121",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-01T19:51:17Z",
+              "completed_at": "2023-11-01T20:09:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18276561059,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6724396076/job/18276561059",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-01T19:51:11Z",
+              "completed_at": "2023-11-01T19:53:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18276561028,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/6724396079/job/18276561028",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-01T19:51:10Z",
+              "completed_at": "2023-11-01T19:55:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 12,
           "title": "Bump github.com/docker/docker from 23.0.3+incompatible to 24.0.7+incompatible in /container-builder",
