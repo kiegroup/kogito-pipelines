@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-02T10:11:19.338Z",
+    "date": "2023-11-02T11:09:04.008Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6731103920"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6731721434"
   },
   "projects": [
     {
@@ -6082,6 +6082,143 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2036,
+          "title": "kie-issues#665: `xml-parser-ts` Doesn't manage Complex Types with Simple Content",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2036",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2036",
+          "state": "open",
+          "labels": [
+            "DO NOT MERGE"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-11-02T10:31:17Z",
+          "updated_at": "2023-11-02T10:47:19Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "61419fce280f95b02fc0ea1db2938d736817428e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kie-issues#665",
+            "sha": "129ca1493a798b4569a33f62981b4da71cc49a12",
+            "label": "yesamer:kie-issues#665"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 18296436806,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18296436806",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T10:51:40Z",
+              "completed_at": "2023-11-02T10:51:44Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296329013,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503822/job/18296329013",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-02T10:48:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296328780,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503822/job/18296328780",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-02T10:48:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296328510,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503822/job/18296328510",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-02T10:48:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296309587,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503824/job/18296309587",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T10:47:35Z",
+              "completed_at": "2023-11-02T10:52:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296308823,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503821/job/18296308823",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T10:47:35Z",
+              "completed_at": "2023-11-02T10:54:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296308777,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503823/job/18296308777",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T10:47:31Z",
+              "completed_at": "2023-11-02T10:51:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18296308130,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6731503823/job/18296308130",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T10:47:35Z",
+              "completed_at": "2023-11-02T10:56:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2035,
           "title": "NO-ISSUE: Bump `jest` and related dependencies",
