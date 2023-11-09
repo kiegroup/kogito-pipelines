@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-09T15:10:59.388Z",
+    "date": "2023-11-09T16:13:43.709Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6813692260"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6814459896"
   },
   "projects": [
     {
@@ -5978,6 +5978,141 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2043,
+          "title": "NO-ISSUE: Extended-services-java PNPM Start script should not require docker.",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2043",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2043",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-11-09T15:26:27Z",
+          "updated_at": "2023-11-09T15:26:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "02cab1e418ce1091486976495bd274021e5af83f",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "NO-ISSUE",
+            "sha": "1a256d4c8034dd5cb9cd1dbee8f2446ae25d70c1",
+            "label": "Josephblt:NO-ISSUE"
+          },
+          "user": {
+            "login": "Josephblt",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25369234?v=4",
+            "html_url": "https://github.com/Josephblt"
+          },
+          "checks": [
+            {
+              "id": 18529736756,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18529736756",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:32:28Z",
+              "completed_at": "2023-11-09T15:32:42Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529501736,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895643/job/18529501736",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:47Z",
+              "completed_at": "2023-11-09T16:01:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529501345,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895643/job/18529501345",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-09T15:26:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529501344,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895642/job/18529501344",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:42Z",
+              "completed_at": "2023-11-09T15:32:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529500747,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895643/job/18529500747",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:47Z",
+              "completed_at": "2023-11-09T15:54:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529500695,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895657/job/18529500695",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:43Z",
+              "completed_at": "2023-11-09T15:30:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529500556,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895635/job/18529500556",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:41Z",
+              "completed_at": "2023-11-09T15:30:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18529500555,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6813895642/job/18529500555",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-09T15:26:42Z",
+              "completed_at": "2023-11-09T15:35:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2041,
           "title": "kie-issues#475: Dynamically do Dev deployments using K8s resource YAMLs on KIE Sandbox (DMN only)",
