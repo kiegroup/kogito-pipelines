@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-13T08:14:30.594Z",
+    "date": "2023-11-13T09:11:24.475Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6847286338"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6847860690"
   },
   "projects": [
     {
@@ -4532,6 +4532,59 @@
       "repo_url": "https://github.com/kiegroup/kogito-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 11,
+          "title": "[1.13.x-blue] Update Kogito bundle for CVE respin",
+          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/11",
+          "html_url": "https://github.com/kiegroup/kogito-operator/pull/11",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-11-13T09:11:02Z",
+          "updated_at": "2023-11-13T09:11:02Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x-blue",
+            "sha": "7faa159a50b7c2937a03170c4d5c36211c4bd351",
+            "label": "kiegroup:1.13.x-blue"
+          },
+          "head": {
+            "ref": "1.13.x-blue_respin1",
+            "sha": "235f4712101524faa85cc31494e2cdae7f4b85a2",
+            "label": "rgdoliveira:1.13.x-blue_respin1"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 18616927036,
+              "name": "Bats Test",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6847862211/job/18616927036",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-13T09:11:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18616926752,
+              "name": "Lint",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6847862211/job/18616926752",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-13T09:11:16Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 8,
           "title": "Bump google.golang.org/grpc from 1.42.0 to 1.56.3",
