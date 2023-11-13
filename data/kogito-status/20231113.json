@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-13T10:11:59.351Z",
+    "date": "2023-11-13T11:09:27.554Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6848513473"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6849135257"
   },
   "projects": [
     {
@@ -350,7 +350,7 @@
             }
           ],
           "created_at": "2023-10-17T10:09:57Z",
-          "updated_at": "2023-11-13T10:10:56Z",
+          "updated_at": "2023-11-13T10:15:39Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -475,12 +475,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26063635160,
+              "id": 26063836196,
               "name": "(build) optaweb-vehicle-routing",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x/job/pullrequest/job/kogito-runtimes.tests.downstream.optaweb-vehicle-routing/70/display/redirect",
-              "conclusion": "pending",
-              "started_at": "2023-11-13T10:10:59Z",
-              "completed_at": "2023-11-13T10:10:59Z",
+              "conclusion": "success",
+              "started_at": "2023-11-13T10:23:02Z",
+              "completed_at": "2023-11-13T10:23:02Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4533,65 +4533,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
       "pullRequests": [
         {
-          "number": 11,
-          "title": "[1.13.x-blue] Update Kogito bundle for CVE respin",
-          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/11",
-          "html_url": "https://github.com/kiegroup/kogito-operator/pull/11",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "jakubschwan",
-              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
-              "html_url": "https://github.com/jakubschwan"
-            }
-          ],
-          "created_at": "2023-11-13T09:11:02Z",
-          "updated_at": "2023-11-13T09:21:53Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.13.x-blue",
-            "sha": "7faa159a50b7c2937a03170c4d5c36211c4bd351",
-            "label": "kiegroup:1.13.x-blue"
-          },
-          "head": {
-            "ref": "1.13.x-blue_respin1",
-            "sha": "235f4712101524faa85cc31494e2cdae7f4b85a2",
-            "label": "rgdoliveira:1.13.x-blue_respin1"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 18616927036,
-              "name": "Bats Test",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6847862211/job/18616927036",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-13T09:11:21Z",
-              "completed_at": "2023-11-13T09:12:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18616926752,
-              "name": "Lint",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/6847862211/job/18616926752",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-13T09:11:16Z",
-              "completed_at": "2023-11-13T09:14:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 8,
           "title": "Bump google.golang.org/grpc from 1.42.0 to 1.56.3",
           "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/8",
@@ -5166,7 +5107,7 @@
               "sha": "1d2c4de7393db1566560e55247b99d3f8b8717c8"
             },
             {
-              "sha": "f5c164d070554dab089c0fb2899a5a1ab824cd12"
+              "sha": "d30f1a5061dcaa317658574a27b2c603e3c9fb17"
             },
             {
               "sha": "cdee8219164e10be2ca031f7b7095f8258036c4d"
@@ -5520,7 +5461,7 @@
               "sha": "4a34676541d44c7a6e3ac715d68586e0d1e514ad"
             },
             {
-              "sha": "a63881fc13ebb63f4d98f27ca42938382bfac407"
+              "sha": "6768691e34bcb8816e072f0eef8a3a4404bc626a"
             }
           ]
         },
