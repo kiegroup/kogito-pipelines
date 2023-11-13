@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-13T11:09:27.554Z",
+    "date": "2023-11-13T12:20:47.371Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6849135257"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6849867974"
   },
   "projects": [
     {
@@ -5979,13 +5979,156 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2048,
+          "title": "KOGITO-9925: Workflow definition endpoints double the last slash",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2048",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2048",
+          "state": "open",
+          "labels": [
+            "waiting-for-qe",
+            "waiting-for-review",
+            "Serverless Workflow"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-11-13T11:22:43Z",
+          "updated_at": "2023-11-13T11:54:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a34d0b5c9e5db6f75a8398aa89ad16ff26663b0c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9925-Workflow-definition-endpoints-double-the-last-slash",
+            "sha": "a8999ad749947b288ec94cd282977a4c2ebe6939",
+            "label": "fantonangeli:KOGITO-9925-Workflow-definition-endpoints-double-the-last-slash"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 18621352304,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18621352304",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:29:59Z",
+              "completed_at": "2023-11-13T11:30:02Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621141243,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280011/job/18621141243",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:23:04Z",
+              "completed_at": "2023-11-13T11:54:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140977,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280011/job/18621140977",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:23:04Z",
+              "completed_at": "2023-11-13T11:53:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140669,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280011/job/18621140669",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:23:00Z",
+              "completed_at": "2023-11-13T11:44:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140402,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280010/job/18621140402",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:23:03Z",
+              "completed_at": "2023-11-13T11:27:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140397,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280014/job/18621140397",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:23:01Z",
+              "completed_at": "2023-11-13T11:27:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140364,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280009/job/18621140364",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:22:59Z",
+              "completed_at": "2023-11-13T11:30:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18621140080,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6849280009/job/18621140080",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T11:22:57Z",
+              "completed_at": "2023-11-13T11:30:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2046,
           "title": "KOGITO-9891: Language Service not available on the SWF Chrome extension",
           "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2046",
           "html_url": "https://github.com/kiegroup/kie-tools/pull/2046",
           "state": "open",
           "labels": [
-            "waiting-for-qe",
             "Serverless Workflow"
           ],
           "draft": false,
@@ -5999,15 +6142,10 @@
               "login": "tiagobento",
               "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
               "html_url": "https://github.com/tiagobento"
-            },
-            {
-              "login": "tomasdavidorg",
-              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
-              "html_url": "https://github.com/tomasdavidorg"
             }
           ],
           "created_at": "2023-11-10T11:07:18Z",
-          "updated_at": "2023-11-13T09:21:12Z",
+          "updated_at": "2023-11-13T11:13:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
