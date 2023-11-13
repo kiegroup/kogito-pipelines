@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-13T16:14:02.682Z",
+    "date": "2023-11-13T17:09:50.856Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6852657460"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6853308775"
   },
   "projects": [
     {
@@ -8605,6 +8605,59 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 8,
+          "title": "WIP: BXMSDOC-8689: business-central-eap7-deployable, update tool bug for 7.13.4",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/8",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/8",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-11-13T17:03:10Z",
+          "updated_at": "2023-11-13T17:03:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0adadbf64c3adc19d564c30e90caa362d8d3b37d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSDOC-8689",
+            "sha": "2d0aaf90640aa8a21cedef475afff011cbd2a13b",
+            "label": "kiegroup:BXMSDOC-8689"
+          },
+          "user": {
+            "login": "emmurphy1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
+            "html_url": "https://github.com/emmurphy1"
+          },
+          "checks": [
+            {
+              "id": 18633591299,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6853232832/job/18633591299",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-11-13T17:03:16Z",
+              "completed_at": "2023-11-13T17:03:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18633590943,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6853232832/job/18633590943",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T17:03:24Z",
+              "completed_at": "2023-11-13T17:07:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2,
           "title": "Bump actions/checkout from 2 to 4",
