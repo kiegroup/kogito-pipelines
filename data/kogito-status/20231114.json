@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-14T16:11:36.558Z",
+    "date": "2023-11-14T17:08:38.206Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6866352796"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6867051672"
   },
   "projects": [
     {
@@ -4228,7 +4228,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-11-13T18:40:29Z",
-          "updated_at": "2023-11-14T14:02:24Z",
+          "updated_at": "2023-11-14T16:55:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4238,7 +4238,7 @@
           },
           "head": {
             "ref": "disable-nightly",
-            "sha": "5ac4bfcc298e5236963908f239d12916a2983841",
+            "sha": "14ed9b01d273b2867db54f0d7003c334ea1f3607",
             "label": "ricardozanini:disable-nightly"
           },
           "user": {
@@ -4248,46 +4248,46 @@
           },
           "checks": [
             {
-              "id": 18664168678,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6863762755/job/18664168678",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T12:43:43Z",
-              "completed_at": "2023-11-14T12:43:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18664168423,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6863762755/job/18664168423",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T12:43:40Z",
-              "completed_at": "2023-11-14T12:44:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18664168144,
+              "id": 18674100671,
               "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6863762755/job/18664168144",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100671",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-11-14T12:43:42Z",
-              "completed_at": "2023-11-14T12:43:47Z",
+              "started_at": "2023-11-14T16:55:13Z",
+              "completed_at": "2023-11-14T16:55:17Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18664168127,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6863762754/job/18664168127",
+              "id": 18674100340,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100340",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-11-14T12:43:41Z",
-              "completed_at": "2023-11-14T12:46:00Z",
+              "started_at": "2023-11-14T16:55:11Z",
+              "completed_at": "2023-11-14T16:55:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18674100023,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888431/job/18674100023",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-14T16:55:14Z",
+              "completed_at": "2023-11-14T16:56:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18674100007,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100007",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-14T16:55:15Z",
+              "completed_at": "2023-11-14T16:56:02Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -6079,10 +6079,15 @@
               "login": "tiagobento",
               "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
               "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "handreyrc",
+              "avatar_url": "https://avatars.githubusercontent.com/u/47090342?v=4",
+              "html_url": "https://github.com/handreyrc"
             }
           ],
           "created_at": "2023-11-09T16:29:18Z",
-          "updated_at": "2023-11-10T10:48:54Z",
+          "updated_at": "2023-11-14T17:02:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8272,59 +8277,6 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 8,
-          "title": "WIP: BXMSDOC-8689: business-central-eap7-deployable, update tool bug for 7.13.4",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/8",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/8",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-13T17:03:10Z",
-          "updated_at": "2023-11-13T17:03:10Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0adadbf64c3adc19d564c30e90caa362d8d3b37d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSDOC-8689",
-            "sha": "2d0aaf90640aa8a21cedef475afff011cbd2a13b",
-            "label": "kiegroup:BXMSDOC-8689"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 18633591299,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6853232832/job/18633591299",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-11-13T17:03:16Z",
-              "completed_at": "2023-11-13T17:03:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18633590943,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6853232832/job/18633590943",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-13T17:03:24Z",
-              "completed_at": "2023-11-13T17:07:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 2,
           "title": "Bump actions/checkout from 2 to 4",
