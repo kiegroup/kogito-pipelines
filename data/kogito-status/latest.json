@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-16T14:10:32.266Z",
+    "date": "2023-11-16T15:11:49.257Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6891898080"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6892671193"
   },
   "projects": [
     {
@@ -6074,10 +6074,10 @@
               "id": 18747441133,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18747441133",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-11-16T13:56:54Z",
-              "completed_at": null,
+              "completed_at": "2023-11-16T14:56:40Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -6190,10 +6190,10 @@
               "id": 18744051206,
               "name": "run (macos-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744051206",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-16T12:21:03Z",
-              "completed_at": null,
+              "completed_at": "2023-11-16T14:38:03Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -6212,10 +6212,10 @@
               "id": 18744050874,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744050874",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-16T12:20:55Z",
-              "completed_at": null,
+              "completed_at": "2023-11-16T14:43:09Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8750,59 +8750,6 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 11,
-          "title": "WIP: BXMSDOC-8690: WLS not supported in 7.13.4 SP2",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/11",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/11",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-15T15:56:43Z",
-          "updated_at": "2023-11-16T12:57:40Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "3b6d9356dea60caffef5dd4fabfcdd116207d420",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSDOC-8690",
-            "sha": "2071baa17942c9c4c870d62ff0b8a108785a8c1f",
-            "label": "kiegroup:BXMSDOC-8690"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 18745289906,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6891046261/job/18745289906",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-11-16T12:57:46Z",
-              "completed_at": "2023-11-16T12:57:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18745289617,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6891046261/job/18745289617",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T12:58:08Z",
-              "completed_at": "2023-11-16T12:59:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 10,
           "title": "WIP: RHPAM-4843 ClassCastException in Spring integration when using ejb timer.",
