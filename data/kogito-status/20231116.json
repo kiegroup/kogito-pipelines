@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-16T11:09:22.841Z",
+    "date": "2023-11-16T12:20:54.321Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6889888774"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6890625744"
   },
   "projects": [
     {
@@ -6054,6 +6054,130 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2057,
+          "title": "KOGITO-9953: Update Cypress version to 13.5.1",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2057",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2057",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-11-16T12:20:38Z",
+          "updated_at": "2023-11-16T12:20:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "34fae3e4885ba1eb10d93bbfca0fda1899dc090b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9953",
+            "sha": "d06ffb47dc8c04f7e4be7e9c0bbc7a66833b5cf1",
+            "label": "tomasdavidorg:KOGITO-9953"
+          },
+          "user": {
+            "login": "tomasdavidorg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+            "html_url": "https://github.com/tomasdavidorg"
+          },
+          "checks": [
+            {
+              "id": 18744051522,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744051522",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744051206,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744051206",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744051191,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627412/job/18744051191",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744050874,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744050874",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:55Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744050686,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627415/job/18744050686",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:53Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744050661,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627421/job/18744050661",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18744050646,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627412/job/18744050646",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T12:20:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2056,
           "title": "NO-ISSUE: Update `guava` to 32.1.3",
