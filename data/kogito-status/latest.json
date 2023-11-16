@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-16T13:14:25.190Z",
+    "date": "2023-11-16T14:10:32.266Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6891241904"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6891898080"
   },
   "projects": [
     {
@@ -4217,83 +4217,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 5,
-          "title": "NO-ISSUE: Disable nightly images job deploy",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/5",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/5",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-13T18:40:29Z",
-          "updated_at": "2023-11-16T13:07:20Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "d0a297186332bf9033469f275fa899fc4b037ca3",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "disable-nightly",
-            "sha": "14ed9b01d273b2867db54f0d7003c334ea1f3607",
-            "label": "ricardozanini:disable-nightly"
-          },
-          "user": {
-            "login": "ricardozanini",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-            "html_url": "https://github.com/ricardozanini"
-          },
-          "checks": [
-            {
-              "id": 18674100671,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100671",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T16:55:13Z",
-              "completed_at": "2023-11-14T16:55:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18674100340,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100340",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T16:55:11Z",
-              "completed_at": "2023-11-14T16:55:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18674100023,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888431/job/18674100023",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T16:55:14Z",
-              "completed_at": "2023-11-14T16:56:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18674100007,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/6866888439/job/18674100007",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-14T16:55:15Z",
-              "completed_at": "2023-11-14T16:56:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -6055,6 +5979,144 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2058,
+          "title": "KOGITO-9954: Update selenium to version 4.15.0",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2058",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2058",
+          "state": "open",
+          "labels": [
+            "waiting-for-review",
+            "waiting-for-ci"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-11-16T13:56:38Z",
+          "updated_at": "2023-11-16T13:57:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "34fae3e4885ba1eb10d93bbfca0fda1899dc090b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9954",
+            "sha": "8695f0fe9209fba63e6e77a87bef927ba1a177e5",
+            "label": "tomasdavidorg:KOGITO-9954"
+          },
+          "user": {
+            "login": "tomasdavidorg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+            "html_url": "https://github.com/tomasdavidorg"
+          },
+          "checks": [
+            {
+              "id": 18747612969,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18747612969",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-16T14:01:15Z",
+              "completed_at": "2023-11-16T14:01:19Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441646,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18747441646",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T13:56:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441429,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732497/job/18747441429",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-16T13:56:52Z",
+              "completed_at": "2023-11-16T14:01:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441413,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18747441413",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T13:56:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441133,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18747441133",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T13:56:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441060,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732490/job/18747441060",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-16T13:56:53Z",
+              "completed_at": "2023-11-16T14:00:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747441028,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732501/job/18747441028",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-16T13:56:53Z",
+              "completed_at": "2023-11-16T14:00:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18747440994,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732497/job/18747440994",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-16T13:56:52Z",
+              "completed_at": "2023-11-16T14:01:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2057,
           "title": "KOGITO-9953: Update Cypress version to 13.5.1",
           "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2057",
@@ -6117,10 +6179,10 @@
               "id": 18744051522,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6890627418/job/18744051522",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-16T12:21:00Z",
-              "completed_at": null,
+              "completed_at": "2023-11-16T14:01:07Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
