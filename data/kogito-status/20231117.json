@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-17T16:15:17.393Z",
+    "date": "2023-11-17T17:10:00.003Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6906414225"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6906973736"
   },
   "projects": [
     {
@@ -5978,6 +5978,136 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2059,
+          "title": "NO-ISSUE: Update JDT.LS to `1.29.0.20231026174049`",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2059",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2059",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2023-11-17T17:02:05Z",
+          "updated_at": "2023-11-17T17:04:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "64345fc043828b126e0c89a065c1d4fc69d8a97e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "jdt.ls-1.29",
+            "sha": "a61df2217ec53a8a5b8044dcbf32a03d689559e0",
+            "label": "yesamer:jdt.ls-1.29"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 18793073397,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18793073397",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-17T17:06:28Z",
+              "completed_at": "2023-11-17T17:06:32Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792923619,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893062/job/18792923619",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-17T17:02:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792923320,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893062/job/18792923320",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-17T17:02:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792922978,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893062/job/18792922978",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-17T17:02:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792922883,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893082/job/18792922883",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-17T17:02:17Z",
+              "completed_at": "2023-11-17T17:05:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792922787,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893070/job/18792922787",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-17T17:02:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792922482,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893064/job/18792922482",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-17T17:02:18Z",
+              "completed_at": "2023-11-17T17:06:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18792922043,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6906893064/job/18792922043",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-17T17:02:19Z",
+              "completed_at": "2023-11-17T17:08:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2058,
           "title": "KOGITO-9954: Update selenium to version 4.15.0",
