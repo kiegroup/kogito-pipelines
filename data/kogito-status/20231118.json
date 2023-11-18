@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-18T17:09:11.474Z",
+    "date": "2023-11-18T18:12:27.994Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6915230913"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6915520717"
   },
   "projects": [
     {
@@ -5978,133 +5978,6 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2058,
-          "title": "KOGITO-9954: Update selenium to version 4.15.0",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2058",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/2058",
-          "state": "open",
-          "labels": [
-            "waiting-for-ci"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ederign",
-              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
-              "html_url": "https://github.com/ederign"
-            }
-          ],
-          "created_at": "2023-11-16T13:56:38Z",
-          "updated_at": "2023-11-17T18:08:23Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "34fae3e4885ba1eb10d93bbfca0fda1899dc090b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "KOGITO-9954",
-            "sha": "8695f0fe9209fba63e6e77a87bef927ba1a177e5",
-            "label": "tomasdavidorg:KOGITO-9954"
-          },
-          "user": {
-            "login": "tomasdavidorg",
-            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
-            "html_url": "https://github.com/tomasdavidorg"
-          },
-          "checks": [
-            {
-              "id": 18795354661,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18795354661",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-17T18:24:02Z",
-              "completed_at": "2023-11-17T20:03:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18795354416,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18795354416",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-17T18:24:03Z",
-              "completed_at": "2023-11-17T20:45:50Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18795354188,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732515/job/18795354188",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-17T18:24:00Z",
-              "completed_at": "2023-11-17T20:44:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18747612969,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/18747612969",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T14:01:15Z",
-              "completed_at": "2023-11-16T14:01:19Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18747441429,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732497/job/18747441429",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T13:56:52Z",
-              "completed_at": "2023-11-16T14:01:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18747441060,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732490/job/18747441060",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T13:56:53Z",
-              "completed_at": "2023-11-16T14:00:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18747441028,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732501/job/18747441028",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T13:56:53Z",
-              "completed_at": "2023-11-16T14:00:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18747440994,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6891732497/job/18747440994",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T13:56:52Z",
-              "completed_at": "2023-11-16T14:01:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 2054,
           "title": "KOGITO-9946: Wrong arrow symbol in zoom widget",
