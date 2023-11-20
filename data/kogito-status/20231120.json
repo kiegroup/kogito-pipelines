@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-20T08:15:11.269Z",
+    "date": "2023-11-20T09:12:13.353Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6927258295"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6927861700"
   },
   "projects": [
     {
@@ -5978,6 +5978,141 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2060,
+          "title": "NO-ISSUE: Bump `axios` to `1.6.2`",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2060",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2060",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-11-20T08:22:15Z",
+          "updated_at": "2023-11-20T08:23:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7db52c5201b5261ebad344cbe82a27222518cb9e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "update_axios",
+            "sha": "6c16731e5fefc3736e9cb054bb5313f1f4a0bc92",
+            "label": "yesamer:update_axios"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 18841138766,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18841138766",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T08:26:41Z",
+              "completed_at": "2023-11-20T08:26:45Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841013117,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333069/job/18841013117",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T08:22:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012931,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333069/job/18841012931",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T08:22:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012733,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333069/job/18841012733",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-20T08:22:33Z",
+              "completed_at": "2023-11-20T08:55:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012728,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333074/job/18841012728",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T08:22:29Z",
+              "completed_at": "2023-11-20T08:26:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012581,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333066/job/18841012581",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T08:22:31Z",
+              "completed_at": "2023-11-20T08:25:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012542,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333084/job/18841012542",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T08:22:30Z",
+              "completed_at": "2023-11-20T08:26:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18841012502,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6927333074/job/18841012502",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T08:22:30Z",
+              "completed_at": "2023-11-20T08:27:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2054,
           "title": "KOGITO-9946: Wrong arrow symbol in zoom widget",
