@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-20T14:10:52.007Z",
+    "date": "2023-11-20T15:12:05.787Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6931268084"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6932032801"
   },
   "projects": [
     {
@@ -20,28 +20,28 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
         {
-          "number": 4,
-          "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.1 to 2.414.2 in /.ci/jenkins/tests",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/4",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/4",
+          "number": 8,
+          "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.3 to 2.414.2 in /.ci/jenkins/tests",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/8",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/8",
           "state": "open",
           "labels": [
             "dependencies"
           ],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2023-09-21T17:11:13Z",
-          "updated_at": "2023-10-30T08:53:50Z",
+          "created_at": "2023-11-20T14:37:13Z",
+          "updated_at": "2023-11-20T14:37:14Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "fac58a3f6457f95b266e334fdd4a4f5c74b7ef1f",
+            "sha": "3fcbb8b5f7650b2328d30c3cc1e8799df71028a2",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.414.2",
-            "sha": "4678395ce99aee0fc05ed99024d538fb7f7c59bf",
+            "sha": "1a846bf8d8eb3a05a0b82909586711da76b0fd2f",
             "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.414.2"
           },
           "user": {
@@ -51,24 +51,46 @@
           },
           "checks": [
             {
-              "id": 18175683812,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6690413239/job/18175683812",
+              "id": 18853691812,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6931607094/job/18853691812",
               "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-30T08:54:03Z",
-              "completed_at": "2023-10-30T08:56:39Z",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T14:37:18Z",
+              "completed_at": "2023-11-20T14:37:18Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18175683575,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6690413239/job/18175683575",
+              "id": 18853691453,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6931607062/job/18853691453",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-10-30T08:54:03Z",
-              "completed_at": "2023-10-30T08:56:01Z",
+              "started_at": "2023-11-20T14:37:23Z",
+              "completed_at": "2023-11-20T14:38:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18853691100,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6931607094/job/18853691100",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T14:37:17Z",
+              "completed_at": "2023-11-20T14:37:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18853691095,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6931607062/job/18853691095",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-20T14:37:25Z",
+              "completed_at": "2023-11-20T14:38:28Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -6885,10 +6907,10 @@
               "id": 18848322651,
               "name": "run (ubuntu-latest)",
               "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6929825025/job/18848322651",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-20T12:06:01Z",
-              "completed_at": null,
+              "completed_at": "2023-11-20T14:26:21Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
