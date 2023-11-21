@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-21T16:14:57.095Z",
+    "date": "2023-11-21T17:11:44.931Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6946605134"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6947251350"
   },
   "projects": [
     {
@@ -6000,6 +6000,150 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2062,
+          "title": "KOGITO-9959: Bump vscode-extension-tester version to 5.10.0",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2062",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2062",
+          "state": "open",
+          "labels": [
+            "waiting-for-qe",
+            "waiting-for-review",
+            "waiting-for-ci"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "LuboTerifaj",
+              "avatar_url": "https://avatars.githubusercontent.com/u/12122769?v=4",
+              "html_url": "https://github.com/LuboTerifaj"
+            }
+          ],
+          "created_at": "2023-11-21T16:20:10Z",
+          "updated_at": "2023-11-21T16:20:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7db52c5201b5261ebad344cbe82a27222518cb9e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9959",
+            "sha": "fd4c088068686f3f059715027676aca2bc9f72d2",
+            "label": "tomasdavidorg:KOGITO-9959"
+          },
+          "user": {
+            "login": "tomasdavidorg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+            "html_url": "https://github.com/tomasdavidorg"
+          },
+          "checks": [
+            {
+              "id": 18898875329,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18898875329",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-21T16:24:22Z",
+              "completed_at": "2023-11-21T16:24:26Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898718523,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672012/job/18898718523",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-21T16:20:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898718060,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672012/job/18898718060",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-21T16:20:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898717656,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672012/job/18898717656",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-21T16:20:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898717593,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672016/job/18898717593",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-21T16:20:23Z",
+              "completed_at": "2023-11-21T16:24:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898717235,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672014/job/18898717235",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-21T16:20:23Z",
+              "completed_at": "2023-11-21T16:24:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898717201,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672011/job/18898717201",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-21T16:20:24Z",
+              "completed_at": "2023-11-21T16:24:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18898717116,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6946672016/job/18898717116",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-21T16:20:24Z",
+              "completed_at": "2023-11-21T16:26:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2060,
           "title": "NO-ISSUE: Bump `axios` to `1.6.2`",
