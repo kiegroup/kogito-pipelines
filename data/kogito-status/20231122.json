@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-22T00:53:25.752Z",
+    "date": "2023-11-22T01:55:52.601Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6951392033"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/6951857914"
   },
   "projects": [
     {
@@ -6000,6 +6000,138 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2064,
+          "title": "kie-issues#577: Build a first version of the new React-based DMN Editor with ~90% feature parity with the current GWT-based one",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2064",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2064",
+          "state": "open",
+          "labels": [
+            "DMN"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2023-11-22T01:13:30Z",
+          "updated_at": "2023-11-22T01:18:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "687c32adc4e099f9724d45259bc0c2a40d63d91e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dmn-editor",
+            "sha": "a1b8bb47c1a25403d48b98fab73f79be5c1df7ce",
+            "label": "tiagobento:dmn-editor"
+          },
+          "user": {
+            "login": "tiagobento",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+            "html_url": "https://github.com/tiagobento"
+          },
+          "checks": [
+            {
+              "id": 18913813736,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/18913813736",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T01:18:32Z",
+              "completed_at": "2023-11-22T01:18:36Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913715399,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550441/job/18913715399",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-22T01:13:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913715249,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550441/job/18913715249",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-22T01:13:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913715245,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550435/job/18913715245",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T01:13:45Z",
+              "completed_at": "2023-11-22T01:18:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913715083,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550441/job/18913715083",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-22T01:13:47Z",
+              "completed_at": "2023-11-22T01:34:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913714989,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550440/job/18913714989",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T01:13:43Z",
+              "completed_at": "2023-11-22T01:18:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913714952,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550437/job/18913714952",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T01:13:43Z",
+              "completed_at": "2023-11-22T01:18:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18913714900,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/6951550435/job/18913714900",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T01:13:44Z",
+              "completed_at": "2023-11-22T01:19:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2063,
           "title": "KOGITO-9952: SWF Editor - Add Icon to show there are subflows defined in States",
