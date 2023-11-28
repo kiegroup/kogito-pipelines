@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-28T07:10:19.783Z",
+    "date": "2023-11-28T08:14:27.316Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7015371170"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7015928096"
   },
   "projects": [
     {
@@ -5898,10 +5898,26 @@
           "labels": [
             "yard"
           ],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
           "created_at": "2023-11-27T10:10:23Z",
-          "updated_at": "2023-11-27T10:20:15Z",
+          "updated_at": "2023-11-28T07:43:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5920,6 +5936,39 @@
             "html_url": "https://github.com/Rikkola"
           },
           "checks": [
+            {
+              "id": 19085317556,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7015645905/job/19085317556",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-28T07:43:22Z",
+              "completed_at": "2023-11-28T08:11:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19085317342,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7015645905/job/19085317342",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-28T07:43:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19085317113,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7015645905/job/19085317113",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-28T07:43:20Z",
+              "completed_at": "2023-11-28T08:07:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 19049513278,
               "name": "CodeQL",
