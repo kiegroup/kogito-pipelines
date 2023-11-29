@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-11-29T02:24:05.479Z",
+    "date": "2023-11-29T03:11:29.553Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027209454"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027529971"
   },
   "projects": [
     {
@@ -48,6 +48,50 @@
             "html_url": "https://github.com/kie-ci3"
           },
           "checks": [
+            {
+              "id": 19121369143,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner-quickstarts",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027165023/job/19121369143",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-29T02:32:31Z",
+              "completed_at": "2023-11-29T02:33:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19121368966,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027165023/job/19121368966",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-29T02:32:30Z",
+              "completed_at": "2023-11-29T02:33:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19121368853,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027165023/job/19121368853",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-29T02:32:30Z",
+              "completed_at": "2023-11-29T02:33:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19121368660,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027165023/job/19121368660",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-29T02:32:31Z",
+              "completed_at": "2023-11-29T02:33:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 19121099133,
               "name": "Drools DSL Downstream tests - kiegroup/kie-jpmml-integration",
@@ -228,10 +272,10 @@
               "id": 19121087523,
               "name": "Get OptaPlanner DSL downstream projects",
               "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7027165023/job/19121087523",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-29T02:17:52Z",
-              "completed_at": null,
+              "completed_at": "2023-11-29T02:32:22Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
