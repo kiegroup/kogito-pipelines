@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-04T22:10:16.657Z",
+    "date": "2023-12-04T23:11:15.553Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7093176520"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7093749532"
   },
   "projects": [
     {
@@ -6772,6 +6772,139 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2077,
+          "title": "NO-ISSUE: Minor changes to the UI of Dev deployment DMN Form webapp and fixing issue reporting links",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2077",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2077",
+          "state": "open",
+          "labels": [
+            "DMN",
+            "Foundation"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2023-12-04T22:12:09Z",
+          "updated_at": "2023-12-04T22:38:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "65b68b9531ebc1253ef2efa4b3fce99701bc5072",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "minor-improvements-to-dev-webapp-and-issues-link",
+            "sha": "f1a035cab826ad89f57f1e0088e4608fc315dc58",
+            "label": "tiagobento:minor-improvements-to-dev-webapp-and-issues-link"
+          },
+          "user": {
+            "login": "tiagobento",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+            "html_url": "https://github.com/tiagobento"
+          },
+          "checks": [
+            {
+              "id": 19306249918,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/19306249918",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-04T22:16:13Z",
+              "completed_at": "2023-12-04T22:16:18Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306132529,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199329/job/19306132529",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-04T22:12:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306132310,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199329/job/19306132310",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-04T22:12:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306132232,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199321/job/19306132232",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-04T22:12:20Z",
+              "completed_at": "2023-12-04T22:16:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306132041,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199329/job/19306132041",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-04T22:12:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306131930,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199338/job/19306131930",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-04T22:12:20Z",
+              "completed_at": "2023-12-04T22:17:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306131897,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199319/job/19306131897",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-04T22:12:20Z",
+              "completed_at": "2023-12-04T22:16:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19306131810,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7093199321/job/19306131810",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-04T22:12:20Z",
+              "completed_at": "2023-12-04T22:19:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2075,
           "title": " kie-issues#629: Test Scenario Editor: BeeTable Integration",
