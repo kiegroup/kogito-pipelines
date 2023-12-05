@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-05T11:09:28.343Z",
+    "date": "2023-12-05T12:20:42.354Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7099867741"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7100623751"
   },
   "projects": [
     {
@@ -6772,6 +6772,174 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2078,
+          "title": "kie-issues#605: Apache CI migration",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2078",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/2078",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-12-05T11:43:39Z",
+          "updated_at": "2023-12-05T11:46:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "65b68b9531ebc1253ef2efa4b3fce99701bc5072",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "apache-ci-migration",
+            "sha": "7c367eb2c58589a8b3a477f0ca2743d5109f1545",
+            "label": "rodrigonull:apache-ci-migration"
+          },
+          "user": {
+            "login": "rodrigonull",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3134877?v=4",
+            "html_url": "https://github.com/rodrigonull"
+          },
+          "checks": [
+            {
+              "id": 19326347778,
+              "name": "pack_and_publish",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243477/job/19326347778",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T11:59:14Z",
+              "completed_at": "2023-12-05T11:59:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325981976,
+              "name": "dry_run / build (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243488/job/19325981976",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:26Z",
+              "completed_at": "2023-12-05T11:58:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325981927,
+              "name": "dry_run / extended_services (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243504/job/19325981927",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:22Z",
+              "completed_at": "2023-12-05T11:54:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325981655,
+              "name": "dry_run / extended_services (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243504/job/19325981655",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:25Z",
+              "completed_at": "2023-12-05T12:05:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325981640,
+              "name": "dry_run / build (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243488/job/19325981640",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:21Z",
+              "completed_at": "2023-12-05T12:08:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325981120,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243480/job/19325981120",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T11:47:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325980773,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243480/job/19325980773",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T11:47:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325980476,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243480/job/19325980476",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T11:47:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325980209,
+              "name": "build_jitexecutor_native_binaries (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243477/job/19325980209",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:21Z",
+              "completed_at": "2023-12-05T11:57:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325979938,
+              "name": "build_jitexecutor_native_binaries (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243477/job/19325979938",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:25Z",
+              "completed_at": "2023-12-05T11:59:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19325979663,
+              "name": "build_jitexecutor_native_binaries (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/7100243477/job/19325979663",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T11:47:18Z",
+              "completed_at": "2023-12-05T11:56:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2077,
           "title": "NO-ISSUE: Minor changes to the UI of Dev deployment DMN Form webapp and fixing issue reporting links",
