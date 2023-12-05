@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-05T22:10:41.306Z",
+    "date": "2023-12-05T23:33:29.336Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7107182121"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7107744587"
   },
   "projects": [
     {
@@ -639,6 +639,239 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
         {
+          "number": 21,
+          "title": "Bump ch.qos.logback:logback-classic from 1.2.9 to 1.2.13 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/21",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/21",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-12-05T22:42:12Z",
+          "updated_at": "2023-12-05T22:42:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5485513db3223b17e5c33ae5c794755463842fa7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-classic-1.2.13",
+            "sha": "977fb7c0e649361184aff49f0ad62f9c9f72e71f",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-classic-1.2.13"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 19349042244,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501865/job/19349042244",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T22:57:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349042089,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501865/job/19349042089",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T22:56:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041931,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501865/job/19349041931",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T22:55:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041781,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501872/job/19349041781",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:42:16Z",
+              "completed_at": "2023-12-05T22:42:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041726,
+              "name": "kogito-apps (ubuntu-latest / Java-11 / Maven-3.8.7)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501865/job/19349041726",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T22:54:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041709,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501836/job/19349041709",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:42:16Z",
+              "completed_at": "2023-12-05T22:42:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041626,
+              "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501861/job/19349041626",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-05T22:52:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041530,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501872/job/19349041530",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:42:16Z",
+              "completed_at": "2023-12-05T22:42:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349041435,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107501836/job/19349041435",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:42:15Z",
+              "completed_at": "2023-12-05T22:42:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "title": "Bump ch.qos.logback:logback-classic from 1.2.9 to 1.2.13 in /.ci/jenkins/tests",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/20",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/20",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-12-05T22:41:44Z",
+          "updated_at": "2023-12-05T22:41:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5485513db3223b17e5c33ae5c794755463842fa7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/dot-ci/jenkins/tests/ch.qos.logback-logback-classic-1.2.13",
+            "sha": "9e4cb988046677976110d6f921e5811d87c73ab6",
+            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/ch.qos.logback-logback-classic-1.2.13"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 19349030016,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498119/job/19349030016",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:41:49Z",
+              "completed_at": "2023-12-05T22:41:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349030014,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498136/job/19349030014",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:41:49Z",
+              "completed_at": "2023-12-05T22:41:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349030006,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498137/job/19349030006",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T22:52:09Z",
+              "completed_at": "2023-12-05T22:56:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349029824,
+              "name": "DSL",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498137/job/19349029824",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-05T22:51:16Z",
+              "completed_at": "2023-12-05T22:52:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349029778,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498136/job/19349029778",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:41:48Z",
+              "completed_at": "2023-12-05T22:41:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19349029739,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107498119/job/19349029739",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-05T22:41:48Z",
+              "completed_at": "2023-12-05T22:41:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 19,
           "title": "Bump ch.qos.logback:logback-core from 1.2.9 to 1.2.13 in /kogito-build/kogito-dependencies-bom",
           "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/19",
@@ -685,10 +918,10 @@
               "id": 19347777218,
               "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107061852/job/19347777218",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-12-05T21:59:05Z",
-              "completed_at": null,
+              "completed_at": "2023-12-05T22:54:11Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -696,10 +929,10 @@
               "id": 19347776950,
               "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107061852/job/19347776950",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-12-05T21:59:04Z",
-              "completed_at": null,
+              "completed_at": "2023-12-05T22:56:50Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -707,10 +940,10 @@
               "id": 19347776747,
               "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7107061851/job/19347776747",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-12-05T21:59:07Z",
-              "completed_at": null,
+              "completed_at": "2023-12-05T22:52:03Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -999,239 +1232,6 @@
               "conclusion": "skipped",
               "started_at": "2023-11-30T05:14:38Z",
               "completed_at": "2023-11-30T05:14:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 16,
-          "title": "Bump ch.qos.logback:logback-classic from 1.2.9 to 1.3.12 in /kogito-build/kogito-dependencies-bom",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/16",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/16",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-29T22:44:12Z",
-          "updated_at": "2023-11-29T22:44:13Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5485513db3223b17e5c33ae5c794755463842fa7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-classic-1.3.12",
-            "sha": "a5d1fdd80764061ed9c62aaa3279ca4d9f886147",
-            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-classic-1.3.12"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 19158412126,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437046/job/19158412126",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-29T22:56:02Z",
-              "completed_at": "2023-11-29T23:31:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411968,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437046/job/19158411968",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-29T22:55:47Z",
-              "completed_at": "2023-11-29T23:31:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411843,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437072/job/19158411843",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:17Z",
-              "completed_at": "2023-11-29T22:44:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411832,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437082/job/19158411832",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:17Z",
-              "completed_at": "2023-11-29T22:44:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411811,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-11 / Maven-3.8.7)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437046/job/19158411811",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-29T22:55:31Z",
-              "completed_at": "2023-11-29T23:20:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411685,
-              "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437055/job/19158411685",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-29T22:56:22Z",
-              "completed_at": "2023-11-30T00:09:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411562,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437082/job/19158411562",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:16Z",
-              "completed_at": "2023-11-29T22:44:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411559,
-              "name": "kogito-apps (ubuntu-latest / Java-11 / Maven-3.8.7)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437046/job/19158411559",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-29T22:50:58Z",
-              "completed_at": "2023-11-29T23:22:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158411555,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039437072/job/19158411555",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:16Z",
-              "completed_at": "2023-11-29T22:44:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 15,
-          "title": "Bump ch.qos.logback:logback-classic from 1.2.9 to 1.3.12 in /.ci/jenkins/tests",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/15",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/15",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-29T22:44:05Z",
-          "updated_at": "2023-11-29T22:44:06Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5485513db3223b17e5c33ae5c794755463842fa7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/dot-ci/jenkins/tests/ch.qos.logback-logback-classic-1.3.12",
-            "sha": "05243fe2d1d569f842d546205bd540fce2a8cdb4",
-            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/ch.qos.logback-logback-classic-1.3.12"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 19158408983,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436381/job/19158408983",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:09Z",
-              "completed_at": "2023-11-29T22:44:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158408980,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436337/job/19158408980",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-29T22:49:52Z",
-              "completed_at": "2023-11-29T22:55:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158408898,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436365/job/19158408898",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:09Z",
-              "completed_at": "2023-11-29T22:44:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158408776,
-              "name": "DSL",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436337/job/19158408776",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-29T22:49:46Z",
-              "completed_at": "2023-11-29T22:50:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158408722,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436381/job/19158408722",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:09Z",
-              "completed_at": "2023-11-29T22:44:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19158408613,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7039436365/job/19158408613",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-29T22:44:09Z",
-              "completed_at": "2023-11-29T22:44:09Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
