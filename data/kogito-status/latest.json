@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-07T19:09:02.049Z",
+    "date": "2023-12-07T20:11:47.214Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7132872669"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7133470497"
   },
   "projects": [
     {
@@ -6772,6 +6772,136 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2084,
+          "title": "NO-ISSUE: Add dev-deployment images to new CI",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2084",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2084",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "rodrigonull",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3134877?v=4",
+              "html_url": "https://github.com/rodrigonull"
+            }
+          ],
+          "created_at": "2023-12-07T20:05:05Z",
+          "updated_at": "2023-12-07T20:05:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "bc2803d2a09eaf6546498d05ea66e9c8583e3cb5",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "dev-deployment-images-ci",
+            "sha": "eb118a89bafa683b13491594fc13a149e1c97a6f",
+            "label": "thiagoelg:dev-deployment-images-ci"
+          },
+          "user": {
+            "login": "thiagoelg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10515135?v=4",
+            "html_url": "https://github.com/thiagoelg"
+          },
+          "checks": [
+            {
+              "id": 19426189089,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/19426189089",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-07T20:09:12Z",
+              "completed_at": "2023-12-07T20:10:52Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426071590,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412629/job/19426071590",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-12-07T20:05:24Z",
+              "completed_at": "2023-12-07T20:05:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426071297,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412629/job/19426071297",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-12-07T20:05:24Z",
+              "completed_at": "2023-12-07T20:05:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426071255,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412639/job/19426071255",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-07T20:05:17Z",
+              "completed_at": "2023-12-07T20:10:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426070963,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412629/job/19426070963",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-12-07T20:05:20Z",
+              "completed_at": "2023-12-07T20:05:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426070873,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412631/job/19426070873",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-07T20:05:17Z",
+              "completed_at": "2023-12-07T20:08:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426070819,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412633/job/19426070819",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-07T20:05:19Z",
+              "completed_at": "2023-12-07T20:10:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19426070766,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7133412639/job/19426070766",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-07T20:05:17Z",
+              "completed_at": "2023-12-07T20:10:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2077,
           "title": "NO-ISSUE: Minor changes to the UI of Dev deployment DMN Form webapp and fixing issue reporting links",
