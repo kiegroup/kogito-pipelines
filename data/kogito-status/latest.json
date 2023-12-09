@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-09T21:08:54.131Z",
+    "date": "2023-12-09T22:09:37.196Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7153540197"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7153795048"
   },
   "projects": [
     {
@@ -6772,141 +6772,6 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2088,
-          "title": "NO-ISSUE: Fix pushing dev-deployment-dmn-form-webapp-image to quay.io on daily …",
-          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2088",
-          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2088",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ederign",
-              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
-              "html_url": "https://github.com/ederign"
-            },
-            {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            },
-            {
-              "login": "thiagoelg",
-              "avatar_url": "https://avatars.githubusercontent.com/u/10515135?v=4",
-              "html_url": "https://github.com/thiagoelg"
-            }
-          ],
-          "created_at": "2023-12-09T18:21:51Z",
-          "updated_at": "2023-12-09T19:25:57Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "d9f9b4636c23ffa7f5d48852c59007b99db2bd03",
-            "label": "apache:main"
-          },
-          "head": {
-            "ref": "fix-daily-dev-publish-push-image",
-            "sha": "c366ac206158f549779d76e7978530f307497e70",
-            "label": "rodrigonull:fix-daily-dev-publish-push-image"
-          },
-          "user": {
-            "login": "rodrigonull",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3134877?v=4",
-            "html_url": "https://github.com/rodrigonull"
-          },
-          "checks": [
-            {
-              "id": 19478625217,
-              "name": "CodeQL",
-              "html_url": "https://github.com/apache/incubator-kie-tools/runs/19478625217",
-              "status": "completed",
-              "conclusion": "neutral",
-              "started_at": "2023-12-09T18:25:50Z",
-              "completed_at": "2023-12-09T18:25:54Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588265,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827306/job/19478588265",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:09Z",
-              "completed_at": "2023-12-09T19:56:19Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588167,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827306/job/19478588167",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:05Z",
-              "completed_at": "2023-12-09T20:16:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588129,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827311/job/19478588129",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:03Z",
-              "completed_at": "2023-12-09T18:25:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588090,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827306/job/19478588090",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:07Z",
-              "completed_at": "2023-12-09T20:55:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588040,
-              "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827310/job/19478588040",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:05Z",
-              "completed_at": "2023-12-09T18:26:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588022,
-              "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827307/job/19478588022",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:04Z",
-              "completed_at": "2023-12-09T18:25:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19478588015,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7152827311/job/19478588015",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-09T18:22:03Z",
-              "completed_at": "2023-12-09T18:26:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 2087,
           "title": "[WORK IN PROGRESS] [DO NOT MERGE] kie-issues#129: Draft solution",
