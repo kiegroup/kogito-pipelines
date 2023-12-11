@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-11T10:12:48.447Z",
+    "date": "2023-12-11T11:09:52.629Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7165911247"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7166561145"
   },
   "projects": [
     {
@@ -6622,6 +6622,92 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 20,
+          "title": "[SRVLOGIC-199] fix operator image reference in bundle",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/20",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/20",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "jakubschwan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
+              "html_url": "https://github.com/jakubschwan"
+            }
+          ],
+          "created_at": "2023-12-11T10:59:48Z",
+          "updated_at": "2023-12-11T11:02:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.44.2.x-prod",
+            "sha": "1626f55a931e3e4375fd1392bb239966ca687a45",
+            "label": "kiegroup:1.44.2.x-prod"
+          },
+          "head": {
+            "ref": "1.44.2.x-prod_SRVLOGIC-199",
+            "sha": "45fb51630d805a05363df5c942260507ad0058fe",
+            "label": "rgdoliveira:1.44.2.x-prod_SRVLOGIC-199"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 19510535267,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7166460508/job/19510535267",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-11T11:01:29Z",
+              "completed_at": "2023-12-11T11:03:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19510534912,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7166460508/job/19510534912",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-11T11:01:29Z",
+              "completed_at": "2023-12-11T11:01:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19510534481,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7166460508/job/19510534481",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-12-11T11:01:33Z",
+              "completed_at": "2023-12-11T11:03:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19510534471,
+              "name": "End-to-end tests (Minikube)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7166460504/job/19510534471",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-11T11:01:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 12,
           "title": "Bump github.com/docker/docker from 23.0.3+incompatible to 24.0.7+incompatible in /container-builder",
