@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-13T17:10:32.905Z",
+    "date": "2023-12-13T18:12:18.716Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7198661849"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7199336120"
   },
   "projects": [
     {
@@ -6793,6 +6793,141 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2094,
+          "title": "kie-issues#765: Fix remaining issues on KIE Tools Jenkins jobs right after the migration to Apache",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2094",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2094",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-12-13T17:40:54Z",
+          "updated_at": "2023-12-13T17:43:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d2b1df723857f013e0a0d9446b6f7e54fc9e27cc",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "fix-github-push",
+            "sha": "12a67616120d1ce9fb2c9e7891936aa6d7b9d7c1",
+            "label": "rodrigonull:fix-github-push"
+          },
+          "user": {
+            "login": "rodrigonull",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3134877?v=4",
+            "html_url": "https://github.com/rodrigonull"
+          },
+          "checks": [
+            {
+              "id": 19609874467,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/19609874467",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2023-12-13T17:45:35Z",
+              "completed_at": "2023-12-13T17:45:38Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609730815,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012481/job/19609730815",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-13T17:41:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609730470,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012481/job/19609730470",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-13T17:41:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609730114,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012481/job/19609730114",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-13T17:41:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609730111,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012488/job/19609730111",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-13T17:41:08Z",
+              "completed_at": "2023-12-13T17:45:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609729848,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012494/job/19609729848",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-13T17:41:06Z",
+              "completed_at": "2023-12-13T17:45:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609729843,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012480/job/19609729843",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-13T17:41:07Z",
+              "completed_at": "2023-12-13T17:45:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19609729752,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7199012488/job/19609729752",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-13T17:41:08Z",
+              "completed_at": "2023-12-13T17:47:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2092,
           "title": "kie-issues#2091: Subflow support on CLI",
