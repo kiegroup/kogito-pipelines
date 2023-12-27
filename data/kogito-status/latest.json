@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2023-12-27T20:11:15.392Z",
+    "date": "2023-12-27T21:10:10.717Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7341565463"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7341917681"
   },
   "projects": [
     {
@@ -7321,6 +7321,141 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2105,
+          "title": "NO-ISSUE: Use the DMN marshaller on the DMN Language Service and disable the Validation panel for DMN 1.3 and above",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2105",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2105",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2023-12-27T20:12:12Z",
+          "updated_at": "2023-12-27T20:12:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "1b14264598440ea8f155b8addf6e367c56941c02",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "improve-language-service",
+            "sha": "ebf21736bd9dfaea72d2b47c87e70d920e756742",
+            "label": "ljmotta:improve-language-service"
+          },
+          "user": {
+            "login": "ljmotta",
+            "avatar_url": "https://avatars.githubusercontent.com/u/24302289?v=4",
+            "html_url": "https://github.com/ljmotta"
+          },
+          "checks": [
+            {
+              "id": 19989571490,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/19989571490",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2023-12-27T20:16:56Z",
+              "completed_at": "2023-12-27T20:17:00Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989492164,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574761/job/19989492164",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-12-27T20:12:30Z",
+              "completed_at": "2023-12-27T20:39:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989492038,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574761/job/19989492038",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-12-27T20:12:28Z",
+              "completed_at": "2023-12-27T21:06:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989492008,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574759/job/19989492008",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-27T20:12:25Z",
+              "completed_at": "2023-12-27T20:17:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989491928,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574761/job/19989491928",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-12-27T20:12:26Z",
+              "completed_at": "2023-12-27T20:31:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989491893,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574758/job/19989491893",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-27T20:12:26Z",
+              "completed_at": "2023-12-27T20:18:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989491863,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574755/job/19989491863",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-27T20:12:26Z",
+              "completed_at": "2023-12-27T20:16:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19989491810,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7341574759/job/19989491810",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-27T20:12:24Z",
+              "completed_at": "2023-12-27T20:17:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2103,
           "title": "kie-issues#240: Create Helm Chart to install KIE Sandbox and its related services",
