@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-08T16:14:09.362Z",
+    "date": "2024-01-08T17:10:13.370Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7450125332"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7450799824"
   },
   "projects": [
     {
@@ -7567,10 +7567,10 @@
               "id": 20265600138,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7449290693/job/20265600138",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-01-08T15:07:30Z",
-              "completed_at": null,
+              "completed_at": "2024-01-08T16:43:39Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7804,7 +7804,6 @@
           "html_url": "https://github.com/apache/incubator-kie-tools/pull/2099",
           "state": "open",
           "labels": [
-            "DO NOT MERGE",
             "wip",
             "Foundation"
           ],
@@ -7827,7 +7826,7 @@
             }
           ],
           "created_at": "2023-12-20T16:28:14Z",
-          "updated_at": "2024-01-08T14:03:42Z",
+          "updated_at": "2024-01-08T17:00:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8063,7 +8062,7 @@
             }
           ],
           "created_at": "2023-10-31T08:04:29Z",
-          "updated_at": "2024-01-08T13:56:54Z",
+          "updated_at": "2024-01-08T16:53:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8073,7 +8072,7 @@
           },
           "head": {
             "ref": "update_jest",
-            "sha": "58e9f675fff1ee2a243e1c4d90c90ad8433d36d6",
+            "sha": "fe65b2f1d530039046ccea7b87d3025fd8bf09d8",
             "label": "yesamer:update_jest"
           },
           "user": {
@@ -8083,90 +8082,90 @@
           },
           "checks": [
             {
-              "id": 20262919668,
+              "id": 20270043377,
               "name": "CodeQL",
-              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20262919668",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20270043377",
               "status": "completed",
               "conclusion": "neutral",
-              "started_at": "2024-01-08T14:01:13Z",
-              "completed_at": "2024-01-08T14:01:17Z",
+              "started_at": "2024-01-08T16:57:48Z",
+              "completed_at": "2024-01-08T16:57:52Z",
               "slug": "github-advanced-security",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20262778150,
-              "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422628/job/20262778150",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-08T13:57:28Z",
-              "completed_at": "2024-01-08T14:03:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20262777999,
+              "id": 20269879393,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422587/job/20262777999",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-08T13:57:40Z",
-              "completed_at": "2024-01-08T14:53:53Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603611/job/20269879393",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-08T16:53:36Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20262777748,
+              "id": 20269879084,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422587/job/20262777748",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-08T13:57:30Z",
-              "completed_at": "2024-01-08T14:16:47Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603611/job/20269879084",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-08T16:53:34Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20262777465,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422587/job/20262777465",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-08T13:57:30Z",
-              "completed_at": "2024-01-08T16:03:08Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20262776692,
-              "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422611/job/20262776692",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-08T13:57:23Z",
-              "completed_at": "2024-01-08T14:01:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20262766070,
+              "id": 20269879077,
               "name": "Analyze (javascript)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422644/job/20262766070",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603615/job/20269879077",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-01-08T13:57:05Z",
-              "completed_at": "2024-01-08T14:01:22Z",
+              "started_at": "2024-01-08T16:53:31Z",
+              "completed_at": "2024-01-08T16:57:58Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20262765804,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7448422644/job/20262765804",
+              "id": 20269878714,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603603/job/20269878714",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-01-08T13:57:05Z",
-              "completed_at": "2024-01-08T14:02:23Z",
+              "started_at": "2024-01-08T16:53:31Z",
+              "completed_at": "2024-01-08T16:56:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20269878698,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603611/job/20269878698",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-08T16:53:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20269878666,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603602/job/20269878666",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-08T16:53:31Z",
+              "completed_at": "2024-01-08T16:59:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20269878664,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7450603615/job/20269878664",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-08T16:53:30Z",
+              "completed_at": "2024-01-08T16:58:25Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
