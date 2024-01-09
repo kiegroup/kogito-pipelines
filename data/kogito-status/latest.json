@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-09T12:20:36.095Z",
+    "date": "2024-01-09T14:10:48.058Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7461060702"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7462170388"
   },
   "projects": [
     {
@@ -637,7 +637,61 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 4,
+          "title": "snake-yaml to 2.0 ",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/4",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/4",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-01-09T14:09:04Z",
+          "updated_at": "2024-01-09T14:09:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x-blue",
+            "sha": "6d41c1f7937524d60d62c4c1e9ff51caf5c24cbd",
+            "label": "kiegroup:1.13.x-blue"
+          },
+          "head": {
+            "ref": "1.13.x-blue_RHPAM-4700",
+            "sha": "424965dbf882ba37c25e0b5a66fb7f3500aceb84",
+            "label": "mareknovotny:1.13.x-blue_RHPAM-4700"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 20303834016,
+              "name": "Maven Build (ubuntu-latest, 11, 3.8.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7462155558/job/20303834016",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-09T14:09:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20303833952,
+              "name": "Maven Build (ubuntu-latest, 11, 3.8.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7462155554/job/20303833952",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-09T14:09:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
