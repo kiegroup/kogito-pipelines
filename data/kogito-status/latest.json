@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-17T13:13:58.570Z",
+    "date": "2024-01-17T14:10:57.641Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7556250620"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7556948216"
   },
   "projects": [
     {
@@ -4435,6 +4435,283 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2123,
+          "title": "kie-issues#424: Add form-generation-tool 'bin' entry point",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2123",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2123",
+          "state": "open",
+          "labels": [
+            "Foundation"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2024-01-17T14:04:42Z",
+          "updated_at": "2024-01-17T14:04:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c6eb6aa160b54882749a18a39b53059b53424f8e",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "kie-issues#424",
+            "sha": "33d515204ba81355c8b48d1b63e2526b935a6f31",
+            "label": "jomarko:kie-issues#424"
+          },
+          "user": {
+            "login": "jomarko",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8044780?v=4",
+            "html_url": "https://github.com/jomarko"
+          },
+          "checks": [
+            {
+              "id": 20575057159,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20575057159",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-01-17T14:09:32Z",
+              "completed_at": "2024-01-17T14:09:36Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574850043,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869392/job/20574850043",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-17T14:05:00Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574849699,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869392/job/20574849699",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-17T14:05:00Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574849579,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869400/job/20574849579",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T14:04:54Z",
+              "completed_at": "2024-01-17T14:09:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574849227,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869392/job/20574849227",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-17T14:04:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574849111,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869410/job/20574849111",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T14:04:54Z",
+              "completed_at": "2024-01-17T14:09:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574849091,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869391/job/20574849091",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T14:04:55Z",
+              "completed_at": "2024-01-17T14:09:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20574848969,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556869400/job/20574848969",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T14:04:56Z",
+              "completed_at": "2024-01-17T14:10:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2122,
+          "title": "KOGITO-10020: In Runtime-tools the Serverless Workflow diagram is not loading",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2122",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2122",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2024-01-17T13:23:47Z",
+          "updated_at": "2024-01-17T13:28:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c6eb6aa160b54882749a18a39b53059b53424f8e",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "KOGITO-10020-In-Runtime-tools-the-Serverless-Workflow-diagram-is-not-loading",
+            "sha": "ee110f2ae81b87c0bf90814ababdf4e42992be07",
+            "label": "fantonangeli:KOGITO-10020-In-Runtime-tools-the-Serverless-Workflow-diagram-is-not-loading"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 20573578071,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20573578071",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-01-17T13:32:12Z",
+              "completed_at": "2024-01-17T13:32:15Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573406634,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377212/job/20573406634",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:28:01Z",
+              "completed_at": "2024-01-17T13:58:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573406543,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377217/job/20573406543",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:27:56Z",
+              "completed_at": "2024-01-17T13:31:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573406340,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377212/job/20573406340",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-17T13:27:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573406319,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377213/job/20573406319",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:27:57Z",
+              "completed_at": "2024-01-17T13:32:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573406000,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377213/job/20573406000",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:27:56Z",
+              "completed_at": "2024-01-17T13:32:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573405989,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377206/job/20573405989",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:27:55Z",
+              "completed_at": "2024-01-17T13:32:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20573405979,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7556377212/job/20573405979",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-17T13:27:57Z",
+              "completed_at": "2024-01-17T13:49:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2121,
           "title": "KOGITO-10004: J2CL-compatible Jakarta api",
