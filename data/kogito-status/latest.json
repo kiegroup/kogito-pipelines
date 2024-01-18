@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-18T12:21:00.622Z",
+    "date": "2024-01-18T13:14:25.823Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7569865414"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7570527733"
   },
   "projects": [
     {
@@ -19,6 +19,59 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 11,
+          "title": "[BXMSPROD-2156] Fix osl main nightly",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/11",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/11",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-01-18T13:09:26Z",
+          "updated_at": "2024-01-18T13:09:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3fcbb8b5f7650b2328d30c3cc1e8799df71028a2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix_osl_nightly",
+            "sha": "2a144fca2f72f39b7d68bbc8b2ede94504558514",
+            "label": "rgdoliveira:fix_osl_nightly"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 20615883295,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7570471978/job/20615883295",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T13:09:38Z",
+              "completed_at": "2024-01-18T13:10:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20615883024,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7570471978/job/20615883024",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T13:09:37Z",
+              "completed_at": "2024-01-18T13:10:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 10,
           "title": "[main] Update Jenkins dependencies to DSL/Jenkins files",
@@ -4595,6 +4648,138 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2125,
+          "title": "KOGITO-10017: Fix dark theme not being applied on SWF text editor",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2125",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2125",
+          "state": "open",
+          "labels": [
+            "Serverless Workflow"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            }
+          ],
+          "created_at": "2024-01-18T12:41:25Z",
+          "updated_at": "2024-01-18T13:06:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d558f9c3d4e1e9de66e544516b8ee5a0c130cf5b",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "KOGITO-10017",
+            "sha": "66430923e1609dc48323de13678891e9fb4c5e98",
+            "label": "caponetto:KOGITO-10017"
+          },
+          "user": {
+            "login": "caponetto",
+            "avatar_url": "https://avatars.githubusercontent.com/u/638737?v=4",
+            "html_url": "https://github.com/caponetto"
+          },
+          "checks": [
+            {
+              "id": 20614975526,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20614975526",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-01-18T12:45:45Z",
+              "completed_at": "2024-01-18T12:45:48Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614822289,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113209/job/20614822289",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T12:41:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614821940,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113209/job/20614821940",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T12:41:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614821521,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113226/job/20614821521",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T12:41:38Z",
+              "completed_at": "2024-01-18T12:47:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614821519,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113209/job/20614821519",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T12:41:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614821512,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113205/job/20614821512",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T12:41:38Z",
+              "completed_at": "2024-01-18T12:44:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614821203,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113208/job/20614821203",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T12:41:36Z",
+              "completed_at": "2024-01-18T12:45:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20614820899,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7570113208/job/20614820899",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-18T12:41:38Z",
+              "completed_at": "2024-01-18T12:46:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2124,
           "title": "kie-issues#831: Make the new DMN Editor actually generate an SVG representing the currently open DRD",
           "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2124",
@@ -4617,7 +4802,7 @@
             }
           ],
           "created_at": "2024-01-17T16:25:22Z",
-          "updated_at": "2024-01-18T06:41:25Z",
+          "updated_at": "2024-01-18T12:27:36Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
