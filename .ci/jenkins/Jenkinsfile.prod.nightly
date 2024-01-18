@@ -7,8 +7,8 @@ pipeline {
         label 'kie-rhel8 && docker && kie-mem24g && !built-in'
     }
     tools {
-        maven 'kie-maven-3.8.7'
-        jdk 'kie-jdk11'
+        maven 'kie-maven-3.9.3'
+        jdk 'kie-jdk17'
         nodejs 'nodejs-16.2.0'
     }
     parameters {
