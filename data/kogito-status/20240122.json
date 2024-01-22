@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-22T09:12:28.084Z",
+    "date": "2024-01-22T10:12:27.748Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7608852313"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7609556155"
   },
   "projects": [
     {
@@ -2654,78 +2654,7 @@
       "default_branch": "main-apache",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 3,
-          "title": "recreate scripts required to generate the devmode and swfbuilder maven repos",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/3",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/3",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-01-22T08:00:09Z",
-          "updated_at": "2024-01-22T08:54:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "4c9bf4f921f10e4ab1296f706dd6e48582afa9d8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "productized_scripts",
-            "sha": "8991e0f9e418475372e491b3f73076a9a54c3785",
-            "label": "rgdoliveira:productized_scripts"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 20716530923,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7608072673/job/20716530923",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T08:00:23Z",
-              "completed_at": "2024-01-22T08:00:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20716530600,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7608072673/job/20716530600",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T08:00:24Z",
-              "completed_at": "2024-01-22T08:01:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20716530288,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7608072673/job/20716530288",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T08:00:24Z",
-              "completed_at": "2024-01-22T08:00:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
