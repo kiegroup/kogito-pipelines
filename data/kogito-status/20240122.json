@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-22T08:15:28.164Z",
+    "date": "2024-01-22T09:12:28.084Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7608236157"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7608852313"
   },
   "projects": [
     {
@@ -2665,18 +2665,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
               "login": "ricardozanini",
               "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
               "html_url": "https://github.com/ricardozanini"
             }
           ],
           "created_at": "2024-01-22T08:00:09Z",
-          "updated_at": "2024-01-22T08:02:29Z",
+          "updated_at": "2024-01-22T08:54:34Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2725,81 +2720,6 @@
               "conclusion": "success",
               "started_at": "2024-01-22T08:00:24Z",
               "completed_at": "2024-01-22T08:00:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/2",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/2",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-01-22T07:40:20Z",
-          "updated_at": "2024-01-22T08:02:12Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "4c9bf4f921f10e4ab1296f706dd6e48582afa9d8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "05f62868553a6e327c15a015673a446747b3d87a",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 20716062670,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7607916111/job/20716062670",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T07:40:33Z",
-              "completed_at": "2024-01-22T07:41:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20716062427,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7607916111/job/20716062427",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T07:40:36Z",
-              "completed_at": "2024-01-22T07:40:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20716062252,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/7607916111/job/20716062252",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-22T07:40:34Z",
-              "completed_at": "2024-01-22T07:40:41Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
