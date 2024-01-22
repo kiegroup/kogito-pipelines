@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-22T11:09:59.778Z",
+    "date": "2024-01-22T12:21:45.665Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7610234111"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7611033658"
   },
   "projects": [
     {
@@ -638,6 +638,113 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 7,
+          "title": "[SRVLOGIC-211] add script to remove modules that should not be in the productized build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/7",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/7",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2024-01-22T11:47:53Z",
+          "updated_at": "2024-01-22T11:56:09Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "8e232ca627055bc6cd8695b20e0baa54a6080702",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-211",
+            "sha": "2c00e33fad5c988654ad1c80af07f449d36b8443",
+            "label": "rgdoliveira:SRVLOGIC-211"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 20724423997,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7610649322/job/20724423997",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724423743,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7610649322/job/20724423743",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724423485,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7610649322/job/20724423485",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724423186,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7610649322/job/20724423186",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724422907,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7610649324/job/20724422907",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 6,
           "title": "[1.13.x] [RHPAM-4812] Updating kubernetes-client to 6.10.0",
@@ -1909,7 +2016,104 @@
       "default_branch": "main-apache",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 3,
+          "title": "[SRVLOGIC-211] add script to remove modules that should not be in the productized build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/3",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/3",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2024-01-22T11:48:30Z",
+          "updated_at": "2024-01-22T11:56:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3c08db2bb48f1cd935c197702ab0530cf13fb2c4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-211",
+            "sha": "c52660f35161ec7222f68dca2362e5bfbf66ab92",
+            "label": "rgdoliveira:SRVLOGIC-211"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 20724443007,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7610655286/job/20724443007",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:54:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724442789,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7610655286/job/20724442789",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:51:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724442575,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7610655286/job/20724442575",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724442551,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7610655280/job/20724442551",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
@@ -1926,7 +2130,93 @@
       "default_branch": "main-apache",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 3,
+          "title": "[SRVLOGIC-211] add script to remove modules that should not be in the productized build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/3",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/3",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2024-01-22T11:48:04Z",
+          "updated_at": "2024-01-22T11:56:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cd527aefe5d5bb8ca5ade55e548c03eaa028577c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-211",
+            "sha": "4207675e417e8944484df545f58d13955ee5b77d",
+            "label": "rgdoliveira:SRVLOGIC-211"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 20724428922,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7610650988/job/20724428922",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724428684,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7610650988/job/20724428684",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20724428425,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7610650988/job/20724428425",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-22T11:48:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
