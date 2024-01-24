@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-24T12:21:19.305Z",
+    "date": "2024-01-24T13:14:34.052Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7640073805"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7640714752"
   },
   "projects": [
     {
@@ -803,7 +803,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-01-09T14:09:04Z",
-          "updated_at": "2024-01-09T14:09:34Z",
+          "updated_at": "2024-01-24T13:08:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -843,6 +843,26 @@
               "completed_at": "2024-01-09T14:45:18Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27146294282,
+              "name": "(build) kogito-runtimes",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-runtimes.tests.kogito-runtimes/29/display/redirect",
+              "conclusion": "pending",
+              "started_at": "2024-01-24T13:08:07Z",
+              "completed_at": "2024-01-24T13:08:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27146294380,
+              "name": "(build) kogito-examples",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-runtimes.tests.downstream.kogito-examples/39/display/redirect",
+              "conclusion": "pending",
+              "started_at": "2024-01-24T13:08:07Z",
+              "completed_at": "2024-01-24T13:08:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         }
