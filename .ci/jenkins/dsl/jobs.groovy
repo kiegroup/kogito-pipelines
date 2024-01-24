@@ -13,49 +13,15 @@ boolean isMainStream() {
 
 // Tools
 setupUpdateJenkinsDependenciesJob()
-if (isMainStream()) {
-    setupCreateIssueToolsJob()
-    setupCleanOldNamespacesToolsJob()
-    setupCleanOldNightlyImagesToolsJob()
-
-    KogitoJobUtils.createQuarkusPlatformUpdateToolsJob(this, 'kogito')
-    if (Utils.isMainBranch(this)) {
-        setupBuildOperatorNode()
-    }
-
-    KogitoJobUtils.createMainQuarkusUpdateToolsJob(this,
-        [ 'kogito-runtimes', 'kogito-examples', 'kogito-docs', 'kogito-images' ],
-        [ 'radtriste', 'cristianonicolai' ]
-    )
-}
 
 // Setup branch branch
 createSetupBranchJob()
-if (isMainStream()) {
-    createSetupBranchCloudJob()
-}
 
 // Nightly
 setupNightlyJob()
 setupQuarkusPlatformJob(JobType.NIGHTLY)
-if (isMainStream()) {
-    setupNightlyCloudJob()
-    setupQuarkus3NightlyJob()
-}
 
 KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-main')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-lts')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-branch')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'native-lts')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-3', []) { script ->
-    def jobParams = JobParamsUtils.DEFAULT_PARAMS_GETTER(script)
-    jobParams.env.put('INTEGRATION_BRANCH_CURRENT', '2.x')
-    return jobParams
-}
-
-// Release
-setupReleaseArtifactsJob()
-setupReleaseCloudJob()
 
 /////////////////////////////////////////////////////////////////
 // Methods
