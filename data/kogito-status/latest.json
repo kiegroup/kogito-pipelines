@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-25T01:57:21.493Z",
+    "date": "2024-01-25T02:30:28.166Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7648804750"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7649072265"
   },
   "projects": [
     {
@@ -4548,7 +4548,7 @@
             }
           ],
           "created_at": "2024-01-24T23:51:32Z",
-          "updated_at": "2024-01-24T23:51:33Z",
+          "updated_at": "2024-01-25T02:27:43Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4568,20 +4568,9 @@
           },
           "checks": [
             {
-              "id": 20839337681,
-              "name": "CodeQL",
-              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20839337681",
-              "status": "completed",
-              "conclusion": "neutral",
-              "started_at": "2024-01-24T23:56:16Z",
-              "completed_at": "2024-01-24T23:56:20Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20839247142,
+              "id": 20842713094,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20839247142",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20842713094",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2024-01-24T23:51:49Z",
@@ -4590,25 +4579,36 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20839247003,
+              "id": 20842712951,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20839247003",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20842712951",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-24T23:51:54Z",
+              "completed_at": "2024-01-25T02:20:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20842712843,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20842712843",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2024-01-24T23:51:54Z",
+              "started_at": "2024-01-25T02:22:21Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20839246880,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7647747728/job/20839246880",
+              "id": 20839337681,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20839337681",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-24T23:51:46Z",
-              "completed_at": "2024-01-25T00:15:30Z",
-              "slug": "github-actions",
+              "conclusion": "neutral",
+              "started_at": "2024-01-24T23:56:16Z",
+              "completed_at": "2024-01-24T23:56:20Z",
+              "slug": "github-advanced-security",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
