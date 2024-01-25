@@ -1,3 +1,20 @@
+generation_config:
+  missing_environments: ignore
+
+job_types:
+  setup_branch:
+    disabled: true
+  nightly:
+    disabled: false
+  other:
+    disabled: true
+  pullrequest:
+    disabled: false
+  release:
+    disabled: true
+  tools:
+    disabled: true
+
 environments:
   native:
     env_vars:
@@ -6,47 +23,12 @@ environments:
       ADDITIONAL_TIMEOUT: 720
     ids:
     - native
-  native-lts:
-    env_vars:
-      NATIVE: true
-      BUILD_MVN_OPTS: -Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral
-      BUILD_MVN_OPTS_CURRENT: -Dnative -Dquarkus.native.container-build=true
-      QUARKUS_BRANCH: '2.13'
-      ADDITIONAL_TIMEOUT: 720
-      BUILD_ENVIRONMENT: quarkus-lts
-    ids:
-    - native
-    - prod
-    - lts
   quarkus-main:
     enabled: false
     env_vars:
       QUARKUS_BRANCH: main
     ids:
     - quarkus
-  quarkus-branch:
-    env_vars:
-      QUARKUS_BRANCH: '2.16'
-    ids:
-    - quarkus
-  quarkus-3:
-    pull_request_default_check: false
-    env_vars:
-      BUILD_MAVEN_TOOL: kie-maven-3.9.1
-      BUILD_JDK_TOOL: kie-jdk17
-      BUILD_MVN_OPTS: -Denforcer.skip
-    ids:
-    - quarkus
-    - quarkus3
-  quarkus-lts:
-    pull_request_default_check: false
-    env_vars:
-      BUILD_MVN_OPTS: -Dproductized -Ddata-index-ephemeral.image=quay.io/kiegroup/kogito-data-index-ephemeral
-      QUARKUS_BRANCH: '2.13'
-    ids:
-    - quarkus
-    - lts
-    - prod
   sonarcloud:
     enabled: false
     auto_generation: false
@@ -127,7 +109,7 @@ cloud:
 jenkins:
   email_creds_id: KOGITO_CI_EMAIL_TO
   default_tools:
-    jdk: kie-jdk11
-    maven: kie-maven-3.8.7
+    jdk: kie-jdk17
+    maven: kie-maven-3.9.3
     sonar_jdk: kie-jdk17
   jobs_definition_file: .ci/jenkins/dsl/jobs.groovy
