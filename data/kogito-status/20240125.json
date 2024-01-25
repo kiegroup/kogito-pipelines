@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-25T15:11:56.538Z",
+    "date": "2024-01-25T16:14:40.069Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7656522964"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7657331671"
   },
   "projects": [
     {
@@ -40,7 +40,7 @@
             }
           ],
           "created_at": "2024-01-24T14:35:31Z",
-          "updated_at": "2024-01-25T12:39:47Z",
+          "updated_at": "2024-01-25T15:47:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -50,7 +50,7 @@
           },
           "head": {
             "ref": "pipelines-main-cleanup",
-            "sha": "670e6867551f775044fd1853c0e34543f0cb65ff",
+            "sha": "26f974111b3643eabdb54dee49513842b9389161",
             "label": "kiegroup:pipelines-main-cleanup"
           },
           "user": {
@@ -60,24 +60,24 @@
           },
           "checks": [
             {
-              "id": 20819754110,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7641750961/job/20819754110",
+              "id": 20866595963,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7656985453/job/20866595963",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-01-24T14:35:45Z",
-              "completed_at": "2024-01-24T14:36:48Z",
+              "started_at": "2024-01-25T15:47:22Z",
+              "completed_at": "2024-01-25T15:49:04Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20819753752,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7641750961/job/20819753752",
+              "id": 20866595625,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7656985453/job/20866595625",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-01-24T14:35:44Z",
-              "completed_at": "2024-01-24T14:36:46Z",
+              "started_at": "2024-01-25T15:47:23Z",
+              "completed_at": "2024-01-25T15:51:22Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -702,103 +702,6 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 10,
-          "title": "include knative-eventing module as part of the product",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/10",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/10",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-01-25T12:23:53Z",
-          "updated_at": "2024-01-25T13:13:16Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "103304ee4e016e6a0fed4d7a73baae2e2be2f3e8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "fix_nightly",
-            "sha": "81ec5704ab98aeb62a6b065eca55f875d84b57bf",
-            "label": "rgdoliveira:fix_nightly"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 20858440157,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7654441429/job/20858440157",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-25T12:24:09Z",
-              "completed_at": "2024-01-25T13:12:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20858439872,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7654441429/job/20858439872",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-25T12:24:05Z",
-              "completed_at": "2024-01-25T13:16:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20858439628,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7654441429/job/20858439628",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-25T12:24:08Z",
-              "completed_at": "2024-01-25T13:18:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20858439369,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7654441429/job/20858439369",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-25T12:24:08Z",
-              "completed_at": "2024-01-25T13:55:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20858439090,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7654441427/job/20858439090",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-25T12:24:05Z",
-              "completed_at": "2024-01-25T13:08:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 4,
           "title": "snake-yaml to 2.0 ",
@@ -1959,7 +1862,7 @@
       "name": "kogito-examples",
       "description": "Kogito examples - Kogito is a cloud-native business automation technology for building cloud-ready business applications.",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-01-09T09:19:45Z",
+      "updated_at": "2024-01-25T15:26:10Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main-apache",
@@ -2698,11 +2601,6 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
               "login": "ricardozanini",
               "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
               "html_url": "https://github.com/ricardozanini"
@@ -2714,7 +2612,7 @@
             }
           ],
           "created_at": "2024-01-25T13:01:22Z",
-          "updated_at": "2024-01-25T13:04:00Z",
+          "updated_at": "2024-01-25T15:26:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5035,10 +4933,10 @@
               "id": 20861139806,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7655327993/job/20861139806",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-01-25T13:37:21Z",
-              "completed_at": null,
+              "completed_at": "2024-01-25T15:18:18Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -5046,10 +4944,10 @@
               "id": 20861139459,
               "name": "run (macos-latest)",
               "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7655327993/job/20861139459",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-01-25T13:37:27Z",
-              "completed_at": null,
+              "completed_at": "2024-01-25T15:36:31Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
