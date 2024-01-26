@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-26T21:09:45.093Z",
+    "date": "2024-01-26T22:09:56.922Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7673426682"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7673930131"
   },
   "projects": [
     {
@@ -1783,57 +1783,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 6,
-          "title": "[1.13.x-blue] [1.13.x] Bump Quarkus version to 2.13.9.Final",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/6",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/6",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "kie-ci3",
-              "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
-              "html_url": "https://github.com/kie-ci3"
-            }
-          ],
-          "created_at": "2024-01-26T15:03:35Z",
-          "updated_at": "2024-01-26T19:46:48Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.13.x-blue",
-            "sha": "66030570130fc1f7ec01b5c4c155d9c7304bafac",
-            "label": "kiegroup:1.13.x-blue"
-          },
-          "head": {
-            "ref": "1.13.x-blue_bump-1.13.x-quarkus-2.13.9.Final",
-            "sha": "572b2a732d30612373da119ebd8eea2a727706d7",
-            "label": "kiegroup:1.13.x-blue_bump-1.13.x-quarkus-2.13.9.Final"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 27194009337,
-              "name": "(build) kogito-examples",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-examples.tests.kogito-examples/10/display/redirect",
-              "conclusion": "success",
-              "started_at": "2024-01-26T15:24:21Z",
-              "completed_at": "2024-01-26T15:24:21Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1856,7 +1806,7 @@
               "sha": "239cf9f023c817913add5149ad902716232a3e8c"
             },
             {
-              "sha": "de13b8b71906d0beb7e61d0e7b9b72f575d53bce"
+              "sha": "2dfe8628e651a51111aa0a94e3dff1d6106be398"
             },
             {
               "sha": "81a0b4f6480bd106459b506c264524e1242e94b6"
@@ -1865,7 +1815,7 @@
               "sha": "d3fd100a3acfd32b2418da68b0a4777d55dfeb52"
             },
             {
-              "sha": "973faf6b01fae39d9934a1e3811a9907b700b1da"
+              "sha": "fe2ef8d70cd2cbc45aaae43cfa69427e044a8d4c"
             },
             {
               "sha": "a7e060dea3af8db0ff2a2e7d6c5e0d3d1bfb0294"
@@ -1892,7 +1842,7 @@
               "sha": "760da5e8bcdd62be0e23fab92974741167cbaf7f"
             },
             {
-              "sha": "c7218c1c9c5eeb59d92a2237898dc7e6ba3bb67b"
+              "sha": "af4b6aec7446fc43bd9ee456f1893bd8d0fb1d1f"
             },
             {
               "sha": "b00e4fa72a8e6b7f44e28f4a04b526c97fcaa064"
@@ -1904,28 +1854,28 @@
               "sha": "7b38f880b317318f912f1ecde7f3e6cfbb17b738"
             },
             {
-              "sha": "5b45275218051a2fc6b349e39e19bec66af0f245"
+              "sha": "f961d5708e348e5e7f147d9f482c2c4b1061606e"
             },
             {
-              "sha": "f9217ba7b6a2e8d3dd197becc27cf4aa09c163b8"
+              "sha": "b79961b2a24744623a9eb932000500dde9ff2e8c"
             },
             {
               "sha": "249e8c7c047104385b5b6d95e8518e975886d21c"
             },
             {
-              "sha": "a24d8918ac7ce2975ceeb98f9a3381393e7be3c2"
+              "sha": "1a959c2466b7439050eeb05b537c3b5e90df61bf"
             },
             {
               "sha": "ae894054ad7765544fed30abc6c00dac4bc9c6f1"
             },
             {
-              "sha": "3a242c55bf7322c3f5c9644177b42e3a6b13a874"
+              "sha": "a56d3e7e7309f9a3411e4d61f89c625793a5aaf5"
             },
             {
               "sha": "7e96e26b09befd083986b9eb0c0ce7488f4ff0e8"
             },
             {
-              "sha": "6c383dfd5c0eb5c9e23824d09fbe3212e9a25275"
+              "sha": "4787573cae8075d1d3917d754d4def35f02c49ef"
             },
             {
               "sha": "3091d70ec2cced4caede189e8a091d7103863c16"
@@ -1934,25 +1884,25 @@
               "sha": "c4d2f21fc7ded48399231404d6cb5f28641fadcb"
             },
             {
-              "sha": "9d7f04ff74042923c1a402383bb378f514397b1e"
+              "sha": "17ec0e07fda7b9bf6ce752d472adfd3422d0500a"
             },
             {
               "sha": "98e7e0e4f5f23daafd1a22e7b58047cf89d4a4ac"
             },
             {
-              "sha": "982c115b029b95c4d529c7ffe655142f41bf8f47"
+              "sha": "638a7e5d8d6186f62dc84329a4a5ac0f22866d1a"
             },
             {
-              "sha": "0bedcfd73aba01715939e494b743ea4e4070a164"
+              "sha": "ec50725426181f634384a2cac694716a34280fcb"
             },
             {
-              "sha": "fc28d2630e99f8987d81d7feece8769092ec9ce2"
+              "sha": "00d11028755fd85e49f6c9e8899483852c2fa112"
             },
             {
-              "sha": "c0e625fb8d5acec68f242f12cb3ea7641f3ad82f"
+              "sha": "ffaa82c20eb6739f80ef6e918783b55b0393f323"
             },
             {
-              "sha": "f21d2408afef85b2c7b51b11139fa01af1792823"
+              "sha": "26873b243f3dd2928010f3d72bb33a0472d0beb9"
             },
             {
               "sha": "177d3cb8385ddc0ea45721f71312afe5e080a661"
@@ -1964,13 +1914,13 @@
               "sha": "b1101017b0ea620561937452c2098a0febc7fbe3"
             },
             {
-              "sha": "de79bdd3d848762022b1a8141c54cbd130c2db42"
+              "sha": "f0223c3ee91044dc2b5e7cd9c75deddc2419968f"
             },
             {
-              "sha": "5769d4c5dd78e6208e0c210b3ff95486335b8266"
+              "sha": "fbf532b7609bfb4ae067f2d2b17f4dc404fc12ba"
             },
             {
-              "sha": "99e74da922bcf148fd63bc7e6692d1b73a5c9800"
+              "sha": "7676635de0b80de73cdbbd48dda31a5d47a8ef5d"
             },
             {
               "sha": "a5aebdf26e92b5c9892b16bb9119a76bdd827166"
@@ -1982,25 +1932,25 @@
               "sha": "cd5964eddc8dc31afce6960ef90efc4d0c360683"
             },
             {
-              "sha": "f9e2dab2bd3071c8e0511ffd8a8f3b7168510689"
+              "sha": "087f416c67c1b1c9bf10003487502e4667f3588c"
             },
             {
               "sha": "9ba9fb988da6ecd8ab5bed66436f0983877bbe77"
             },
             {
-              "sha": "90b5c3bf6fad997d1ed0b7500315a7563dd0fc16"
+              "sha": "c941539836488a87e2219b577e02a5c3e6ba441c"
             },
             {
-              "sha": "96c8a5c44c340fe6c0643c713981155019387ae7"
+              "sha": "99f036f106ac193b1e3dbfeaf1d0756db3d69779"
             },
             {
               "sha": "99efea02adfa216005126dd47ed9c0f128ece939"
             },
             {
-              "sha": "ebec72eeff7f29a799fe2bc2c54a8a7a7b55a8f8"
+              "sha": "632968380b1d1987cc4fb4b094f9888dfb9d5009"
             },
             {
-              "sha": "be6e441244f1a9d8f16514df831cdf7b9524c697"
+              "sha": "3bcaacedd8b6045946eb59fe3621a36b88a69aa3"
             },
             {
               "sha": "c2343cc1efc7a151ff3fc5e7bea705c6f23afa51"
@@ -2009,16 +1959,16 @@
               "sha": "d310ab28b8873ea392b9a77c4a56b711e8f7a0b7"
             },
             {
-              "sha": "d65f123146316eeab373b5f086cb3451e0a50cf6"
+              "sha": "aa415ca9e5bb7aa8d4acd947f98044b36828c590"
             },
             {
-              "sha": "5ecd92a6ac95c6a2edec4dbf46c614a39a40df45"
+              "sha": "0bf70fdd93cebf7167618e7f6a3b2b9b3c753fc8"
             },
             {
               "sha": "1260142e24de121b8b37ec6830ca21103d1b7949"
             },
             {
-              "sha": "ad379f0e9863268fe907cfdc832eeded1e7e7d20"
+              "sha": "b0e525b98681a80f096622ce7fc88e66837b4f99"
             },
             {
               "sha": "bf87c0b17a09ffb779858770dd738b73014e13d0"
@@ -2030,10 +1980,10 @@
               "sha": "7836a6f17e1972737eef703d3114d235d5dadc51"
             },
             {
-              "sha": "f172b69640681517a34caa3cbdc5d2ee7d1b2e68"
+              "sha": "1e4edc167c8ba408dec009817908b90e310a3566"
             },
             {
-              "sha": "f6e0cede59107715007306c6de22dc4df762c6c6"
+              "sha": "7a9c36412a86470f66e8d05b70c43910bdcca4ab"
             },
             {
               "sha": "a4996bf7d1b71db8bdbed5ebb78ca1e76744f0a9"
@@ -2042,16 +1992,16 @@
               "sha": "6e386a35d8cd55a86f741513979197efd1e14174"
             },
             {
-              "sha": "b6a5e701e0ae87794cb98e44482d94e76542ffc3"
+              "sha": "b3f26cd56d5dafd958c1dc7a570dd3bdcc0b783a"
             },
             {
-              "sha": "f9bf769b55821fb89da014d6061c2a08ae365aa3"
+              "sha": "1355cd2a1f3b9bcc017066af2bd1a466373431a2"
             },
             {
               "sha": "e285849c48c32419597b0f02d8b48a133326d92e"
             },
             {
-              "sha": "e765989e412b15697aeac52c89612c177dde38b0"
+              "sha": "7146436795c807dd1a02f5c22f978f019879cf9a"
             },
             {
               "sha": "a5535eed62f259c4895e56b3ff197cb40fcacb3b"
@@ -2060,7 +2010,7 @@
               "sha": "fad6a072db18c586a6f226dbcfa87f81cca52491"
             },
             {
-              "sha": "a3e8dc3eec53fa93a6f41f08419a1d26575de942"
+              "sha": "f2fedff06750423e8f507dae0b1a58749b4812b8"
             },
             {
               "sha": "5264764138f30819e345519aca9916e4cf01a1ff"
@@ -2075,40 +2025,40 @@
               "sha": "5264764138f30819e345519aca9916e4cf01a1ff"
             },
             {
-              "sha": "17ce829f3e3a2afb0acae979076c6cb91a410e32"
+              "sha": "1941a208c074996e279a55cdcb7c676da44fe046"
             },
             {
               "sha": "4bdc1edb6329aaa83f5074d0b01a7ef6de20c5ea"
             },
             {
-              "sha": "7809bb404218d5e327d6058ad9e7fe7bf74909af"
+              "sha": "4cc28857b659770ffe6224178428eeefad7a3cc7"
             },
             {
               "sha": "4565ce8f38564222ecb21d7a90e6ad3903b224bd"
             },
             {
-              "sha": "086f2dcb99762785fa702bb4753a3a9bd168153c"
+              "sha": "171b0edb9d1bc1f49a189dac5849397fb1953ce6"
             },
             {
-              "sha": "d2ebca3dc4e8b93c8bf20011e8cd5747e8b32c66"
+              "sha": "7e2c146a425358c3a4ee9366d727b8744442049a"
             },
             {
               "sha": "a715dd450c228ab62cb2e57214a3bc48c85ad7ee"
             },
             {
-              "sha": "827681f15647f5309dfc5ccd96c6d2d8cc23b17b"
+              "sha": "c3d3d2b05f444f7cf6c74565803c2c8d8e1e0fad"
             },
             {
-              "sha": "b43e33329dfca255a2dfa28d3b337f106b0c06d1"
+              "sha": "1c0246eb4110f15ce42849252d4a63904b7a2224"
             },
             {
-              "sha": "1b24a4f8b479833048cb2a2b80785abd1692190e"
+              "sha": "607fab7ed6deae0d81d92488ccb6cf169b3f0429"
             },
             {
               "sha": "1cfb52c8295e172b3b718ed4d722d707697a9e32"
             },
             {
-              "sha": "d46bd6587ff6812ef8700eac06bc3bf76c63801b"
+              "sha": "d1230e4ed871c6bc011f9f4ba7f6a5278efc06fc"
             },
             {
               "sha": "7430ba807cb563eee8ad5ef22fb3f41a007baf55"
@@ -2117,22 +2067,22 @@
               "sha": "0c771e50fe8a50bdffd52ae9e45b6d9855da6b81"
             },
             {
-              "sha": "a533b2eb7fafb9b23fa7c7f7833608fa3ef3ec22"
+              "sha": "642e740857b02519ddb6fe0f4767bd3a0bf9d136"
             },
             {
               "sha": "f25b657700f46638761226620ed5eacb132b914b"
             },
             {
-              "sha": "8c81a5e998571420e41630cda1960c455b3a3d43"
+              "sha": "55312960805ba0153e9cfd06b3ff596e0c056a0c"
             },
             {
               "sha": "5faee4230b5e3d3d4801b8d35e5cd435792d5ec5"
             },
             {
-              "sha": "ee0a26a21db6a12210231447174739d94e11a381"
+              "sha": "fab8b8e91250ffa51ec32057595f646c85b6c1bd"
             },
             {
-              "sha": "b8706fd8c3d427184e871cdaeefe3c2abc249988"
+              "sha": "57bf5c7fde70054a4bac581aea058cca655a7ca4"
             },
             {
               "sha": "98ba61240befa3f5ccc0df1dbdcf79b78148a353"
@@ -2141,16 +2091,16 @@
               "sha": "6c5625b4a2ce3655c22db29b3dc1945f4005587d"
             },
             {
-              "sha": "78a2db58b659badefa8d1d71b25f56a62eb8ceaf"
+              "sha": "ffac99bbcf50d481e69771f558adb9ef442063a6"
             },
             {
-              "sha": "11372518e4923e7de06c89bebdb5436afffd9418"
+              "sha": "5e3e1b5a46cc71a157b300f691f2614ab2cbd439"
             },
             {
               "sha": "21dbbd02b832c4bd2e4fa95f1dc6cc08041126d9"
             },
             {
-              "sha": "95689c14849742c07e6b3dfca0d8ef18972b1d5e"
+              "sha": "1e605dba2b7ed743ce4a028095a038ef97588a8f"
             },
             {
               "sha": "fc1b1a75465ec2714a73b764e759ef3635a642ee"
@@ -2162,22 +2112,22 @@
               "sha": "3a8e3d44da50c35454510ecd070c3b65a3f36d51"
             },
             {
-              "sha": "236c8f892a13477ace654d0d7e210808dc497fff"
+              "sha": "8ed807f2634af428b28023e8456d035d6292b5b0"
             },
             {
               "sha": "fb2fea44db2bb2c004385ff984b0b1063a2bba72"
             },
             {
-              "sha": "0f5152dd99e47fd2534cdc6af3afe664046fd202"
+              "sha": "bbf05a6273fe1fa9c11f24ddc63510edcce50dc7"
             },
             {
               "sha": "9c315cdfc62c582f1d398b4f1d69a36215641843"
             },
             {
-              "sha": "02b2e92956414b66af0065849b27f9569f9798bb"
+              "sha": "4600c794cba1a90f13a3fea2adfbc7ad8a2676f2"
             },
             {
-              "sha": "8a78a72d4d6449289fe6f1e5efd9ac261b3e4591"
+              "sha": "ea2100e7a3238cb49ca6bb6482b4dbb6268a3a52"
             },
             {
               "sha": "464b68bd715cb2d140f089a86ad0b8f533aeb0ab"
@@ -2189,67 +2139,67 @@
               "sha": "7a451de3e4b06ede4a066ed94229845a70e8d9a4"
             },
             {
-              "sha": "05b202f5a36dd77bf770a47b7aca28a4688a8fe7"
+              "sha": "43ed193ae129a4bda7db3ca85f9ac1c3581855e7"
             },
             {
               "sha": "ba294cbf878b32d72ab22654b9f1c557a3bb4d13"
             },
             {
-              "sha": "ce8f1b69b7ebc239bb746b8984d9bd9dac88858a"
+              "sha": "dc0d8b6330b03c7d9cabeb6379f94e8b233ea77a"
             },
             {
-              "sha": "bed130ed99287fd11baa007818dfb9e8b9226c4d"
+              "sha": "578f5f5006d8b3985e1642d22739dd8283a0bd3c"
             },
             {
-              "sha": "799e1e0a79e81d06b0ef47f935c2d686f60088d7"
+              "sha": "f5887a7e7f8b2c4880f7a6a8cc2d4a138bd5e70b"
             },
             {
               "sha": "0d44d9fdf827eb6d9b86c3c796bf4c5a76e99b09"
             },
             {
-              "sha": "e357a12fd82c1deb6e993db1e46b25fe13b436a8"
+              "sha": "7809f257a192f8a87c96595789861b1e5786b6b2"
             },
             {
-              "sha": "1d0a92e035b6de6a4735bf54673635f0282b724c"
+              "sha": "57ade8c912f74c4fe2317351d867716a4259a97a"
             },
             {
-              "sha": "eb902d288f37cb789d7f8856f7f5fddaf2323520"
+              "sha": "d9214b141515bec18372734a276a2be533aef381"
             },
             {
-              "sha": "38aee32fdc78711b67237ddfacde91a07bef4d30"
+              "sha": "aa14b1d206e026fce28eb482ccea70c86556ed81"
             },
             {
               "sha": "c3453712bcce3297bce93afd59a13d4b696c4d59"
             },
             {
-              "sha": "c6e5482b286a70359f773dd6631a4ff27fb61ff1"
+              "sha": "ba84d504d53e905f2773dca163d291a84cb477ae"
             },
             {
-              "sha": "0b56e4cdd87f8875a6d1f28e50c122e7eff015fd"
+              "sha": "e6e55df2458dc6f4a24cb31734495e041d5b77dc"
             },
             {
               "sha": "25a4d0f284e8870637cdcf8efbab6b0e22b68d7a"
             },
             {
-              "sha": "a5f21db6d2c547f4db5a43b514c00de1a347f57d"
+              "sha": "96d497961a31e9d37f990dd19c3bde8ee5408240"
             },
             {
-              "sha": "bfe957456158ca11c8aedfd61d58caa5d482b7c4"
+              "sha": "750578e7ee5eeab1244a0a399e01bee959b89bfa"
             },
             {
               "sha": "9847f7c1d4e58cf3ac6153b9d59dbf67365c49b9"
             },
             {
-              "sha": "1e25045cc6f405e37f55e396273b4537186a01e9"
+              "sha": "a83c726e48e95b37d8c1b3672f959755fa5e0dc6"
             },
             {
-              "sha": "bd4c644bde45d6f60be957f1b4d3ce031fd9af77"
+              "sha": "09cc8a48f093fa6033382e140cf951b87b114a1f"
             },
             {
               "sha": "db1da9510b07a1f8290713c0b0085d76f1fe02c4"
             },
             {
-              "sha": "beed99ed8081ad8493e2c70c37190aa7945edd96"
+              "sha": "c1afb7a2bb5ec036dfc2adb41d5f3a1d85e3b3f2"
             }
           ]
         },
@@ -4507,7 +4457,7 @@
             }
           ],
           "created_at": "2024-01-26T19:06:55Z",
-          "updated_at": "2024-01-26T19:06:56Z",
+          "updated_at": "2024-01-26T22:09:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4517,7 +4467,7 @@
           },
           "head": {
             "ref": "kie-issue-785-b",
-            "sha": "5bc3e12eeeaf56930fd24492776fb805b8055328",
+            "sha": "9d08a12b9b25eb93a323194fe562060a858dff98",
             "label": "ljmotta:kie-issue-785-b"
           },
           "user": {
@@ -4527,90 +4477,46 @@
           },
           "checks": [
             {
-              "id": 20912763862,
-              "name": "CodeQL",
-              "html_url": "https://github.com/apache/incubator-kie-tools/runs/20912763862",
-              "status": "completed",
-              "conclusion": "neutral",
-              "started_at": "2024-01-26T19:12:22Z",
-              "completed_at": "2024-01-26T19:12:25Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20912592342,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328886/job/20912592342",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:11Z",
-              "completed_at": "2024-01-26T20:03:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20912592129,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328886/job/20912592129",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:11Z",
-              "completed_at": "2024-01-26T20:40:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20912591909,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328886/job/20912591909",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-26T19:07:09Z",
-              "completed_at": "2024-01-26T19:36:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20912591801,
+              "id": 20917583658,
               "name": "Analyze (javascript)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328885/job/20912591801",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:08Z",
-              "completed_at": "2024-01-26T19:12:34Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7673929910/job/20917583658",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-26T22:09:41Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20912591630,
+              "id": 20917583571,
               "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328889/job/20912591630",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:05Z",
-              "completed_at": "2024-01-26T19:11:28Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7673929945/job/20917583571",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-26T22:09:41Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20912591582,
+              "id": 20917583554,
               "name": "check",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328882/job/20912591582",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:06Z",
-              "completed_at": "2024-01-26T19:11:18Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7673929903/job/20917583554",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-26T22:09:41Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20912591506,
+              "id": 20917583303,
               "name": "Analyze (go)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7672328885/job/20912591506",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T19:07:07Z",
-              "completed_at": "2024-01-26T19:12:34Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7673929910/job/20917583303",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-26T22:09:40Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -4674,10 +4580,10 @@
               "id": 20914792065,
               "name": "run (windows-latest)",
               "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7673027936/job/20914792065",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-01-26T20:23:51Z",
-              "completed_at": null,
+              "completed_at": "2024-01-26T22:05:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
