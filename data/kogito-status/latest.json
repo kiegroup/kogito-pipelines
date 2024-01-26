@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-26T15:10:54.704Z",
+    "date": "2024-01-26T16:13:11.685Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7669832025"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7670540056"
   },
   "projects": [
     {
@@ -699,7 +699,7 @@
       "pullRequests": [
         {
           "number": 13,
-          "title": "[1.13.x-blue] [1.13.x] Bump Quarkus version to 2.13.9.Final",
+          "title": "[1.13.x-blue] Bump Quarkus version to 2.13.9.Final",
           "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/13",
           "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/13",
           "state": "open",
@@ -709,18 +709,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
               "login": "kie-ci3",
               "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
               "html_url": "https://github.com/kie-ci3"
             }
           ],
           "created_at": "2024-01-26T15:04:54Z",
-          "updated_at": "2024-01-26T15:04:55Z",
+          "updated_at": "2024-01-26T15:15:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -738,7 +733,28 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
             "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 27194016487,
+              "name": "(build) kogito-runtimes",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-runtimes.tests.kogito-runtimes/30/display/redirect",
+              "conclusion": "success",
+              "started_at": "2024-01-26T15:24:41Z",
+              "completed_at": "2024-01-26T15:24:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27194272371,
+              "name": "(build) kogito-examples",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-runtimes.tests.downstream.kogito-examples/40/display/redirect",
+              "conclusion": "failure",
+              "started_at": "2024-01-26T15:35:59Z",
+              "completed_at": "2024-01-26T15:35:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         }
       ],
       "branchesComparison": {
@@ -1866,12 +1882,12 @@
           },
           "checks": [
             {
-              "id": 27193586105,
+              "id": 27194009337,
               "name": "(build) kogito-examples",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-examples.tests.kogito-examples/10/display/redirect",
-              "conclusion": "pending",
-              "started_at": "2024-01-26T15:04:55Z",
-              "completed_at": "2024-01-26T15:04:55Z",
+              "conclusion": "success",
+              "started_at": "2024-01-26T15:24:21Z",
+              "completed_at": "2024-01-26T15:24:21Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4832,18 +4848,13 @@
               "html_url": "https://github.com/paulovmr"
             },
             {
-              "login": "tiagobento",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
-              "html_url": "https://github.com/tiagobento"
-            },
-            {
               "login": "yesamer",
               "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
               "html_url": "https://github.com/yesamer"
             }
           ],
           "created_at": "2024-01-19T13:57:54Z",
-          "updated_at": "2024-01-26T14:47:34Z",
+          "updated_at": "2024-01-26T16:04:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
