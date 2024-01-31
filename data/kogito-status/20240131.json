@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-01-31T12:18:28.427Z",
+    "date": "2024-01-31T13:11:05.845Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7725903567"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7726583369"
   },
   "projects": [
     {
@@ -4364,6 +4364,143 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2137,
+          "title": "kie-issues#239: Implement DMN 1.4 new FEEL functions support",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2137",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2137",
+          "state": "open",
+          "labels": [
+            "DMN"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2024-01-31T12:44:31Z",
+          "updated_at": "2024-01-31T12:52:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ecd063ef431f7cf76458094db97916a961901215",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "kie-issues#239",
+            "sha": "e7e656008dd336d35f6bf203473593fa3c048e7f",
+            "label": "yesamer:kie-issues#239"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 21062596965,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/21062596965",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-01-31T12:57:09Z",
+              "completed_at": "2024-01-31T12:57:14Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062429641,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337168/job/21062429641",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-31T12:53:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062429344,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337168/job/21062429344",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-31T12:53:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062429041,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337168/job/21062429041",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-31T12:53:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062413470,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337152/job/21062413470",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-31T12:52:43Z",
+              "completed_at": "2024-01-31T12:57:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062413464,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337154/job/21062413464",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-31T12:52:42Z",
+              "completed_at": "2024-01-31T12:57:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062413169,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337157/job/21062413169",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-31T12:52:41Z",
+              "completed_at": "2024-01-31T12:58:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21062413056,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7726337154/job/21062413056",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-31T12:52:40Z",
+              "completed_at": "2024-01-31T12:57:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2136,
           "title": "kie-issues#808: kn-plugin cli version 10.0.0",
