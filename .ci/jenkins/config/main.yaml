@@ -37,11 +37,6 @@ git:
       config_file:
         path: dsl/seed/config/branch.yaml
       jenkinsfile: dsl/seed/jobs/Jenkinsfile.seed.branch
-  - name: 1.29.x
-    seed:
-      branch: seed-kogito-1.29.x
-      config_file:
-        path: dsl/config/branch.yaml
   - name: 1.38.x-prod
     seed:
       branch: seed-kogito-1.38.x
