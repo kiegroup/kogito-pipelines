@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-05T17:10:12.503Z",
+    "date": "2024-02-05T18:13:39.093Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7788192393"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7788969361"
   },
   "projects": [
     {
@@ -4287,83 +4287,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 5,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/5",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/5",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-02-05T07:49:22Z",
-          "updated_at": "2024-02-05T15:38:44Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "11ab49a68fb5d70219c8f64f511d17cbfb93b95f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "2964c1ff4cf9b463b2c01038833ca470e10f9b8f",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 21215099645,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7781169463/job/21215099645",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-05T08:04:16Z",
-              "completed_at": "2024-02-05T08:06:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21215099445,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7781169463/job/21215099445",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-05T07:49:33Z",
-              "completed_at": "2024-02-05T07:52:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21215099197,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7781169462/job/21215099197",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-05T08:03:41Z",
-              "completed_at": "2024-02-05T08:18:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21215099195,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/7781169463/job/21215099195",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-05T08:03:43Z",
-              "completed_at": "2024-02-05T08:04:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
@@ -4449,10 +4373,10 @@
               "id": 21232464856,
               "name": "run (macos-latest)",
               "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7786810630/job/21232464856",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2024-02-05T15:25:23Z",
-              "completed_at": null,
+              "completed_at": "2024-02-05T17:57:30Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
