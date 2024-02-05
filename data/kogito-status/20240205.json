@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-05T13:11:06.393Z",
+    "date": "2024-02-05T14:09:54.299Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7785003721"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7785749709"
   },
   "projects": [
     {
@@ -4572,20 +4572,9 @@
           },
           "checks": [
             {
-              "id": 21221683181,
-              "name": "CodeQL",
-              "html_url": "https://github.com/apache/incubator-kie-tools/runs/21221683181",
-              "status": "completed",
-              "conclusion": "neutral",
-              "started_at": "2024-02-05T10:56:52Z",
-              "completed_at": "2024-02-05T10:56:56Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21221527228,
+              "id": 21229031129,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21221527228",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21229031129",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2024-02-05T10:52:31Z",
@@ -4594,14 +4583,36 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21221527005,
+              "id": 21229030770,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21221527005",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-02-05T10:53:17Z",
-              "completed_at": "2024-02-05T10:53:17Z",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21229030770",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-05T14:09:38Z",
+              "completed_at": null,
               "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21229030352,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21229030352",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-05T10:52:27Z",
+              "completed_at": "2024-02-05T13:33:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21221683181,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/21221683181",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-02-05T10:56:52Z",
+              "completed_at": "2024-02-05T10:56:56Z",
+              "slug": "github-advanced-security",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
@@ -4623,17 +4634,6 @@
               "conclusion": "success",
               "started_at": "2024-02-05T10:52:25Z",
               "completed_at": "2024-02-05T10:55:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21221526762,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7783314718/job/21221526762",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-02-05T10:52:27Z",
-              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
