@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-06T05:10:42.887Z",
+    "date": "2024-02-06T06:13:45.997Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7795005591"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7795489923"
   },
   "projects": [
     {
@@ -4305,6 +4305,138 @@
       "repo_url": "https://github.com/apache/incubator-kie-tools",
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2144,
+          "title": "kie-issues#880: On the DMN Editor, all DRG elements list should show invalid names in red",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2144",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2144",
+          "state": "open",
+          "labels": [
+            "DMN"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2024-02-06T05:20:33Z",
+          "updated_at": "2024-02-06T05:20:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c91692e043901780779b340042900b20272d77e5",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "bug-fixing-dmn-editor-3-pr",
+            "sha": "0896f9981e2ab4158327fc281734c4eeaf38ef0a",
+            "label": "tiagobento:bug-fixing-dmn-editor-3-pr"
+          },
+          "user": {
+            "login": "tiagobento",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+            "html_url": "https://github.com/tiagobento"
+          },
+          "checks": [
+            {
+              "id": 21257574779,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/21257574779",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-02-06T05:24:57Z",
+              "completed_at": "2024-02-06T05:25:00Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257493201,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094421/job/21257493201",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:55Z",
+              "completed_at": "2024-02-06T05:26:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489733,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094423/job/21257489733",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:48Z",
+              "completed_at": "2024-02-06T05:57:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489601,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094423/job/21257489601",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:46Z",
+              "completed_at": "2024-02-06T06:00:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489595,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094424/job/21257489595",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:42Z",
+              "completed_at": "2024-02-06T05:25:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489494,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094423/job/21257489494",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:47Z",
+              "completed_at": "2024-02-06T05:55:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489474,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094422/job/21257489474",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:44Z",
+              "completed_at": "2024-02-06T05:24:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21257489454,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7795094424/job/21257489454",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-06T05:20:43Z",
+              "completed_at": "2024-02-06T05:25:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2138,
           "title": "NO-ISSUE: Use new `macos-14` runners",
