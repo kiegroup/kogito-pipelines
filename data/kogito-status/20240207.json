@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-07T19:08:20.449Z",
+    "date": "2024-02-07T20:10:21.360Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7819913423"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7820568027"
   },
   "projects": [
     {
@@ -4306,6 +4306,141 @@
       "pulls_url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2149,
+          "title": "NO-ISSUE: Fix test snapshot and command for dev-deployment-upload-service",
+          "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2149",
+          "html_url": "https://github.com/apache/incubator-kie-tools/pull/2149",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ederign",
+              "avatar_url": "https://avatars.githubusercontent.com/u/531351?v=4",
+              "html_url": "https://github.com/ederign"
+            },
+            {
+              "login": "tiagobento",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1584568?v=4",
+              "html_url": "https://github.com/tiagobento"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            }
+          ],
+          "created_at": "2024-02-07T19:10:36Z",
+          "updated_at": "2024-02-07T20:05:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b4ab570ecca78149f29b16ef787d8fe2ba882fed",
+            "label": "apache:main"
+          },
+          "head": {
+            "ref": "fix-ddus-tests",
+            "sha": "9fc494e80b50215931e5853ecca9ba23f778a45b",
+            "label": "thiagoelg:fix-ddus-tests"
+          },
+          "user": {
+            "login": "thiagoelg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10515135?v=4",
+            "html_url": "https://github.com/thiagoelg"
+          },
+          "checks": [
+            {
+              "id": 21333679750,
+              "name": "CodeQL",
+              "html_url": "https://github.com/apache/incubator-kie-tools/runs/21333679750",
+              "status": "completed",
+              "conclusion": "neutral",
+              "started_at": "2024-02-07T19:15:10Z",
+              "completed_at": "2024-02-07T19:15:14Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516697,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946116/job/21333516697",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:58Z",
+              "completed_at": "2024-02-07T19:25:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516423,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946116/job/21333516423",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:11:00Z",
+              "completed_at": "2024-02-07T19:37:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516387,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946118/job/21333516387",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:52Z",
+              "completed_at": "2024-02-07T19:15:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516157,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946116/job/21333516157",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:55Z",
+              "completed_at": "2024-02-07T19:18:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516102,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946123/job/21333516102",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:52Z",
+              "completed_at": "2024-02-07T19:14:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333516033,
+              "name": "check",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946115/job/21333516033",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:51Z",
+              "completed_at": "2024-02-07T19:16:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333515950,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7819946118/job/21333515950",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-07T19:10:51Z",
+              "completed_at": "2024-02-07T19:16:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2148,
           "title": "kie-issues#921: Drop KIE Tools JIT executor native Github workflow",
           "url": "https://api.github.com/repos/apache/incubator-kie-tools/pulls/2148",
@@ -4351,9 +4486,9 @@
           },
           "checks": [
             {
-              "id": 21332817735,
+              "id": 21334586382,
               "name": "run (windows-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21332817735",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21334586382",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2024-02-07T14:41:24Z",
@@ -4362,9 +4497,9 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21332817526,
+              "id": 21334586212,
               "name": "run (macos-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21332817526",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21334586212",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2024-02-07T14:41:22Z",
@@ -4373,13 +4508,13 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21332817270,
+              "id": 21334586006,
               "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21332817270",
+              "html_url": "https://github.com/apache/incubator-kie-tools/actions/runs/7816519767/job/21334586006",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2024-02-07T18:51:41Z",
-              "completed_at": "2024-02-07T18:59:11Z",
+              "started_at": "2024-02-07T19:41:41Z",
+              "completed_at": "2024-02-07T19:49:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
