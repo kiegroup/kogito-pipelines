@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-12T15:11:35.681Z",
+    "date": "2024-02-12T16:13:06.686Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7873795295"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7874621184"
   },
   "projects": [
     {
@@ -19,6 +19,42 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 21,
+          "title": ".ci/nightly-build-config.yaml: run remove_modules.sh with failfast",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/21",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/21",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-02-12T16:05:40Z",
+          "updated_at": "2024-02-12T16:05:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "49681b9f957b2fe1a1586590bf4e5844d9c1d6a4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "use_prod_script",
+            "sha": "72a2624879daa8447718373722c5cedd41d86585",
+            "label": "rgdoliveira:use_prod_script"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": []
+        },
         {
           "number": 14,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.3 to 2.427 in /.ci/jenkins/tests",
