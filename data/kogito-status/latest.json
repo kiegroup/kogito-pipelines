@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-12T07:10:03.792Z",
+    "date": "2024-02-12T08:13:56.506Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7868370848"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7868891628"
   },
   "projects": [
     {
@@ -637,7 +637,100 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 19,
+          "title": "productized/remove_modules.sh: fail script if module is not found in the pom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/19",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/19",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-02-12T07:55:53Z",
+          "updated_at": "2024-02-12T07:59:30Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f88754351fbe8e2d3e16c6458c2fe2ee285137a9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_prodscript",
+            "sha": "57e13ca648a63d223b3ab9f7f00d825f0c208dd5",
+            "label": "rgdoliveira:main_prodscript"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 21466444701,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7868723930/job/21466444701",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:56:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466444599,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7868723930/job/21466444599",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:56:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466444491,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7868723930/job/21466444491",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:56:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466444372,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7868723930/job/21466444372",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:56:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466444244,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/7868723928/job/21466444244",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:56:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1707,7 +1800,89 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 10,
+          "title": "productized/remove_modules.sh: fail script if module is not found in the pom ",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/10",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/10",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-02-12T07:57:33Z",
+          "updated_at": "2024-02-12T07:59:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d9388eb329e05f5da11854f86c875e49f3c199de",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_prodscript",
+            "sha": "08947291932d6db5455161bace81085fe5a2b12c",
+            "label": "rgdoliveira:main_prodscript"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 21466477356,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7868734525/job/21466477356",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:57:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466477233,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7868734525/job/21466477233",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:57:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466477094,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7868734525/job/21466477094",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:57:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466477086,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/7868734524/job/21466477086",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:57:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
@@ -1724,7 +1899,78 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 13,
+          "title": "productized/remove_modules.sh: fail script if module is not found in the pom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/13",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/13",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-02-12T07:58:31Z",
+          "updated_at": "2024-02-12T08:00:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "42ebde97ca6aa0a1b559edc6b200cf24665b182e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_prodscript",
+            "sha": "1b3c162b8a5510bc6e53218c79a447ddf5fd4e36",
+            "label": "rgdoliveira:main_prodscript"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 21466496680,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7868740602/job/21466496680",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:58:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466496530,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7868740602/job/21466496530",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:58:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21466496325,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/7868740602/job/21466496325",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-12T07:58:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
