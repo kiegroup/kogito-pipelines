@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-14T02:16:54.523Z",
+    "date": "2024-02-14T03:12:28.956Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895587965"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895968548"
   },
   "projects": [
     {
@@ -19,6 +19,279 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 24,
+          "title": "[main] Update Jenkins dependencies to DSL/Jenkins files",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/24",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/24",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-02-14T02:17:40Z",
+          "updated_at": "2024-02-14T02:17:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5b432cd286d2a6e40eee4a943e809f987b152aee",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main-2.426.3",
+            "sha": "18263334881cdfe8d6a166657a7b7bf6c20df012",
+            "label": "kiegroup:main-2.426.3"
+          },
+          "user": {
+            "login": "kie-ci3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106377484?v=4",
+            "html_url": "https://github.com/kie-ci3"
+          },
+          "checks": [
+            {
+              "id": 21548211930,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner-quickstarts",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211930",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:13Z",
+              "completed_at": "2024-02-14T02:19:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548211822,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211822",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:44Z",
+              "completed_at": "2024-02-14T02:19:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548211728,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/optaplanner",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211728",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:14Z",
+              "completed_at": "2024-02-14T02:18:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548211567,
+              "name": "OptaPlanner DSL Downstream tests - kiegroup/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211567",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:14Z",
+              "completed_at": "2024-02-14T02:19:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548211179,
+              "name": "Drools DSL Downstream tests - kiegroup/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211179",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:08Z",
+              "completed_at": "2024-02-14T02:18:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548211067,
+              "name": "Drools DSL Downstream tests - kiegroup/drools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548211067",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:09Z",
+              "completed_at": "2024-02-14T02:18:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210962,
+              "name": "Drools DSL Downstream tests - kiegroup/drools-website",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210962",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:09Z",
+              "completed_at": "2024-02-14T02:18:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210523,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-serverless-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210523",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:07Z",
+              "completed_at": "2024-02-14T02:19:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210415,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-runtimes",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210415",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:09Z",
+              "completed_at": "2024-02-14T02:19:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210296,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-pipelines",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210296",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:08Z",
+              "completed_at": "2024-02-14T02:19:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210156,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-operator",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210156",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:07Z",
+              "completed_at": "2024-02-14T02:19:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548210008,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-images",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548210008",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:07Z",
+              "completed_at": "2024-02-14T02:19:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548209879,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-examples",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548209879",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:06Z",
+              "completed_at": "2024-02-14T02:18:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548209754,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548209754",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:07Z",
+              "completed_at": "2024-02-14T02:19:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548209618,
+              "name": "Kogito DSL Downstream tests - kiegroup/kogito-apps",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548209618",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:06Z",
+              "completed_at": "2024-02-14T02:19:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548209500,
+              "name": "Kogito DSL Downstream tests - kiegroup/kie-tools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548209500",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:07Z",
+              "completed_at": "2024-02-14T02:18:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548209344,
+              "name": "Kogito DSL Downstream tests - kiegroup/kie-docs",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548209344",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:18:06Z",
+              "completed_at": "2024-02-14T02:18:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548205277,
+              "name": "Get Kogito DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548205277",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-14T02:17:51Z",
+              "completed_at": "2024-02-14T02:17:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548205172,
+              "name": "Get OptaPlanner DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548205172",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-14T02:17:50Z",
+              "completed_at": "2024-02-14T02:18:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548205144,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597016/job/21548205144",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-14T02:17:51Z",
+              "completed_at": "2024-02-14T02:18:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548205040,
+              "name": "Get Drools DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597015/job/21548205040",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-14T02:17:50Z",
+              "completed_at": "2024-02-14T02:18:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21548205023,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7895597016/job/21548205023",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-14T02:17:50Z",
+              "completed_at": "2024-02-14T02:19:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 14,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.3 to 2.427 in /.ci/jenkins/tests",
