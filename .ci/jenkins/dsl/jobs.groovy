@@ -25,7 +25,7 @@ if (isMainStream()) {
 
     KogitoJobUtils.createMainQuarkusUpdateToolsJob(this,
         [ 'kogito-runtimes', 'kogito-examples', 'kogito-docs', 'kogito-images' ],
-        [ 'radtriste', 'cristianonicolai' ]
+        [ 'rgdoliveira', 'mareknovotny' ]
     )
 }
 
@@ -40,18 +40,10 @@ setupNightlyJob()
 setupQuarkusPlatformJob(JobType.NIGHTLY)
 if (isMainStream()) {
     setupNightlyCloudJob()
-    setupQuarkus3NightlyJob()
 }
 
 KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-main')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-lts')
 KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-branch')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'native-lts')
-KogitoJobUtils.createEnvironmentIntegrationBranchNightlyJob(this, 'quarkus-3', []) { script ->
-    def jobParams = JobParamsUtils.DEFAULT_PARAMS_GETTER(script)
-    jobParams.env.put('INTEGRATION_BRANCH_CURRENT', '2.x')
-    return jobParams
-}
 
 // Release
 setupReleaseArtifactsJob()
@@ -151,6 +143,7 @@ void setupNightlyJob() {
     ])
     KogitoJobTemplate.createPipelineJob(this, jobParams)?.with {
         parameters {
+            booleanParam('DEPLOY', false, 'Should be deployed after setup ?')
             booleanParam('SKIP_TESTS', false, 'Skip all tests')
             booleanParam('SKIP_CLOUD_NIGHTLY', !isMainStream(), 'Skip cloud nightly execution')
         }
@@ -184,42 +177,6 @@ void setupNightlyCloudJob() {
 
             booleanParam('USE_TEMP_OPENSHIFT_REGISTRY', false, 'If enabled, use Openshift registry to push temporary images')
         }
-    }
-}
-
-void setupQuarkus3NightlyJob() {
-    // Tests are done on 9.x/2.x branch => Create 2.x branch on Kogito
-    // Need to split as Drools and Kogito end up in different integration branches
-    KogitoJobUtils.createNightlyBuildChainIntegrationJob(this, 'quarkus-3', 'drools', true) { script ->
-        def jobParams = JobParamsUtils.getDefaultJobParams(script, 'drools')
-        jobParams.git.branch = VersionUtils.getProjectTargetBranch('drools', Utils.getGitBranch(this), Utils.getRepoName(this))
-        jobParams.env.put('ADDITIONAL_TIMEOUT', '180')
-        jobParams.env.put('BUILD_ENVIRONMENT_OPTIONS_CURRENT', 'rewrite push_changes')
-        jobParams.env.put('INTEGRATION_BRANCH_CURRENT', '9.x')
-        jobParams.env.put('LAUNCH_DOWNSTREAM_JOBS', 'kie-jpmml-integration.integration,kogito-runtimes.integration')
-        jobParams.parametersValues.put('SKIP_TESTS', true)
-        jobParams.parametersValues.put('SKIP_INTEGRATION_TESTS', true)
-        return jobParams
-    }
-    KogitoJobUtils.createBuildChainIntegrationJob(this, 'quarkus-3', 'kie-jpmml-integration', true) { script ->
-        def jobParams = JobParamsUtils.getDefaultJobParams(script, 'kie-jpmml-integration')
-        jobParams.env.put('ADDITIONAL_TIMEOUT', '180')
-        jobParams.env.put('BUILD_ENVIRONMENT_OPTIONS_CURRENT', 'rewrite push_changes')
-        jobParams.env.put('INTEGRATION_BRANCH_CURRENT', '9.x')
-        jobParams.parametersValues.put('SKIP_TESTS', true)
-        jobParams.parametersValues.put('SKIP_INTEGRATION_TESTS', true)
-        return jobParams
-    }
-    KogitoJobUtils.createBuildChainIntegrationJob(this, 'quarkus-3', 'kogito-runtimes', true) { script ->
-        def jobParams = JobParamsUtils.getDefaultJobParams(script, 'kogito-runtimes')
-        jobParams.env.put('ADDITIONAL_TIMEOUT', '720')
-        jobParams.env.put('BUILD_ENVIRONMENT_OPTIONS_CURRENT', 'rewrite push_changes')
-        jobParams.env.put('INTEGRATION_BRANCH_CURRENT', '2.x')
-        jobParams.env.put('BUILDCHAIN_FULL_BRANCH_DOWNSTREAM_BUILD', 'true')
-        jobParams.env.put('NODE_OPTIONS', '--max_old_space_size=4096')
-        jobParams.parametersValues.put('SKIP_TESTS', true)
-        jobParams.parametersValues.put('SKIP_INTEGRATION_TESTS', true)
-        return jobParams
     }
 }
 
