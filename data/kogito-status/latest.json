@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-19T09:11:21.636Z",
+    "date": "2024-02-19T10:12:00.492Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7957116843"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7957866614"
   },
   "projects": [
     {
@@ -27,9 +27,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
           "created_at": "2024-02-14T02:17:40Z",
-          "updated_at": "2024-02-14T02:17:40Z",
+          "updated_at": "2024-02-19T09:48:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -293,83 +304,6 @@
           ]
         },
         {
-          "number": 14,
-          "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.3 to 2.427 in /.ci/jenkins/tests",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/14",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/14",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-01-26T02:06:55Z",
-          "updated_at": "2024-01-26T02:06:56Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a2c8a9a6c4e63a1681418e162319f4e6f3e59296",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.427",
-            "sha": "945393cd834508fa366d09e883bd688027fc4536",
-            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.427"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 20885227923,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7663048219/job/20885227923",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T02:07:08Z",
-              "completed_at": "2024-01-26T02:08:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20885227920,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7663048229/job/20885227920",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-01-26T02:07:00Z",
-              "completed_at": "2024-01-26T02:07:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20885227780,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7663048219/job/20885227780",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-26T02:07:06Z",
-              "completed_at": "2024-01-26T02:08:08Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20885227585,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/7663048229/job/20885227585",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-01-26T02:06:59Z",
-              "completed_at": "2024-01-26T02:06:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 10,
           "title": "[main] Update Jenkins dependencies to DSL/Jenkins files",
           "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/10",
@@ -377,9 +311,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            }
+          ],
           "created_at": "2023-11-29T02:17:39Z",
-          "updated_at": "2023-11-29T02:17:39Z",
+          "updated_at": "2024-02-19T09:28:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
