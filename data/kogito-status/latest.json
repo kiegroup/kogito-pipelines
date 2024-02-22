@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-22T13:12:44.347Z",
+    "date": "2024-02-22T14:10:56.838Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8005075162"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8005829650"
   },
   "projects": [
     {
@@ -18,85 +18,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 29,
-          "title": "Bump org.jenkins-ci.main:jenkins-core from 2.401.3 to 2.426.3 in /.ci/jenkins/tests",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/29",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/29",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-02-22T12:47:20Z",
-          "updated_at": "2024-02-22T13:00:04Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7b0aff4fd42a5657c41a8d0118f1c9d90773f1f3",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.426.3",
-            "sha": "356fd13dcb91b95595ecdd10c18e00ce682c87cc",
-            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.426.3"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 21862645961,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8004713568/job/21862645961",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-22T12:47:33Z",
-              "completed_at": "2024-02-22T12:51:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21862645686,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8004713568/job/21862645686",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-22T12:47:32Z",
-              "completed_at": "2024-02-22T12:49:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21862645212,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8004713377/job/21862645212",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-22T12:47:25Z",
-              "completed_at": "2024-02-22T12:47:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21862644360,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8004713377/job/21862644360",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-22T12:47:24Z",
-              "completed_at": "2024-02-22T12:47:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
