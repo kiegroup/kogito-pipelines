@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-02-28T10:12:11.608Z",
+    "date": "2024-02-28T11:10:19.634Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8078678818"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8079409827"
   },
   "projects": [
     {
@@ -2695,82 +2695,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 16,
-          "title": "[1.13.x] Merge 1.13.x-next branch into 1.13.x",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/16",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/16",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-02-28T07:57:48Z",
-          "updated_at": "2024-02-28T09:10:00Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.13.x",
-            "sha": "393e4b265f62c85b908d621b5816cb2ccecaec4f",
-            "label": "kiegroup:1.13.x"
-          },
-          "head": {
-            "ref": "mergeNext",
-            "sha": "3364f375a64093051bf03fdcc93f8c9cf84b7aff",
-            "label": "rgdoliveira:mergeNext"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 22067417214,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8077333502/job/22067417214",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-28T08:22:49Z",
-              "completed_at": "2024-02-28T08:22:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22067417054,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8077333502/job/22067417054",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-28T08:22:50Z",
-              "completed_at": "2024-02-28T08:22:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22067416870,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8077333502/job/22067416870",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-28T08:22:49Z",
-              "completed_at": "2024-02-28T08:23:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27760898168,
-              "name": "Linux",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x/job/pullrequest/job/kogito-images/55/display/redirect",
-              "conclusion": "failure",
-              "started_at": "2024-02-28T08:58:42Z",
-              "completed_at": "2024-02-28T08:58:42Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -2983,6 +2908,9 @@
               "sha": "488029f176b43c740942d1618975d78fe0961247"
             },
             {
+              "sha": "e91ac335f21128340c248f79d8ea5ab4e31d7f5f"
+            },
+            {
               "sha": "b16cd087e26e4366680f7fca983c4000f98edbd2"
             },
             {
@@ -3028,19 +2956,19 @@
               "sha": "76e31e9e322688794e38686c1b48585cd91558d5"
             },
             {
-              "sha": "e589678aaeefc047a13446d422b7922f3dae84ac"
+              "sha": "b897a5bd332d10716e4a4655252c17bebe198cf5"
             },
             {
-              "sha": "de0d6948ef9c07dbc032cf40e0b404b64455c832"
+              "sha": "485f88b38eaaa028f9a4eddc0a5bd6e810f272ea"
             },
             {
-              "sha": "7489d70f08e6718e17b80b7d25f9508bc53b72ab"
+              "sha": "bec927df9147ad4c978a7ad0a04e97d0172339fa"
             },
             {
-              "sha": "3f37305dfdba647a5a5035f9c0efc7d696137871"
+              "sha": "9aa27d351f2433335c14a015a1b64a2d0207633f"
             },
             {
-              "sha": "77609f001d62868948d6d7c3788514f6e98536ed"
+              "sha": "a388ea4ecc862da4e5710cfdf8e26dbfc237f49d"
             },
             {
               "sha": "27b8fc25368d9bb734bfbd921261360ffff3e38c"
@@ -3049,7 +2977,7 @@
               "sha": "4406aade19677d371e670d40edac060724849c93"
             },
             {
-              "sha": "faf92d2f333a79c648c9a09f690b6e9d51c2c4db"
+              "sha": "0e8ef318658e3227f78c5d8650db7bcb1e993eec"
             },
             {
               "sha": "f0abf2bbe7c0d2a4714daa29ad3f63a7b38632e2"
@@ -3067,7 +2995,7 @@
               "sha": "c70b2d983291a20f83c8fa4c47275d53d36a6880"
             },
             {
-              "sha": "39f61bea20f6365d990957372f9383f65b264ac9"
+              "sha": "622f0035baa6a87205d928ddf9fd217f007540f2"
             }
           ]
         }
