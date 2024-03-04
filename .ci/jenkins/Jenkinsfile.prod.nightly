@@ -91,7 +91,7 @@ pipeline {
                             [$class: 'StringParameterValue', name: 'KOGITO_PRODUCT_VERSION', value: PME_BUILD_VARIABLES['productVersion']],
                             [$class: 'StringParameterValue', name: 'TIME_STAMP', value: "${PME_BUILD_VARIABLES['datetimeSuffix']}"],
                             [$class: 'StringParameterValue', name: 'GIT_INFORMATION_HASHES', value: "${treatGitHashes(env.GIT_INFORMATION_HASHES)}"],
-                            [$class: 'StringParameterValue', name: 'FILE_ID', value: 'kogito-blue-nightly-properties-template']
+                            [$class: 'StringParameterValue', name: 'NIGHTLY_FILE_ID', value: 'kogito-blue-nightly-properties-template']
                         ]
                     } else {
                         println "[WARNING] No artifacts to upload. None project has been built."
