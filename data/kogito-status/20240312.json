@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-03-12T09:13:12.892Z",
+    "date": "2024-03-12T10:11:01.960Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8246265057"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8247028768"
   },
   "projects": [
     {
@@ -27,9 +27,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
           "created_at": "2024-02-23T02:20:30Z",
-          "updated_at": "2024-02-23T02:20:30Z",
+          "updated_at": "2024-03-12T09:16:17Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -549,116 +555,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 27,
-          "title": "[test] check test runs",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/27",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/27",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-03-12T08:26:11Z",
-          "updated_at": "2024-03-12T08:29:21Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bc498e60886d29bbc5e80205c82a5ca3506ebdea",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "check_tests_run",
-            "sha": "d913ac3d81f4ef79e117cb4066df3910f5260099",
-            "label": "rgdoliveira:check_tests_run"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 22550303919,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740636/job/22550303919",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-03-12T08:29:41Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550303684,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740636/job/22550303684",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-03-12T08:29:41Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550303427,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740636/job/22550303427",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-03-12T08:29:39Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550303380,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740632/job/22550303380",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-12T08:29:33Z",
-              "completed_at": "2024-03-12T08:39:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550303107,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740636/job/22550303107",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-03-12T08:29:38Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550302933,
-              "name": "DSL",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740632/job/22550302933",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-12T08:29:32Z",
-              "completed_at": "2024-03-12T08:31:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22550302840,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8245740637/job/22550302840",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-03-12T08:29:41Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1728,7 +1625,89 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 15,
+          "title": "productized/modules: remove oracle modules that were dropped from upstream",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/15",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/15",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-03-12T09:55:06Z",
+          "updated_at": "2024-03-12T10:04:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b3164ed9bbd7f8662527fd512f4ebb1669194e3a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix_apps_modules",
+            "sha": "4245cd2d06e650654d7e8531ec708ad92525be3b",
+            "label": "rgdoliveira:fix_apps_modules"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 22553659360,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8246815073/job/22553659360",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-12T09:55:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22553659096,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8246815073/job/22553659096",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-12T09:55:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22553658805,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8246815080/job/22553658805",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-12T09:55:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22553658801,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8246815073/job/22553658801",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-12T09:55:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
