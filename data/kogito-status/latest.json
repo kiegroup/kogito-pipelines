@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-03-25T11:10:26.119Z",
+    "date": "2024-03-25T12:18:57.717Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8419131834"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8419931628"
   },
   "projects": [
     {
@@ -2364,7 +2364,99 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 24,
+          "title": "[SRVLOGIC-267] Create cekit descriptors for Data Index PostgreSQL and Jobs Service images",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/24",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/24",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-03-25T11:41:00Z",
+          "updated_at": "2024-03-25T11:42:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6cd1628fa22b402fe0a750c47be59e6c4ec5c696",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-267",
+            "sha": "38a0d26e91fb73004a8f6e6e0f236d2fba7d61f8",
+            "label": "rgdoliveira:SRVLOGIC-267"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 23052185989,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8419485856/job/23052185989",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-25T11:41:13Z",
+              "completed_at": "2024-03-25T11:41:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23052185764,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8419485856/job/23052185764",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-25T11:41:11Z",
+              "completed_at": "2024-03-25T11:41:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23052185488,
+              "name": "Validate OSL imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8419485865/job/23052185488",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-25T11:41:13Z",
+              "completed_at": "2024-03-25T11:41:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23052185472,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8419485856/job/23052185472",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-25T11:41:12Z",
+              "completed_at": "2024-03-25T11:41:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
