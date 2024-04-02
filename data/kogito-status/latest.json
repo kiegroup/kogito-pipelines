@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-02T12:19:49.135Z",
+    "date": "2024-04-02T13:11:53.708Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8522639349"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8523400851"
   },
   "projects": [
     {
@@ -555,100 +555,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 29,
-          "title": "add kogito-serverless-workflow-executor module to the product",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/29",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/29",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "wmedvede",
-              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-              "html_url": "https://github.com/wmedvede"
-            }
-          ],
-          "created_at": "2024-04-02T09:00:17Z",
-          "updated_at": "2024-04-02T12:09:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "e344aa3cb0407a7ab2e0e0d5c4daa3afb0a6ef1d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "add_module",
-            "sha": "7d2d56a1e22705a6a9a66c50030b733c295be033",
-            "label": "rgdoliveira:add_module"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 23340272192,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8520146650/job/23340272192",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-02T11:00:03Z",
-              "completed_at": "2024-04-02T12:12:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23340271935,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8520146650/job/23340271935",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-02T09:00:31Z",
-              "completed_at": "2024-04-02T10:08:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23340271705,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8520146650/job/23340271705",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-02T09:00:29Z",
-              "completed_at": "2024-04-02T09:52:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23340271386,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8520146650/job/23340271386",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-02T09:00:32Z",
-              "completed_at": "2024-04-02T10:29:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23337161155,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8520146655/job/23337161155",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-02T09:36:37Z",
-              "completed_at": "2024-04-02T10:18:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -4332,10 +4239,25 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "LuboTerifaj",
+              "avatar_url": "https://avatars.githubusercontent.com/u/12122769?v=4",
+              "html_url": "https://github.com/LuboTerifaj"
             }
           ],
           "created_at": "2024-04-01T12:49:36Z",
-          "updated_at": "2024-04-01T15:06:07Z",
+          "updated_at": "2024-04-02T12:30:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
