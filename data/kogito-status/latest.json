@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-12T10:12:06.920Z",
+    "date": "2024-04-12T11:11:38.317Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8660472194"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8661149775"
   },
   "projects": [
     {
@@ -2375,7 +2375,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-04-12T10:11:54Z",
-          "updated_at": "2024-04-12T10:11:54Z",
+          "updated_at": "2024-04-12T10:37:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2398,10 +2398,10 @@
               "id": 23748489824,
               "name": "Bats Tests",
               "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489824",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-04-12T10:12:07Z",
-              "completed_at": null,
+              "completed_at": "2024-04-12T10:12:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2409,10 +2409,10 @@
               "id": 23748489581,
               "name": "ShellCheck",
               "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489581",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-04-12T10:12:03Z",
-              "completed_at": null,
+              "completed_at": "2024-04-12T10:12:11Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2420,20 +2420,20 @@
               "id": 23748489206,
               "name": "Validate Kogito imagestreams",
               "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489206",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2024-04-12T10:12:05Z",
-              "completed_at": null,
+              "completed_at": "2024-04-12T10:12:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 28561166111,
+              "id": 28561720016,
               "name": "Linux",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-images/67/display/redirect",
-              "conclusion": "pending",
-              "started_at": "2024-04-12T10:11:57Z",
-              "completed_at": "2024-04-12T10:11:57Z",
+              "conclusion": "failure",
+              "started_at": "2024-04-12T10:46:19Z",
+              "completed_at": "2024-04-12T10:46:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2447,15 +2447,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "RishiRajAnand",
-              "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
-              "html_url": "https://github.com/RishiRajAnand"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2024-04-12T05:41:21Z",
-          "updated_at": "2024-04-12T08:35:53Z",
+          "updated_at": "2024-04-12T10:40:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2852,18 +2846,13 @@
               "html_url": "https://github.com/spolti"
             },
             {
-              "login": "RishiRajAnand",
-              "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
-              "html_url": "https://github.com/RishiRajAnand"
-            },
-            {
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
             }
           ],
           "created_at": "2024-04-12T07:56:37Z",
-          "updated_at": "2024-04-12T10:02:29Z",
+          "updated_at": "2024-04-12T10:22:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
