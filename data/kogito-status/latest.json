@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-12T09:11:51.687Z",
+    "date": "2024-04-12T10:12:06.920Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8659750900"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8660472194"
   },
   "projects": [
     {
@@ -2366,6 +2366,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
       "pullRequests": [
         {
+          "number": 29,
+          "title": "[1.13.x-blue] fix bats tests",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/29",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/29",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-04-12T10:11:54Z",
+          "updated_at": "2024-04-12T10:11:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x-blue",
+            "sha": "a0d0c92b58e70227645da211217bb5e59b11dbd1",
+            "label": "kiegroup:1.13.x-blue"
+          },
+          "head": {
+            "ref": "1.13.x-blue-fix-bats",
+            "sha": "a9c22ebe936a59045eb26e2b3b55d205c2e57f86",
+            "label": "akumar074:1.13.x-blue-fix-bats"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 23748489824,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489824",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-12T10:12:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23748489581,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489581",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-12T10:12:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23748489206,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8660475565/job/23748489206",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-12T10:12:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28561166111,
+              "name": "Linux",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito/job/1.13.x-blue/job/pullrequest/job/kogito-images/67/display/redirect",
+              "conclusion": "pending",
+              "started_at": "2024-04-12T10:11:57Z",
+              "completed_at": "2024-04-12T10:11:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 27,
           "title": "[1.13.x-blue] Prepare BAMOE Kogito 8.0.5",
           "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/27",
@@ -2781,10 +2855,15 @@
               "login": "RishiRajAnand",
               "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
               "html_url": "https://github.com/RishiRajAnand"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
             }
           ],
           "created_at": "2024-04-12T07:56:37Z",
-          "updated_at": "2024-04-12T09:07:06Z",
+          "updated_at": "2024-04-12T10:02:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2794,7 +2873,7 @@
           },
           "head": {
             "ref": "bump-blue-8.0.5",
-            "sha": "688e418e511ed9b672fbdee31f2d54e8bf15cb98",
+            "sha": "79fcbd39e9ef79aea288dae731e58e4a24dc8eb0",
             "label": "akumar074:bump-blue-8.0.5"
           },
           "user": {
@@ -2804,24 +2883,24 @@
           },
           "checks": [
             {
-              "id": 23743474820,
+              "id": 23748115852,
               "name": "Bats Test",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/8658828475/job/23743474820",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/8660350352/job/23748115852",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-04-12T07:56:49Z",
-              "completed_at": "2024-04-12T07:57:26Z",
+              "started_at": "2024-04-12T10:02:13Z",
+              "completed_at": "2024-04-12T10:02:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23743474601,
+              "id": 23748115580,
               "name": "Lint",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/8658828475/job/23743474601",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/8660350352/job/23748115580",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-04-12T07:56:50Z",
-              "completed_at": "2024-04-12T07:59:15Z",
+              "conclusion": "success",
+              "started_at": "2024-04-12T10:02:12Z",
+              "completed_at": "2024-04-12T10:05:42Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
