@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-16T19:08:43.682Z",
+    "date": "2024-04-16T20:11:21.363Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8711155623"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8711889326"
   },
   "projects": [
     {
@@ -4211,116 +4211,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 30,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/30",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/30",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-04-16T07:06:14Z",
-          "updated_at": "2024-04-16T16:56:29Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b08d9c7c6ca2c8f64376c8953082a513c860865b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "1c15fcddbd7895b6c00a85a86781efcf44aed05d",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 23889518104,
-              "name": "Integration tests (kaniko-docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889518104",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:58:12Z",
-              "completed_at": "2024-04-16T17:00:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889517855,
-              "name": "Integration tests (docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889517855",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:58:11Z",
-              "completed_at": "2024-04-16T17:00:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889460428,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889460428",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:56:42Z",
-              "completed_at": "2024-04-16T16:56:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889460106,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889460106",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:56:43Z",
-              "completed_at": "2024-04-16T16:59:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889459743,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540445/job/23889459743",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:56:42Z",
-              "completed_at": "2024-04-16T17:38:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889459695,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889459695",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:56:41Z",
-              "completed_at": "2024-04-16T16:58:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23889459692,
-              "name": "Unit Tests",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889459692",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T16:56:40Z",
-              "completed_at": "2024-04-16T16:58:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
