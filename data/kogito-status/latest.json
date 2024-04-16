@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-16T16:13:55.794Z",
+    "date": "2024-04-16T17:10:43.419Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8708984197"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8709718711"
   },
   "projects": [
     {
@@ -4222,7 +4222,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-04-16T07:06:14Z",
-          "updated_at": "2024-04-16T09:49:41Z",
+          "updated_at": "2024-04-16T16:56:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4232,7 +4232,7 @@
           },
           "head": {
             "ref": "sync_main",
-            "sha": "f4491e638e4c87857f7dfec995ac2b0a0ff8a1ec",
+            "sha": "1c15fcddbd7895b6c00a85a86781efcf44aed05d",
             "label": "rgdoliveira:sync_main"
           },
           "user": {
@@ -4242,101 +4242,79 @@
           },
           "checks": [
             {
-              "id": 23869791863,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370096/job/23869791863",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-04-16T09:47:08Z",
-              "completed_at": "2024-04-16T10:31:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23864079621,
-              "name": "Integration tests (docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701393460/job/23864079621",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T07:30:04Z",
-              "completed_at": "2024-04-16T07:32:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23864079396,
+              "id": 23889518104,
               "name": "Integration tests (kaniko-docker)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701393460/job/23864079396",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889518104",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-04-16T07:30:03Z",
-              "completed_at": "2024-04-16T07:32:34Z",
+              "started_at": "2024-04-16T16:58:12Z",
+              "completed_at": "2024-04-16T17:00:57Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23863308931,
-              "name": "Integration tests (${{ matrix.container-engine }})",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370091/job/23863308931",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-04-16T07:08:13Z",
-              "completed_at": "2024-04-16T07:08:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23863307593,
-              "name": "Unit Tests",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701393460/job/23863307593",
+              "id": 23889517855,
+              "name": "Integration tests (docker)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889517855",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-04-16T07:28:36Z",
-              "completed_at": "2024-04-16T07:29:55Z",
+              "started_at": "2024-04-16T16:58:11Z",
+              "completed_at": "2024-04-16T17:00:06Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23863239567,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370089/job/23863239567",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-16T07:26:23Z",
-              "completed_at": "2024-04-16T07:29:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23863239330,
+              "id": 23889460428,
               "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370089/job/23863239330",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889460428",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-04-16T07:26:06Z",
-              "completed_at": "2024-04-16T07:26:15Z",
+              "started_at": "2024-04-16T16:56:42Z",
+              "completed_at": "2024-04-16T16:56:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23863239041,
+              "id": 23889460106,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889460106",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-16T16:56:43Z",
+              "completed_at": "2024-04-16T16:59:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23889459743,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540445/job/23889459743",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-16T16:56:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23889459695,
               "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370089/job/23863239041",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540442/job/23889459695",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-04-16T07:26:02Z",
-              "completed_at": "2024-04-16T07:28:29Z",
+              "started_at": "2024-04-16T16:56:41Z",
+              "completed_at": "2024-04-16T16:58:58Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23863239030,
+              "id": 23889459692,
               "name": "Unit Tests",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8701370091/job/23863239030",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8709540444/job/23889459692",
               "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-04-16T07:08:12Z",
-              "completed_at": "2024-04-16T07:08:12Z",
+              "conclusion": "success",
+              "started_at": "2024-04-16T16:56:40Z",
+              "completed_at": "2024-04-16T16:58:04Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
