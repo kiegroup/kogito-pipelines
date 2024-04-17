@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-17T16:14:22.311Z",
+    "date": "2024-04-17T17:09:24.795Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8725247868"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8725928600"
   },
   "projects": [
     {
@@ -4381,44 +4381,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 2,
-          "title": "SRVLOGIC-247: Some modules part of the product are getting moved from Kogito-apps to Kie-tools",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/2",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/2",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            }
-          ],
-          "created_at": "2024-04-01T12:49:36Z",
-          "updated_at": "2024-04-17T08:05:38Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "95bfecb6340dd9daf12c7696b074bd8dcd7ba257",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "midstream-pom",
-            "sha": "a20146a63d4dc9a8bb4f6e2130b0843aae8eb2bc",
-            "label": "paulovmr:midstream-pom"
-          },
-          "user": {
-            "login": "paulovmr",
-            "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-            "html_url": "https://github.com/paulovmr"
-          },
-          "checks": []
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
