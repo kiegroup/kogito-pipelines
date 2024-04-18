@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-18T07:11:29.131Z",
+    "date": "2024-04-18T08:14:30.708Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8733844517"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8734593600"
   },
   "projects": [
     {
@@ -2435,89 +2435,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 33,
-          "title": "Recreate org.kie.kogito.pkg-update and org.kie.kogito.image.dependencies modules removed from upstream",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/33",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/33",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "wmedvede",
-              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-              "html_url": "https://github.com/wmedvede"
-            }
-          ],
-          "created_at": "2024-04-17T10:03:11Z",
-          "updated_at": "2024-04-17T11:38:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0572a254a04253afabd97f8b7d66da775eeb4cb6",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_recreate_modules",
-            "sha": "ebb89ad95de1ce1101c0b0ea7091eb1174b66d40",
-            "label": "rgdoliveira:main_recreate_modules"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 23920629570,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8720006312/job/23920629570",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-17T10:03:24Z",
-              "completed_at": "2024-04-17T10:03:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23920629260,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8720006312/job/23920629260",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-17T10:03:24Z",
-              "completed_at": "2024-04-17T10:03:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23920628920,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8720006312/job/23920628920",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-17T10:03:25Z",
-              "completed_at": "2024-04-17T10:03:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23920628813,
-              "name": "Validate OSL imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8720006302/job/23920628813",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-17T10:03:24Z",
-              "completed_at": "2024-04-17T10:03:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
