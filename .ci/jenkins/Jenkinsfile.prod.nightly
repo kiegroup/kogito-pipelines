@@ -103,10 +103,14 @@ pipeline {
                     // Images names
                     env.DATA_INDEX_EPHEMERAL = 'data-index-ephemeral'
                     env.DATA_INDEX_POSTGRESQL = 'data-index-postgresql'
+                    env.JOBS_SERVICE_EPHEMERAL = 'jobs-service-ephemeral'
+                    env.JOBS_SERVICE_POSTGRESQL = 'jobs-service-postgresql'
 
                     // Images registries placeholders
                     env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
                     env.DATA_INDEX_POSTGRESQL_REGISTRY = ''
+                    env.JOBS_SERVICE_EPHEMERAL_REGISTRY = ''
+                    env.JOBS_SERVICE_POSTGRESQL_REGISTRY = ''
                 }
             }
         }
@@ -134,6 +138,28 @@ pipeline {
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip"]
 
                             env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Jobs Service Ephemeral image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-jobs-service-ephemeral-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip"]
+
+                            env.JOBS_SERVICE_EPHEMERAL_REGISTRY = buildImage(env.JOBS_SERVICE_EPHEMERAL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Jobs Service Postgresql image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-jobs-service-postgresql-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
+
+                            env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -195,7 +221,7 @@ pipeline {
                         mavenRepositoryFileUrl, 
                         env.ALREADY_BUILT_PROJECTS,
                         ['serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'], 'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'], 'drools': env.VERSION_kiegroup_drools, 'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION, 'quarkus.bom': env.QUARKUS_VERSION],
-                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY],
+                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY, "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY, "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
                     echo "[INFO] Message Body: ${messageBody}"
