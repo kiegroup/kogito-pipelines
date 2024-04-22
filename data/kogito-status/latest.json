@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-22T08:15:07.187Z",
+    "date": "2024-04-22T09:12:31.986Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8780744925"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8781515768"
   },
   "projects": [
     {
@@ -19,6 +19,70 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 32,
+          "title": "[SRVLOGIC-283] add Data index images as part of OSL productized nightly",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/32",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/32",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2024-04-22T08:27:22Z",
+          "updated_at": "2024-04-22T08:40:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "19990bfc2ed28bfc6a8b0623f2e1a3d694a7a76c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-283",
+            "sha": "5b1c4a8fa0e696bad39517106f42639dc1b415b7",
+            "label": "rgdoliveira:SRVLOGIC-283"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24091819817,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8780917085/job/24091819817",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-22T08:27:37Z",
+              "completed_at": "2024-04-22T08:28:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24091819420,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8780917085/job/24091819420",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-22T08:27:36Z",
+              "completed_at": "2024-04-22T08:28:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 30,
           "title": "[main] Update Jenkins dependencies to DSL/Jenkins files",
