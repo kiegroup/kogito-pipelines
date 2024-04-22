@@ -17,7 +17,7 @@ default:
     downstream: mvn clean install -Dquickly -Dproductized=true -DskipTests=true ${{ env.BUILD_MVN_OPTS }} 
     after:
       current: |
-        docker system prune -f 
+        podman system prune -f
 
 build:
   - project: kiegroup/drools

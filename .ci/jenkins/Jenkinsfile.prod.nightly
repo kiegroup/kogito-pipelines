@@ -4,7 +4,7 @@ import org.kie.jenkins.MavenCommand
 
 pipeline {
     agent {
-        label 'kie-rhel8 && docker && kie-mem24g && !built-in'
+        label 'kie-rhel8 && podman && kie-mem24g && !built-in'
     }
     tools {
         maven 'kie-maven-3.9.3'
@@ -16,6 +16,7 @@ pipeline {
         string(description: 'The product version, if not provided the kogito-runtimes main branch one will be use', name: 'PRODUCT_VERSION')
         string(description: 'The drools product version, if not provided the drools main branch one will be used', name: 'DROOLS_PRODUCT_VERSION')
         string(description: 'The config repository branch', name: 'CONFIG_BRANCH', defaultValue: 'master')
+        booleanParam(description: 'If images should be built', name: 'BUILD_IMAGES', defaultValue: true)
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
@@ -67,13 +68,6 @@ pipeline {
                     env.QUARKUS_VERSION = PME_BUILD_VARIABLES['quarkusVersion'].replaceAll("\\{\\{.*\\}\\}", env.QUARKUS_VERSION_COMMUNITY)
                     env.QUARKUS_PLATFORM_VERSION = PME_BUILD_VARIABLES['quarkusPlatformVersion'].replaceAll("\\{\\{.*\\}\\}", env.QUARKUS_VERSION_COMMUNITY)
 
-                    // export images registries
-                    env.IMAGE_TAG_VERSION = PME_BUILD_VARIABLES['imageTagVersion']
-                    env.DATA_INDEX_IMAGE_REGISTRY = PME_BUILD_VARIABLES['dataIndexImageRegistry'].replaceAll("\\{\\{.*\\}\\}", env.IMAGE_TAG_VERSION)
-                    env.SWF_BUILDER_IMAGE_REGISTRY = PME_BUILD_VARIABLES['swfBuilderImageRegistry'].replaceAll("\\{\\{.*\\}\\}", env.IMAGE_TAG_VERSION)
-                    env.SWF_DEVMODE_IMAGE_REGISTRY = PME_BUILD_VARIABLES['swfDevModeImageRegistry'].replaceAll("\\{\\{.*\\}\\}", env.IMAGE_TAG_VERSION)
-                    env.OPERATOR_IMAGE_REGISTRY = PME_BUILD_VARIABLES['operatorImageRegistry'].replaceAll("\\{\\{.*\\}\\}", env.IMAGE_TAG_VERSION)
-
                     sh 'printenv'
                 }
             }
@@ -94,6 +88,54 @@ pipeline {
                             }
                         }
                     }, 2, 480*60)
+                }
+            }
+        }
+        stage ('Initialize images') {
+            steps {
+                script {
+                    // Common variables
+                    env.NIGHTLY_BRANCH_NAME = 'openshift-serverless-nightly-rhel-8'
+                    env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
+                    env.M2_FOLDER = '/home/jenkins/.m2/repository'
+                    env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-images"
+
+                    // Images names
+                    env.DATA_INDEX_EPHEMERAL = 'data-index-ephemeral'
+                    env.DATA_INDEX_POSTGRESQL = 'data-index-postgresql'
+
+                    // Images registries placeholders
+                    env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
+                    env.DATA_INDEX_POSTGRESQL_REGISTRY = ''
+                }
+            }
+        }
+        stage ('Build images') {
+            when {
+                expression { return params.BUILD_IMAGES }
+            }
+            parallel {
+                stage('Data Index Ephemeral image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-data-index-ephemeral-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip"]
+
+                            env.DATA_INDEX_EPHEMERAL_REGISTRY = buildImage(env.DATA_INDEX_EPHEMERAL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Data Index Postgresql image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-data-index-postgresql-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip"]
+
+                            env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
                 }
             }
         }
@@ -153,7 +195,7 @@ pipeline {
                         mavenRepositoryFileUrl, 
                         env.ALREADY_BUILT_PROJECTS,
                         ['serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'], 'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'], 'drools': env.VERSION_kiegroup_drools, 'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION, 'quarkus.bom': env.QUARKUS_VERSION],
-                        ['data-index-ephemeral': env.DATA_INDEX_IMAGE_REGISTRY, 'swf-builder': env.SWF_BUILDER_IMAGE_REGISTRY, 'swf-devmode': env.SWF_DEVMODE_IMAGE_REGISTRY, 'operator': env.OPERATOR_IMAGE_REGISTRY],
+                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
                     echo "[INFO] Message Body: ${messageBody}"
@@ -200,6 +242,37 @@ pipeline {
         cleanup {
             cleanWs()
         }
+    }
+}
+
+def buildImage(String imageName, String descriptorFile, String nightlyBranchName, Map<String, String> artifacts, String imagesRepository) {
+    // Create a different folder for each image during the build, otherwise dir() will mess up the builds during parallel run
+    sh "cp -rp ${imagesRepository} ${env.WORKSPACE}/${imageName}_repo"
+    dir("${env.WORKSPACE}/${imageName}_repo") {
+        println "Building image ${imageName}"
+
+        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
+        println "Diff of ${descriptorFile} after replacing branch name"
+        sh "git diff ${descriptorFile}"
+
+        println 'Using cekit version'
+        util.runWithPythonVirtualEnv('cekit --version', 'cekit')
+
+        def overrides = ''
+        artifacts.each { artifactPath, overridesName ->
+            def md5sum = sh(script: "md5sum ${artifactPath} | cut -d' ' -f 1", returnStdout: true).trim()
+            overrides += " --overrides \"artifacts: [{name: ${overridesName}, md5: ${md5sum}}]\""
+            println "Adding file ${artifactPath} to cekit cache"
+            util.runWithPythonVirtualEnv("cekit-cache add --md5=${md5sum} ${artifactPath}", 'cekit')
+        }
+
+        util.withKerberos('rhba-osbs-builder-keytab') {
+            def cekitBuildCmd = "cekit --redhat --descriptor ${descriptorFile} build ${overrides} osbs --user rhba-osbs-builder -y"
+            util.runWithPythonVirtualEnv("${cekitBuildCmd} | tee ${imageName}-build-log.txt", 'cekit')
+        }
+
+        def imageRegistry = sh(script: "brew call --json-output getTaskResult \$(cat ${imageName}-build-log.txt | grep -oP '(?<=Task ).*(?= was)') | jq -nre 'input.repositories[0]'", returnStdout: true)
+        return imageRegistry.trim()
     }
 }
 
