@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-24T13:17:41.561Z",
+    "date": "2024-04-24T14:11:29.766Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8817222081"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8818012965"
   },
   "projects": [
     {
@@ -1799,83 +1799,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-04-23T13:39:26Z",
+      "updated_at": "2024-04-24T13:28:56Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 23,
-          "title": "productized/modules: drop serverless-workflow-dmn-quarkus module from product",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/23",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/23",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
-          "created_at": "2024-04-24T12:41:15Z",
-          "updated_at": "2024-04-24T12:48:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5ae3dd2331ca1246f739a6fe313a31f32f9d65b6",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_modules",
-            "sha": "7a82c852f09ed6863bd82a699c6082d539493623",
-            "label": "rgdoliveira:main_modules"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 24201371710,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8816694312/job/24201371710",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-04-24T12:41:31Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24201371372,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8816694312/job/24201371372",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-04-24T12:41:28Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24201370873,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8816694312/job/24201370873",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-04-24T12:41:29Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 21,
           "title": "SRVLOGIC-282: Move main-sync CI to kie-ci repository",
@@ -4689,18 +4619,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            },
-            {
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
             }
           ],
           "created_at": "2024-04-23T13:39:26Z",
-          "updated_at": "2024-04-23T14:49:53Z",
+          "updated_at": "2024-04-24T14:06:48Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4710,7 +4635,7 @@
           },
           "head": {
             "ref": "sync-upstream-20240423-2",
-            "sha": "b22fc9ed5e5f9ff802d761102e4b9fd662b60de5",
+            "sha": "7e4e68a7dc2e644940938ac65538e2b72e5d30c0",
             "label": "fantonangeli:sync-upstream-20240423-2"
           },
           "user": {
