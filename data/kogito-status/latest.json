@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-04-26T06:15:35.747Z",
+    "date": "2024-04-26T07:11:27.592Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8843954025"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8844494931"
   },
   "projects": [
     {
@@ -4516,6 +4516,107 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 34,
+          "title": "[SRVLOGIC-287] Recreate Operator/Bundle files dropped from upstream in midstream",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/34",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/34",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-04-26T06:57:46Z",
+          "updated_at": "2024-04-26T07:06:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "52271249a3ab440b161921d0ce40c8dde4c62bfc",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-287",
+            "sha": "18ef36708c2965e41bb83a3c97604da164bd4424",
+            "label": "rgdoliveira:SRVLOGIC-287"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24286086738,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8844350449/job/24286086738",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-26T06:57:56Z",
+              "completed_at": "2024-04-26T06:58:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24286086594,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8844350449/job/24286086594",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-26T06:57:58Z",
+              "completed_at": "2024-04-26T07:00:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24286086458,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8844350445/job/24286086458",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-26T06:57:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24286086437,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8844350449/job/24286086437",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-04-26T06:57:56Z",
+              "completed_at": "2024-04-26T07:00:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28811830735,
+              "name": "Openshift tests",
+              "html_url": "https://jenkins-kogito-tools.kogito-cluster-0ad6762cc85bcef5745bb684498c2436-0000.us-south.containers.appdomain.cloud/job/kogito/job/kogito-serverless-operator-PR-check/493/display/redirect",
+              "conclusion": "failure",
+              "started_at": "2024-04-26T06:58:47Z",
+              "completed_at": "2024-04-26T06:58:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 33,
           "title": "SRVLOGIC-289 - Introduce kn-workflow-cli-artifacts image bundle",
