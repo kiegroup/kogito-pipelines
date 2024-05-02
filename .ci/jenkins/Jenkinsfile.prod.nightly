@@ -105,12 +105,16 @@ pipeline {
                     env.DATA_INDEX_POSTGRESQL = 'data-index-postgresql'
                     env.JOBS_SERVICE_EPHEMERAL = 'jobs-service-ephemeral'
                     env.JOBS_SERVICE_POSTGRESQL = 'jobs-service-postgresql'
+                    env.SWF_BUILDER = 'swf-builder'
+                    env.SWF_DEVMODE = 'swf-devmode'
 
                     // Images registries placeholders
                     env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
                     env.DATA_INDEX_POSTGRESQL_REGISTRY = ''
                     env.JOBS_SERVICE_EPHEMERAL_REGISTRY = ''
                     env.JOBS_SERVICE_POSTGRESQL_REGISTRY = ''
+                    env.SWF_BUILDER_REGISTRY = ''
+                    env.SWF_DEVMODE_REGISTRY = ''
                 }
             }
         }
@@ -160,6 +164,32 @@ pipeline {
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
 
                             env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('SWF Builder image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-swf-builder-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-builder-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
+                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-builder-maven-repository/${env.ARTIFACTS_VERSION}/kogito-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-maven-repository-image-build.zip"
+                                            ]
+
+                            env.SWF_BUILDER_REGISTRY = buildImage(env.SWF_BUILDER, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('SWF Devmode image') {
+                    steps {
+                        script {
+                            def descriptorFile = 'prod-logic-swf-devmode-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml and the name in module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-quarkus-app-image-build.zip",
+                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-maven-repository/${env.ARTIFACTS_VERSION}/kogito-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-maven-repository-image-build.zip"
+                                            ]
+
+                            env.SWF_DEVMODE_REGISTRY = buildImage(env.SWF_DEVMODE, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -221,7 +251,8 @@ pipeline {
                         mavenRepositoryFileUrl, 
                         env.ALREADY_BUILT_PROJECTS,
                         ['serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'], 'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'], 'drools': env.VERSION_kiegroup_drools, 'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION, 'quarkus.bom': env.QUARKUS_VERSION],
-                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY, "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY, "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY],
+                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY, "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY, "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY,
+                            "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY, "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
                     echo "[INFO] Message Body: ${messageBody}"
