@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-02T14:10:27.007Z",
+    "date": "2024-05-02T15:12:08.686Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8925296928"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8926204163"
   },
   "projects": [
     {
@@ -549,106 +549,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2024-05-02T07:31:13Z",
+      "updated_at": "2024-05-02T14:52:28Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 35,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/35",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/35",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:04:14Z",
-          "updated_at": "2024-05-02T12:35:49Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "de803de3c7bc413289946e1440eac1d1fedc51dc",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "4f2dd8edcf43cc135a958300946f8d0a98352f46",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24368983206,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8876763155/job/24368983206",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:04:29Z",
-              "completed_at": "2024-04-29T10:52:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24368982869,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8876763155/job/24368982869",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:04:29Z",
-              "completed_at": "2024-04-29T10:52:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24368982476,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8876763155/job/24368982476",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:04:29Z",
-              "completed_at": "2024-04-29T11:28:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24368981746,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8876763155/job/24368981746",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:04:28Z",
-              "completed_at": "2024-04-29T10:58:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24368981270,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8876763200/job/24368981270",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-04-29T10:04:30Z",
-              "completed_at": "2024-04-29T10:45:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1712,95 +1619,13 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2024-04-30T12:29:51Z",
+      "updated_at": "2024-05-02T14:53:18Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 24,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/24",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/24",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:07:56Z",
-          "updated_at": "2024-05-02T12:36:00Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "aec6ad77d3cd44ce6386954f709b07910f4ba101",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "5dd8e23945cd09fc2322460214228b982969b4c8",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24369131429,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8876813354/job/24369131429",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:08:10Z",
-              "completed_at": "2024-04-29T10:55:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369131093,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8876813354/job/24369131093",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:08:10Z",
-              "completed_at": "2024-04-29T11:01:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369130777,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8876813354/job/24369130777",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:08:10Z",
-              "completed_at": "2024-04-29T10:52:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369130773,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8876813348/job/24369130773",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:08:10Z",
-              "completed_at": "2024-04-29T11:30:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
@@ -1811,84 +1636,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-04-30T12:24:25Z",
+      "updated_at": "2024-05-02T14:53:46Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 24,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/24",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/24",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:12:06Z",
-          "updated_at": "2024-05-02T12:37:16Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "6911cbf6a1a2cf45c876aae45e07fad9dd17e659",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "56c07f37dc8c12f9419d2c3a8ea982b9c49a0569",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24369295510,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8876866250/job/24369295510",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:12:18Z",
-              "completed_at": "2024-04-29T10:56:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369295263,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8876866250/job/24369295263",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:12:49Z",
-              "completed_at": "2024-04-29T11:06:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369295044,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8876866250/job/24369295044",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:17:49Z",
-              "completed_at": "2024-04-29T11:15:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -2604,95 +2358,13 @@
       "name": "kogito-images",
       "description": "This repository is a fork of apache/incubator-kie-kogito-images. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-images",
-      "updated_at": "2024-04-30T12:38:19Z",
+      "updated_at": "2024-05-02T14:55:08Z",
       "homepage": "http://kogito.kie.org",
       "language": "Shell",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 35,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/35",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/35",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:14:56Z",
-          "updated_at": "2024-05-02T12:36:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "48797bf363104cccc1090a2226236b090203590a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "e40719b769d0b22e62334ad104efaeaa8a8db37b",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24369403415,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8876902547/job/24369403415",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:46:03Z",
-              "completed_at": "2024-04-29T10:46:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369403152,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8876902547/job/24369403152",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:45:39Z",
-              "completed_at": "2024-04-29T10:45:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369402851,
-              "name": "Validate OSL imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8876902540/job/24369402851",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:45:27Z",
-              "completed_at": "2024-04-29T10:46:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369402843,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8876902547/job/24369402843",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:45:44Z",
-              "completed_at": "2024-04-29T10:45:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -4533,94 +4205,13 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-04-30T13:36:09Z",
+      "updated_at": "2024-05-02T14:56:33Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 35,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/35",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/35",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:17:36Z",
-          "updated_at": "2024-05-02T12:36:50Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "52271249a3ab440b161921d0ce40c8dde4c62bfc",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "59c87e571231ccd477c65a8d950bfdf0ad954e23",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24369504380,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8876936283/job/24369504380",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:46:35Z",
-              "completed_at": "2024-04-29T10:49:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369504115,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8876936283/job/24369504115",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:46:08Z",
-              "completed_at": "2024-04-29T10:46:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369503848,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8876936283/job/24369503848",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:46:35Z",
-              "completed_at": "2024-04-29T10:48:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24369503824,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8876936291/job/24369503824",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-04-29T10:46:30Z",
-              "completed_at": "2024-04-29T11:29:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 34,
           "title": "[SRVLOGIC-287] Recreate Operator/Bundle files dropped from upstream in midstream",
@@ -4718,7 +4309,7 @@
       "name": "kie-tools",
       "description": "Tools for KIE",
       "html_url": "https://github.com/kiegroup/kie-tools",
-      "updated_at": "2024-04-24T14:16:44Z",
+      "updated_at": "2024-05-02T14:58:24Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -4792,7 +4383,7 @@
             }
           ],
           "created_at": "2024-04-29T12:16:33Z",
-          "updated_at": "2024-04-29T12:19:31Z",
+          "updated_at": "2024-05-02T15:01:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4804,47 +4395,6 @@
             "ref": "SRVLOGIC-282-Move-main-sync-CI-to-kie-ci-repository",
             "sha": "151187c1ada55e81506400c572a5741a4bf79454",
             "label": "fantonangeli:SRVLOGIC-282-Move-main-sync-CI-to-kie-ci-repository"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": []
-        },
-        {
-          "number": 5,
-          "title": "SRVLOGIC-281: Move upstream-sync CI to kie-ci repository",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/5",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/5",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "paulovmr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-              "html_url": "https://github.com/paulovmr"
-            },
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-04-29T10:22:47Z",
-          "updated_at": "2024-05-02T12:36:40Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "533229acd464add8024f38531c41b71c232f9623",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository",
-            "sha": "b771f5fdfce9f7a9d07f01d34f146b8f4c454587",
-            "label": "fantonangeli:SRVLOGIC-281-Move-upstream-sync-CI-to-kie-ci-repository"
           },
           "user": {
             "login": "fantonangeli",
