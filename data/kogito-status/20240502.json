@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-02T17:10:49.004Z",
+    "date": "2024-05-02T18:14:24.240Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8927744948"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8928506730"
   },
   "projects": [
     {
@@ -4316,6 +4316,131 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 8,
+          "title": "Set NPM custom registry URL using npm config",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/8",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/8",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-05-02T17:56:27Z",
+          "updated_at": "2024-05-02T17:56:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "dcbf7560c71536235e6a386e04e02e3e262a17c9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "npm-registry-test",
+            "sha": "7c7f952db5b2fcbeebfe734f1515d3b303f6afff",
+            "label": "paulovmr:npm-registry-test"
+          },
+          "user": {
+            "login": "paulovmr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+            "html_url": "https://github.com/paulovmr"
+          },
+          "checks": [
+            {
+              "id": 24523638854,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/24523638854",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-02T17:59:25Z",
+              "completed_at": "2024-05-02T17:59:30Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523538223,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928292006/job/24523538223",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-02T17:56:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537965,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928292006/job/24523537965",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-02T17:56:42Z",
+              "completed_at": "2024-05-02T17:58:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537617,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928291990/job/24523537617",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-02T17:56:42Z",
+              "completed_at": "2024-05-02T18:00:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537614,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928291992/job/24523537614",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-02T17:56:40Z",
+              "completed_at": "2024-05-02T17:59:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537612,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928292006/job/24523537612",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-02T17:56:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537349,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928291991/job/24523537349",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-02T17:56:38Z",
+              "completed_at": "2024-05-02T18:01:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24523537105,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/8928291991/job/24523537105",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-02T17:56:38Z",
+              "completed_at": "2024-05-02T17:59:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 7,
           "title": "SRVLOGIC-289: Remove workflow plugin dependency on knative/client int…",
