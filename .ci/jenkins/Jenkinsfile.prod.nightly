@@ -99,6 +99,7 @@ pipeline {
                     env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
                     env.M2_FOLDER = '/home/jenkins/.m2/repository'
                     env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-images"
+                    env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
 
                     // Images names
                     env.DATA_INDEX_EPHEMERAL = 'data-index-ephemeral'
@@ -126,6 +127,8 @@ pipeline {
                 stage('Data Index Ephemeral image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 0)
+
                             def descriptorFile = 'prod-logic-data-index-ephemeral-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip"]
@@ -137,6 +140,8 @@ pipeline {
                 stage('Data Index Postgresql image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 1)
+
                             def descriptorFile = 'prod-logic-data-index-postgresql-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip"]
@@ -148,6 +153,8 @@ pipeline {
                 stage('Jobs Service Ephemeral image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 2)
+
                             def descriptorFile = 'prod-logic-jobs-service-ephemeral-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip"]
@@ -159,6 +166,8 @@ pipeline {
                 stage('Jobs Service Postgresql image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 3)
+
                             def descriptorFile = 'prod-logic-jobs-service-postgresql-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
@@ -170,6 +179,8 @@ pipeline {
                 stage('SWF Builder image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 4)
+
                             def descriptorFile = 'prod-logic-swf-builder-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-builder-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
@@ -183,6 +194,8 @@ pipeline {
                 stage('SWF Devmode image') {
                     steps {
                         script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 5)
+
                             def descriptorFile = 'prod-logic-swf-devmode-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml and the name in module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-quarkus-app-image-build.zip",
