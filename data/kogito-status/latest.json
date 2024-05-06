@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-06T07:11:21.200Z",
+    "date": "2024-05-06T08:14:42.406Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8965382224"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/8966076350"
   },
   "projects": [
     {
@@ -4212,6 +4212,81 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 36,
+          "title": "update supported arches for kn-workflow-cli-artifacts image",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/36",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/36",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-05-06T08:02:20Z",
+          "updated_at": "2024-05-06T08:05:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "607bca21e1d83eba3c33065926b27209bed3cca9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kn-workflow-cli-image",
+            "sha": "c0305d13f5762d91ca8bc90295dfe2690bf9cb24",
+            "label": "rgdoliveira:kn-workflow-cli-image"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24620370184,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8965918878/job/24620370184",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-06T08:02:36Z",
+              "completed_at": "2024-05-06T08:02:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24620369939,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8965918878/job/24620369939",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-06T08:02:34Z",
+              "completed_at": "2024-05-06T08:05:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24620369619,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8965918871/job/24620369619",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-06T08:02:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24620369592,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8965918878/job/24620369592",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-06T08:02:35Z",
+              "completed_at": "2024-05-06T08:05:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 34,
           "title": "[SRVLOGIC-287] Recreate Operator/Bundle files dropped from upstream in midstream",
