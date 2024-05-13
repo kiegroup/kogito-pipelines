@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-13T10:12:23.597Z",
+    "date": "2024-05-13T11:09:35.768Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9061118886"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9061842649"
   },
   "projects": [
     {
@@ -556,6 +556,92 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 45,
+          "title": "remove jbpm-tools and tests from the product",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/45",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/45",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-05-13T10:38:47Z",
+          "updated_at": "2024-05-13T10:39:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "1a111c80b5a817dd0db56358f410ae117b06c462",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_prodmodules",
+            "sha": "d64f14faea92a6eb1fb8fa2ec18a4189232cdce4",
+            "label": "rgdoliveira:main_prodmodules"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24893314637,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314637",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:38:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24893314415,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314415",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:38:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24893314143,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314143",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:38:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24893313916,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893313916",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:38:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24893313812,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481496/job/24893313812",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:38:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 36,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
@@ -2599,6 +2685,87 @@
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 39,
+          "title": "set prod images version to 1.33",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/39",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/39",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            }
+          ],
+          "created_at": "2024-05-13T10:29:01Z",
+          "updated_at": "2024-05-13T10:47:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "74f2a103ce0c6ae39f74cc4d2889c6623b322440",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_133-versions",
+            "sha": "38e470ce372f25238addafdcba0f5c2aac28b7ef",
+            "label": "rgdoliveira:main_133-versions"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24892931527,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/9061349248/job/24892931527",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:29:12Z",
+              "completed_at": "2024-05-13T10:29:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24892931194,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/9061349248/job/24892931194",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:29:14Z",
+              "completed_at": "2024-05-13T10:29:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24892930859,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/9061349248/job/24892930859",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:29:13Z",
+              "completed_at": "2024-05-13T10:29:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24892930849,
+              "name": "Validate OSL imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/9061349241/job/24892930849",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:29:11Z",
+              "completed_at": "2024-05-13T10:29:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 36,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
@@ -4693,7 +4860,7 @@
             }
           ],
           "created_at": "2024-04-26T06:57:46Z",
-          "updated_at": "2024-05-10T12:19:41Z",
+          "updated_at": "2024-05-13T10:42:37Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4703,7 +4870,7 @@
           },
           "head": {
             "ref": "SRVLOGIC-287",
-            "sha": "cfc88a61e79b7a5b13c6938dd89586637bcb874a",
+            "sha": "0acd367803cf19da01a57f856e8009f692dcb838",
             "label": "rgdoliveira:SRVLOGIC-287"
           },
           "user": {
@@ -4713,46 +4880,46 @@
           },
           "checks": [
             {
-              "id": 24819647778,
+              "id": 24893452087,
               "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9032104387/job/24819647778",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9061523720/job/24893452087",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-10T12:19:12Z",
-              "completed_at": "2024-05-10T12:21:28Z",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:42:48Z",
+              "completed_at": "2024-05-13T10:43:47Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 24819647464,
+              "id": 24893451906,
               "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9032104387/job/24819647464",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9061523720/job/24893451906",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-05-10T12:19:12Z",
-              "completed_at": "2024-05-10T12:23:07Z",
+              "started_at": "2024-05-13T10:42:47Z",
+              "completed_at": "2024-05-13T10:43:45Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 24819647149,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9032104390/job/24819647149",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-10T12:19:12Z",
-              "completed_at": "2024-05-10T13:04:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24819647139,
+              "id": 24893451715,
               "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9032104387/job/24819647139",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9061523720/job/24893451715",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-10T12:19:12Z",
-              "completed_at": "2024-05-10T12:19:25Z",
+              "conclusion": "success",
+              "started_at": "2024-05-13T10:42:48Z",
+              "completed_at": "2024-05-13T10:43:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24893451709,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9061523719/job/24893451709",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-13T10:42:49Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
