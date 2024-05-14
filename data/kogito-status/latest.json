@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-14T07:11:47.022Z",
+    "date": "2024-05-14T08:15:37.770Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9075242045"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9076023489"
   },
   "projects": [
     {
@@ -4523,6 +4523,87 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
         {
+          "number": 42,
+          "title": "Update operator managed persistence extensions to quarkus 3.8.4",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/42",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/42",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            }
+          ],
+          "created_at": "2024-05-14T07:12:14Z",
+          "updated_at": "2024-05-14T08:15:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e662f27b19c95696e0a0040bc18b2d4afb815aa2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "updated-persistence-extensions",
+            "sha": "5642d5ceffd485e9fd426dda076969f307b3922a",
+            "label": "wmedvede:updated-persistence-extensions"
+          },
+          "user": {
+            "login": "wmedvede",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+            "html_url": "https://github.com/wmedvede"
+          },
+          "checks": [
+            {
+              "id": 24935499831,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9075253110/job/24935499831",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T07:12:26Z",
+              "completed_at": "2024-05-14T07:14:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24935499634,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9075253110/job/24935499634",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T07:12:26Z",
+              "completed_at": "2024-05-14T07:12:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24935499384,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9075253110/job/24935499384",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T07:12:28Z",
+              "completed_at": "2024-05-14T07:15:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24935499362,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9075253108/job/24935499362",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T07:12:28Z",
+              "completed_at": "2024-05-14T07:57:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 37,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
           "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/37",
@@ -4682,7 +4763,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-04-26T06:57:46Z",
-          "updated_at": "2024-05-14T06:52:43Z",
+          "updated_at": "2024-05-14T07:20:44Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
