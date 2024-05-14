@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-14T10:13:52.688Z",
+    "date": "2024-05-14T11:09:35.087Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9077617002"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9078320508"
   },
   "projects": [
     {
@@ -4515,13 +4515,99 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-05-14T08:45:40Z",
+      "updated_at": "2024-05-14T10:28:23Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 44,
+          "title": "Set images to 1.33 and remove tech-preview string",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/44",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/44",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-05-14T10:54:42Z",
+          "updated_at": "2024-05-14T10:54:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b924f3431801499e2cecd3be9759af206d0a9567",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_osl133",
+            "sha": "46af4f5a234ce7481579bc8a62d3c5be58320676",
+            "label": "rgdoliveira:main_osl133"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 24944512744,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512744",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:54:53Z",
+              "completed_at": "2024-05-14T10:55:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24944512522,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512522",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:54:53Z",
+              "completed_at": "2024-05-14T10:57:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24944512305,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138702/job/24944512305",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-14T10:54:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24944512298,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512298",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:54:55Z",
+              "completed_at": "2024-05-14T10:57:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 37,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
@@ -4671,81 +4757,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
-        },
-        {
-          "number": 34,
-          "title": "[SRVLOGIC-287] Recreate Operator/Bundle files dropped from upstream in midstream",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/34",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/34",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-04-26T06:57:46Z",
-          "updated_at": "2024-05-14T09:47:18Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "f3d8cd34015eee522c1f2de718f8985181398398",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-287",
-            "sha": "fd4038fe13d516b82d4764a062cd7eda8c9d9353",
-            "label": "rgdoliveira:SRVLOGIC-287"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 24939900976,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9076674447/job/24939900976",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T09:03:49Z",
-              "completed_at": "2024-05-14T09:04:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24939900460,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9076674447/job/24939900460",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T09:03:50Z",
-              "completed_at": "2024-05-14T09:04:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24939900032,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9076674447/job/24939900032",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T09:03:49Z",
-              "completed_at": "2024-05-14T09:04:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24939899986,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9076674437/job/24939899986",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T09:03:53Z",
-              "completed_at": "2024-05-14T09:45:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
         }
       ],
       "branchesComparison": {
@@ -4765,6 +4776,136 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 17,
+          "title": "kie-issues#1207: serverless-workflow-diagram-editor get ECONNREFUSED on bootstrap with a proxy",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/17",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/17",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-05-14T10:36:22Z",
+          "updated_at": "2024-05-14T10:36:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6125582404aca35673cb3526535157c88adac026",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kie-issues#1207-serverless-workflow-diagram-editor-get-ECONNREFUSED-on-bootstrap-with-a-proxy",
+            "sha": "ad0f2ca27aee703f3df3fd264ab51cb636457b06",
+            "label": "fantonangeli:kie-issues#1207-serverless-workflow-diagram-editor-get-ECONNREFUSED-on-bootstrap-with-a-proxy"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 24944030375,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/24944030375",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:41:25Z",
+              "completed_at": "2024-05-14T10:41:29Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943846695,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931300/job/24943846695",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-14T10:36:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943846432,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931300/job/24943846432",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-14T10:36:37Z",
+              "completed_at": "2024-05-14T10:38:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943846005,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931300/job/24943846005",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-14T10:36:36Z",
+              "completed_at": "2024-05-14T11:09:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943845988,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931312/job/24943845988",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-14T10:36:39Z",
+              "completed_at": "2024-05-14T10:40:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943845976,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931316/job/24943845976",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:36:34Z",
+              "completed_at": "2024-05-14T10:39:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943845900,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931335/job/24943845900",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:36:33Z",
+              "completed_at": "2024-05-14T10:41:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24943845520,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9077931335/job/24943845520",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-14T10:36:32Z",
+              "completed_at": "2024-05-14T10:41:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 10,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
