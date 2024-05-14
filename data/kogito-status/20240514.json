@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-14T06:16:42.247Z",
+    "date": "2024-05-14T07:11:47.022Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9074662497"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9075242045"
   },
   "projects": [
     {
@@ -549,99 +549,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2024-05-14T05:01:43Z",
+      "updated_at": "2024-05-14T06:43:31Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 45,
-          "title": "remove jbpm-tools and tests from the product",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/45",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/45",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-13T10:38:47Z",
-          "updated_at": "2024-05-13T10:39:22Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1a111c80b5a817dd0db56358f410ae117b06c462",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_prodmodules",
-            "sha": "d64f14faea92a6eb1fb8fa2ec18a4189232cdce4",
-            "label": "rgdoliveira:main_prodmodules"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 24897214506,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481496/job/24897214506",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-13T12:19:11Z",
-              "completed_at": "2024-05-13T13:10:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24893314637,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314637",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-13T10:38:58Z",
-              "completed_at": "2024-05-13T11:32:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24893314415,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314415",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-13T10:38:59Z",
-              "completed_at": "2024-05-13T11:33:50Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24893314143,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893314143",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-13T10:38:58Z",
-              "completed_at": "2024-05-13T11:38:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24893313916,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9061481500/job/24893313916",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-13T10:38:58Z",
-              "completed_at": "2024-05-13T12:09:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 36,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
@@ -4766,15 +4680,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "wmedvede",
-              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-              "html_url": "https://github.com/wmedvede"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2024-04-26T06:57:46Z",
-          "updated_at": "2024-05-13T16:17:55Z",
+          "updated_at": "2024-05-14T06:52:43Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
