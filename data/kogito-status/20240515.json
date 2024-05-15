@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-15T17:11:36.810Z",
+    "date": "2024-05-15T18:14:26.643Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9099901318"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9100693210"
   },
   "projects": [
     {
@@ -4690,6 +4690,114 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 18,
+          "title": "[DO NOT MERGE] NO-ISSUE: Renamed SWF VS Code extension to Openshift Serverless Logic Editor and added update-version-to option to maven build",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/18",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/18",
+          "state": "open",
+          "labels": [
+            "DO_NOT_MERGE"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "fantonangeli",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+              "html_url": "https://github.com/fantonangeli"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-05-15T18:03:43Z",
+          "updated_at": "2024-05-15T18:14:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "bda4a6f38eaea00c124360017e8b66054c8ebd1e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "add-serverless-vscode",
+            "sha": "2696f8bf161676e9eb234afc56774dd65d71127a",
+            "label": "paulovmr:add-serverless-vscode"
+          },
+          "user": {
+            "login": "paulovmr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+            "html_url": "https://github.com/paulovmr"
+          },
+          "checks": [
+            {
+              "id": 25016115908,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9100694854/job/25016115908",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-15T18:14:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25016115907,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9100694849/job/25016115907",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-15T18:14:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25016115862,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9100694851/job/25016115862",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-15T18:14:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25016115480,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9100694851/job/25016115480",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-15T18:14:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 17,
           "title": "kie-issues#1207: serverless-workflow-diagram-editor get ECONNREFUSED on bootstrap with a proxy",
