@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-15T08:14:38.220Z",
+    "date": "2024-05-15T09:14:13.811Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9092264786"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9093077723"
   },
   "projects": [
     {
@@ -4515,94 +4515,13 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-05-14T10:28:23Z",
+      "updated_at": "2024-05-15T09:02:30Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 44,
-          "title": "Set images to 1.33 and remove tech-preview string",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/44",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/44",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "wmedvede",
-              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-              "html_url": "https://github.com/wmedvede"
-            }
-          ],
-          "created_at": "2024-05-14T10:54:42Z",
-          "updated_at": "2024-05-14T20:40:56Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b924f3431801499e2cecd3be9759af206d0a9567",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_osl133",
-            "sha": "46af4f5a234ce7481579bc8a62d3c5be58320676",
-            "label": "rgdoliveira:main_osl133"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 24944512744,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512744",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T10:54:53Z",
-              "completed_at": "2024-05-14T10:55:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24944512522,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512522",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T10:54:53Z",
-              "completed_at": "2024-05-14T10:57:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24944512305,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138702/job/24944512305",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T10:54:54Z",
-              "completed_at": "2024-05-14T11:39:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24944512298,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9078138696/job/24944512298",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-14T10:54:55Z",
-              "completed_at": "2024-05-14T10:57:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 37,
           "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
