@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-16T12:21:29.828Z",
+    "date": "2024-05-16T13:13:11.233Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9112149284"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9112957641"
   },
   "projects": [
     {
@@ -4683,7 +4683,7 @@
       "name": "kie-tools",
       "description": "Tools for KIE",
       "html_url": "https://github.com/kiegroup/kie-tools",
-      "updated_at": "2024-05-15T16:46:22Z",
+      "updated_at": "2024-05-16T13:09:51Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -4812,186 +4812,6 @@
               "conclusion": "success",
               "started_at": "2024-05-15T20:07:39Z",
               "completed_at": "2024-05-15T20:12:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 19,
-          "title": "kie-issues#1207: serverless-workflow-diagram-editor get ECONNREFUSED on bootstrap with a proxy",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/19",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/19",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            }
-          ],
-          "created_at": "2024-05-15T18:21:08Z",
-          "updated_at": "2024-05-16T10:33:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bda4a6f38eaea00c124360017e8b66054c8ebd1e",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "kie-issues#1207-serverless-workflow-diagram-editor-get-ECONNREFUSED-on-bootstrap-with-a-proxy-full-mvn",
-            "sha": "48f30872b1ab22da9a36e15e882987db89d01b44",
-            "label": "fantonangeli:kie-issues#1207-serverless-workflow-diagram-editor-get-ECONNREFUSED-on-bootstrap-with-a-proxy-full-mvn"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 25046655030,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/25046655030",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-16T10:38:20Z",
-              "completed_at": "2024-05-16T10:38:25Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046467396,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769343/job/25046467396",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:44Z",
-              "completed_at": "2024-05-16T11:02:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046467129,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769343/job/25046467129",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:44Z",
-              "completed_at": "2024-05-16T10:35:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046466823,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769348/job/25046466823",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:42Z",
-              "completed_at": "2024-05-16T10:38:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046466813,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769338/job/25046466813",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-16T10:33:44Z",
-              "completed_at": "2024-05-16T10:36:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046466812,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769343/job/25046466812",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:45Z",
-              "completed_at": "2024-05-16T10:51:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046466326,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769197/job/25046466326",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:44Z",
-              "completed_at": "2024-05-16T11:03:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046466016,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769197/job/25046466016",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:39Z",
-              "completed_at": "2024-05-16T10:35:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046465630,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769196/job/25046465630",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:39Z",
-              "completed_at": "2024-05-16T10:37:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046465629,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769201/job/25046465629",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-16T10:33:40Z",
-              "completed_at": "2024-05-16T10:36:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046465624,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769197/job/25046465624",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-16T10:33:39Z",
-              "completed_at": "2024-05-16T10:49:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046465331,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769206/job/25046465331",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-16T10:33:39Z",
-              "completed_at": "2024-05-16T10:38:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25046465049,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9110769206/job/25046465049",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-16T10:33:39Z",
-              "completed_at": "2024-05-16T10:38:30Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
