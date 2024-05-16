@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-16T16:13:39.502Z",
+    "date": "2024-05-16T17:11:28.498Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9115672969"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9116404908"
   },
   "projects": [
     {
@@ -4690,6 +4690,131 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 23,
+          "title": "No-issue: Fix maven-base issues on bootstrap",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/23",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/23",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-05-16T16:31:19Z",
+          "updated_at": "2024-05-16T16:38:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "484a1b812088fbf307792ba5728e86e157c15853",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix-maven-base-bootstrap-main-branch",
+            "sha": "8288eaff70953c2d52ca0feb981d064dfc96db4a",
+            "label": "fantonangeli:fix-maven-base-bootstrap-main-branch"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 25063510782,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/25063510782",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-16T16:36:10Z",
+              "completed_at": "2024-05-16T16:36:14Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063308074,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909982/job/25063308074",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-16T16:31:35Z",
+              "completed_at": "2024-05-16T16:52:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307829,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909982/job/25063307829",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-16T16:31:31Z",
+              "completed_at": "2024-05-16T16:33:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307565,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909982/job/25063307565",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-16T16:31:30Z",
+              "completed_at": "2024-05-16T16:43:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307439,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909933/job/25063307439",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-16T16:31:30Z",
+              "completed_at": "2024-05-16T16:36:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307243,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909930/job/25063307243",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-16T16:31:32Z",
+              "completed_at": "2024-05-16T16:36:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307238,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909939/job/25063307238",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-16T16:31:31Z",
+              "completed_at": "2024-05-16T16:35:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25063307154,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9115909933/job/25063307154",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-16T16:31:30Z",
+              "completed_at": "2024-05-16T16:36:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 20,
           "title": "[DO NOT MERGE] NO-ISSUE: Added jenkins file to publish OSL VS Code extension",
