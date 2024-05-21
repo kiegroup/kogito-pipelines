@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-05-21T16:14:03.724Z",
+    "date": "2024-05-21T17:12:38.203Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9177856135"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9178586070"
   },
   "projects": [
     {
@@ -4690,6 +4690,136 @@
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 25,
+          "title": "No-issue: Prod build config fixes on main",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/25",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/25",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-05-21T16:40:05Z",
+          "updated_at": "2024-05-21T16:40:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "484a1b812088fbf307792ba5728e86e157c15853",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "prod-config-fixes-main",
+            "sha": "aa3dcdc6c203c926958469fb01fade6379cd2dde",
+            "label": "fantonangeli:prod-config-fixes-main"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 25237749048,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/25237749048",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-21T16:45:19Z",
+              "completed_at": "2024-05-21T16:45:24Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237538587,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202431/job/25237538587",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-05-21T16:40:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237538286,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202431/job/25237538286",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-21T16:40:17Z",
+              "completed_at": "2024-05-21T16:42:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237538005,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202439/job/25237538005",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-21T16:40:15Z",
+              "completed_at": "2024-05-21T16:45:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237537837,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202431/job/25237537837",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-21T16:40:18Z",
+              "completed_at": "2024-05-21T17:08:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237537798,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202448/job/25237537798",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-21T16:40:16Z",
+              "completed_at": "2024-05-21T16:43:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237537790,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202430/job/25237537790",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-05-21T16:40:19Z",
+              "completed_at": "2024-05-21T16:44:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25237537616,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9178202439/job/25237537616",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-05-21T16:40:16Z",
+              "completed_at": "2024-05-21T16:45:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 23,
           "title": "No-issue: Fix maven-base issues on bootstrap",
