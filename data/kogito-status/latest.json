@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-06-03T17:11:20.461Z",
+    "date": "2024-06-03T18:15:56.138Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9354403189"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9355226027"
   },
   "projects": [
     {
@@ -4617,17 +4617,17 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-05-06T08:02:20Z",
-          "updated_at": "2024-05-29T06:39:31Z",
+          "updated_at": "2024-06-03T17:44:04Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "607bca21e1d83eba3c33065926b27209bed3cca9",
+            "sha": "ae58af9c5f02c00e6d8d80986e10a805ef0674d5",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "kn-workflow-cli-image",
-            "sha": "735d9bbdcdc27e1a69f153381d3ba12b255041ce",
+            "sha": "ac595d440ad81cc976752b3dae8c01f189aa15da",
             "label": "rgdoliveira:kn-workflow-cli-image"
           },
           "user": {
@@ -4637,46 +4637,46 @@
           },
           "checks": [
             {
-              "id": 24622072317,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8966478212/job/24622072317",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T08:48:08Z",
-              "completed_at": "2024-05-06T08:48:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24622072108,
+              "id": 25747375295,
               "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8966478212/job/24622072108",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9354457951/job/25747375295",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-05-06T08:48:09Z",
-              "completed_at": "2024-05-06T08:50:21Z",
+              "started_at": "2024-06-03T17:15:14Z",
+              "completed_at": "2024-06-03T17:17:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 24622071886,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8966478211/job/24622071886",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T08:48:28Z",
-              "completed_at": "2024-05-06T09:35:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24622071864,
+              "id": 25747375028,
               "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8966478212/job/24622071864",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9354457951/job/25747375028",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-05-06T08:48:07Z",
-              "completed_at": "2024-05-06T08:51:01Z",
+              "started_at": "2024-06-03T17:15:15Z",
+              "completed_at": "2024-06-03T17:18:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25747374742,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9354457951/job/25747374742",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-06-03T17:15:14Z",
+              "completed_at": "2024-06-03T17:15:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25747374733,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9354457962/job/25747374733",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-06-03T17:15:13Z",
+              "completed_at": "2024-06-03T17:59:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
