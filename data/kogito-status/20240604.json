@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-06-04T13:13:52.861Z",
+    "date": "2024-06-04T14:11:28.974Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9367787161"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9368693829"
   },
   "projects": [
     {
@@ -3006,6 +3006,70 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
       "pullRequests": [
         {
+          "number": 31,
+          "title": "[1.13.x] Update Kogito bundle for CVE respin (CVE-2024-33599)",
+          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/31",
+          "html_url": "https://github.com/kiegroup/kogito-operator/pull/31",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "jakubschwan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
+              "html_url": "https://github.com/jakubschwan"
+            }
+          ],
+          "created_at": "2024-06-04T14:00:49Z",
+          "updated_at": "2024-06-04T14:05:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x",
+            "sha": "7973c88791c1c35dcedc5caef7abccbb5d23b57c",
+            "label": "kiegroup:1.13.x"
+          },
+          "head": {
+            "ref": "1.13.x_cve_respin_2",
+            "sha": "404d3743eddd0e43ba2dcf50d42faec4f34e83f4",
+            "label": "rgdoliveira:1.13.x_cve_respin_2"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 25790762210,
+              "name": "Lint",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/9368517990/job/25790762210",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-06-04T14:01:02Z",
+              "completed_at": "2024-06-04T14:04:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25790761738,
+              "name": "Bats Test",
+              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/9368517990/job/25790761738",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-06-04T14:01:02Z",
+              "completed_at": "2024-06-04T14:01:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 15,
           "title": "Bump golang.org/x/crypto from 0.1.0 to 0.17.0 in /test",
           "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/15",
@@ -4525,7 +4589,7 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-05-31T12:54:45Z",
+      "updated_at": "2024-06-04T13:32:37Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
@@ -4602,81 +4666,6 @@
               "conclusion": "success",
               "started_at": "2024-05-06T14:41:34Z",
               "completed_at": "2024-05-06T15:27:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 36,
-          "title": "update supported arches for kn-workflow-cli-artifacts image",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/36",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/36",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-06T08:02:20Z",
-          "updated_at": "2024-06-04T10:19:48Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "ae58af9c5f02c00e6d8d80986e10a805ef0674d5",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "kn-workflow-cli-image",
-            "sha": "dec992550d02ebf77e0aba712c482bedbf9cdc33",
-            "label": "rgdoliveira:kn-workflow-cli-image"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 25780419217,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9365363471/job/25780419217",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-04T10:19:58Z",
-              "completed_at": "2024-06-04T10:22:19Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25780418879,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9365363471/job/25780418879",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-04T10:19:58Z",
-              "completed_at": "2024-06-04T10:22:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25780418509,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9365363471/job/25780418509",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-04T10:20:00Z",
-              "completed_at": "2024-06-04T10:20:10Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25780418507,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9365363459/job/25780418507",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-04T10:19:59Z",
-              "completed_at": "2024-06-04T11:01:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
