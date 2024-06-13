@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-06-13T11:11:03.423Z",
+    "date": "2024-06-13T12:22:10.984Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9498570096"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9499523065"
   },
   "projects": [
     {
@@ -4891,133 +4891,13 @@
       "name": "kie-tools",
       "description": "Tools for KIE",
       "html_url": "https://github.com/kiegroup/kie-tools",
-      "updated_at": "2024-06-11T19:41:15Z",
+      "updated_at": "2024-06-13T11:28:27Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 31,
-          "title": "[SRVLOGIC-325] use KogitoVersion variable for org.apache.kie.sonataflow:sonataflow-quarkus-devui version ",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/31",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/31",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-06-13T09:38:21Z",
-          "updated_at": "2024-06-13T10:58:09Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "892c8fac34cb39ebf9fc2d95611ed216fc454e40",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_SRVLOGIC-325",
-            "sha": "3603e16b166b6293fe7e717dc907af3fd8cd0dfe",
-            "label": "rgdoliveira:main_SRVLOGIC-325"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 26173872889,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/26173872889",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-13T09:43:17Z",
-              "completed_at": "2024-06-13T09:43:22Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173670100,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338483/job/26173670100",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-13T09:38:37Z",
-              "completed_at": "2024-06-13T10:02:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669801,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338483/job/26173669801",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-13T09:38:34Z",
-              "completed_at": "2024-06-13T09:40:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669480,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338484/job/26173669480",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-13T09:38:34Z",
-              "completed_at": "2024-06-13T09:43:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669274,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338483/job/26173669274",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-13T09:38:35Z",
-              "completed_at": "2024-06-13T10:08:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669263,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338478/job/26173669263",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-13T09:38:34Z",
-              "completed_at": "2024-06-13T09:43:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669232,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338477/job/26173669232",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-13T09:38:35Z",
-              "completed_at": "2024-06-13T09:41:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26173669045,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/9497338484/job/26173669045",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-13T09:38:35Z",
-              "completed_at": "2024-06-13T09:43:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
