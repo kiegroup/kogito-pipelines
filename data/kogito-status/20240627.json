@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-06-27T11:10:07.051Z",
+    "date": "2024-06-27T12:22:29.377Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9695499226"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9696463542"
   },
   "projects": [
     {
@@ -822,100 +822,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2024-06-27T05:01:37Z",
+      "updated_at": "2024-06-27T12:20:15Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 36,
-          "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/36",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/36",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-06T13:55:57Z",
-          "updated_at": "2024-05-08T13:06:02Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "588456ae803d004cbecab8365e4feb9396612d30",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "No-issue-fix-condition-error-in-midstream-sync-ci",
-            "sha": "fb316e62a9a952921fa11b7853b574aa78206d68",
-            "label": "fantonangeli:No-issue-fix-condition-error-in-midstream-sync-ci"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24633572654,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8970317662/job/24633572654",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:56:09Z",
-              "completed_at": "2024-05-06T14:50:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633572238,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8970317662/job/24633572238",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:56:07Z",
-              "completed_at": "2024-05-06T14:49:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633571900,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8970317662/job/24633571900",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:56:09Z",
-              "completed_at": "2024-05-06T15:00:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633571548,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8970317662/job/24633571548",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:56:08Z",
-              "completed_at": "2024-05-06T15:35:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633571520,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/8970317641/job/24633571520",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-05-06T13:56:09Z",
-              "completed_at": "2024-05-06T14:41:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1979,7 +1892,7 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2024-06-11T05:51:59Z",
+      "updated_at": "2024-06-27T12:16:00Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
@@ -2066,81 +1979,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
-        },
-        {
-          "number": 25,
-          "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/25",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/25",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-06T13:58:54Z",
-          "updated_at": "2024-05-08T13:05:42Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7332d036eda2e63f1bc75ea1395089816f0cf9e8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "No-issue-fix-condition-error-in-midstream-sync-ci",
-            "sha": "59a43aacc16e6aeda22aad36becea3a648b4885d",
-            "label": "fantonangeli:No-issue-fix-condition-error-in-midstream-sync-ci"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24633696471,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8970352264/job/24633696471",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:59:06Z",
-              "completed_at": "2024-05-06T14:50:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633696172,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8970352264/job/24633696172",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:59:06Z",
-              "completed_at": "2024-05-06T14:54:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633695899,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8970352264/job/24633695899",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:59:06Z",
-              "completed_at": "2024-05-06T14:57:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633695854,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/8970352265/job/24633695854",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:59:06Z",
-              "completed_at": "2024-05-06T15:24:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
         }
       ],
       "branchesComparison": {
@@ -2153,84 +1991,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-06-11T05:52:24Z",
+      "updated_at": "2024-06-27T12:16:44Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 25,
-          "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/25",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/25",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            }
-          ],
-          "created_at": "2024-05-06T13:51:30Z",
-          "updated_at": "2024-05-08T13:08:52Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "769ebb1f8b2ffff84f910c8657e687214c595bed",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "No-issue-fix-condition-error-in-midstream-sync-ci",
-            "sha": "dc6a7b265d8cd77f48720cda48992babfc73cc99",
-            "label": "fantonangeli:No-issue-fix-condition-error-in-midstream-sync-ci"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24633378206,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8970254928/job/24633378206",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:51:42Z",
-              "completed_at": "2024-05-06T14:38:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633377932,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8970254928/job/24633377932",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:51:41Z",
-              "completed_at": "2024-05-06T14:52:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633377665,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/8970254928/job/24633377665",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T13:51:42Z",
-              "completed_at": "2024-05-06T14:41:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -2946,99 +2713,13 @@
       "name": "kogito-images",
       "description": "This repository is a fork of apache/incubator-kie-kogito-images. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-images",
-      "updated_at": "2024-06-11T05:52:38Z",
+      "updated_at": "2024-06-27T12:19:29Z",
       "homepage": "http://kogito.kie.org",
       "language": "Shell",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 36,
-          "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/36",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/36",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-06T14:01:45Z",
-          "updated_at": "2024-05-08T13:00:07Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "8fa7aab570f4d0334810d26396165a33e2cd2a6b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "No-issue-fix-condition-error-in-midstream-sync-ci",
-            "sha": "02936a228d3ebaf2d69d51205abb2bc83fab4ed8",
-            "label": "fantonangeli:No-issue-fix-condition-error-in-midstream-sync-ci"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24633829757,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8970392214/job/24633829757",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:38:55Z",
-              "completed_at": "2024-05-06T14:38:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633829435,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8970392214/job/24633829435",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:38:51Z",
-              "completed_at": "2024-05-06T14:39:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633829216,
-              "name": "Validate OSL imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8970392228/job/24633829216",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:39:20Z",
-              "completed_at": "2024-05-06T14:39:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633829178,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/8970392214/job/24633829178",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:38:36Z",
-              "completed_at": "2024-05-06T14:38:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29438748876,
-              "name": "continuous-integration/jenkins/pr-merge",
-              "html_url": "https://ci-builds.apache.org/job/KIE/job/kogito/job/pullrequest_jobs/job/kogito-images-pr/job/PR-36/2/display/redirect",
-              "conclusion": "error",
-              "started_at": "2024-06-01T02:34:40Z",
-              "completed_at": "2024-06-01T02:34:40Z",
-              "slug": false,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -4879,89 +4560,13 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-06-11T05:52:55Z",
+      "updated_at": "2024-06-27T12:17:00Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 37,
-          "title": "NO-ISSUE: fix condition error in upstream-sync and main-sync workflows",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/37",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/37",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-05-06T14:04:12Z",
-          "updated_at": "2024-05-08T12:51:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "607bca21e1d83eba3c33065926b27209bed3cca9",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "No-issue-fix-condition-error-in-midstream-sync-ci",
-            "sha": "c0a83baa7ca35e5b638125deb1470e286351b97b",
-            "label": "fantonangeli:No-issue-fix-condition-error-in-midstream-sync-ci"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 24633943911,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8970425677/job/24633943911",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:39:47Z",
-              "completed_at": "2024-05-06T14:42:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633943528,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8970425677/job/24633943528",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:39:43Z",
-              "completed_at": "2024-05-06T14:42:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633943115,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8970425677/job/24633943115",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:39:24Z",
-              "completed_at": "2024-05-06T14:39:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24633943094,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/8970425681/job/24633943094",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-05-06T14:41:34Z",
-              "completed_at": "2024-05-06T15:27:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
