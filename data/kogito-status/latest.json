@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-07-17T17:10:27.601Z",
+    "date": "2024-07-17T18:15:55.076Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9978502505"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/9979362256"
   },
   "projects": [
     {
@@ -822,100 +822,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2024-07-17T05:01:34Z",
+      "updated_at": "2024-07-17T17:58:40Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 51,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/51",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/51",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-07-17T13:43:56Z",
-          "updated_at": "2024-07-17T13:51:19Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "3626ecec196a53819c4f1fa8a3d7fe1a3f709624",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "6927a44e61458f7aa7eff1b3445eb79dbcf1798a",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 27565066337,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9975404728/job/27565066337",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:09Z",
-              "completed_at": "2024-07-17T14:41:36Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565065959,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9975404728/job/27565065959",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:08Z",
-              "completed_at": "2024-07-17T15:06:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565065667,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9975404728/job/27565065667",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:09Z",
-              "completed_at": "2024-07-17T14:31:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565065363,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9975404728/job/27565065363",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:30Z",
-              "completed_at": "2024-07-17T14:44:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565065336,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/9975404730/job/27565065336",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:10Z",
-              "completed_at": "2024-07-17T14:30:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1979,88 +1892,13 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2024-07-08T17:02:13Z",
+      "updated_at": "2024-07-17T17:59:05Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 34,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/34",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/34",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-07-17T13:43:57Z",
-          "updated_at": "2024-07-17T13:51:29Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "c99b7d81d2d1839555e3a89e209a720e10f2f3a7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "2bb541ceb0b0c08a0df89cbab38e3c7584d14a65",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 27573194035,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/9975404854/job/27573194035",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-07-17T16:16:32Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565066500,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/9975404862/job/27565066500",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:20Z",
-              "completed_at": "2024-07-17T14:52:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565066140,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/9975404862/job/27565066140",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:11Z",
-              "completed_at": "2024-07-17T14:37:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565065681,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/9975404862/job/27565065681",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:11Z",
-              "completed_at": "2024-07-17T14:30:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 32,
           "title": "[SRVLOGIC-349] Allow productization of integration-tests-jobs-service",
@@ -2158,78 +1996,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-07-08T17:02:34Z",
+      "updated_at": "2024-07-17T17:59:09Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 35,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/35",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/35",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-07-17T13:44:01Z",
-          "updated_at": "2024-07-17T13:51:38Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0189eea58269fdc0b0b1556c54cd0d74a81c41b0",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "44e154e6845d1afc9cd06c5915a070cd2e6465f6",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 27565070031,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/9975405683/job/27565070031",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T14:06:50Z",
-              "completed_at": "2024-07-17T14:48:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565069544,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/9975405683/job/27565069544",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:48:25Z",
-              "completed_at": "2024-07-17T14:39:51Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565069229,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/9975405683/job/27565069229",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T13:44:13Z",
-              "completed_at": "2024-07-17T14:42:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -4792,89 +4565,13 @@
       "name": "kogito-serverless-operator",
       "description": "This repository is a fork of apache/incubator-kie-kogito-serverless-operator. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-serverless-operator",
-      "updated_at": "2024-07-08T17:02:41Z",
+      "updated_at": "2024-07-17T17:59:11Z",
       "homepage": "",
       "language": "Go",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 64,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/64",
-          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/64",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-07-17T13:50:16Z",
-          "updated_at": "2024-07-17T13:51:47Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0fdd9d611c5a72765f199b149e417957862bb39b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "2e59c544c3a6793676bc9ec91cf81476bf2f0af9",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 27565403329,
-              "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9975501229/job/27565403329",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T14:22:03Z",
-              "completed_at": "2024-07-17T14:24:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565402961,
-              "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9975501229/job/27565402961",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T14:19:09Z",
-              "completed_at": "2024-07-17T14:21:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565402571,
-              "name": "End-to-end tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9975501210/job/27565402571",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T14:21:57Z",
-              "completed_at": "2024-07-17T15:05:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27565402554,
-              "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/9975501229/job/27565402554",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-07-17T14:11:14Z",
-              "completed_at": "2024-07-17T14:11:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
