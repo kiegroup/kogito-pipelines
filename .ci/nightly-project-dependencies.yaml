@@ -23,3 +23,7 @@ dependencies:
   - project: kiegroup/kogito-images
     dependencies:
       - project: kiegroup/kie-tools
+
+  - project: kiegroup/kogito-serverless-operator
+    dependencies:
+      - project: kiegroup/kogito-images

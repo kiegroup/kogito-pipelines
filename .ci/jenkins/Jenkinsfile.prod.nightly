@@ -99,6 +99,7 @@ pipeline {
                     env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
                     env.M2_FOLDER = '/home/jenkins/.m2/repository'
                     env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-images"
+                    env.OPERATOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-serverless-operator"
                     env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
 
                     // Images names
@@ -108,6 +109,7 @@ pipeline {
                     env.JOBS_SERVICE_POSTGRESQL = 'jobs-service-postgresql'
                     env.SWF_BUILDER = 'swf-builder'
                     env.SWF_DEVMODE = 'swf-devmode'
+                    env.OPERATOR = 'operator'
 
                     // Images registries placeholders
                     env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
@@ -116,6 +118,7 @@ pipeline {
                     env.JOBS_SERVICE_POSTGRESQL_REGISTRY = ''
                     env.SWF_BUILDER_REGISTRY = ''
                     env.SWF_DEVMODE_REGISTRY = ''
+                    env.OPERATOR_REGISTRY = ''
                 }
             }
         }
@@ -206,6 +209,17 @@ pipeline {
                         }
                     }
                 }
+                stage('Operator image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+
+                            def descriptorFile = 'images/prod-operator-image.yaml'
+                            env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_REPOSITORY_PATH)
+                        }
+                    }
+                }
+
             }
         }
         stage('Upload maven repository') {
@@ -244,7 +258,9 @@ pipeline {
                             def sanitizedProjectName = f.replaceAll('/', '_').replaceAll('-', '_')
                             def buildScript = env["PME_BUILD_SCRIPT_${sanitizedProjectName}"]
                             def pomPath = maven.getProjectPomFromBuildCmd(buildScript)
-                            env["VERSION_${f}"] = maven.mvnGetVersionProperty(new MavenCommand(this).withProperty('productized'), 'project.version', pomPath)
+                            if (new File(pomPath).exists()) {
+                                env["VERSION_${f}"] = maven.mvnGetVersionProperty(new MavenCommand(this).withProperty('productized'), 'project.version', pomPath)
+                            }
                         }
                     }
                     
@@ -265,7 +281,7 @@ pipeline {
                         env.ALREADY_BUILT_PROJECTS,
                         ['serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'], 'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'], 'drools': env.VERSION_kiegroup_drools, 'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION, 'quarkus.bom': env.QUARKUS_VERSION],
                         ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY, "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY, "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY,
-                            "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY, "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY],
+                            "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY, "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY, "${env.OPERATOR}": env.OPERATOR_REGISTRY],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
                     echo "[INFO] Message Body: ${messageBody}"
@@ -307,6 +323,42 @@ pipeline {
         cleanup {
             cleanWs()
         }
+    }
+}
+
+def buildOperator(String descriptorFile, String nightlyBranchName, String operatorRepository) {
+    // Create a different folder for operator, otherwise dir() will mess up with folders and impact other steps of pipeline
+    sh "cp -rp ${operatorRepository} ${env.WORKSPACE}/operator_repo"
+    dir("${env.WORKSPACE}/operator_repo") {
+        println "Building operator"
+
+        // Remove go work files due to cachito limitation and push changes to  a temporary prod branch
+        def prodBranch = "main-prod-nightly"
+        if (githubscm.isBranchExist("origin", prodBranch)) {
+            githubscm.removeRemoteBranch("origin", prodBranch)
+        }
+        githubscm.createBranch(prodBranch)
+        sh "rm -f go.work go.work.sum"
+        githubscm.commitChanges("remove go work files due to cachito limitation")
+        githubscm.pushObject("origin", prodBranch)
+
+        // Replace branch and ref in descriptor file
+        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
+        def reference = githubscm.getCommitHash()
+        sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
+        println "Diff of ${descriptorFile} after replacing branch name and ref"
+        sh "git diff ${descriptorFile}"
+
+        println 'Using cekit version'
+        util.runWithPythonVirtualEnv('cekit --version', 'cekit')
+
+        util.withKerberos('rhba-osbs-builder-keytab') {
+            def cekitBuildCmd = "cekit --redhat --descriptor ${descriptorFile} build osbs --user rhba-osbs-builder -y"
+            util.runWithPythonVirtualEnv("${cekitBuildCmd} | tee operator-build-log.txt", 'cekit')
+        }
+
+        def imageRegistry = sh(script: "brew call --json-output getTaskResult \$(cat operator-build-log.txt | grep -oP '(?<=Task ).*(?= was)') | jq -nre 'input.repositories[0]'", returnStdout: true)
+        return imageRegistry.trim()
     }
 }
 
