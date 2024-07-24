@@ -258,8 +258,10 @@ pipeline {
                             def sanitizedProjectName = f.replaceAll('/', '_').replaceAll('-', '_')
                             def buildScript = env["PME_BUILD_SCRIPT_${sanitizedProjectName}"]
                             def pomPath = maven.getProjectPomFromBuildCmd(buildScript)
-                            if (new File(pomPath).exists()) {
+                            try {
                                 env["VERSION_${f}"] = maven.mvnGetVersionProperty(new MavenCommand(this).withProperty('productized'), 'project.version', pomPath)
+                            } catch (err) {
+                                echo "Skipping to get version of project ${projectName} as no pom.xml was found"
                             }
                         }
                     }
