@@ -9,7 +9,7 @@ jdkTool = env.BUILD_JDK_TOOL
 sonarJdkTool = env.SONAR_JDK_TOOL
 mavenTool = env.BUILD_MAVEN_TOOL
 
-mavenDeployArtifacts = env.ENABLE_DEPLOY
+mavenDeployArtifacts = env.ENABLE_DEPLOY.toBoolean()
 mavenDeployRepository = env.MAVEN_DEPLOY_REPOSITORY ?: ''
 mavenDeployRepositoryCredsId = env.MAVEN_DEPLOY_REPOSITORY_CREDS_ID ?: ''
 mavenDeployLocalDir = env.MAVEN_DEPLOY_LOCAL_DIR ?: ''
@@ -178,6 +178,7 @@ pipeline {
             }
             steps {
                 script {
+                    echo "enviroment property mavenDeployArtifacts: " + mavenDeployArtifacts;
                     // Upload to specific repository with credentials
                     String mavenDeployRepositoryZipUrl = "${mavenDeployRepository.replaceAll('/content/', '/service/local/').replaceFirst('/*$', '')}/content-compressed"
                     maven.uploadLocalArtifacts(mavenDeployRepositoryCredsId, getMavenDeployLocalDir(), mavenDeployRepositoryZipUrl)
