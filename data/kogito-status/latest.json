@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-08-06T14:11:43.226Z",
+    "date": "2024-08-06T15:13:52.047Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10268188316"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10269206667"
   },
   "projects": [
     {
@@ -286,7 +286,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-08-06T12:38:45Z",
-          "updated_at": "2024-08-06T12:38:45Z",
+          "updated_at": "2024-08-06T14:12:53Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -309,10 +309,10 @@
               "id": 28410150201,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10266679608/job/28410150201",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2024-08-06T14:04:17Z",
-              "completed_at": null,
+              "completed_at": "2024-08-06T14:52:41Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1443,7 +1443,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-08-06T12:38:49Z",
-          "updated_at": "2024-08-06T12:38:49Z",
+          "updated_at": "2024-08-06T14:13:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1536,7 +1536,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-08-06T12:38:55Z",
-          "updated_at": "2024-08-06T12:38:55Z",
+          "updated_at": "2024-08-06T14:13:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1556,35 +1556,35 @@
           },
           "checks": [
             {
-              "id": 28405550599,
+              "id": 28411202870,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28411202870",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-06T14:22:01Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28411202364,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28411202364",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-06T14:22:03Z",
+              "completed_at": "2024-08-06T15:12:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28411201981,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28405550599",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28411201981",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2024-08-06T13:17:56Z",
               "completed_at": "2024-08-06T14:10:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28405550211,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28405550211",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-08-06T12:46:22Z",
-              "completed_at": "2024-08-06T13:33:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28405549861,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/10266682665/job/28405549861",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-08-06T13:12:09Z",
-              "completed_at": "2024-08-06T14:04:24Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -2323,7 +2323,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-08-06T14:01:21Z",
-          "updated_at": "2024-08-06T14:01:21Z",
+          "updated_at": "2024-08-06T14:13:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4246,7 +4246,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-08-06T14:11:43Z",
-          "updated_at": "2024-08-06T14:11:43Z",
+          "updated_at": "2024-08-06T14:13:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4264,7 +4264,52 @@
             "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
             "html_url": "https://github.com/rgdoliveira"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 28410613592,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10268195984/job/28410613592",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-06T14:11:55Z",
+              "completed_at": "2024-08-06T14:14:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28410613067,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10268195984/job/28410613067",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-06T14:11:58Z",
+              "completed_at": "2024-08-06T14:12:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28410612557,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10268195978/job/28410612557",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-06T14:11:57Z",
+              "completed_at": "2024-08-06T14:56:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28410612541,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10268195984/job/28410612541",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-06T14:11:55Z",
+              "completed_at": "2024-08-06T14:14:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
         }
       ],
       "branchesComparison": {
