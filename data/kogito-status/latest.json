@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-08-08T14:11:43.221Z",
+    "date": "2024-08-08T15:13:05.551Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10303739340"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10304751050"
   },
   "projects": [
     {
@@ -1401,7 +1401,94 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 36,
+          "title": "productized/modules: remove data-index-jpa modules from the product as they are related to postgresql",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/36",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/36",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-08-08T14:56:50Z",
+          "updated_at": "2024-08-08T14:56:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "440e279925191de87912683ba66be576272a0d84",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "modules",
+            "sha": "b440bfbe300a0321e65cbc05ddd90c68538058b8",
+            "label": "rgdoliveira:modules"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 28523076710,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/10304487062/job/28523076710",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-08T14:57:01Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28523076319,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/10304487062/job/28523076319",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-08T14:57:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28523075566,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/10304487052/job/28523075566",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-08T14:57:02Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28523075418,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/10304487062/job/28523075418",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-08T14:57:01Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
