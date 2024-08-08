@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-08-08T11:11:33.270Z",
+    "date": "2024-08-08T12:23:17.262Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10300979584"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10301983801"
   },
   "projects": [
     {
@@ -4004,7 +4004,133 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 34,
+          "title": "Sync main branch with Apache main branch",
+          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/34",
+          "html_url": "https://github.com/kiegroup/kie-tools/pull/34",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2024-08-08T11:59:45Z",
+          "updated_at": "2024-08-08T12:00:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "de32b00a59a1188112a48f35750e1660f2ed5b1c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "sync-main",
+            "sha": "336a7135582030e1e7636dab702fc350ddffeed0",
+            "label": "fantonangeli:sync-main"
+          },
+          "user": {
+            "login": "fantonangeli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+            "html_url": "https://github.com/fantonangeli"
+          },
+          "checks": [
+            {
+              "id": 28513756484,
+              "name": "CodeQL",
+              "html_url": "https://github.com/kiegroup/kie-tools/runs/28513756484",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-08T12:03:42Z",
+              "completed_at": "2024-08-08T12:03:45Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513573827,
+              "name": "run (windows-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618077/job/28513573827",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-08T12:00:07Z",
+              "completed_at": "2024-08-08T12:04:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513573529,
+              "name": "run (macos-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618077/job/28513573529",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-08T12:00:00Z",
+              "completed_at": "2024-08-08T12:01:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513573119,
+              "name": "run (ubuntu-latest)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618077/job/28513573119",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-08T12:00:02Z",
+              "completed_at": "2024-08-08T12:02:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513573103,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618078/job/28513573103",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-08T12:00:01Z",
+              "completed_at": "2024-08-08T12:01:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513573099,
+              "name": "check",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618080/job/28513573099",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-08-08T12:00:02Z",
+              "completed_at": "2024-08-08T12:02:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513572650,
+              "name": "Analyze (javascript)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618085/job/28513572650",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-08T12:00:01Z",
+              "completed_at": "2024-08-08T12:05:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28513572308,
+              "name": "Analyze (go)",
+              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10301618085/job/28513572308",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-08T12:00:01Z",
+              "completed_at": "2024-08-08T12:03:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
