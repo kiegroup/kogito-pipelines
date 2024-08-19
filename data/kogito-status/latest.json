@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-08-19T16:15:07.290Z",
+    "date": "2024-08-19T17:12:46.482Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10457009784"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10457825140"
   },
   "projects": [
     {
@@ -331,7 +331,110 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 55,
+          "title": "[SRVLOGIC-373] include monitoring-elastic modules as part of the product",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/55",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/55",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-08-19T16:48:23Z",
+          "updated_at": "2024-08-19T16:54:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7bbba10869c504f27160b295f92d6d14fdc612b8",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-373-1",
+            "sha": "eff2cbb2a3932e2b09a9bb0d3736c2b7e3f791d9",
+            "label": "rgdoliveira:SRVLOGIC-373-1"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 28957250664,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10457497287/job/28957250664",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-19T16:48:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957250279,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10457497287/job/28957250279",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-19T16:48:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957249803,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10457497287/job/28957249803",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-19T16:48:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957249426,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.3)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10457497287/job/28957249426",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-19T16:48:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957249394,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.3",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10457497286/job/28957249394",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-08-19T16:48:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -2140,7 +2243,99 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 52,
+          "title": "[SRVLOGIC-373] add kie-addons-quarkus-monitoring-elastic extension to devmode and builder images",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/52",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/52",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-08-19T16:52:09Z",
+          "updated_at": "2024-08-19T16:54:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "27fe8634d9192fac1638af632e394b049056dfbc",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-373-1",
+            "sha": "4d186dc923460590c80dd3c8d552ab3367d89692",
+            "label": "rgdoliveira:SRVLOGIC-373-1"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 28957418338,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10457546451/job/28957418338",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-19T16:52:22Z",
+              "completed_at": "2024-08-19T16:52:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957417992,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10457546451/job/28957417992",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-19T16:52:23Z",
+              "completed_at": "2024-08-19T16:52:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957417677,
+              "name": "Validate OSL imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10457546454/job/28957417677",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-19T16:52:25Z",
+              "completed_at": "2024-08-19T16:52:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28957417662,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10457546451/job/28957417662",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-19T16:52:23Z",
+              "completed_at": "2024-08-19T16:52:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
