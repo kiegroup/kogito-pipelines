@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-08-28T14:12:00.473Z",
+    "date": "2024-08-28T15:13:11.458Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10598435380"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10599500541"
   },
   "projects": [
     {
@@ -19,6 +19,124 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 46,
+          "title": "[1.13.x-blue][BXMSPROD-2209] move prod nightly to use rhel8",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/46",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/46",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-08-28T14:29:01Z",
+          "updated_at": "2024-08-28T14:29:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x-blue",
+            "sha": "063ae6d538d5ae567b06f3bea0612c3a12e43a23",
+            "label": "kiegroup:1.13.x-blue"
+          },
+          "head": {
+            "ref": "1.13.x-blue_BXMSPROD-2209",
+            "sha": "78ecda9ab3bddb4d870b40a510f688c5a848075a",
+            "label": "rgdoliveira:1.13.x-blue_BXMSPROD-2209"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 29372084996,
+              "name": "jenkinsfile-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10598754698/job/29372084996",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-28T14:29:15Z",
+              "completed_at": "2024-08-28T14:33:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29372084499,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10598754698/job/29372084499",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-28T14:29:14Z",
+              "completed_at": "2024-08-28T14:32:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 45,
+          "title": "[1.13.x][BXMSPROD-2209] move prod nightly to use rhel8",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/45",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/45",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2024-08-28T14:26:00Z",
+          "updated_at": "2024-08-28T14:29:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "1.13.x",
+            "sha": "c7a4a2b15950a41575ea1526f0ec14dba4ead913",
+            "label": "kiegroup:1.13.x"
+          },
+          "head": {
+            "ref": "1.13.x_BXMSPROD-2209",
+            "sha": "31245fd07c7ed886e6a5e52414ce707724d03410",
+            "label": "rgdoliveira:1.13.x_BXMSPROD-2209"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 29371902058,
+              "name": "jenkinsfile-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10598701489/job/29371902058",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-28T14:26:15Z",
+              "completed_at": "2024-08-28T14:30:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29371901600,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10598701489/job/29371901600",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-08-28T14:26:13Z",
+              "completed_at": "2024-08-28T14:28:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 43,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.426.3 to 2.452.4 in /.ci/jenkins/tests",
