@@ -33,7 +33,7 @@ pipeline {
                     env.DROOLS_PRODUCT_VERSION = "${DROOLS_PRODUCT_VERSION ?: parseVersionFromPom('kiegroup/drools', getDroolsBranch())}"
 
                     // Needed by Kogito Apps
-                    setupCypressEnv('12.17.0')
+                    setupCypressEnv('13.13.0')
                 }
             }
         }
