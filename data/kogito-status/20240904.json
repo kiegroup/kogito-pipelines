@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-09-04T14:12:16.414Z",
+    "date": "2024-09-04T15:13:47.353Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10703449990"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10704551601"
   },
   "projects": [
     {
@@ -2140,7 +2140,99 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 56,
+          "title": "set prod images version to 1.34",
+          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/56",
+          "html_url": "https://github.com/kiegroup/kogito-images/pull/56",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-09-04T14:20:13Z",
+          "updated_at": "2024-09-04T14:42:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "22a8338d58ee7044749b71e8795f4e9d9bab9c03",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "osl134_versions",
+            "sha": "94016b056fdfa5601803f64b5ebacbcdcb7d7b92",
+            "label": "rgdoliveira:osl134_versions"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 29674577633,
+              "name": "Validate Kogito imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10703609474/job/29674577633",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:20:34Z",
+              "completed_at": "2024-09-04T14:20:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29674577088,
+              "name": "Bats Tests",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10703609474/job/29674577088",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:20:28Z",
+              "completed_at": "2024-09-04T14:21:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29674576528,
+              "name": "ShellCheck",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10703609474/job/29674576528",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:20:28Z",
+              "completed_at": "2024-09-04T14:20:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29674576478,
+              "name": "Validate OSL imagestreams",
+              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10703609492/job/29674576478",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:20:29Z",
+              "completed_at": "2024-09-04T14:20:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -3987,7 +4079,99 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 67,
+          "title": "set prod images version to 1.34",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/67",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/67",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-09-04T14:36:18Z",
+          "updated_at": "2024-09-04T14:42:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "118abd851de1f47597e05bb9feb3bd0bf572e61e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "osl134_versions",
+            "sha": "f963dedf6dc5bae37f3ec5e04d14db9ffa853041",
+            "label": "rgdoliveira:osl134_versions"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 29675587072,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10703913205/job/29675587072",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:36:31Z",
+              "completed_at": "2024-09-04T14:36:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29675586435,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10703913205/job/29675586435",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:36:30Z",
+              "completed_at": "2024-09-04T14:39:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29675585917,
+              "name": "End-to-end tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10703913236/job/29675585917",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-09-04T14:36:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 29675585840,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/10703913205/job/29675585840",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-09-04T14:36:32Z",
+              "completed_at": "2024-09-04T14:39:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
