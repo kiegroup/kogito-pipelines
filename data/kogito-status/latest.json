@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-09-09T15:14:22.364Z",
+    "date": "2024-09-09T16:16:03.308Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10776092472"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10777117229"
   },
   "projects": [
     {
@@ -325,100 +325,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2024-09-09T05:01:36Z",
+      "updated_at": "2024-09-09T16:01:20Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 58,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/58",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/58",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-09-09T14:19:50Z",
-          "updated_at": "2024-09-09T14:39:44Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "42e3f7901c45bfa948d89b5cd607ade56f260991",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "db9adfaa2bf02b42fffb5807f593082058f00804",
-            "label": "rgdoliveira:sync_main"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 29878858324,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10775133433/job/29878858324",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-09-09T14:20:07Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29878857955,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10775133433/job/29878857955",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-09T14:20:08Z",
-              "completed_at": "2024-09-09T15:10:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29878857549,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10775133433/job/29878857549",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-09-09T14:20:09Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29878857070,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10775133433/job/29878857070",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-09-09T14:20:07Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29878856938,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/10775133434/job/29878856938",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-09T14:20:08Z",
-              "completed_at": "2024-09-09T15:14:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -4091,118 +4004,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 37,
-          "title": "SRVLOGIC-382: SonataFlow Management Console productization setup in midstream",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/37",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/37",
-          "state": "open",
-          "labels": [
-            "DO_NOT_MERGE"
-          ],
-          "draft": true,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            },
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            }
-          ],
-          "created_at": "2024-09-09T08:54:59Z",
-          "updated_at": "2024-09-09T08:54:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1b3ab5cb4f503caead1d2ea4d70abeaca32aad98",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "productize-sonataflow-management-console",
-            "sha": "1b633d84aadf98af6176a131d327f848bd117cf8",
-            "label": "fantonangeli:productize-sonataflow-management-console"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 29862283269,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/29862283269",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-09T08:59:21Z",
-              "completed_at": "2024-09-09T08:59:24Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29862085853,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10769889899/job/29862085853",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-09T08:55:11Z",
-              "completed_at": "2024-09-09T08:57:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29862085841,
-              "name": "run",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10769889898/job/29862085841",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-09-09T08:55:05Z",
-              "completed_at": "2024-09-09T08:55:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29862085834,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10769889875/job/29862085834",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-09T08:55:12Z",
-              "completed_at": "2024-09-09T08:57:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29862085372,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10769889878/job/29862085372",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-09T08:55:12Z",
-              "completed_at": "2024-09-09T09:00:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29862084890,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10769889878/job/29862084890",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-09T08:55:11Z",
-              "completed_at": "2024-09-09T08:59:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
