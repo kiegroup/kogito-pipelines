@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-09-13T17:11:58.600Z",
+    "date": "2024-09-13T18:17:43.726Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10853275800"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10854107138"
   },
   "projects": [
     {
@@ -4080,139 +4080,13 @@
       "name": "kie-tools",
       "description": "Tools for KIE",
       "html_url": "https://github.com/kiegroup/kie-tools",
-      "updated_at": "2024-09-13T12:22:37Z",
+      "updated_at": "2024-09-13T17:17:27Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 49,
-          "title": "Revert \"Add image-env-to-json-standalone and EnvJson.schema.json to t…",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/49",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/49",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "ricardozanini",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-              "html_url": "https://github.com/ricardozanini"
-            }
-          ],
-          "created_at": "2024-09-13T15:57:25Z",
-          "updated_at": "2024-09-13T16:12:10Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1a2347b57aa7905e42a2c6f6f934057f5aedac84",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "productize-sonataflow-management-console-3-revert",
-            "sha": "e25ac2b4e3790047052aedbcda4811db0b38306c",
-            "label": "fantonangeli:productize-sonataflow-management-console-3-revert"
-          },
-          "user": {
-            "login": "fantonangeli",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-            "html_url": "https://github.com/fantonangeli"
-          },
-          "checks": [
-            {
-              "id": 30118177331,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/30118177331",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T16:01:36Z",
-              "completed_at": "2024-09-13T16:01:38Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117993307,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290206/job/30117993307",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-13T15:57:42Z",
-              "completed_at": "2024-09-13T16:01:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992897,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290206/job/30117992897",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-13T15:57:39Z",
-              "completed_at": "2024-09-13T15:59:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992839,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290192/job/30117992839",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T15:57:36Z",
-              "completed_at": "2024-09-13T16:02:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992342,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290206/job/30117992342",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-13T15:57:38Z",
-              "completed_at": "2024-09-13T16:01:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992325,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290200/job/30117992325",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-13T15:57:38Z",
-              "completed_at": "2024-09-13T16:00:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992320,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290202/job/30117992320",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-09-13T15:57:37Z",
-              "completed_at": "2024-09-13T15:59:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30117992097,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/10852290192/job/30117992097",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T15:57:37Z",
-              "completed_at": "2024-09-13T16:01:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
