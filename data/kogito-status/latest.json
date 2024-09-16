@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-09-16T07:13:23.813Z",
+    "date": "2024-09-16T08:18:10.386Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10879153516"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10880026079"
   },
   "projects": [
     {
@@ -2140,89 +2140,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 59,
-          "title": "[9.101.x-prod] Add missing test annotation for prod build serverless workflow images",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/59",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/59",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            }
-          ],
-          "created_at": "2024-09-13T13:05:30Z",
-          "updated_at": "2024-09-16T05:56:22Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1c9ecbf9b38234cf84e737d89181034fcc39766d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "9.101.x-prod",
-            "sha": "6e4225356481ffddd16d7a784e3126292c3ba4f5",
-            "label": "jakubschwan:9.101.x-prod"
-          },
-          "user": {
-            "login": "jakubschwan",
-            "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
-            "html_url": "https://github.com/jakubschwan"
-          },
-          "checks": [
-            {
-              "id": 30109376063,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10849675105/job/30109376063",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T13:05:43Z",
-              "completed_at": "2024-09-13T13:05:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30109375484,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10849675105/job/30109375484",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T13:05:42Z",
-              "completed_at": "2024-09-13T13:05:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30109375039,
-              "name": "Validate OSL imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10849675102/job/30109375039",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T13:05:44Z",
-              "completed_at": "2024-09-13T13:05:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30109375019,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10849675105/job/30109375019",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-13T13:05:43Z",
-              "completed_at": "2024-09-13T13:06:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
