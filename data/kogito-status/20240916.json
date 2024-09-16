@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-09-16T13:21:38.056Z",
+    "date": "2024-09-16T14:13:25.737Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10884717395"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/10885647679"
   },
   "projects": [
     {
@@ -2134,89 +2134,13 @@
       "name": "kogito-images",
       "description": "This repository is a fork of apache/incubator-kie-kogito-images. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-images",
-      "updated_at": "2024-09-09T13:43:02Z",
+      "updated_at": "2024-09-16T13:40:41Z",
       "homepage": "http://kogito.kie.org",
       "language": "Shell",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-images",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-images/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 61,
-          "title": "remove kie-addons-quarkus-monitoring-elastic extension to devmode and builder images",
-          "url": "https://api.github.com/repos/kiegroup/kogito-images/pulls/61",
-          "html_url": "https://github.com/kiegroup/kogito-images/pull/61",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-09-16T12:14:17Z",
-          "updated_at": "2024-09-16T12:55:38Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1c9ecbf9b38234cf84e737d89181034fcc39766d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_elastic",
-            "sha": "25bc3f2bf028be1b37fc6433be9232add5397a8a",
-            "label": "rgdoliveira:main_elastic"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 30196965267,
-              "name": "ShellCheck",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10883553367/job/30196965267",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-16T12:14:30Z",
-              "completed_at": "2024-09-16T12:14:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30196964774,
-              "name": "Bats Tests",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10883553367/job/30196964774",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-16T12:14:32Z",
-              "completed_at": "2024-09-16T12:14:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30196964325,
-              "name": "Validate Kogito imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10883553367/job/30196964325",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-16T12:14:31Z",
-              "completed_at": "2024-09-16T12:14:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 30196964320,
-              "name": "Validate OSL imagestreams",
-              "html_url": "https://github.com/kiegroup/kogito-images/actions/runs/10883553366/job/30196964320",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-09-16T12:14:30Z",
-              "completed_at": "2024-09-16T12:14:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
