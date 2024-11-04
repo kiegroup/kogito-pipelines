@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-04T20:14:48.250Z",
+    "date": "2024-11-04T21:12:23.921Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11671938413"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11672750811"
   },
   "projects": [
     {
@@ -4029,139 +4029,13 @@
       "name": "kie-tools",
       "description": "Tools for KIE",
       "html_url": "https://github.com/kiegroup/kie-tools",
-      "updated_at": "2024-10-25T15:32:29Z",
+      "updated_at": "2024-11-04T20:49:21Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-tools",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-tools/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 58,
-          "title": "add maven-base as part of midstream project structure and use default settings.xml from maven instead of a custom one",
-          "url": "https://api.github.com/repos/kiegroup/kie-tools/pulls/58",
-          "html_url": "https://github.com/kiegroup/kie-tools/pull/58",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fantonangeli",
-              "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
-              "html_url": "https://github.com/fantonangeli"
-            }
-          ],
-          "created_at": "2024-11-04T17:07:26Z",
-          "updated_at": "2024-11-04T17:19:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "703ea5326ad0facd7439d67f2f4c1f7b7aa74906",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_mvnbase",
-            "sha": "2e1ec837d5535028ac393058847781f7f391a475",
-            "label": "rgdoliveira:main_mvnbase"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 32490583365,
-              "name": "CodeQL",
-              "html_url": "https://github.com/kiegroup/kie-tools/runs/32490583365",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-04T17:11:49Z",
-              "completed_at": "2024-11-04T17:11:53Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490353267,
-              "name": "run (windows-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116946/job/32490353267",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-11-04T17:07:43Z",
-              "completed_at": "2024-11-04T17:10:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490352855,
-              "name": "run (macos-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116946/job/32490352855",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-11-04T17:07:40Z",
-              "completed_at": "2024-11-04T17:10:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490352263,
-              "name": "run (ubuntu-latest)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116946/job/32490352263",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-11-04T17:07:41Z",
-              "completed_at": "2024-11-04T17:10:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490352245,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116969/job/32490352245",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-11-04T17:07:40Z",
-              "completed_at": "2024-11-04T17:09:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490352180,
-              "name": "check",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116947/job/32490352180",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-11-04T17:07:42Z",
-              "completed_at": "2024-11-04T17:09:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490351917,
-              "name": "Analyze (javascript)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116950/job/32490351917",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-04T17:07:39Z",
-              "completed_at": "2024-11-04T17:12:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32490351436,
-              "name": "Analyze (go)",
-              "html_url": "https://github.com/kiegroup/kie-tools/actions/runs/11669116950/job/32490351436",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-04T17:07:39Z",
-              "completed_at": "2024-11-04T17:11:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
