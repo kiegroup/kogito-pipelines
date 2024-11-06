@@ -209,16 +209,16 @@ pipeline {
                         }
                     }
                 }
-                // stage('Operator image') {
-                //     steps {
-                //         script {
-                //             sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+                stage('Operator image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
 
-                //             def descriptorFile = 'images/prod-operator-image.yaml'
-                //             env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_REPOSITORY_PATH)
-                //         }
-                //     }
-                // }
+                            def descriptorFile = 'images/prod-operator-image.yaml'
+                            env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_REPOSITORY_PATH)
+                        }
+                    }
+                }
 
             }
         }
