@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-07T16:16:38.468Z",
+    "date": "2024-11-07T17:11:51.599Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11726980608"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11727900421"
   },
   "projects": [
     {
@@ -1356,95 +1356,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2024-11-07T15:37:55Z",
+      "updated_at": "2024-11-07T16:47:10Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 45,
-          "title": "remove kogito-java-examples module from the product",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/45",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/45",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2024-11-07T15:56:29Z",
-          "updated_at": "2024-11-07T16:02:15Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5fee7c082742c4a51aa58074917a19b2b31f984f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main_modules",
-            "sha": "7af2d55b6db3a6317643ce301955f6f9ac34d3d6",
-            "label": "rgdoliveira:main_modules"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 32665719877,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/11726628265/job/32665719877",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-11-07T15:56:43Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32665719429,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/11726628265/job/32665719429",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-11-07T15:56:43Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32665719049,
-              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/11726628265/job/32665719049",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-11-07T15:56:41Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32665718601,
-              "name": "kogito-java-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/11726628265/job/32665718601",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2024-11-07T15:56:43Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
