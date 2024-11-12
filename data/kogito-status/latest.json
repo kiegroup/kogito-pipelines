@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-12T13:20:57.231Z",
+    "date": "2024-11-12T14:13:10.196Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11798138145"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11799039042"
   },
   "projects": [
     {
@@ -3932,6 +3932,92 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 94,
+          "title": "fix main.go path for osl.builder install",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/94",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/94",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2024-11-12T13:56:03Z",
+          "updated_at": "2024-11-12T14:12:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f8752052fde66df5368c33d876e451ae007f68f3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_fixprodoperator",
+            "sha": "f687366a12b574505069f859f543a444a9ae9d7d",
+            "label": "rgdoliveira:main_fixprodoperator"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 32865617782,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11798741952/job/32865617782",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-12T13:56:18Z",
+              "completed_at": "2024-11-12T13:56:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 32865617388,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11798741952/job/32865617388",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-12T13:56:17Z",
+              "completed_at": "2024-11-12T13:58:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 32865617073,
+              "name": "End-to-End Tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11798741943/job/32865617073",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-11-12T13:56:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 32865616439,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11798741952/job/32865616439",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-12T13:56:16Z",
+              "completed_at": "2024-11-12T13:59:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 87,
           "title": "Red Hat Konflux update kogito-serverless-operator",
