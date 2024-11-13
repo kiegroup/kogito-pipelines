@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-13T08:18:03.118Z",
+    "date": "2024-11-13T09:14:13.124Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11813238336"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11814123634"
   },
   "projects": [
     {
@@ -275,7 +275,38 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 74,
+          "title": "typo",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/74",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/74",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-11-13T08:58:34Z",
+          "updated_at": "2024-11-13T08:58:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c336146f6e7c25be277d436d2529b254c27dae0f",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main",
+            "sha": "f4c54833203d4c5cc4bf5a1cb46e031f3d4dff56",
+            "label": "aritgithub:main"
+          },
+          "user": {
+            "login": "aritgithub",
+            "avatar_url": "https://avatars.githubusercontent.com/u/28338171?v=4",
+            "html_url": "https://github.com/aritgithub"
+          },
+          "checks": []
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
