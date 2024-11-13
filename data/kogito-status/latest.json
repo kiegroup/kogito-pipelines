@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-13T16:17:19.126Z",
+    "date": "2024-11-13T17:12:04.343Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11821325892"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11822298312"
   },
   "projects": [
     {
@@ -2406,65 +2406,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls{/number}",
       "pullRequests": [
         {
-          "number": 34,
-          "title": "[1.13.x] Update Kogito bundle for CVE respin (CVE-2024-3596)",
-          "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/34",
-          "html_url": "https://github.com/kiegroup/kogito-operator/pull/34",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "jakubschwan",
-              "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
-              "html_url": "https://github.com/jakubschwan"
-            }
-          ],
-          "created_at": "2024-11-13T15:11:38Z",
-          "updated_at": "2024-11-13T16:05:14Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "1.13.x",
-            "sha": "8d8ba7bbff2e065adc644ed7797e43714d3e8c7d",
-            "label": "kiegroup:1.13.x"
-          },
-          "head": {
-            "ref": "1.13.x_cve_respin_3",
-            "sha": "e31dd67cb32cf550480633c11bb75b199bdaebd5",
-            "label": "rgdoliveira:1.13.x_cve_respin_3"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 32931704557,
-              "name": "Lint",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/11820126823/job/32931704557",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-13T15:11:54Z",
-              "completed_at": "2024-11-13T15:19:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 32931703390,
-              "name": "Bats Test",
-              "html_url": "https://github.com/kiegroup/kogito-operator/actions/runs/11820126823/job/32931703390",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-13T15:11:54Z",
-              "completed_at": "2024-11-13T15:14:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 15,
           "title": "Bump golang.org/x/crypto from 0.1.0 to 0.17.0 in /test",
           "url": "https://api.github.com/repos/kiegroup/kogito-operator/pulls/15",
@@ -3721,7 +3662,7 @@
               "sha": "ebcf0736f46461d4edfe6add9acbecc632b48a51"
             },
             {
-              "sha": "0936d03b145f739c947ecd3ff4cc5c3b27005abb"
+              "sha": "8399141232fe1e8bfd71c1e2efeac3b2326039ee"
             },
             {
               "sha": "cdee8219164e10be2ca031f7b7095f8258036c4d"
@@ -3973,7 +3914,7 @@
               "sha": "4a34676541d44c7a6e3ac715d68586e0d1e514ad"
             },
             {
-              "sha": "55242e33b0aad7a6c90bdc5189e92df3425bbf53"
+              "sha": "b769f9030289214281e52bdcd26d5f7079ec4131"
             }
           ]
         }
