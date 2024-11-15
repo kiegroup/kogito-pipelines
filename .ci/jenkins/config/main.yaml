@@ -23,13 +23,6 @@ git:
     main_branch: true
     seed:
       branch: main
-  - name: 1.13.x
-    old_folder_structure: true
-    seed:
-      branch: 1.13.x
-      config_file:
-        path: dsl/seed/config/branch.yaml
-      jenkinsfile: dsl/seed/jobs/Jenkinsfile.seed.branch
 seed:
   config_file:
     git:
