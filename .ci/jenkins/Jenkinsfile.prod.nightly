@@ -98,7 +98,7 @@ pipeline {
                     env.NIGHTLY_BRANCH_NAME = 'openshift-serverless-nightly-rhel-8'
                     env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
                     env.M2_FOLDER = '/home/jenkins/.m2/repository'
-                    env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-images"
+                    env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_kie-tools"
                     env.OPERATOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-serverless-operator"
                     env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
 
@@ -132,11 +132,11 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 0)
 
-                            def descriptorFile = 'prod-logic-data-index-ephemeral-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip"]
+                            def descriptorFilePath = 'packages/osl-data-index-ephemeral-image/generated/logic-data-index-ephemeral-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "data-index-service-inmemory", target: "data-index-service-inmemory-image-build.zip"]]
 
-                            env.DATA_INDEX_EPHEMERAL_REGISTRY = buildImage(env.DATA_INDEX_EPHEMERAL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.DATA_INDEX_EPHEMERAL_REGISTRY = buildImage(env.DATA_INDEX_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -145,11 +145,11 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 1)
 
-                            def descriptorFile = 'prod-logic-data-index-postgresql-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip"]
+                            def descriptorFilePath = 'packages/osl-data-index-postgresql-image/generated/logic-data-index-postgresql-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "data-index-service-postgresql", target: "data-index-service-postgresql-image-build.zip"]]
 
-                            env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -158,11 +158,11 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 2)
 
-                            def descriptorFile = 'prod-logic-jobs-service-ephemeral-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip"]
+                            def descriptorFilePath = 'packages/osl-jobs-service-ephemeral-image/generated/logic-jobs-service-ephemeral-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "jobs-service-inmemory", target: "jobs-service-inmemory-image-build.zip"]]
 
-                            env.JOBS_SERVICE_EPHEMERAL_REGISTRY = buildImage(env.JOBS_SERVICE_EPHEMERAL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.JOBS_SERVICE_EPHEMERAL_REGISTRY = buildImage(env.JOBS_SERVICE_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -171,11 +171,11 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 3)
 
-                            def descriptorFile = 'prod-logic-jobs-service-postgresql-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
+                            def descriptorFilePath = 'packages/osl-jobs-service-postgresql-image/generated/logic-jobs-service-postgresql-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "jobs-service-postgresql", target: "jobs-service-postgresql-image-build.zip"]]
 
-                            env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -184,13 +184,13 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 4)
 
-                            def descriptorFile = 'prod-logic-swf-builder-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-builder-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
-                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-builder-maven-repository/${env.ARTIFACTS_VERSION}/kogito-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-maven-repository-image-build.zip"
+                            def descriptorFilePath = 'packages/osl-swf-builder-image/generated/logic-swf-builder-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-builder-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-quarkus-app", target: "kogito-builder-quarkus-app-image-build.zip"],
+                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-builder-maven-repository/${env.ARTIFACTS_VERSION}/kogito-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-maven-repository", target: "kogito-builder-maven-repository-image-build.zip"]
                                             ]
 
-                            env.SWF_BUILDER_REGISTRY = buildImage(env.SWF_BUILDER, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.SWF_BUILDER_REGISTRY = buildImage(env.SWF_BUILDER, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -199,13 +199,13 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 5)
 
-                            def descriptorFile = 'prod-logic-swf-devmode-rhel8-image.yaml'
-                            // Map with artifact path required in image module.yaml and the name in module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-quarkus-app-image-build.zip",
-                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-maven-repository/${env.ARTIFACTS_VERSION}/kogito-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-maven-repository-image-build.zip"
+                            def descriptorFilePath = 'packages/osl-swf-devmode-image/generated/logic-swf-devmode-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-quarkus-app", target: "kogito-devmode-quarkus-app-image-build.zip"],
+                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-maven-repository/${env.ARTIFACTS_VERSION}/kogito-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-maven-repository", target: "kogito-devmode-maven-repository-image-build.zip"]
                                             ]
 
-                            env.SWF_DEVMODE_REGISTRY = buildImage(env.SWF_DEVMODE, descriptorFile, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                            env.SWF_DEVMODE_REGISTRY = buildImage(env.SWF_DEVMODE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -364,12 +364,14 @@ def buildOperator(String descriptorFile, String nightlyBranchName, String operat
     }
 }
 
-def buildImage(String imageName, String descriptorFile, String nightlyBranchName, Map<String, String> artifacts, String imagesRepository) {
+def buildImage(String imageName, String descriptorFilePath, String nightlyBranchName, Map<String, String> artifacts, String imagesRepository) {
     // Create a different folder for each image during the build, otherwise dir() will mess up the builds during parallel run
-    sh "cp -rp ${imagesRepository} ${env.WORKSPACE}/${imageName}_repo"
+    def imageFolder = descriptorFilePath.substring(0, descriptorFilePath.lastIndexOf('/'))
+    sh "cp -rp ${imagesRepository}/${imageFolder} ${env.WORKSPACE}/${imageName}_repo"
     dir("${env.WORKSPACE}/${imageName}_repo") {
         println "Building image ${imageName}"
 
+        def descriptorFile = descriptorFilePath.substring(descriptorFilePath.lastIndexOf('/') + 1, descriptorFilePath.size())
         sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
         println "Diff of ${descriptorFile} after replacing branch name"
         sh "git diff ${descriptorFile}"
@@ -378,9 +380,9 @@ def buildImage(String imageName, String descriptorFile, String nightlyBranchName
         util.runWithPythonVirtualEnv('cekit --version', 'cekit')
 
         def overrides = ''
-        artifacts.each { artifactPath, overridesName ->
+        artifacts.each { artifactPath, artifactOverrides ->
             def md5sum = sh(script: "md5sum ${artifactPath} | cut -d' ' -f 1", returnStdout: true).trim()
-            overrides += " --overrides \"artifacts: [{name: ${overridesName}, md5: ${md5sum}}]\""
+            overrides += " --overrides \"artifacts: [{name: ${artifactOverrides.name}, target: ${artifactOverrides.target}, md5: ${md5sum}}]\""
             println "Adding file ${artifactPath} to cekit cache"
             util.runWithPythonVirtualEnv("cekit-cache add --md5=${md5sum} ${artifactPath}", 'cekit')
         }

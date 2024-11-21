@@ -24,6 +24,10 @@ dependencies:
     dependencies:
       - project: kiegroup/kie-tools
 
+  - project: kubesmarts/kie-tools
+    dependencies:
+      - project: kiegroup/kogito-images
+
   - project: kiegroup/kogito-serverless-operator
     dependencies:
       - project: kiegroup/kogito-images
