@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-22T13:22:58.356Z",
+    "date": "2024-11-22T14:13:11.153Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11973427251"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11974226130"
   },
   "projects": [
     {
@@ -12,67 +12,13 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2024-11-15T10:01:51Z",
+      "updated_at": "2024-11-22T13:40:37Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 53,
-          "title": "[BXMSPROD-2213] adjust OSL nightly to build images from new kubesmarts/ke-tools midstream fork",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/53",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/53",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-11-21T20:54:15Z",
-          "updated_at": "2024-11-22T08:31:48Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "33eb89b950bb95f313f015050c77cf539042f197",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSPROD-2213",
-            "sha": "8284dc4debc357c81dbd6bf66e43e46d9ccdf7f4",
-            "label": "rgdoliveira:BXMSPROD-2213"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 33347794788,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11961480301/job/33347794788",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-21T20:54:30Z",
-              "completed_at": "2024-11-21T20:56:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 33347794482,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/11961480301/job/33347794482",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-21T20:54:31Z",
-              "completed_at": "2024-11-21T20:57:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
