@@ -62,7 +62,12 @@ build:
         ${{ env.PME_CMD }} ${{ env.PME_ALIGNMENT_PARAMS_kiegroup_kogito_images }}
         bash -c "set -o pipefail ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_images }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_images.maven.log"
 
+  - project: kubesmarts/kie-tools
+    build-command:
+      downstream: |
+        echo "Cloned kubesmarts/kie-tools repository for building the images"
+
   - project: kiegroup/kogito-serverless-operator
     build-command:
       downstream: |
-        echo "Cloned operator repository for building Operator image"
+        echo "Cloned kiegroup/kogito-serverless-operator repository for building Operator image"
