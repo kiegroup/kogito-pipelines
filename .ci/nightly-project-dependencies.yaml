@@ -20,14 +20,14 @@ dependencies:
     dependencies:
       - project: kiegroup/kogito-examples
 
-  - project: kiegroup/kogito-images
+  - project: kubesmarts/osl-images
     dependencies:
       - project: kiegroup/kie-tools
 
   - project: kubesmarts/kie-tools
     dependencies:
-      - project: kiegroup/kogito-images
+      - project: kubesmarts/osl-images
 
   - project: kiegroup/kogito-serverless-operator
     dependencies:
-      - project: kiegroup/kogito-images
+      - project: kubesmarts/osl-images

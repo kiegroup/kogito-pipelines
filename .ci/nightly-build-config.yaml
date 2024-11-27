@@ -50,7 +50,7 @@ build:
         ${{ env.PME_CMD }} ${{ env.PME_ALIGNMENT_PARAMS_kiegroup_kie_tools }}
         bash -c "set -o pipefail ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kie_tools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kie_tools.maven.log"
 
-  - project: kiegroup/kogito-images
+  - project: kubesmarts/osl-images
     build-command:
       downstream: |
         export MAVEN_OPTIONS="-s ${{ env.PME_MAVEN_SETTINGS_XML }}"
@@ -59,8 +59,8 @@ build:
         echo "NIGHTLY=${{ env.NIGHTLY }}"
         export NIGHTLY_DEPLOY_FOLDER="${{ env.WORKSPACE }}/deployDirectory"
         echo "NIGHTLY_DEPLOY_FOLDER=${{ env.NIGHTLY_DEPLOY_FOLDER }}"
-        ${{ env.PME_CMD }} ${{ env.PME_ALIGNMENT_PARAMS_kiegroup_kogito_images }}
-        bash -c "set -o pipefail ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_images }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_images.maven.log"
+        ${{ env.PME_CMD }} ${{ env.PME_ALIGNMENT_PARAMS_kubesmarts_osl_images }}
+        bash -c "set -o pipefail ; ${{ env.PME_BUILD_SCRIPT_kubesmarts_osl_images }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_images.maven.log"
 
   - project: kubesmarts/kie-tools
     build-command:
