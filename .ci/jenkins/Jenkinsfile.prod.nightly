@@ -186,8 +186,8 @@ pipeline {
 
                             def descriptorFilePath = 'packages/osl-swf-builder-image/generated/logic-swf-builder-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-builder-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-quarkus-app", target: "kogito-builder-quarkus-app-image-build.zip"],
-                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-builder-maven-repository/${env.ARTIFACTS_VERSION}/kogito-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-maven-repository", target: "kogito-builder-maven-repository-image-build.zip"]
+                            def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-builder-quarkus-app/${env.ARTIFACTS_VERSION}/osl-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-quarkus-app", target: "kogito-builder-quarkus-app-image-build.zip"],
+                                            "${env.M2_FOLDER}/com/redhat/osl/osl-builder-maven-repository/${env.ARTIFACTS_VERSION}/osl-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-builder-maven-repository", target: "kogito-builder-maven-repository-image-build.zip"]
                                             ]
 
                             env.SWF_BUILDER_REGISTRY = buildImage(env.SWF_BUILDER, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
@@ -201,8 +201,8 @@ pipeline {
 
                             def descriptorFilePath = 'packages/osl-swf-devmode-image/generated/logic-swf-devmode-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/kogito-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-quarkus-app", target: "kogito-devmode-quarkus-app-image-build.zip"],
-                                            "${env.M2_FOLDER}/org/kie/kogito/kogito-devmode-maven-repository/${env.ARTIFACTS_VERSION}/kogito-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-maven-repository", target: "kogito-devmode-maven-repository-image-build.zip"]
+                            def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/osl-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-quarkus-app", target: "kogito-devmode-quarkus-app-image-build.zip"],
+                                            "${env.M2_FOLDER}/com/redhat/osl/osl-devmode-maven-repository/${env.ARTIFACTS_VERSION}/osl-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": [name: "kogito-devmode-maven-repository", target: "kogito-devmode-maven-repository-image-build.zip"]
                                             ]
 
                             env.SWF_DEVMODE_REGISTRY = buildImage(env.SWF_DEVMODE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
