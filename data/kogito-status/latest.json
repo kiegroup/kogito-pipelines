@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-11-30T07:12:48.423Z",
+    "date": "2024-11-30T08:17:10.961Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/12094506097"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/12094875243"
   },
   "projects": [
     {
@@ -4340,7 +4340,7 @@
         },
         {
           "number": 106,
-          "title": "Update dependency cekit to v4.13.0",
+          "title": "Update dependency cekit to v4.14.0",
           "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/106",
           "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/106",
           "state": "open",
@@ -4348,7 +4348,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-11-23T12:04:45Z",
-          "updated_at": "2024-11-23T12:04:45Z",
+          "updated_at": "2024-11-30T08:06:56Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4358,7 +4358,7 @@
           },
           "head": {
             "ref": "konflux/mintmaker/main/cekit-4.x",
-            "sha": "f62fdf04b48d3ac4c7aebc8968c6841214d3218e",
+            "sha": "5e8e6cb6b7cd14b90828919f50a27426c8a18084",
             "label": "kiegroup:konflux/mintmaker/main/cekit-4.x"
           },
           "user": {
@@ -4368,46 +4368,46 @@
           },
           "checks": [
             {
-              "id": 33420612214,
+              "id": 33727279742,
               "name": "Unit tests And Coverage",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11986976708/job/33420612214",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12094814161/job/33727279742",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-11-23T12:05:45Z",
-              "completed_at": "2024-11-23T12:08:55Z",
+              "started_at": "2024-11-30T08:07:05Z",
+              "completed_at": "2024-11-30T08:10:21Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 33420612128,
+              "id": 33727279650,
               "name": "Check headers",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11986976708/job/33420612128",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12094814161/job/33727279650",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-11-23T12:04:56Z",
-              "completed_at": "2024-11-23T12:05:12Z",
+              "started_at": "2024-11-30T08:07:06Z",
+              "completed_at": "2024-11-30T08:07:12Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 33420612126,
+              "id": 33727279510,
               "name": "End-to-End Tests (Kind)",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11986976709/job/33420612126",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12094814157/job/33727279510",
               "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-11-23T12:04:59Z",
-              "completed_at": "2024-11-23T12:54:28Z",
+              "conclusion": "failure",
+              "started_at": "2024-11-30T08:07:05Z",
+              "completed_at": "2024-11-30T08:09:47Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 33420612035,
+              "id": 33727279501,
               "name": "Check files generation",
-              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11986976708/job/33420612035",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12094814161/job/33727279501",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2024-11-23T12:05:45Z",
-              "completed_at": "2024-11-23T12:08:20Z",
+              "started_at": "2024-11-30T08:07:07Z",
+              "completed_at": "2024-11-30T08:09:35Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
