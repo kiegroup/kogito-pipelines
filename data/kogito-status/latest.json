@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2024-12-21T20:13:29.248Z",
+    "date": "2024-12-21T21:11:29.801Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/12448131837"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/12448483880"
   },
   "projects": [
     {
@@ -3963,6 +3963,156 @@
       "repo_url": "https://github.com/kiegroup/kogito-serverless-operator",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 115,
+          "title": "Update dependency click to v8.1.8",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/115",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/115",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-12-21T20:14:15Z",
+          "updated_at": "2024-12-21T20:14:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "21c99f1ed0dee31b65c128f72e45702f51029d13",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "konflux/mintmaker/main/click-8.x",
+            "sha": "bf687dfa45ba9a6377de3483e1be5b679d01d9ba",
+            "label": "kiegroup:konflux/mintmaker/main/click-8.x"
+          },
+          "user": {
+            "login": "red-hat-konflux[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/296509?v=4",
+            "html_url": "https://github.com/apps/red-hat-konflux"
+          },
+          "checks": [
+            {
+              "id": 34752413084,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139870/job/34752413084",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:25Z",
+              "completed_at": "2024-12-21T20:18:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752412890,
+              "name": "End-to-End Tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139866/job/34752412890",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:27Z",
+              "completed_at": "2024-12-21T21:03:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752412889,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139870/job/34752412889",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:26Z",
+              "completed_at": "2024-12-21T20:17:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752412782,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139870/job/34752412782",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:26Z",
+              "completed_at": "2024-12-21T20:14:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 114,
+          "title": "Update dependency Jinja2 to v3.1.5",
+          "url": "https://api.github.com/repos/kiegroup/kogito-serverless-operator/pulls/114",
+          "html_url": "https://github.com/kiegroup/kogito-serverless-operator/pull/114",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-12-21T20:14:10Z",
+          "updated_at": "2024-12-21T20:14:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "21c99f1ed0dee31b65c128f72e45702f51029d13",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "konflux/mintmaker/main/jinja2-3.x",
+            "sha": "e6e31e9e193d761e17abbf9dbc32a60bf3f7d4e0",
+            "label": "kiegroup:konflux/mintmaker/main/jinja2-3.x"
+          },
+          "user": {
+            "login": "red-hat-konflux[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/296509?v=4",
+            "html_url": "https://github.com/apps/red-hat-konflux"
+          },
+          "checks": [
+            {
+              "id": 34752411981,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139403/job/34752411981",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:22Z",
+              "completed_at": "2024-12-21T20:14:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752411891,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139403/job/34752411891",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:22Z",
+              "completed_at": "2024-12-21T20:17:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752411796,
+              "name": "End-to-End Tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139408/job/34752411796",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:22Z",
+              "completed_at": "2024-12-21T21:01:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34752411795,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/12448139403/job/34752411795",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-12-21T20:14:21Z",
+              "completed_at": "2024-12-21T20:17:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 111,
           "title": "Update dependency requests to <2.32.4",
