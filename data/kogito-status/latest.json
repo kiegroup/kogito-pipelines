@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-02-25T21:12:56.186Z",
+    "date": "2025-02-25T22:13:08.660Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13531041855"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13531976646"
   },
   "projects": [
     {
@@ -18,7 +18,61 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 56,
+          "title": "adjust OSL nightly to build the operator from kubesmarts/osl-images repository",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/56",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/56",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-02-25T22:02:37Z",
+          "updated_at": "2025-02-25T22:02:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7ba417d1735ac123a148d4dba7cd2fc0c3a29c2b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix_operator_nightly",
+            "sha": "31d4f2a6763ae1524fba5cd71c01d9fa0474a1af",
+            "label": "rgdoliveira:fix_operator_nightly"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 37815565103,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13531815561/job/37815565103",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-02-25T22:02:50Z",
+              "completed_at": "2025-02-25T22:04:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37815564708,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13531815561/job/37815564708",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-02-25T22:02:49Z",
+              "completed_at": "2025-02-25T22:03:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
