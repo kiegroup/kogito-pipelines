@@ -27,7 +27,3 @@ dependencies:
   - project: kubesmarts/kie-tools
     dependencies:
       - project: kubesmarts/osl-images
-
-  - project: kiegroup/kogito-serverless-operator
-    dependencies:
-      - project: kubesmarts/osl-images
