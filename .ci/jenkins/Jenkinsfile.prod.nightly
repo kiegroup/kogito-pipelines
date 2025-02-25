@@ -99,7 +99,8 @@ pipeline {
                     env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
                     env.M2_FOLDER = '/home/jenkins/.m2/repository'
                     env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_kie-tools"
-                    env.OPERATOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kiegroup_kogito-serverless-operator"
+                    env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_osl-images"
+                    env.OPERATOR_CODE_REPOSITORY_PATH= "${env.IMAGES_REPOSITORY_PATH}"
                     env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
 
                     // Images names
@@ -229,8 +230,8 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
 
-                            def descriptorFile = 'images/prod-operator-image.yaml'
-                            env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_REPOSITORY_PATH)
+                            def descriptorFile = 'osl-operator-image/logic-rhel8-operator-image.yaml'
+                            env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH, env.OPERATOR_CODE_REPOSITORY_PATH)
                         }
                     }
                 }
@@ -343,25 +344,15 @@ pipeline {
     }
 }
 
-def buildOperator(String descriptorFile, String nightlyBranchName, String operatorRepository) {
+def buildOperator(String descriptorFile, String nightlyBranchName, String operatorDescriptorRepository, String operatorCodeRepository) {
     // Create a different folder for operator, otherwise dir() will mess up with folders and impact other steps of pipeline
-    sh "cp -rp ${operatorRepository} ${env.WORKSPACE}/operator_repo"
+    sh "cp -rp ${operatorDescriptorRepository} ${env.WORKSPACE}/operator_repo"
     dir("${env.WORKSPACE}/operator_repo") {
         println "Building operator"
 
-        // Remove go work files due to cachito limitation and push changes to  a temporary prod branch
-        def prodBranch = "main-prod-nightly"
-        if (githubscm.isBranchExist("origin", prodBranch)) {
-            githubscm.removeRemoteBranch("origin", prodBranch)
-        }
-        githubscm.createBranch(prodBranch)
-        sh "rm -f go.work go.work.sum"
-        githubscm.commitChanges("remove go work files due to cachito limitation")
-        githubscm.pushObject("origin", prodBranch)
-
         // Replace branch and ref in descriptor file
         sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
-        def reference = githubscm.getCommitHash()
+        def reference = sh(returnStdout: true, script: "cd ${operatorCodeRepository};git rev-parse HEAD").trim()
         sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
         println "Diff of ${descriptorFile} after replacing branch name and ref"
         sh "git diff ${descriptorFile}"

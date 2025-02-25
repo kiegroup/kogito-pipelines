@@ -66,8 +66,3 @@ build:
     build-command:
       downstream: |
         echo "Cloned kubesmarts/kie-tools repository for building the images"
-
-  - project: kiegroup/kogito-serverless-operator
-    build-command:
-      downstream: |
-        echo "Cloned kiegroup/kogito-serverless-operator repository for building Operator image"
