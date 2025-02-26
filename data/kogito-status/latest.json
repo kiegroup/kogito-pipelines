@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-02-26T15:15:37.953Z",
+    "date": "2025-02-26T16:18:11.851Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13547170294"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/13548465386"
   },
   "projects": [
     {
@@ -1345,7 +1345,89 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 61,
+          "title": "add persistence-commons as part of productized-multi-repo-zip.xml",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/61",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/61",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "wmedvede",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+              "html_url": "https://github.com/wmedvede"
+            }
+          ],
+          "created_at": "2025-02-26T15:58:34Z",
+          "updated_at": "2025-02-26T15:58:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3df45057cfa706582d2fe8a7f4e3c53c18f9b443",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "persistence_commons",
+            "sha": "5aa910d0fb101ac0caa6be3b66fa3ad966655bee",
+            "label": "rgdoliveira:persistence_commons"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 37864588488,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/13548077328/job/37864588488",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-02-26T15:58:48Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37864588017,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/13548077328/job/37864588017",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-02-26T15:58:46Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37864587436,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/13548077346/job/37864587436",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-02-26T15:58:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37864587377,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/13548077328/job/37864587377",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-02-26T15:58:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
