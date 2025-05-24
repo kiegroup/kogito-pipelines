@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-05-24T01:12:08.835Z",
+    "date": "2025-05-24T03:02:52.726Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/15221876033"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/15222786330"
   },
   "projects": [
     {
@@ -4243,7 +4243,52 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/296509?v=4",
             "html_url": "https://github.com/apps/red-hat-konflux"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 33417484916,
+              "name": "Check files generation",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11985507282/job/33417484916",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-23T08:05:42Z",
+              "completed_at": "2024-11-23T08:09:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33417484824,
+              "name": "Unit tests And Coverage",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11985507282/job/33417484824",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-23T08:05:43Z",
+              "completed_at": "2024-11-23T08:09:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33417484721,
+              "name": "Check headers",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11985507282/job/33417484721",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-23T08:05:42Z",
+              "completed_at": "2024-11-23T08:05:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33417484602,
+              "name": "End-to-End Tests (Kind)",
+              "html_url": "https://github.com/kiegroup/kogito-serverless-operator/actions/runs/11985507274/job/33417484602",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-11-23T08:06:31Z",
+              "completed_at": "2024-11-23T08:53:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
         },
         {
           "number": 104,
