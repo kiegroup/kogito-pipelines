@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-07-15T05:21:01.217Z",
+    "date": "2025-07-15T06:25:49.710Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16284788901"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16285778922"
   },
   "projects": [
     {
@@ -398,6 +398,17 @@
           },
           "checks": [
             {
+              "id": 45981763938,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16262433794/job/45981763938",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-07-15T05:32:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
               "id": 45977591119,
               "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.6)",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16262433800/job/45977591119",
@@ -438,17 +449,6 @@
               "conclusion": "success",
               "started_at": "2025-07-15T03:42:50Z",
               "completed_at": "2025-07-15T04:29:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 45910523031,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16262433794/job/45910523031",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2025-07-14T08:53:45Z",
-              "completed_at": "2025-07-14T10:54:04Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
