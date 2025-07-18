@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-07-18T12:34:26.825Z",
+    "date": "2025-07-18T13:33:44.634Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16370665311"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16371875380"
   },
   "projects": [
     {
@@ -1345,7 +1345,89 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 70,
+          "title": "[OSL-dev] Fix non product removal modules in prod CI pipeline",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/70",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/70",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            }
+          ],
+          "created_at": "2025-07-18T13:30:04Z",
+          "updated_at": "2025-07-18T13:30:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2c9ce1719c616331ccd60e6b1bc2cab97d95761d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix-non-product-removal-modules",
+            "sha": "5ac097f59edfde362b72ac3ae51dce309de88d6d",
+            "label": "kiegroup:fix-non-product-removal-modules"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 46261771896,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16371803331/job/46261771896",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-07-18T13:30:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 46261771893,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16371803331/job/46261771893",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-07-18T13:30:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 46261771872,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16371803331/job/46261771872",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-07-18T13:30:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 46261771819,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16371803318/job/46261771819",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-07-18T13:30:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
