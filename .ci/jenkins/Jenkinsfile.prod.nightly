@@ -354,6 +354,7 @@ def buildOperator(String descriptorFile, String nightlyBranchName, String operat
         sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
         def reference = sh(returnStdout: true, script: "cd ${operatorCodeRepository};git rev-parse HEAD").trim()
         sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
+        sh """sed -i "s/ version:.*/ version: ${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
         println "Diff of ${descriptorFile} after replacing branch name and ref"
         sh "git diff ${descriptorFile}"
 
