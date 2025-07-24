@@ -187,7 +187,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 4)
 
-                            def descriptorFilePath = 'images-dist/osl-swf-builder-image/generated/logic-swf-builder-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-swf-builder-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-builder-quarkus-app/${env.ARTIFACTS_VERSION}/osl-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
                                             "${env.M2_FOLDER}/com/redhat/osl/osl-builder-maven-repository/${env.ARTIFACTS_VERSION}/osl-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-maven-repository-image-build.zip"
@@ -354,7 +354,7 @@ def buildOperator(String descriptorFile, String nightlyBranchName, String operat
         sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
         def reference = sh(returnStdout: true, script: "cd ${operatorCodeRepository};git rev-parse HEAD").trim()
         sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
-        sh """sed -i "s/ version:.*/ version: ${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
+        sh """sed -i "s/ version:.*/ version: 999.0.0.nightly/g" ${descriptorFile}"""
         println "Diff of ${descriptorFile} after replacing branch name and ref"
         sh "git diff ${descriptorFile}"
 
