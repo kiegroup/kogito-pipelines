@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-07-31T10:18:24.941Z",
+    "date": "2025-07-31T11:15:01.319Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16646313654"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16647454148"
   },
   "projects": [
     {
@@ -12,78 +12,13 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2025-07-24T13:00:33Z",
+      "updated_at": "2025-07-31T10:39:30Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 66,
-          "title": "SRVLOGIC-582: Use descriptorFilePath to modify image manifests",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/66",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/66",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            }
-          ],
-          "created_at": "2025-07-31T08:16:24Z",
-          "updated_at": "2025-07-31T09:30:43Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1c4573a56e664abbd4d092b7855bdf454aba0d78",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-582",
-            "sha": "6576d78e829a9e7216acb1e0a5111fecd07a00d3",
-            "label": "domhanak:SRVLOGIC-582"
-          },
-          "user": {
-            "login": "domhanak",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-            "html_url": "https://github.com/domhanak"
-          },
-          "checks": [
-            {
-              "id": 47103521145,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16645018664/job/47103521145",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-07-31T09:17:59Z",
-              "completed_at": "2025-07-31T09:19:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 47103521138,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16645018664/job/47103521138",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-07-31T09:17:59Z",
-              "completed_at": "2025-07-31T09:19:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
