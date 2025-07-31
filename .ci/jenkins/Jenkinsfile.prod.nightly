@@ -379,10 +379,10 @@ def buildImage(String imageName, String descriptorFilePath, String nightlyBranch
         println "Building image ${imageName}"
 
         def descriptorFile = descriptorFilePath.substring(descriptorFilePath.lastIndexOf('/') + 1, descriptorFilePath.size())
-        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFilePath}"""
-        sh """sed -i "s/999-20250511-local/${env.ARTIFACTS_VERSION}/g" ${descriptorFilePath}"""
-        println "Diff of ${descriptorFilePath} after replacing branch name"
-        sh "git diff ${descriptorFilePath}"
+        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
+        sh """sed -i "s/999-20250511-local/${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
+        println "Diff of ${descriptorFile} after replacing branch name and org.kie.kogito.version"
+        sh "git diff ${descriptorFile}"
 
         println 'Using cekit version'
         util.runWithPythonVirtualEnv('cekit --version', 'cekit')
