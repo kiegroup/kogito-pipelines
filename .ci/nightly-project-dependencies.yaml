@@ -16,13 +16,13 @@ dependencies:
       - project: kiegroup/kogito-runtimes
       - project: kiegroup/kogito-apps
 
-  - project: kiegroup/kie-tools
+  - project: kubesmarts/kie-tools
     dependencies:
       - project: kiegroup/kogito-examples
 
   - project: kubesmarts/osl-images
     dependencies:
-      - project: kiegroup/kie-tools
+      - project: kubesmarts/kie-tools
 
   - project: kubesmarts/kie-tools
     dependencies:
