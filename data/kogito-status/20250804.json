@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-08-04T08:25:12.567Z",
+    "date": "2025-08-04T09:27:43.500Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16717968438"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/16719317915"
   },
   "projects": [
     {
@@ -275,7 +275,105 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 111,
+          "title": "Sync main branch with Apache main branch",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/111",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/111",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2025-08-04T08:56:30Z",
+          "updated_at": "2025-08-04T09:16:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0831d5bf6f9c267691a6cc17a5617ae487eaaf01",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "sync",
+            "sha": "63324e358a386b5316f7ecb860b577c030cf34bc",
+            "label": "saumya1singh:sync"
+          },
+          "user": {
+            "login": "saumya1singh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+            "html_url": "https://github.com/saumya1singh"
+          },
+          "checks": [
+            {
+              "id": 47317676089,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16718640462/job/47317676089",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T08:56:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47317676077,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16718640462/job/47317676077",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T08:56:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47317676070,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16718640462/job/47317676070",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T08:56:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47317676060,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16718640462/job/47317676060",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T08:56:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47317675982,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/16718640444/job/47317675982",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T08:56:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
@@ -1345,7 +1443,94 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 77,
+          "title": "Sync main branch with Apache main branch ",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/77",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/77",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2025-08-04T09:04:18Z",
+          "updated_at": "2025-08-04T09:16:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d65a4a62d4c4c3e7bf8f1724ff988c4a04745b7a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "sync-main",
+            "sha": "6f46cd94d0aca4acfeb63473b5a0e425e8eeab28",
+            "label": "saumya1singh:sync-main"
+          },
+          "user": {
+            "login": "saumya1singh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+            "html_url": "https://github.com/saumya1singh"
+          },
+          "checks": [
+            {
+              "id": 47318235376,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16718810365/job/47318235376",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T09:04:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47318235354,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.6",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16718810362/job/47318235354",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T09:04:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47318235344,
+              "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16718810365/job/47318235344",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T09:04:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 47318235341,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/16718810365/job/47318235341",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-08-04T09:04:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
@@ -1362,7 +1547,44 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 67,
+          "title": "Sync main branch with Apache main branch",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/67",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/67",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2025-08-04T09:10:57Z",
+          "updated_at": "2025-08-04T09:16:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "128c699cc9fc902942d24dabcdb1cf1229356788",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "sync-main",
+            "sha": "bb199e1735a05d41c6e7bb3a88dd301a7162fd10",
+            "label": "saumya1singh:sync-main"
+          },
+          "user": {
+            "login": "saumya1singh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+            "html_url": "https://github.com/saumya1singh"
+          },
+          "checks": []
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
