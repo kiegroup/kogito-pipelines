@@ -61,8 +61,3 @@ build:
         echo "NIGHTLY_DEPLOY_FOLDER=${{ env.NIGHTLY_DEPLOY_FOLDER }}"
         ${{ env.PME_CMD }} ${{ env.PME_ALIGNMENT_PARAMS_kubesmarts_osl_images }}
         bash -c "set -o pipefail ; ${{ env.PME_BUILD_SCRIPT_kubesmarts_osl_images }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_images.maven.log"
-
-  - project: kubesmarts/kie-tools
-    build-command:
-      downstream: |
-        echo "Cloned kubesmarts/kie-tools repository for building the images"
