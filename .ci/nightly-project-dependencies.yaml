@@ -23,7 +23,3 @@ dependencies:
   - project: kubesmarts/osl-images
     dependencies:
       - project: kubesmarts/kie-tools
-
-  - project: kubesmarts/kie-tools
-    dependencies:
-      - project: kubesmarts/osl-images
