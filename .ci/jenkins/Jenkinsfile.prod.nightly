@@ -111,6 +111,7 @@ pipeline {
                     env.SWF_BUILDER = 'swf-builder'
                     env.SWF_DEVMODE = 'swf-devmode'
                     env.DB_MIGRATOR_TOOL = 'db-migrator-tool'
+                    env.MANAGEMENT_CONSOLE = 'management-console'
                     env.OPERATOR = 'operator'
 
                     // Images registries placeholders
@@ -121,6 +122,7 @@ pipeline {
                     env.SWF_BUILDER_REGISTRY = ''
                     env.SWF_DEVMODE_REGISTRY = ''
                     env.DB_MIGRATOR_TOOL_REGISTRY = ''
+                    env.MANAGEMENT_CONSOLE_REGISTRY = ''
                     env.OPERATOR_REGISTRY = ''
                 }
             }
@@ -222,6 +224,19 @@ pipeline {
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-db-migrator-tool/${env.ARTIFACTS_VERSION}/kogito-db-migrator-tool-${env.ARTIFACTS_VERSION}-image-build.zip": "db-migrator-tool-image-build.zip"]
 
                             env.DB_MIGRATOR_TOOL_REGISTRY = buildImage(env.DB_MIGRATOR_TOOL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Management Console image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+
+                            def descriptorFilePath = 'images-dist/logic-management-console-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/apache/kie/sonataflow/sonataflow-management-console-webapp/${env.ARTIFACTS_VERSION}/sonataflow-management-console-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "sonataflow-management-console-webapp-image-build.zip"]
+
+                            env.MANAGEMENT_CONSOLE_REGISTRY = buildImage(env.MANAGEMENT_CONSOLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
                     }
                 }
