@@ -111,6 +111,7 @@ pipeline {
                     env.SWF_BUILDER = 'swf-builder'
                     env.SWF_DEVMODE = 'swf-devmode'
                     env.DB_MIGRATOR_TOOL = 'db-migrator-tool'
+                    env.MANAGEMENT_CONSOLE = 'management-console'
                     env.OPERATOR = 'operator'
 
                     // Images registries placeholders
@@ -121,6 +122,7 @@ pipeline {
                     env.SWF_BUILDER_REGISTRY = ''
                     env.SWF_DEVMODE_REGISTRY = ''
                     env.DB_MIGRATOR_TOOL_REGISTRY = ''
+                    env.MANAGEMENT_CONSOLE_REGISTRY = ''
                     env.OPERATOR_REGISTRY = ''
                 }
             }
@@ -225,6 +227,19 @@ pipeline {
                         }
                     }
                 }
+                stage('Management Console image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+
+                            def descriptorFilePath = 'images-dist/logic-management-console-rhel8-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/apache/kie/sonataflow/sonataflow-management-console-webapp/${env.ARTIFACTS_VERSION}/sonataflow-management-console-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "sonataflow-management-console-webapp-image-build.zip"]
+
+                            env.MANAGEMENT_CONSOLE_REGISTRY = buildImage(env.MANAGEMENT_CONSOLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
                 stage('Operator image') {
                     steps {
                         script {
@@ -297,9 +312,24 @@ pipeline {
                     def messageBody = getMessageBody(
                         mavenRepositoryFileUrl, 
                         env.ALREADY_BUILT_PROJECTS,
-                        ['serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'], 'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'], 'drools': env.VERSION_kiegroup_drools, 'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION, 'quarkus.bom': env.QUARKUS_VERSION],
-                        ["${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY, "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY, "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY, "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY,
-                            "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY, "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY, "${env.DB_MIGRATOR_TOOL}": env.DB_MIGRATOR_TOOL_REGISTRY, "${env.OPERATOR}": env.OPERATOR_REGISTRY],
+                        [
+                         'serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'],
+                         'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'],
+                         'drools': env.VERSION_kiegroup_drools,
+                         'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION,
+                         'quarkus.bom': env.QUARKUS_VERSION
+                        ],
+                        [
+                         "${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY,
+                         "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY,
+                         "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY,
+                         "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY,
+                         "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY,
+                         "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY,
+                         "${env.DB_MIGRATOR_TOOL}": env.DB_MIGRATOR_TOOL_REGISTRY,
+                         "${env.MANAGEMENT_CONSOLE}" : env.MANAGEMENT_CONSOLE_REGISTRY,
+                         "${env.OPERATOR}": env.OPERATOR_REGISTRY
+                        ],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
                     echo "[INFO] Message Body: ${messageBody}"
