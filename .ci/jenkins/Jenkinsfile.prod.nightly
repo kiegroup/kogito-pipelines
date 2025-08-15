@@ -139,7 +139,10 @@ pipeline {
 
                             def descriptorFilePath = 'images-dist/logic-data-index-ephemeral-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip"]
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip"
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-data-index-webapp/${env.ARTIFACTS_VERSION}/kogito-data-index-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-data-index-webapp-image-build.zip"
+                            ]
 
                             env.DATA_INDEX_EPHEMERAL_REGISTRY = buildImage(env.DATA_INDEX_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
@@ -152,7 +155,10 @@ pipeline {
 
                             def descriptorFilePath = 'images-dist/logic-data-index-postgresql-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip"]
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-data-index-webapp/${env.ARTIFACTS_VERSION}/kogito-data-index-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-data-index-webapp-image-build.zip"
+]
 
                             env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
