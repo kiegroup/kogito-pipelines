@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-08-18T05:20:28.386Z",
+    "date": "2025-08-18T06:27:00.369Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17031737346"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17032819502"
   },
   "projects": [
     {
@@ -18,7 +18,67 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 73,
+          "title": "BAQE-3160: Fix missing colon in artifacts map",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/73",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/73",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fantonangeli",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+              "html_url": "https://github.com/fantonangeli"
+            }
+          ],
+          "created_at": "2025-08-18T06:18:28Z",
+          "updated_at": "2025-08-18T06:18:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6db03880b0088c6da1d3880b3f4b8231257d455f",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BAQE-3160-fix-missing-colon",
+            "sha": "faf3e9f2b60476be51719d73d66388000cc85348",
+            "label": "domhanak:BAQE-3160-fix-missing-colon"
+          },
+          "user": {
+            "login": "domhanak",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+            "html_url": "https://github.com/domhanak"
+          },
+          "checks": [
+            {
+              "id": 48278423680,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17032675314/job/48278423680",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-08-18T06:18:35Z",
+              "completed_at": "2025-08-18T06:19:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48278423651,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17032675314/job/48278423651",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-08-18T06:18:35Z",
+              "completed_at": "2025-08-18T06:19:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
