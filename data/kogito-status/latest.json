@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-08-25T05:16:48.840Z",
+    "date": "2025-08-25T06:25:25.735Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17199798108"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17200949762"
   },
   "projects": [
     {
@@ -1356,67 +1356,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2025-08-10T02:20:58Z",
+      "updated_at": "2025-08-25T05:50:19Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 68,
-          "title": "Sync main branch with Apache main branch",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/68",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/68",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2025-08-06T10:16:30Z",
-          "updated_at": "2025-08-07T05:55:47Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "128c699cc9fc902942d24dabcdb1cf1229356788",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "sync_main",
-            "sha": "bb199e1735a05d41c6e7bb3a88dd301a7162fd10",
-            "label": "saumya1singh:sync_main"
-          },
-          "user": {
-            "login": "saumya1singh",
-            "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-            "html_url": "https://github.com/saumya1singh"
-          },
-          "checks": [
-            {
-              "id": 47529930442,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/16774126351/job/47529930442",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2025-08-06T17:29:47Z",
-              "completed_at": "2025-08-06T17:29:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 47529930366,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/16774126351/job/47529930366",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2025-08-06T17:29:47Z",
-              "completed_at": "2025-08-06T17:29:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
