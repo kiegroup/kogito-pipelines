@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-08-26T03:06:07.165Z",
+    "date": "2025-08-26T04:18:59.268Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17226716540"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17227787393"
   },
   "projects": [
     {
@@ -4380,7 +4380,152 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-docs/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 17,
+          "title": "Bump brace-expansion",
+          "url": "https://api.github.com/repos/kiegroup/kogito-docs/pulls/17",
+          "html_url": "https://github.com/kiegroup/kogito-docs/pull/17",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            }
+          ],
+          "created_at": "2025-08-26T03:17:08Z",
+          "updated_at": "2025-08-26T03:17:09Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "937b766552aeafcced8ce224ca24edd6a8cc3301",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/npm_and_yarn/multi-c22e25d29b",
+            "sha": "312bc4330a71e6be3edb949a938b2a80d7c5c5d0",
+            "label": "kiegroup:dependabot/npm_and_yarn/multi-c22e25d29b"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 48873164685,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877824/job/48873164685",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:14Z",
+              "completed_at": "2025-08-26T03:17:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873162948,
+              "name": "Building Serverless Workflow Documentation with Antora",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226878023/job/48873162948",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-08-26T03:17:17Z",
+              "completed_at": "2025-08-26T03:18:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873162616,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877824/job/48873162616",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:12Z",
+              "completed_at": "2025-08-26T03:17:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873162472,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226878036/job/48873162472",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:12Z",
+              "completed_at": "2025-08-26T03:17:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873162320,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226878036/job/48873162320",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:12Z",
+              "completed_at": "2025-08-26T03:17:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873161906,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877932/job/48873161906",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:11Z",
+              "completed_at": "2025-08-26T03:17:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873161859,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877932/job/48873161859",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:11Z",
+              "completed_at": "2025-08-26T03:17:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873161506,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877790/job/48873161506",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:11Z",
+              "completed_at": "2025-08-26T03:17:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 48873161399,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-docs/actions/runs/17226877790/job/48873161399",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-08-26T03:17:11Z",
+              "completed_at": "2025-08-26T03:17:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {},
         "1.13.x-blue": {}
