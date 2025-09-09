@@ -158,7 +158,7 @@ pipeline {
                             def artifacts = [
                                 "${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip",
                                 "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-data-index-webapp/${env.ARTIFACTS_VERSION}/kogito-data-index-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-data-index-webapp-image-build.zip"
-]
+                            ]
 
                             env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
@@ -259,6 +259,25 @@ pipeline {
 
             }
         }
+        stage('Build KN Workflow plugin') {
+            steps {
+                echo "[INFO] Building KN Workflow plugin"
+                dir("${env.WORKSPACE}/bc/kubesmarts_kie-tools") {
+                    def build_status = sh (returnStatus: true, script: """
+                        export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
+                        export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
+                        export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
+                        ./node/pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
+                    """)
+                    // For testing and throughput, if this does not work well, we can stil lget nightly
+                    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                        if (build_status == 1) {
+                            error('[ERROR] Kn Workflow plugin error during pnpm build:prod script execution.')
+                        }
+                    }
+                }
+            }
+        }
         stage('Upload maven repository') {
             steps {
                 script {
@@ -269,12 +288,34 @@ pipeline {
                         sh "mv ${env.WORKSPACE}/deployDirectory/* ${destDir}"
                         dir("${env.WORKSPACE}/deployDirectoryFinal") {
                             sh "zip -r maven-repository-${env.DATE_TIME_SUFFIX} ."
-                            def relativeFile = "rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly"
+                            def relativeFile = "rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/maven-repository-${env.DATE_TIME_SUFFIX}"
                             def folder="${env.RCM_GUEST_FOLDER}/${relativeFile}"
 
                             util.withKerberos('rhba-prod-keytab') {
                                 sh "ssh 'rhba-prod@${env.RCM_HOST}' 'mkdir -p ${folder}'"
                                 sh "rsync -rlp --info=progress2 maven-repository-${env.DATE_TIME_SUFFIX}.zip rhba-prod@${env.RCM_HOST}:staging/${relativeFile}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage('Upload KN Workflow Plugin binaries') {
+            steps {
+                script {
+                    echo "[INFO] Start uploading KN Workflow plugin binaries"
+                    def knWorkflowPluginDist = "${env.WORKSPACE}/bc/kubesmarts_kie-tools/packages/kn-plugin-workflow/dist"
+                    if(fileExists("${knWorkflowPluginDist}")){
+                        def destDir = "${env.WORKSPACE}/knWorkflowPluginFinal/"
+                        sh "mkdir -p ${destDir}"
+                        sh "mv ${knWorkflowPluginDist}/* ${destDir}"
+                        dir("${env.WORKSPACE}/knWorkflowPluginFinal") {
+                            def relativeFile = "rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/kn-workflow-plugin-${env.DATE_TIME_SUFFIX}"
+                            def folder="${env.RCM_GUEST_FOLDER}/${relativeFile}"
+
+                            util.withKerberos('rhba-prod-keytab') {
+                                sh "ssh 'rhba-prod@${env.RCM_HOST}' 'mkdir -p ${folder}'"
+                                sh "rsync -rlp --info=progress2 ./** rhba-prod@${env.RCM_HOST}:staging/${relativeFile}"
                             }
                         }
                     }
@@ -312,11 +353,13 @@ pipeline {
                 script {
                     echo '[INFO] Sending OPENSHIFT SERVERLESS LOGIC UMB message to QE.'
 
-                    def mavenRepositoryFileUrl = "${env.STAGING_SERVER_URL}/rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/maven-repository-${env.DATE_TIME_SUFFIX}.zip"
+                    def mavenRepositoryFileUrl = "${env.STAGING_SERVER_URL}/rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/maven-repository-${env.DATE_TIME_SUFFIX}/maven-repository-${env.DATE_TIME_SUFFIX}.zip"
+                    def knWorkflowPluginBinariesUrl = "${env.STAGING_SERVER_URL}/rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/kn-workflow-plugin-${env.DATE_TIME_SUFFIX}/"
                     def topic = "VirtualTopic.qe.ci.ba.openshift-serverless-logic.${env.UMB_VERSION}.nightly.trigger"
                     def eventType = "openshift-serverless-logic-${env.UMB_VERSION}-nightly-qe-trigger"
                     def messageBody = getMessageBody(
-                        mavenRepositoryFileUrl, 
+                        mavenRepositoryFileUrl,
+                        knWorkflowPluginBinariesUrl, 
                         env.ALREADY_BUILT_PROJECTS,
                         [
                          'serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'],
@@ -441,11 +484,12 @@ def buildImage(String imageName, String descriptorFilePath, String nightlyBranch
     }
 }
 
-def getMessageBody(String mavenRepositoryFileUrl, String alreadyBuiltProjects, Map<String, String> versions, Map<String, String> imagesRegistries, Map<String, String> scmHashes) {
+def getMessageBody(String mavenRepositoryFileUrl, String knWorkflowPluginBinariesUrl,String alreadyBuiltProjects, Map<String, String> versions, Map<String, String> imagesRegistries, Map<String, String> scmHashes) {
     def alreadyBuiltProjectsArray = (alreadyBuiltProjects ?: '').split(";")
     return """
 {
     "maven_repository_file_url": "${mavenRepositoryFileUrl}",
+    "kn_workflow_binaries_url: "${knWorkflowPluginBinariesUrl}",
     "version": ${new groovy.json.JsonBuilder(versions).toString()},
     "image": ${new groovy.json.JsonBuilder(imagesRegistries).toString()},
     "scm_hash": ${new groovy.json.JsonBuilder(scmHashes).toString()},
