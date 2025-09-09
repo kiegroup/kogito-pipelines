@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-09T12:33:02.458Z",
+    "date": "2025-09-09T13:27:27.643Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17582691911"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17584182354"
   },
   "projects": [
     {
@@ -18,7 +18,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 74,
+          "title": "SRVLOGIC-657: Include Kn Workflow plugin binaries in nightly prod build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/74",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/74",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            }
+          ],
+          "created_at": "2025-09-09T13:07:23Z",
+          "updated_at": "2025-09-09T13:07:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a26ab1ea9907ad8713610a7b0582d68d8c0b8be4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-657",
+            "sha": "7825d92e537d5816e585f7665c1f36b4f2b60484",
+            "label": "domhanak:SRVLOGIC-657"
+          },
+          "user": {
+            "login": "domhanak",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+            "html_url": "https://github.com/domhanak"
+          },
+          "checks": [
+            {
+              "id": 49945761417,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17583624776/job/49945761417",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-09T13:08:03Z",
+              "completed_at": "2025-09-09T13:13:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 49945761387,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17583624776/job/49945761387",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-09T13:08:02Z",
+              "completed_at": "2025-09-09T13:09:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
