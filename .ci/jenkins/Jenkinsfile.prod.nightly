@@ -9,7 +9,7 @@ pipeline {
     tools {
         maven 'kie-maven-3.9.6'
         jdk 'kie-jdk17'
-        nodejs 'nodejs-16.2.0'
+        nodejs 'nodejs-20.14.0'
     }
     parameters {
         string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'main')
@@ -491,7 +491,7 @@ def getMessageBody(String mavenRepositoryFileUrl, String knWorkflowPluginBinarie
     return """
 {
     "maven_repository_file_url": "${mavenRepositoryFileUrl}",
-    "kn_workflow_binaries_url: "${knWorkflowPluginBinariesUrl}",
+    "kn_workflow_binaries_url": "${knWorkflowPluginBinariesUrl}",
     "version": ${new groovy.json.JsonBuilder(versions).toString()},
     "image": ${new groovy.json.JsonBuilder(imagesRegistries).toString()},
     "scm_hash": ${new groovy.json.JsonBuilder(scmHashes).toString()},
