@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-10T07:14:07.056Z",
+    "date": "2025-09-10T08:19:52.358Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17606169569"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17607671273"
   },
   "projects": [
     {
@@ -12,78 +12,13 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2025-09-09T13:40:50Z",
+      "updated_at": "2025-09-10T07:14:54Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 75,
-          "title": "SRVLOGIC-657: Fix missing script block",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/75",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/75",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            }
-          ],
-          "created_at": "2025-09-10T07:01:34Z",
-          "updated_at": "2025-09-10T07:01:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "6ed9ab9bf21a81238820f8ea5f296b7ccb82c2a7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-657-2",
-            "sha": "380675dc82ef9e2876d87b521801ece1e1fe5358",
-            "label": "domhanak:SRVLOGIC-657-2"
-          },
-          "user": {
-            "login": "domhanak",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-            "html_url": "https://github.com/domhanak"
-          },
-          "checks": [
-            {
-              "id": 50016491502,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17605880652/job/50016491502",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-09-10T07:01:40Z",
-              "completed_at": "2025-09-10T07:14:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 50016491493,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17605880652/job/50016491493",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-09-10T07:01:40Z",
-              "completed_at": "2025-09-10T07:04:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
