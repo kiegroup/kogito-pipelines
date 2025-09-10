@@ -261,18 +261,20 @@ pipeline {
         }
         stage('Build KN Workflow plugin') {
             steps {
-                echo "[INFO] Building KN Workflow plugin"
-                dir("${env.WORKSPACE}/bc/kubesmarts_kie-tools") {
-                    def build_status = sh (returnStatus: true, script: """
-                        export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
-                        export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
-                        export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
-                        ./node/pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
-                    """)
-                    // For testing and throughput, if this does not work well, we can stil lget nightly
-                    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                        if (build_status == 1) {
-                            error('[ERROR] Kn Workflow plugin error during pnpm build:prod script execution.')
+                script {
+                    echo "[INFO] Building KN Workflow plugin"
+                    dir("${env.WORKSPACE}/bc/kubesmarts_kie-tools") {
+                        def build_status = sh (returnStatus: true, script: """
+                            export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
+                            export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
+                            export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
+                            ./node/pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
+                        """)
+                        // For testing and throughput, if this does not work well, we can stil lget nightly
+                        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                            if (build_status == 1) {
+                                error('[ERROR] Kn Workflow plugin error during pnpm build:prod script execution.')
+                            }
                         }
                     }
                 }
