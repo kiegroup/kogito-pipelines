@@ -102,6 +102,7 @@ pipeline {
                     env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_osl-images"
                     env.OPERATOR_CODE_REPOSITORY_PATH= "${env.WORKSPACE}/bc/kubesmarts_kie-tools"
                     env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
+                    env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH = "${env.IMAGES_REPOSITORY_PATH}/images-dist/modules/kogito-project-versions/module.yaml"
 
                     // Images names
                     env.DATA_INDEX_EPHEMERAL = 'data-index-ephemeral'
@@ -124,6 +125,15 @@ pipeline {
                     env.DB_MIGRATOR_TOOL_REGISTRY = ''
                     env.MANAGEMENT_CONSOLE_REGISTRY = ''
                     env.OPERATOR_REGISTRY = ''
+
+                    // Override SONATAFLOW_QUARKUS_DEVUI_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/### SET ME DURING BUILD PROCESS ###/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override KOGITO_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override QUARKUS_PLATFORM_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/${env.QUARKUS_VERSION_COMMUNITY}/${env.QUARKUS_PLATFORM_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override QUARKUS_PLATFORM_GROUPID in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/io.quarkus.platform/com.redhat.quarkus.platform/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
                 }
             }
         }
