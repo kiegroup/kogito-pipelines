@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-11T09:15:26.686Z",
+    "date": "2025-09-11T10:15:02.266Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17639898926"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17641368173"
   },
   "projects": [
     {
@@ -18,7 +18,125 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 78,
+          "title": "SRVLOGIC-212: Upgrade Serverless Logic Images to RHEL9",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/78",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/78",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-09-11T09:49:50Z",
+          "updated_at": "2025-09-11T09:55:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b081e2af6d2e0de64c39021b2fbe87a8243da8b3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-212",
+            "sha": "fdf25b2110b167896790886d0962c8340e85d494",
+            "label": "wmedvede:SRVLOGIC-212"
+          },
+          "user": {
+            "login": "wmedvede",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+            "html_url": "https://github.com/wmedvede"
+          },
+          "checks": [
+            {
+              "id": 50127076100,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17640768666/job/50127076100",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-11T09:49:58Z",
+              "completed_at": "2025-09-11T09:53:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50127076084,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17640768666/job/50127076084",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-11T09:49:59Z",
+              "completed_at": "2025-09-11T09:53:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 77,
+          "title": "SRVLOGIC-631: Override version in kogito-project-versions module",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/77",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/77",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            }
+          ],
+          "created_at": "2025-09-11T09:18:30Z",
+          "updated_at": "2025-09-11T09:21:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b081e2af6d2e0de64c39021b2fbe87a8243da8b3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-631-4",
+            "sha": "34b1395ca3c3ae1691aecc9c60845bc44a2aaebb",
+            "label": "domhanak:SRVLOGIC-631-4"
+          },
+          "user": {
+            "login": "domhanak",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+            "html_url": "https://github.com/domhanak"
+          },
+          "checks": [
+            {
+              "id": 50124853055,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17640071243/job/50124853055",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-11T09:21:57Z",
+              "completed_at": "2025-09-11T09:24:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50124853051,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17640071243/job/50124853051",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-11T09:21:59Z",
+              "completed_at": "2025-09-11T09:23:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "1.13.x": {
           "1.13.x-blue": [
