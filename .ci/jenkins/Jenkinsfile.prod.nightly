@@ -181,7 +181,10 @@ pipeline {
 
                             def descriptorFilePath = 'images-dist/logic-jobs-service-ephemeral-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip"]
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-jobs-service-webapp/${env.ARTIFACTS_VERSION}/kogito-jobs-service-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-jobs-service-webapp-image-build.zip"
+                            ]
 
                             env.JOBS_SERVICE_EPHEMERAL_REGISTRY = buildImage(env.JOBS_SERVICE_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
@@ -194,7 +197,10 @@ pipeline {
 
                             def descriptorFilePath = 'images-dist/logic-jobs-service-postgresql-rhel8-image.yaml'
                             // Map with artifact path required in image module.yaml
-                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-jobs-service-webapp/${env.ARTIFACTS_VERSION}/kogito-jobs-service-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-jobs-service-webapp-image-build.zip"
+                            ]
 
                             env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
                         }
