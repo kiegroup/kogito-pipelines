@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-16T12:30:50.953Z",
+    "date": "2025-09-16T13:24:59.000Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17765821878"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17767294220"
   },
   "projects": [
     {
@@ -354,9 +354,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
           "created_at": "2025-09-16T09:33:52Z",
-          "updated_at": "2025-09-16T10:25:24Z",
+          "updated_at": "2025-09-16T12:31:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1511,9 +1522,25 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "fantonangeli",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17780574?v=4",
+              "html_url": "https://github.com/fantonangeli"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
           "created_at": "2025-09-16T10:18:23Z",
-          "updated_at": "2025-09-16T10:24:59Z",
+          "updated_at": "2025-09-16T12:32:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1533,35 +1560,35 @@
           },
           "checks": [
             {
-              "id": 50478670093,
-              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50478670093",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-09-16T10:20:32Z",
-              "completed_at": "2025-09-16T11:24:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 50478670082,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50478670082",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-09-16T10:20:18Z",
-              "completed_at": "2025-09-16T11:33:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 50478670074,
+              "id": 50488979294,
               "name": "kogito-quarkus-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50478670074",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50488979294",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2025-09-16T10:20:30Z",
               "completed_at": "2025-09-16T11:34:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50488979123,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50488979123",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-09-16T12:32:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50488979070,
+              "name": "kogito-springboot-examples (ubuntu-latest / Java-17 / Maven-3.9.6)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/17762612783/job/50488979070",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-16T10:20:32Z",
+              "completed_at": "2025-09-16T11:24:59Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1604,9 +1631,25 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "ricardozanini",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+              "html_url": "https://github.com/ricardozanini"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
           "created_at": "2025-09-16T10:24:14Z",
-          "updated_at": "2025-09-16T10:24:53Z",
+          "updated_at": "2025-09-16T12:33:13Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
