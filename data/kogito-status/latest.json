@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-16T14:15:10.458Z",
+    "date": "2025-09-16T15:15:43.720Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17768755063"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17770526097"
   },
   "projects": [
     {
@@ -19,6 +19,59 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 79,
+          "title": "SRVLOGIC-658: include kogito-jobs-service-webapp in the osl-jobs-service images",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/79",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/79",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-09-16T15:15:31Z",
+          "updated_at": "2025-09-16T15:15:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6712a85d36545101c3c6d7690186733dd616ef72",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-658",
+            "sha": "74c7accd87aedd6ee33fe640c3b4deba60071bca",
+            "label": "wmedvede:SRVLOGIC-658"
+          },
+          "user": {
+            "login": "wmedvede",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
+            "html_url": "https://github.com/wmedvede"
+          },
+          "checks": [
+            {
+              "id": 50505138533,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17770531519/job/50505138533",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-09-16T15:15:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50505138525,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17770531519/job/50505138525",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-09-16T15:15:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 78,
           "title": "SRVLOGIC-212: Upgrade Serverless Logic Images to RHEL9",
