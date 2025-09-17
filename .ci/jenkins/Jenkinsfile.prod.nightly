@@ -95,7 +95,7 @@ pipeline {
             steps {
                 script {
                     // Common variables
-                    env.NIGHTLY_BRANCH_NAME = 'openshift-serverless-nightly-rhel-8'
+                    env.NIGHTLY_BRANCH_NAME = 'openshift-serverless-nightly-rhel-9'
                     env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
                     env.M2_FOLDER = '/home/jenkins/.m2/repository'
                     env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_osl-images"
@@ -147,7 +147,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 0)
 
-                            def descriptorFilePath = 'images-dist/logic-data-index-ephemeral-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-data-index-ephemeral-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = [
                                 "${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip",
@@ -163,7 +163,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 1)
 
-                            def descriptorFilePath = 'images-dist/logic-data-index-postgresql-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-data-index-postgresql-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = [
                                 "${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip",
@@ -179,7 +179,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 2)
 
-                            def descriptorFilePath = 'images-dist/logic-jobs-service-ephemeral-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-jobs-service-ephemeral-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip"]
 
@@ -192,7 +192,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 3)
 
-                            def descriptorFilePath = 'images-dist/logic-jobs-service-postgresql-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-jobs-service-postgresql-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip"]
 
@@ -205,7 +205,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 4)
 
-                            def descriptorFilePath = 'images-dist/logic-swf-builder-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-swf-builder-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-builder-quarkus-app/${env.ARTIFACTS_VERSION}/osl-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
                                             "${env.M2_FOLDER}/com/redhat/osl/osl-builder-maven-repository/${env.ARTIFACTS_VERSION}/osl-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-maven-repository-image-build.zip"
@@ -220,7 +220,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 5)
 
-                            def descriptorFilePath = 'images-dist/logic-swf-devmode-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-swf-devmode-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/osl-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-quarkus-app-image-build.zip",
                                             "${env.M2_FOLDER}/com/redhat/osl/osl-devmode-maven-repository/${env.ARTIFACTS_VERSION}/osl-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-maven-repository-image-build.zip"
@@ -235,7 +235,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
 
-                            def descriptorFilePath = 'images-dist/logic-db-migrator-tool-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-db-migrator-tool-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-db-migrator-tool/${env.ARTIFACTS_VERSION}/kogito-db-migrator-tool-${env.ARTIFACTS_VERSION}-image-build.zip": "db-migrator-tool-image-build.zip"]
 
@@ -248,7 +248,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
 
-                            def descriptorFilePath = 'images-dist/logic-management-console-rhel8-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-management-console-rhel9-image.yaml'
                             // Map with artifact path required in image module.yaml
                             def artifacts = ["${env.M2_FOLDER}/org/apache/kie/sonataflow/sonataflow-management-console-webapp/${env.ARTIFACTS_VERSION}/sonataflow-management-console-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "sonataflow-management-console-webapp-image-build.zip"]
 
@@ -261,7 +261,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
 
-                            def descriptorFile = 'osl-operator-image/logic-rhel8-operator-image.yaml'
+                            def descriptorFile = 'osl-operator-image/logic-rhel9-operator-image.yaml'
                             env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH, env.OPERATOR_CODE_REPOSITORY_PATH)
                         }
                     }
