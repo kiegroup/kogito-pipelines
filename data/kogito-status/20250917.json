@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-17T20:15:48.271Z",
+    "date": "2025-09-17T21:12:26.216Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17809562813"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810807336"
   },
   "projects": [
     {
@@ -19,6 +19,150 @@
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 80,
+          "title": "Bump org.jenkins-ci.main:jenkins-core from 2.440.2 to 2.516.3 in /.ci/jenkins/tests",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/80",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/80",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-09-17T20:39:24Z",
+          "updated_at": "2025-09-17T20:39:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d6981c17d28e9828f93082dd008e729818e937da",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.516.3",
+            "sha": "096c7e4a7c9f4cd118724decb2d2474ff09ef71f",
+            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.main-jenkins-core-2.516.3"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 50631507148,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109937/job/50631507148",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-17T20:39:31Z",
+              "completed_at": "2025-09-17T20:41:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631507130,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109937/job/50631507130",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-09-17T20:39:30Z",
+              "completed_at": "2025-09-17T20:41:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506533,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109762/job/50631506533",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:28Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506500,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109762/job/50631506500",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:28Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506472,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109716/job/50631506472",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506295,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109716/job/50631506295",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506205,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109657/job/50631506205",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506087,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109657/job/50631506087",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506084,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109674/job/50631506084",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 50631506021,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17810109674/job/50631506021",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2025-09-17T20:39:27Z",
+              "completed_at": "2025-09-17T20:39:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 79,
           "title": "SRVLOGIC-658: include kogito-jobs-service-webapp in the osl-jobs-service images",
