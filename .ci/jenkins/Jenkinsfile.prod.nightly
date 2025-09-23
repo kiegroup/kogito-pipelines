@@ -9,7 +9,7 @@ pipeline {
     tools {
         maven 'kie-maven-3.9.6'
         jdk 'kie-jdk17'
-        nodejs 'nodejs-20.14.0'
+        nodejs 'nodejs-22.11.0'
     }
     parameters {
         string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'main')
