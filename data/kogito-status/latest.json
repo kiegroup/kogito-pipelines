@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2025-09-23T14:15:01.216Z",
+    "date": "2025-09-23T15:15:29.983Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17949042958"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17950746946"
   },
   "projects": [
     {
@@ -12,77 +12,13 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2025-09-19T11:33:39Z",
+      "updated_at": "2025-09-23T14:45:00Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 81,
-          "title": "Update Jenkinsfile.prod.nightly",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/81",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/81",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            }
-          ],
-          "created_at": "2025-09-23T08:54:01Z",
-          "updated_at": "2025-09-23T08:54:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "d8df1e9855f5bb318e5f7878dcfa228c9572b752",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "mareknovotny-nodejs22",
-            "sha": "33e72fa2003f3dcce75ecb6f0c46f0c965908741",
-            "label": "kiegroup:mareknovotny-nodejs22"
-          },
-          "user": {
-            "login": "mareknovotny",
-            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-            "html_url": "https://github.com/mareknovotny"
-          },
-          "checks": [
-            {
-              "id": 51016656315,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17940771164/job/51016656315",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-09-23T08:54:08Z",
-              "completed_at": "2025-09-23T08:56:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 51016656309,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/17940771164/job/51016656309",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-09-23T08:54:09Z",
-              "completed_at": "2025-09-23T08:55:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 80,
           "title": "Bump org.jenkins-ci.main:jenkins-core from 2.440.2 to 2.516.3 in /.ci/jenkins/tests",
