@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Generate status page data
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           path: ./kogito-pipelines
       - name: Retrieve active repositories
@@ -34,7 +34,7 @@ jobs:
           title: Kogito Status
           subtitle: Kiegroup Kogito organization repositories CI status
           base-branch-filter: "${{ steps.retrieve_active_branches.outputs.result }}"
-          branches: 1.13.x,1.13.x-blue
+          branches: main, 9.10*
           created-by: GitHub Action
           created-url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
           logger-level: debug
