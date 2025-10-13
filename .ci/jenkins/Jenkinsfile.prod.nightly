@@ -281,12 +281,22 @@ pipeline {
                     echo "[INFO] Building KN Workflow plugin"
                     dir("${env.WORKSPACE}/bc/kubesmarts_kie-tools") {
                         def build_status = sh (returnStatus: true, script: """
+                            echo 'Installing PNPM@9.3.0'
+                            npm install -g pnpm@9.3.0 --registry=${NPM_REGISTRY_URL}
+
+                            echo 'Version of pnpm installed:'
+                            pnpm --version
+
                             export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
                             export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
                             export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
-                            ./node/pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
+                            export KIE_TOOLS_BUILD_runTests=false
+                            export KIE_TOOLS_BUILD_runEndToEndTests=false
+                            
+                            pnpm bootstrap -F '@kie-tools/kn-plugin-workflow'
+                            pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
                         """)
-                        // For testing and throughput, if this does not work well, we can stil lget nightly
+                        // For testing and throughput, if this does not work well, we can still get nightly
                         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                             if (build_status == 1) {
                                 error('[ERROR] Kn Workflow plugin error during pnpm build:prod script execution.')
