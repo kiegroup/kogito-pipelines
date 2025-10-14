@@ -288,6 +288,7 @@ pipeline {
                             pnpm --version
 
                             export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
+                            export KN_PLUGIN_WORKFLOW__quarkusPlatformGroupId='com.redhat.quarkus.platform'
                             export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
                             export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
                             export KIE_TOOLS_BUILD_runTests=false
