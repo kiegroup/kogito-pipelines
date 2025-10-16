@@ -187,7 +187,7 @@ maven:
   #artifacts_repository: ''
   pr_checks:
     repository:
-      url: https://\${env.BXMS_QE_NEXUS}/nexus/content/repositories/kogito-runtimes-pr-full-testing/
+      url: https://\${env.BXMS_QE_NEXUS}/content/repositories/kogito-runtimes-pr-full-testing/
       creds_id: unpacks-zip-on-qa-nexus
 cloud:
   image:
