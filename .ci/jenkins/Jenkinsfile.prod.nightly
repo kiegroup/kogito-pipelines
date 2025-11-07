@@ -84,7 +84,7 @@ pipeline {
                             def definitionFile = "https://raw.githubusercontent.com/\\\${GROUP:kiegroup}/kogito-pipelines/${getDefinitionFileBranch()}/.ci/nightly-build-config.yaml"
                             
                             configFileProvider([configFile(fileId: "${SETTINGS_XML_ID}", variable: 'PME_MAVEN_SETTINGS_XML')]) {
-                                sh "build-chain build branch --token=${GITHUB_TOKEN} -f ${definitionFile} -b ${buildBranch} -o bc -p kiegroup/kogito-runtimes --fullProjectDependencyTree --skipParallelCheckout"
+                                sh "mvn --version; build-chain build branch --token=${GITHUB_TOKEN} -f ${definitionFile} -b ${buildBranch} -o bc -p kiegroup/kogito-runtimes --fullProjectDependencyTree --skipParallelCheckout"
                             }
                         }
                     }, 1, 480*60)
