@@ -51,7 +51,7 @@ build:
   - project: kubesmarts/osl-images
     build-command:
       downstream: |
-        export MAVEN_OPTIONS="${{ env.BUILD_MVN_OPTS }} -s ${{ env.PME_MAVEN_SETTINGS_XML }}"
+        export MAVEN_OPTIONS="${{ env.BUILD_MVN_OPTS }} -s ${{ env.PME_MAVEN_SETTINGS_XML }} -Daether.syncContext.named.time=300"
         echo "MAVEN_OPTIONS=${{ env.MAVEN_OPTIONS }}"
         export NIGHTLY="true"
         echo "NIGHTLY=${{ env.NIGHTLY }}"
