@@ -127,13 +127,9 @@ pipeline {
                     env.OPERATOR_REGISTRY = ''
 
                     // Override SONATAFLOW_QUARKUS_DEVUI_VERSION in image manifest - modules/kogito-project-versions/module.yaml
-                    sh """sed -i "s/### SET ME DURING BUILD PROCESS ###/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    sh """sed -i "s/9.104.0.redhat-00003/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
                     // Override KOGITO_VERSION in image manifest - modules/kogito-project-versions/module.yaml
-                    sh """sed -i "s/9.104.0/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
-                    // Override QUARKUS_PLATFORM_VERSION in image manifest - modules/kogito-project-versions/module.yaml
-                    sh """sed -i "s/${env.QUARKUS_VERSION_COMMUNITY}/${env.QUARKUS_PLATFORM_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
-                    // Override QUARKUS_PLATFORM_GROUPID in image manifest - modules/kogito-project-versions/module.yaml
-                    sh """sed -i "s/io.quarkus.platform/com.redhat.quarkus.platform/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    sh """sed -i "s/9.104.0.redhat-00003/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
                 }
             }
         }
