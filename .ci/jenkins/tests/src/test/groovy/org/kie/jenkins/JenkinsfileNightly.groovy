@@ -153,7 +153,7 @@ class TestJenkinsfileNightly extends SingleFileDeclarativePipelineTest {
             'kogito-examples': [:],
         ])
 
-        assertTestCallstackContains('githubscm.resolveRepository', 'kie-kogito-examples, AUTHOR, BRANCH, false, AUTHOR_CREDS_ID')
+        assertTestCallstackContains('githubscm.resolveRepository', 'kogito-examples, AUTHOR, BRANCH, false, AUTHOR_CREDS_ID')
         assertTestCallstackContains('githubscm.createBranch', 'nightly-BRANCH')
         assertTestCallstackContains('githubscm.pushObject', 'origin, nightly-BRANCH, AUTHOR_PUSH_CREDS_ID')
     }
