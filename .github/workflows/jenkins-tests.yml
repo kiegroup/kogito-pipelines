@@ -41,9 +41,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: DSL tests
-      uses: apache/incubator-kie-kogito-pipelines/.ci/actions/dsl-tests@main
+      uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
       with:
-        main-config-file-repo: apache/incubator-kie-kogito-pipelines
+        main-config-file-repo: kiegroup/kogito-pipelines
         main-config-file-path: .ci/jenkins/config/main.yaml
-        branch-config-file-repo: apache/incubator-kie-kogito-pipelines
+        branch-config-file-repo: kiegroup/kogito-pipelines
         
