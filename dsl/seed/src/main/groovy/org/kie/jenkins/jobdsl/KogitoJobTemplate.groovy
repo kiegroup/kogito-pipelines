@@ -215,6 +215,11 @@ class KogitoJobTemplate {
 
         def job = createPipelineJob(script, jobParams)
         job?.with {
+
+            if (Utils.isMainBranch(script)){
+                disabled()
+            }
+
             // Redefine to keep days instead of number of builds
             logRotator {
                 daysToKeep(10)

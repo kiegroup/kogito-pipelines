@@ -1,0 +1,579 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+import org.kie.jenkins.MavenCommand
+
+pipeline {
+    agent {
+        label 'kie-rhel8 && podman && kie-mem24g && !built-in'
+    }
+    tools {
+        maven 'kie-maven-3.9.6'
+        jdk 'kie-jdk17'
+        nodejs 'nodejs-22.11.0'
+    }
+    parameters {
+        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'main')
+        string(description: 'The product version, if not provided the kogito-runtimes main branch one will be use', name: 'PRODUCT_VERSION')
+        string(description: 'The drools product version, if not provided the drools main branch one will be used', name: 'DROOLS_PRODUCT_VERSION')
+        string(description: 'The config repository branch', name: 'CONFIG_BRANCH', defaultValue: 'master')
+        booleanParam(description: 'If images should be built', name: 'BUILD_IMAGES', defaultValue: true)
+    }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+    }
+    environment {
+        DATE_TIME_SUFFIX_FORMAT = 'yyyyMMddHH'
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                script {
+                    // Fetch versions from pom if not provided
+                    env.PRODUCT_VERSION = "${PRODUCT_VERSION ?: parseVersionFromPom('kiegroup/kogito-runtimes', getBuildBranch())}"
+                    env.DROOLS_PRODUCT_VERSION = "${DROOLS_PRODUCT_VERSION ?: parseVersionFromPom('kiegroup/drools', getDroolsBranch())}"
+
+                    // Needed by Kogito Apps
+                    setupCypressEnv('13.13.0')
+                }
+            }
+        }
+        stage('Install build-chain tool') {
+            steps {
+                script {
+                    println "[INFO] Installing build-chain tool"
+                    sh "npm install -g @kie/build-chain-action${env.NPM_REGISTRY_URL ? " -registry=${NPM_REGISTRY_URL}" : ''}"
+
+                    sh "npm list -g | grep build-chain"
+                }
+            }
+        }
+        stage('Clone build configuration repo') {
+            steps {
+                script {
+                    def currentBranch = getBuildConfigBranch()
+                    println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL}:${currentBranch} into build_config folder"
+                    sh "git clone -b ${currentBranch} --single-branch ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
+
+                    // export PME parameters and build scripts from nightly build config
+                    def buildConfigAdditionalVariables = [
+                        'productVersion': env.PRODUCT_VERSION,
+                        'droolsProductVersion': env.DROOLS_PRODUCT_VERSION
+                    ]
+                    pmebuild.parseBuildConfig("$WORKSPACE/build_config/openshift-serverless-logic/nightly", buildConfigAdditionalVariables)
+
+                    def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(';').collect{ it.split('=')}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
+
+                    // export Quarkus community versions
+                    env.QUARKUS_VERSION_COMMUNITY = PME_BUILD_VARIABLES['quarkusVersionCommunity']
+                    env.QUARKUS_VERSION = PME_BUILD_VARIABLES['quarkusVersion'].replaceAll("\\{\\{.*\\}\\}", env.QUARKUS_VERSION_COMMUNITY)
+                    env.QUARKUS_PLATFORM_VERSION = PME_BUILD_VARIABLES['quarkusPlatformVersion'].replaceAll("\\{\\{.*\\}\\}", env.QUARKUS_VERSION_COMMUNITY)
+
+                    sh 'printenv'
+                }
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
+                    def pipelineHelper = new PipelineHelper(this)
+                    pipelineHelper.retry(
+                    {
+                        withCredentials([string(credentialsId: "kie-ci1-token", variable: 'GITHUB_TOKEN')]) {
+                            def SETTINGS_XML_ID = 'osl-prod-main'
+                            def buildBranch = getBuildBranch()
+                            def definitionFile = "https://raw.githubusercontent.com/\\\${GROUP:kiegroup}/kogito-pipelines/${getDefinitionFileBranch()}/.ci/nightly-build-config.yaml"
+                            
+                            configFileProvider([configFile(fileId: "${SETTINGS_XML_ID}", variable: 'PME_MAVEN_SETTINGS_XML')]) {
+                                sh "build-chain build branch --token=${GITHUB_TOKEN} -f ${definitionFile} -b ${buildBranch} -o bc -p kiegroup/kogito-runtimes --fullProjectDependencyTree --skipParallelCheckout"
+                            }
+                        }
+                    }, 1, 480*60)
+                }
+            }
+        }
+        stage ('Initialize images') {
+            steps {
+                script {
+                    // Common variables
+                    env.NIGHTLY_BRANCH_NAME = 'openshift-serverless-nightly-rhel-9'
+                    env.ARTIFACTS_VERSION = "${env.PRODUCT_VERSION}.redhat-${env.DATE_TIME_SUFFIX}"
+                    env.M2_FOLDER = '/home/jenkins/.m2/repository'
+                    env.IMAGES_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_osl-images"
+                    env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH = "${env.WORKSPACE}/bc/kubesmarts_osl-images"
+                    env.OPERATOR_CODE_REPOSITORY_PATH= "${env.WORKSPACE}/bc/kubesmarts_kie-tools"
+                    env.SLEEP_TIME = '30' // required as cekit-cache command fails if many invocations at the same time
+                    env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH = "${env.IMAGES_REPOSITORY_PATH}/images-dist/modules/kogito-project-versions/module.yaml"
+
+                    // Images names
+                    env.DATA_INDEX_EPHEMERAL = 'data-index-ephemeral'
+                    env.DATA_INDEX_POSTGRESQL = 'data-index-postgresql'
+                    env.JOBS_SERVICE_EPHEMERAL = 'jobs-service-ephemeral'
+                    env.JOBS_SERVICE_POSTGRESQL = 'jobs-service-postgresql'
+                    env.SWF_BUILDER = 'swf-builder'
+                    env.SWF_DEVMODE = 'swf-devmode'
+                    env.DB_MIGRATOR_TOOL = 'db-migrator-tool'
+                    env.MANAGEMENT_CONSOLE = 'management-console'
+                    env.OPERATOR = 'operator'
+
+                    // Images registries placeholders
+                    env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
+                    env.DATA_INDEX_POSTGRESQL_REGISTRY = ''
+                    env.JOBS_SERVICE_EPHEMERAL_REGISTRY = ''
+                    env.JOBS_SERVICE_POSTGRESQL_REGISTRY = ''
+                    env.SWF_BUILDER_REGISTRY = ''
+                    env.SWF_DEVMODE_REGISTRY = ''
+                    env.DB_MIGRATOR_TOOL_REGISTRY = ''
+                    env.MANAGEMENT_CONSOLE_REGISTRY = ''
+                    env.OPERATOR_REGISTRY = ''
+
+                    // Override SONATAFLOW_QUARKUS_DEVUI_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/### SET ME DURING BUILD PROCESS ###/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override KOGITO_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override QUARKUS_PLATFORM_VERSION in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/${env.QUARKUS_VERSION_COMMUNITY}/${env.QUARKUS_PLATFORM_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    // Override QUARKUS_PLATFORM_GROUPID in image manifest - modules/kogito-project-versions/module.yaml
+                    sh """sed -i "s/io.quarkus.platform/com.redhat.quarkus.platform/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                }
+            }
+        }
+        stage ('Build images') {
+            when {
+                expression { return params.BUILD_IMAGES }
+            }
+            parallel {
+                stage('Data Index Ephemeral image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 0)
+
+                            def descriptorFilePath = 'images-dist/logic-data-index-ephemeral-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/data-index-service-inmemory/${env.ARTIFACTS_VERSION}/data-index-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-inmemory-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-data-index-webapp/${env.ARTIFACTS_VERSION}/kogito-data-index-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-data-index-webapp-image-build.zip"
+                            ]
+
+                            env.DATA_INDEX_EPHEMERAL_REGISTRY = buildImage(env.DATA_INDEX_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Data Index Postgresql image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 1)
+
+                            def descriptorFilePath = 'images-dist/logic-data-index-postgresql-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/data-index-service-postgresql/${env.ARTIFACTS_VERSION}/data-index-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "data-index-service-postgresql-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-data-index-webapp/${env.ARTIFACTS_VERSION}/kogito-data-index-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-data-index-webapp-image-build.zip"
+                            ]
+
+                            env.DATA_INDEX_POSTGRESQL_REGISTRY = buildImage(env.DATA_INDEX_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Jobs Service Ephemeral image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 2)
+
+                            def descriptorFilePath = 'images-dist/logic-jobs-service-ephemeral-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/jobs-service-inmemory/${env.ARTIFACTS_VERSION}/jobs-service-inmemory-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-inmemory-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-jobs-service-webapp/${env.ARTIFACTS_VERSION}/kogito-jobs-service-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-jobs-service-webapp-image-build.zip"
+                            ]
+
+                            env.JOBS_SERVICE_EPHEMERAL_REGISTRY = buildImage(env.JOBS_SERVICE_EPHEMERAL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Jobs Service Postgresql image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 3)
+
+                            def descriptorFilePath = 'images-dist/logic-jobs-service-postgresql-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = [
+                                "${env.M2_FOLDER}/org/kie/kogito/jobs-service-postgresql/${env.ARTIFACTS_VERSION}/jobs-service-postgresql-${env.ARTIFACTS_VERSION}-image-build.zip": "jobs-service-postgresql-image-build.zip",
+                                "${env.M2_FOLDER}/org/apache/kie/kogito/kogito-jobs-service-webapp/${env.ARTIFACTS_VERSION}/kogito-jobs-service-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-jobs-service-webapp-image-build.zip"
+                            ]
+
+                            env.JOBS_SERVICE_POSTGRESQL_REGISTRY = buildImage(env.JOBS_SERVICE_POSTGRESQL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('SWF Builder image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 4)
+
+                            def descriptorFilePath = 'images-dist/logic-swf-builder-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-builder-quarkus-app/${env.ARTIFACTS_VERSION}/osl-builder-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-quarkus-app-image-build.zip",
+                                            "${env.M2_FOLDER}/com/redhat/osl/osl-builder-maven-repository/${env.ARTIFACTS_VERSION}/osl-builder-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-builder-maven-repository-image-build.zip"
+                                            ]
+
+                            env.SWF_BUILDER_REGISTRY = buildImage(env.SWF_BUILDER, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('SWF Devmode image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 5)
+
+                            def descriptorFilePath = 'images-dist/logic-swf-devmode-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/com/redhat/osl/osl-devmode-quarkus-app/${env.ARTIFACTS_VERSION}/osl-devmode-quarkus-app-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-quarkus-app-image-build.zip",
+                                            "${env.M2_FOLDER}/com/redhat/osl/osl-devmode-maven-repository/${env.ARTIFACTS_VERSION}/osl-devmode-maven-repository-${env.ARTIFACTS_VERSION}-image-build.zip": "kogito-devmode-maven-repository-image-build.zip"
+                                            ]
+
+                            env.SWF_DEVMODE_REGISTRY = buildImage(env.SWF_DEVMODE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('DB Migrator Tool image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+
+                            def descriptorFilePath = 'images-dist/logic-db-migrator-tool-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/kie/kogito/kogito-db-migrator-tool/${env.ARTIFACTS_VERSION}/kogito-db-migrator-tool-${env.ARTIFACTS_VERSION}-image-build.zip": "db-migrator-tool-image-build.zip"]
+
+                            env.DB_MIGRATOR_TOOL_REGISTRY = buildImage(env.DB_MIGRATOR_TOOL, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Management Console image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 6)
+
+                            def descriptorFilePath = 'images-dist/logic-management-console-rhel9-image.yaml'
+                            // Map with artifact path required in image module.yaml
+                            def artifacts = ["${env.M2_FOLDER}/org/apache/kie/sonataflow/sonataflow-management-console-webapp/${env.ARTIFACTS_VERSION}/sonataflow-management-console-webapp-${env.ARTIFACTS_VERSION}-image-build.zip": "sonataflow-management-console-webapp-image-build.zip"]
+
+                            env.MANAGEMENT_CONSOLE_REGISTRY = buildImage(env.MANAGEMENT_CONSOLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
+                stage('Operator image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
+
+                            def descriptorFile = 'osl-operator-image/logic-rhel9-operator-image.yaml'
+                            env.OPERATOR_REGISTRY = buildOperator(descriptorFile, env.NIGHTLY_BRANCH_NAME, env.OPERATOR_DESCRIPTOR_REPOSITORY_PATH, env.OPERATOR_CODE_REPOSITORY_PATH)
+                        }
+                    }
+                }
+
+            }
+        }
+        stage('Build KN Workflow plugin') {
+            steps {
+                script {
+                    echo "[INFO] Building KN Workflow plugin"
+                    dir("${env.WORKSPACE}/bc/kubesmarts_kie-tools") {
+                        def build_status = sh (returnStatus: true, script: """
+                            echo 'Installing PNPM@9.3.0'
+                            npm install -g pnpm@9.3.0 --registry=${NPM_REGISTRY_URL}
+
+                            echo 'Version of pnpm installed:'
+                            pnpm --version
+
+                            export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
+                            export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
+                            export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
+                            export KIE_TOOLS_BUILD_runTests=false
+                            export KIE_TOOLS_BUILD_runEndToEndTests=false
+                            
+                            pnpm bootstrap -F '@kie-tools/kn-plugin-workflow'
+                            pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
+                        """)
+                        // For testing and throughput, if this does not work well, we can still get nightly
+                        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                            if (build_status == 1) {
+                                error('[ERROR] Kn Workflow plugin error during pnpm build:prod script execution.')
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage('Upload maven repository') {
+            steps {
+                script {
+                    echo "[INFO] Start uploading ${env.WORKSPACE}/deployDirectory"
+                    if(fileExists("${env.WORKSPACE}/deployDirectory")){
+                        def destDir = "${env.WORKSPACE}/deployDirectoryFinal/openshift-serverless-logic-${PRODUCT_VERSION}-maven-repository/maven-repository/"
+                        sh "mkdir -p ${destDir}"
+                        sh "mv ${env.WORKSPACE}/deployDirectory/* ${destDir}"
+                        dir("${env.WORKSPACE}/deployDirectoryFinal") {
+                            sh "zip -r maven-repository-${env.DATE_TIME_SUFFIX} ."
+                            def relativeFile = "rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/maven-repository-${env.DATE_TIME_SUFFIX}"
+                            def folder="${env.RCM_GUEST_FOLDER}/${relativeFile}"
+
+                            util.withKerberos('rhba-prod-keytab') {
+                                sh "ssh 'rhba-prod@${env.RCM_HOST}' 'mkdir -p ${folder}'"
+                                sh "rsync -rlp --info=progress2 maven-repository-${env.DATE_TIME_SUFFIX}.zip rhba-prod@${env.RCM_HOST}:staging/${relativeFile}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage('Upload KN Workflow Plugin binaries') {
+            steps {
+                script {
+                    echo "[INFO] Start uploading KN Workflow plugin binaries"
+                    def knWorkflowPluginDist = "${env.WORKSPACE}/bc/kubesmarts_kie-tools/packages/kn-plugin-workflow/dist"
+                    if(fileExists("${knWorkflowPluginDist}")){
+                        def destDir = "${env.WORKSPACE}/knWorkflowPluginFinal/"
+                        sh "mkdir -p ${destDir}"
+                        sh "mv ${knWorkflowPluginDist}/* ${destDir}"
+                        dir("${env.WORKSPACE}/knWorkflowPluginFinal") {
+                            def relativeFile = "rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/kn-workflow-plugin-${env.DATE_TIME_SUFFIX}"
+                            def folder="${env.RCM_GUEST_FOLDER}/${relativeFile}"
+
+                            util.withKerberos('rhba-prod-keytab') {
+                                sh "ssh 'rhba-prod@${env.RCM_HOST}' 'mkdir -p ${folder}'"
+                                sh "rsync -rlp --info=progress2 ./** rhba-prod@${env.RCM_HOST}:staging/${relativeFile}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage ('Extract Git Information') {
+            steps {
+                script {
+                    def projectFolders = sh(returnStdout: true, script: "ls ${env.WORKSPACE}/bc").trim().split("\n")
+                    for (f in projectFolders) {
+                        dir("${env.WORKSPACE}/bc/${f}") {
+                            def projectName = f.replace("_", "/")
+                            // extract git infos
+                            util.storeGitInformation(projectName)
+                            env.ALREADY_BUILT_PROJECTS = "${env.ALREADY_BUILT_PROJECTS ?: ''}${projectName};"
+
+                            def sanitizedProjectName = f.replaceAll('/', '_').replaceAll('-', '_')
+                            def buildScript = env["PME_BUILD_SCRIPT_${sanitizedProjectName}"]
+                            def pomPath = maven.getProjectPomFromBuildCmd(buildScript)
+                            try {
+                                env["VERSION_${f}"] = maven.mvnGetVersionProperty(new MavenCommand(this).withProperty('productized'), 'project.version', pomPath)
+                            } catch (err) {
+                                echo "Skipping to get version of project ${projectName} as no pom.xml was found"
+                            }
+                        }
+                    }
+                    
+                    sh 'printenv'
+                }
+            }
+        }
+        stage ('Send UMB Message to QE.') {
+            steps {
+                script {
+                    echo '[INFO] Sending OPENSHIFT SERVERLESS LOGIC UMB message to QE.'
+
+                    def mavenRepositoryFileUrl = "${env.STAGING_SERVER_URL}/rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/maven-repository-${env.DATE_TIME_SUFFIX}/maven-repository-${env.DATE_TIME_SUFFIX}.zip"
+                    def knWorkflowPluginBinariesUrl = "${env.STAGING_SERVER_URL}/rhoss/rhoss-logic-${PRODUCT_VERSION}.nightly/kn-workflow-plugin-${env.DATE_TIME_SUFFIX}/"
+                    def topic = "VirtualTopic.qe.ci.ba.openshift-serverless-logic.${env.UMB_VERSION}.nightly.trigger"
+                    def eventType = "openshift-serverless-logic-${env.UMB_VERSION}-nightly-qe-trigger"
+                    def messageBody = getMessageBody(
+                        mavenRepositoryFileUrl,
+                        knWorkflowPluginBinariesUrl, 
+                        env.ALREADY_BUILT_PROJECTS,
+                        [
+                         'serverlesslogic': env['VERSION_kiegroup_kogito-runtimes'],
+                         'serverlesslogic-rhba': env['VERSION_kiegroup_kogito-runtimes'],
+                         'drools': env.VERSION_kiegroup_drools,
+                         'platform.quarkus.bom': env.QUARKUS_PLATFORM_VERSION,
+                         'quarkus.bom': env.QUARKUS_VERSION
+                        ],
+                        [
+                         "${env.DATA_INDEX_EPHEMERAL}": env.DATA_INDEX_EPHEMERAL_REGISTRY,
+                         "${env.DATA_INDEX_POSTGRESQL}": env.DATA_INDEX_POSTGRESQL_REGISTRY,
+                         "${env.JOBS_SERVICE_EPHEMERAL}": env.JOBS_SERVICE_EPHEMERAL_REGISTRY,
+                         "${JOBS_SERVICE_POSTGRESQL}": env.JOBS_SERVICE_POSTGRESQL_REGISTRY,
+                         "${env.SWF_BUILDER}": env.SWF_BUILDER_REGISTRY,
+                         "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY,
+                         "${env.DB_MIGRATOR_TOOL}": env.DB_MIGRATOR_TOOL_REGISTRY,
+                         "${env.MANAGEMENT_CONSOLE}" : env.MANAGEMENT_CONSOLE_REGISTRY,
+                         "${env.OPERATOR}": env.OPERATOR_REGISTRY
+                        ],
+                        gitHashesToCollection(env.GIT_INFORMATION_HASHES)
+                    )
+                    echo "[INFO] Message Body: ${messageBody}"
+                    echo "[INFO] Topic: ${topic}"
+                    echo "[INFO] Event Type: ${eventType}"
+                    build job: env.SEND_UMB_MESSAGE_JOB_PATH, parameters: [
+                            [$class: 'StringParameterValue', name: 'MESSAGE_BODY', value: messageBody],
+                            [$class: 'StringParameterValue', name: 'TOPIC', value: topic],
+                            [$class: 'StringParameterValue', name: 'EVENT_TYPE', value: eventType]
+                    ]
+                    echo '[SUCCESS] Message was successfully sent.'
+                }
+            }
+        }
+    }
+    post {
+        failure {
+            emailext body: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL} \n' +
+                    ' \n' +
+                    '${BUILD_LOG, maxLines=750}', subject: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
+        }
+        unstable {
+            emailext body: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL} \n' +
+                    ' \n' +
+                    'Failed tests: ${BUILD_URL}/testReport \n' +
+                    ' \n' +
+                    '${BUILD_LOG, maxLines=750}', subject: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
+        }
+        fixed {
+            emailext body: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL}', subject: 'OPENSHIFT SERVERLESS LOGIC ${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
+        }
+        always {
+            echo 'Archiving maven logs...'
+            archiveArtifacts artifacts: '*.maven.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+        }
+        cleanup {
+            cleanWs()
+        }
+    }
+}
+
+def buildOperator(String descriptorFile, String nightlyBranchName, String operatorDescriptorRepository, String operatorCodeRepository) {
+    // Create a different folder for operator, otherwise dir() will mess up with folders and impact other steps of pipeline
+    sh "cp -rp ${operatorDescriptorRepository} ${env.WORKSPACE}/operator_repo"
+    dir("${env.WORKSPACE}/operator_repo") {
+        println "Building operator"
+
+        // Replace branch and ref and version in descriptor file
+        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
+        def reference = sh(returnStdout: true, script: "cd ${operatorCodeRepository};git rev-parse HEAD").trim()
+        sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
+        sh """sed -i "s/ version:.*/ version: 999.0.0.nightly/g" ${descriptorFile}"""
+        println "Diff of ${descriptorFile} after replacing branch name and ref"
+        sh "git diff ${descriptorFile}"
+
+        println 'Using cekit version'
+        util.runWithPythonVirtualEnv('cekit --version', 'cekit')
+
+        util.withKerberos('rhba-osbs-builder-keytab') {
+            def cekitBuildCmd = "cekit --redhat --descriptor ${descriptorFile} build osbs --user rhba-osbs-builder -y"
+            util.runWithPythonVirtualEnv("${cekitBuildCmd} | tee operator-build-log.txt", 'cekit')
+        }
+
+        def imageRegistry = sh(script: "brew call --json-output getTaskResult \$(cat operator-build-log.txt | grep -oP '(?<=Task ).*(?= was)') | jq -nre 'input.repositories[0]'", returnStdout: true)
+        return imageRegistry.trim()
+    }
+}
+
+def buildImage(String imageName, String descriptorFilePath, String nightlyBranchName, Map<String, String> artifacts, String imagesRepository) {
+    // Create a different folder for each image during the build, otherwise dir() will mess up the builds during parallel run
+    def imageFolder = descriptorFilePath.substring(0, descriptorFilePath.lastIndexOf('/'))
+    sh "cp -rp ${imagesRepository}/${imageFolder} ${env.WORKSPACE}/${imageName}_repo"
+    dir("${env.WORKSPACE}/${imageName}_repo") {
+        println "Building image ${imageName}"
+
+        def descriptorFile = descriptorFilePath.substring(descriptorFilePath.lastIndexOf('/') + 1, descriptorFilePath.size())
+        sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
+        sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
+        println "Diff of ${descriptorFile} after replacing branch name and org.kie.kogito.version"
+        sh "git diff ${descriptorFile}"
+
+        println 'Using cekit version'
+        util.runWithPythonVirtualEnv('cekit --version', 'cekit')
+
+        def overrides = ''
+        artifacts.each { artifactPath, overridesName ->
+            def md5sum = sh(script: "md5sum ${artifactPath} | cut -d' ' -f 1", returnStdout: true).trim()
+            overrides += " --overrides \"artifacts: [{name: ${overridesName}, md5: ${md5sum}}]\""
+            println "Adding file ${artifactPath} to cekit cache"
+            util.runWithPythonVirtualEnv("cekit-cache add --md5=${md5sum} ${artifactPath}", 'cekit')
+        }
+
+        util.withKerberos('rhba-osbs-builder-keytab') {
+            def cekitBuildCmd = "cekit --redhat --descriptor ${descriptorFile} build ${overrides} osbs --user rhba-osbs-builder -y"
+            util.runWithPythonVirtualEnv("${cekitBuildCmd} | tee ${imageName}-build-log.txt", 'cekit')
+        }
+
+        def imageRegistry = sh(script: "brew call --json-output getTaskResult \$(cat ${imageName}-build-log.txt | grep -oP '(?<=Task ).*(?= was)') | jq -nre 'input.repositories[0]'", returnStdout: true)
+        return imageRegistry.trim()
+    }
+}
+
+def getMessageBody(String mavenRepositoryFileUrl, String knWorkflowPluginBinariesUrl,String alreadyBuiltProjects, Map<String, String> versions, Map<String, String> imagesRegistries, Map<String, String> scmHashes) {
+    def alreadyBuiltProjectsArray = (alreadyBuiltProjects ?: '').split(";")
+    return """
+{
+    "maven_repository_file_url": "${mavenRepositoryFileUrl}",
+    "kn_workflow_binaries_url": "${knWorkflowPluginBinariesUrl}",
+    "version": ${new groovy.json.JsonBuilder(versions).toString()},
+    "image": ${new groovy.json.JsonBuilder(imagesRegistries).toString()},
+    "scm_hash": ${new groovy.json.JsonBuilder(scmHashes).toString()},
+    "built_projects": ${new groovy.json.JsonBuilder(alreadyBuiltProjectsArray).toString()}
+}"""
+}
+
+def setupCypressEnv(String cypressVersion) {
+    if (env.CYPRESS_BINARY_URL) {
+        env.CYPRESS_INSTALL_BINARY = "${CYPRESS_BINARY_URL}/cypress-${cypressVersion}.zip"
+    }
+}
+
+def gitHashesToCollection(String gitInformationHashes) {
+    return gitInformationHashes.replaceAll(/([\w\d\-\_\.]*\/)([\w\d\-\_\.]*)/,'$2').split(';').findAll { it.split('=').size() }.collectEntries{ [it.split('=')[0], it.split('=')[1]] }
+}
+
+String getBuildConfigBranch() {
+  return env.CONFIG_BRANCH ?: env.DEFAULT_CONFIG_BRANCH ?: env.BRANCH_NAME ?: env.GIT_BRANCH
+}
+
+String getBuildBranch() {
+  // Fallback to main if none exist
+  return env.CHANGE_BRANCH ?: env.BRANCH_NAME ?: env.GIT_BRANCH ?: 'main'
+}
+
+String getDroolsBranch() {
+    return calculateKieRepoBranch(getBuildBranch())
+}
+
+String getDefinitionFileBranch() {
+  // Fallback to getBuildBranch if DEFINITION_FILE_BRANCH not set
+  return env.DEFINITION_FILE_BRANCH ?: getBuildBranch()
+}
+
+String calculateKieRepoBranch(String branch) {
+    /* The Drools/OptaPlanner major version is shifted by 7 from the Kogito major version:
+    Kogito 1.x.y -> Drools 8.x.y. 
+    Kogito 1.x.y -> OptaPlanner 8.x.y. */
+    int majorVersionShift = 7
+    String [] branchSplit = branch.split("\\.")
+    if (branchSplit.length == 3) {
+        Integer optaplannerMajorVersion = Integer.parseInt(branchSplit[0]) + majorVersionShift
+        return "${optaplannerMajorVersion}.${branchSplit[1]}.${branchSplit[2]}"
+    } else {
+       return branch
+    }
+}
+
+// Parse version from main branch of the given project
+//      * project: in the form of owner/repository
+def parseVersionFromPom(String project, String branch) {
+    def pomFilename = "${project.replaceAll("/", "_")}_pom.xml"
+    def pomPath = "${env.WORKSPACE}/${pomFilename}"
+
+    sh "curl https://raw.githubusercontent.com/${project}/${branch}/pom.xml -o ${pomPath}"
+    def pom = readMavenPom file: pomPath
+    return pom.getVersion().replaceAll('-SNAPSHOT', '')
+}

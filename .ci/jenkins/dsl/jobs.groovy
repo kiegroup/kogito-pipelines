@@ -40,7 +40,7 @@ if (isMainStream()) {
 
     KogitoJobUtils.createMainQuarkusUpdateToolsJob(this,
         [ 'kogito-runtimes', 'kogito-examples', 'kogito-docs', 'kogito-images' ],
-        [ 'radtriste', 'cristianonicolai' ]
+        [ 'rgdoliveira', 'mareknovotny' ]
     )
 }
 
@@ -137,6 +137,7 @@ void setupNightlyJob() {
     ])
     KogitoJobTemplate.createPipelineJob(this, jobParams)?.with {
         parameters {
+            booleanParam('DEPLOY', false, 'Should be deployed after setup ?')
             booleanParam('SKIP_TESTS', false, 'Skip all tests')
         }
     }

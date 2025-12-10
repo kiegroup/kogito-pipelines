@@ -1,26 +1,16 @@
 version: "2.1"
 dependencies:
-  - project: apache/incubator-kie-drools
+  - project: kiegroup/drools
 
   - project: apache/incubator-kie-optaplanner
     dependencies:
-      - project: apache/incubator-kie-drools
+     - project: kiegroup/drools
 
-  - project: apache/incubator-kie-kogito-runtimes
+  - project: kiegroup/kogito-apps
     dependencies:
-      - project: apache/incubator-kie-drools
-      - project: apache/incubator-kie-optaplanner
-  
-  - project: apache/incubator-kie-kogito-apps
-    dependencies:
-      - project: apache/incubator-kie-kogito-runtimes
+      - project: kiegroup/kogito-runtimes
 
-  - project: apache/incubator-kie-kogito-examples
+  - project: kiegroup/kogito-examples
     dependencies:
-      - project: apache/incubator-kie-kogito-runtimes
-      - project: apache/incubator-kie-kogito-apps
-  
-  # - project: kiegroup/kie-jpmml-integration
-  #   dependencies:
-  #     - project: apache/incubator-kie-drools
-    # no mapping needed
+      - project: kiegroup/kogito-runtimes
+      - project: kiegroup/kogito-apps

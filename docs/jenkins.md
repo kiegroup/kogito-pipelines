@@ -183,6 +183,10 @@ maven:
     build_promotion_profile_id: 1966c60aff37d
   artifacts_repository: http://nexus3-tradisso-nexus.apps.kogito-cloud.hosted.psi.rdu2.redhat.com/repository/kogito-test/
   #artifacts_repository: ''
+  pr_checks:
+    repository:
+      url: https://\${env.BXMS_QE_NEXUS}/content/repositories/kogito-runtimes-pr-full-testing/
+      creds_id: unpacks-zip-on-qa-nexus
 cloud:
   image:
     registry_user_credentials_id: DOCKERHUB_USER

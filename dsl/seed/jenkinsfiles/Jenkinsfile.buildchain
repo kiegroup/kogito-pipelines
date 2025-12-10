@@ -9,7 +9,7 @@ jdkTool = env.BUILD_JDK_TOOL
 sonarJdkTool = env.SONAR_JDK_TOOL
 mavenTool = env.BUILD_MAVEN_TOOL
 
-mavenDeployArtifacts = Boolean.valueOf(env.ENABLE_DEPLOY)
+mavenDeployArtifacts = env.ENABLE_DEPLOY.toBoolean()
 mavenDeployRepository = env.MAVEN_DEPLOY_REPOSITORY ?: ''
 mavenDeployRepositoryCredsId = env.MAVEN_DEPLOY_REPOSITORY_CREDS_ID ?: ''
 mavenDeployLocalDir = env.MAVEN_DEPLOY_LOCAL_DIR ?: ''
@@ -47,11 +47,10 @@ notificationJobName = env.NOTIFICATION_JOB_NAME ?: 'PR'
 
 pipeline {
     agent {
-        docker { 
-            image env.AGENT_DOCKER_BUILDER_IMAGE
-            label util.avoidFaultyNodes(agentLabel)
-            args env.AGENT_DOCKER_BUILDER_ARGS
-        }
+        label agentLabel
+    }
+    tools {
+        nodejs 'nodejs-20.14.0'
     }
     options {
         timestamps()
@@ -130,38 +129,47 @@ pipeline {
                                 // Related to https://github.com/jenkinsci/junit-plugin/issues/478 and https://github.com/jenkinsci/junit-plugin/issues/467
                                 sh 'find . -type d -name node_modules -exec rm -rf {} \\; || true'
 
-                                junit(testResults: '**/junit.xml, **/target/surefire-reports/**/*.xml, **/target/failsafe-reports/**/*.xml, **/target/invoker-reports/**/*.xml', allowEmptyResults: true)
-                                archiveArtifacts(artifacts: '**/cypress/screenshots/**,**/cypress/videos/**', fingerprint: false, allowEmptyArchive: true)
-                            }
-                        }
-                        unsuccessful {
-                            script {
-                                util.archiveConsoleLog('', 300)
-                            }
-                        }
+                        junit(testResults: '**/junit.xml, **/target/surefire-reports/**/*.xml, **/target/failsafe-reports/**/*.xml, **/target/invoker-reports/**/*.xml', allowEmptyResults: true)
+                        archiveArtifacts(artifacts: '**/cypress/screenshots/**,**/cypress/videos/**', fingerprint: false, allowEmptyArchive: true)
                     }
                 }
-                stage('Sonar analysis') {
-                    when {
-                        expression { return enableSonarCloudAnalysis }
+                unsuccessful {
+                    script {
+                        util.archiveConsoleLog('', 300)
                     }
-                    steps {
-                        script {
-                            dir(getProjectFolder()) {
-                                configFileProvider([configFile(fileId: settingsXmlId, variable: 'MAVEN_SETTINGS_FILE')]) {
-                                    withCredentials([string(credentialsId: 'SONARCLOUD_TOKEN', variable: 'TOKEN')]) {
-                                        new MavenCommand(this)
-                                            .withProperty('sonar.login', "${TOKEN}")
-                                            .withProperty('sonar.organization', 'apache') // override what's in pom.xml for now
-                                            .withProperty('sonar.projectKey', env.SONAR_PROJECT_KEY)
-                                            .withLogFileName('sonar_analysis.maven.log')
-                                            .withSettingsXmlFile(MAVEN_SETTINGS_FILE)
-                                            .run("-e -nsu validate -Psonarcloud-analysis -Denforcer.skip=true ${env.SONARCLOUD_ANALYSIS_MVN_OPTS ?: ''}")
-                                    }
-                                }
-                            }
-                        }
+                }
+            }
+        }
+        stage('Sonar analysis') {
+            when {
+                expression { return enableSonarCloudAnalysis }
+            }
+            tools {
+                jdk sonarJdkTool
+                maven mavenTool
+            }
+            steps {
+                script {
+                    dir(getProjectFolder()) {
+                        maven.runMavenWithSettingsSonar(settingsXmlId, "-e -nsu validate -Psonarcloud-analysis -Denforcer.skip=true ${env.SONARCLOUD_ANALYSIS_MVN_OPTS ?: ''}", 'SONARCLOUD_TOKEN', 'sonar_analysis.maven.log')
                     }
+                }
+            }
+        }
+        stage('Upload artifacts to repository') {
+            when {
+                expression { return mavenDeployArtifacts }
+            }
+            tools {
+                jdk jdkTool
+                maven mavenTool
+            }
+            steps {
+                script {
+                    echo "enviroment property mavenDeployArtifacts: " + mavenDeployArtifacts;
+                    // Upload to specific repository with credentials
+                    String mavenDeployRepositoryZipUrl = "${mavenDeployRepository.replaceAll('/content/', '/service/local/').replaceFirst('/*$', '')}/content-compressed"
+                    maven.uploadLocalArtifacts(mavenDeployRepositoryCredsId, getMavenDeployLocalDir(), mavenDeployRepositoryZipUrl)
                 }
             }
         }

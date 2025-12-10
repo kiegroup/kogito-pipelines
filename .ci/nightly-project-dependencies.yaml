@@ -1,0 +1,25 @@
+version: "2.1"
+
+dependencies:
+  - project: kiegroup/drools
+
+  - project: kiegroup/kogito-runtimes
+    dependencies:
+      - project: kiegroup/drools
+
+  - project: kiegroup/kogito-apps
+    dependencies:
+      - project: kiegroup/kogito-runtimes
+
+  - project: kiegroup/kogito-examples
+    dependencies:
+      - project: kiegroup/kogito-runtimes
+      - project: kiegroup/kogito-apps
+
+  - project: kubesmarts/kie-tools
+    dependencies:
+      - project: kiegroup/kogito-examples
+
+  - project: kubesmarts/osl-images
+    dependencies:
+      - project: kubesmarts/kie-tools
