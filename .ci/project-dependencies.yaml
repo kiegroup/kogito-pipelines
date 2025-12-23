@@ -2,10 +2,6 @@ version: "2.1"
 dependencies:
   - project: kiegroup/drools
 
-  - project: apache/incubator-kie-optaplanner
-    dependencies:
-     - project: kiegroup/drools
-
   - project: kiegroup/kogito-apps
     dependencies:
       - project: kiegroup/kogito-runtimes

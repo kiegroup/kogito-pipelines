@@ -34,7 +34,7 @@ runs:
     - name: Checkout Scripts
       uses: actions/checkout@v4
       with:
-        repository: apache/incubator-kie-kogito-pipelines
+        repository: kiegroup/kogito-pipelines
         sparse-checkout: |
           .ci/actions/maven
         path: maven-tools

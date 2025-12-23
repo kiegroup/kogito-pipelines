@@ -14,14 +14,14 @@ class UtilSpec extends JenkinsPipelineSpecification {
 
     def "[util.groovy] getProject"() {
         when:
-        def project = groovyScript.getProject('https://github.com/apache/incubator-kie-kogito-pipelines.git')
+        def project = groovyScript.getProject('https://github.com/kiegroup/kogito-pipelines.git')
         then:
-        project == 'apache/incubator-kie-kogito-pipelines'
+        project == 'kiegroup/kogito-pipelines'
     }
 
     def "[util.groovy] getGroup"() {
         when:
-        def group = groovyScript.getGroup('https://github.com/apache/incubator-kie-kogito-pipelines.git')
+        def group = groovyScript.getGroup('https://github.com/kiegroup/kogito-pipelines.git')
         then:
         group == 'apache'
     }

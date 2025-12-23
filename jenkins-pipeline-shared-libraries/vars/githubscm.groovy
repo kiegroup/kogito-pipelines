@@ -491,7 +491,7 @@ def updateReleaseBody(String tagName, String credsId = 'kie-ci') {
         sh """
             #!/bin/bash
             sed -i -r 's|\\[((incubator-)?kie-issues[-#][0-9]*)\\](.*)|\\1\\3|g' ${releaseNotesFile}
-            sed -i -r 's|(incubator-)?kie-issues[-#]([0-9]*)(.*)|\\[kie-issues#\\2\\](https\\://github\\.com/apache/incubator-kie-issues/issues/\\2)\\3|g' ${releaseNotesFile}
+            sed -i -r 's|(incubator-)?kie-issues[-#]([0-9]*)(.*)|\\[kie-issues#\\2\\](https\\://github\\.com/kiegroup/issues/issues/\\2)\\3|g' ${releaseNotesFile}
         """
         sh "gh release edit ${tagName} -F ${releaseNotesFile}"
     }

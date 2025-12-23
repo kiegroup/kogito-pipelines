@@ -5,23 +5,20 @@ Here is a small overview of current pipelines existing around Kogito project.
 ## Which projects ?
 
 - Drools
-  - https://github.com/apache/incubator-kie-drools
+  - https://github.com/kiegroup/drools
   - https://github.com/kiegroup/drools-website
-  - https://github.com/apache/incubator-kie-benchmarks
-  - https://github.com/kiegroup/kie-pmml-integration
+  - https://github.com/kiegroup/benchmarks
 - Kogito
-  - https://github.com/apache/incubator-kie-kogito-pipelines
-  - https://github.com/apache/incubator-kie-kogito-runtimes
-  - https://github.com/apache/incubator-kie-kogito-apps
-  - https://github.com/apache/incubator-kie-kogito-examples
-  - https://github.com/apache/incubator-kie-kogito-images
-  - https://github.com/apache/incubator-kie-kogito-docs
-  - https://github.com/apache/incubator-kie-kogito-serverless-operator
-  - https://github.com/apache/incubator-kie-docs
+  - https://github.com/kiegroup/kogito-pipelines
+  - https://github.com/kiegroup/kogito-runtimes
+  - https://github.com/kiegroup/kogito-apps
+  - https://github.com/kiegroup/kogito-examples
+  - https://github.com/kiegroup/kogito-docs
+  - https://github.com/kiegroup/docs
   - https://github.com/kiegroup/kie-tools
 - OptaPlanner
-  - https://github.com/apache/incubator-kie-optaplanner
-  - https://github.com/apache/incubator-kie-optaplanner-quickstarts
+  - https://github.com/kiegroup/optaplanner
+  - https://github.com/kiegroup/optaplanner-quickstarts
   - https://github.com/kiegroup/optaplanner-website
 
 ### Projects' dependencies
@@ -174,9 +171,9 @@ The nightlies are creating specific branches:
 **DSL config files**
 
 Main Config file for Quarkus 3 are can be found on separate from code:
-- https://github.com/apache/incubator-kie-drools/tree/9.x-dsl-config
-- https://github.com/apache/incubator-kie-kogito-pipelines/tree/2.x-dsl-config
-- https://github.com/apache/incubator-kie-optaplanner/tree/9.x-dsl-config
+- https://github.com/kiegroup/drools/tree/9.x-dsl-config
+- https://github.com/kiegroup/kogito-pipelines/tree/2.x-dsl-config
+- https://github.com/kiegroup/optaplanner/tree/9.x-dsl-config
 
 And jobs would be found in different Jenkins folders:
 - https://ci-builds.apache.org/job/KIE/job/drools-9.x/

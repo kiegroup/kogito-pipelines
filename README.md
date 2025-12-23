@@ -28,11 +28,11 @@ This repository contains some of the pipelines of Kogito project.
 
 Apart from this repository, pipelines are also concerning those repositories:
 
-* [kogito-runtimes](https://github.com/apache/incubator-kie-kogito-runtimes)
-* [kogito-apps](https://github.com/apache/incubator-kie-kogito-apps)
-* [kogito-examples](https://github.com/apache/incubator-kie-kogito-examples)
-* [kogito-images](https://github.com/apache/incubator-kie-kogito-images)
-* [kie-tools](https://github.com/apache/incubator-kie-tools)
+* [kogito-runtimes](https://github.com/kiegroup/kogito-runtimes)
+* [kogito-apps](https://github.com/kiegroup/kogito-apps)
+* [kogito-examples](https://github.com/kiegroup/kogito-examples)
+* [kogito-images](https://github.com/kiegroup/kogito-images)
+* [kie-tools](https://github.com/kiegroup/tools)
 
 # The different Kogito pipelines
 
@@ -123,7 +123,7 @@ Jenkins PR checks are of 3 different types:
 
 Each repository has a different yaml files in `.github/workflows` folder to configure the workflow.
 
-We are additionally using [`composite actions`](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) to centralized most common steps used by the different Kogito repositories' jobs. You can check the different kind of composite actions we have available at [`.ci/actions` folder](https://github.com/apache/incubator-kie-kogito-pipelines/tree/main/.ci/actions).
+We are additionally using [`composite actions`](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) to centralized most common steps used by the different Kogito repositories' jobs. You can check the different kind of composite actions we have available at [`.ci/actions` folder](https://github.com/kiegroup/kogito-pipelines/tree/main/.ci/actions).
 
 After the build, test results are parsed and logged using the [`action-surefire-report`](https://github.com/ScaCap/action-surefire-report) action.
 
