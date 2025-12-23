@@ -9,6 +9,8 @@ pre: |
   echo "BUILD_MVN_OPTS_CURRENT=${{ env.BUILD_MVN_OPTS_CURRENT }}"
   echo "QUARKUS_VERSION=${{ env.QUARKUS_VERSION }}"
   echo "ENABLE_DEPLOY=${{ env.ENABLE_DEPLOY }}"
+  export REMOVE_MODULES="./productized/remove_modules.sh ./productized/modules"
+  echo "REMOVE_MODULES=${{ env.REMOVE_MODULES }}"
 
 default:
   build-command:
@@ -22,7 +24,7 @@ default:
     current: |
       mvn dependency:tree clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }}
     upstream: |
-      mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }}
+      ${{ env.REMOVE_MODULES }}; mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }}"
 
 build:
   - project: kiegroup/drools
@@ -31,20 +33,15 @@ build:
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.DROOLS_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.DROOLS_BUILD_MVN_OPTS }}
       upstream: |
-        mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.DROOLS_BUILD_MVN_OPTS_UPSTREAM }}
-
+        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log"vn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.DROOLS_BUILD_MVN_OPTS_UPSTREAM }}
+  
   - project: kiegroup/kogito-runtimes
     build-command:
       current: |
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_RUNTIMES_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean -Dfull ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS }}
       upstream: |
-        mvn dependency:tree clean install -Dquickly -Dfull ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS_UPSTREAM }}
-      after:
-        current: |
-          export MVN_EXCLUSION="!org.kie.kogito:kogito-serverless-workflow-executor-python,!org.drools:drools-quarkus-rules-integration-test,!org.kie.kogito:jbpm-tests,!org.jbpm:jbpm-quarkus-integration-test,!org.kie.kogito:integration-tests-quarkus-norest,!org.kie.kogito:integration-tests-quarkus-norest,!org.kie.kogito:kogito-spring-boot-integration-tests,!org.kie.kogito:integration-tests-springboot-processes-persistence-common,!org.kie.kogito:integration-tests-springboot-decisions-it,!org.kie.kogito:integration-tests-springboot-kafka-it,!org.kie.kogito:integration-tests-springboot-norest-it,!org.kie.kogito:integration-tests-springboot-processes-it,!org.kie.kogito:integration-tests-springboot-processes-persistence-it,!org.kie.kogito:integration-tests-springboot-processes-infinispan,!org.kie.kogito:integration-tests-springboot-processes-jdbc,!org.kie.kogito:integration-tests-springboot-processes-mongodb,!org.kie.kogito:integration-tests-springboot-processes-postgresql"
-          echo  ${{ env.MVN_EXCLUSION }}
-          mvn clean package -DskipTests -Dfull artifact:3.5.1:compare -Dcompare.fail=false -Dcompare.aggregate.only=true -Dreference.repo=file:~/.m2/repository -pl ${{ env.MVN_EXCLUSION }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS }}
+        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log" mvn dependency:tree clean install -Dquickly -Dfull ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS_UPSTREAM }}
 
   - project: kiegroup/kogito-apps
     build-command: 
@@ -52,13 +49,7 @@ build:
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_APPS_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS }}
       upstream: |
-        mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS_UPSTREAM }}
-      after:
-        # Make sure you add -pl into MVN_PROJECTS_EXCLUSION when adding some exclusions
-        current: |
-          export MVN_PROJECTS_EXCLUSION=""
-          echo  ${{ env.MVN_PROJECTS_EXCLUSION }}
-          mvn clean package -DskipTests -Dfull artifact:3.5.1:compare -Dcompare.fail=false -Dcompare.aggregate.only=true -Dreference.repo=file:~/.m2/repository ${{ env.MVN_PROJECTS_EXCLUSION }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS }}
+        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log"  mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS_UPSTREAM }}
 
   - project: kiegroup/kogito-examples
     build-command:
@@ -68,8 +59,4 @@ build:
         mvn dependency:tree -pl :kogito-examples clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
         mvn dependency:tree -f ${{ env.KOGITO_EXAMPLES_SUBFOLDER_POM }}pom.xml clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
       upstream: |
-        mvn dependency:tree clean install -DskipTests -DskipITs ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS_UPSTREAM }}
-      after:
-        # In case of deploy, deploy the parent poms only.
-        current: |
-          bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then mvn dependency:tree -DskipTests -DskipITs -pl .,kogito-quarkus-examples,kogito-springboot-examples,serverless-workflow-examples deploy ${{ env.BUILD_MVN_OPTS }} ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_EXAMPLES_DEPLOY_MVN_OPTS }}; else echo 'No deploy is scheduled'; fi"
+        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log"  mvn dependency:tree clean install -DskipTests -DskipITs ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS_UPSTREAM }}
