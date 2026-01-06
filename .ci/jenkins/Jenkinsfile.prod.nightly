@@ -4,7 +4,7 @@ import org.kie.jenkins.MavenCommand
 
 pipeline {
     agent {
-        label 'RHEL9 && podman && mem16G && !built-in'
+        label 'kie-rhel9 && podman && kie-mem24g && !built-in'
     }
     tools {
         maven 'kie-maven-3.9.6'
