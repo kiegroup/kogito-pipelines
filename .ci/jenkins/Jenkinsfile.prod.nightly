@@ -4,7 +4,7 @@ import org.kie.jenkins.MavenCommand
 
 pipeline {
     agent {
-        label 'kie-rhel8 && podman && kie-mem24g && !built-in'
+        label 'RHEL9 && podman && mem16G && !built-in'
     }
     tools {
         maven 'kie-maven-3.9.6'
@@ -288,12 +288,14 @@ pipeline {
                             pnpm --version
 
                             export KN_PLUGIN_WORKFLOW__version=${env.ARTIFACTS_VERSION}
+                            export QUARKUS_PLATFORM_version=${env.QUARKUS_PLATFORM_VERSION}
+                            export KN_PLUGIN_WORKFLOW__quarkusPlatformGroupId='com.redhat.quarkus.platform'
                             export KN_PLUGIN_WORKFLOW__devModeImageUrl=${env.SWF_DEVMODE_REGISTRY}
                             export KN_PLUGIN_WORKFLOW__builderImage=${env.SWF_BUILDER_REGISTRY}
                             export KIE_TOOLS_BUILD_runTests=false
                             export KIE_TOOLS_BUILD_runEndToEndTests=false
                             
-                            pnpm bootstrap -F '@kie-tools/kn-plugin-workflow'
+                            pnpm bootstrap -F '@kie-tools/kn-plugin-workflow...'
                             pnpm -F '@kie-tools/kn-plugin-workflow' build:prod
                         """)
                         // For testing and throughput, if this does not work well, we can still get nightly
