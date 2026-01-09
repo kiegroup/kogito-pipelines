@@ -1,3 +1,22 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
 package org.kie.jenkins.jobdsl.utils
 
 import org.kie.jenkins.jobdsl.model.JobType
@@ -16,7 +35,7 @@ class JobParamsUtils {
         repository = repository ?: Utils.getRepoName(script)
         def jobParams = [
             job: [
-                name: repository,
+                name: Utils.getRepositoryJobDisplayName(script, repository),
             ],
             git: [
                 author: Utils.getGitAuthor(script),
@@ -135,16 +154,17 @@ class JobParamsUtils {
 
     static def setupJobParamsBuildChainConfiguration(def script, def jobParams, String repository, String buildchainType, String notificationJobName) {
         setupJobParamsSeedPipelineConfiguration(script, jobParams, KogitoConstants.BUILD_CHAIN_JENKINSFILE)
+        setupJobParamsAgentDockerBuilderImageConfiguration(script, jobParams)
         jobParams.env = jobParams.env ?: [:]
         jobParams.env.putAll([
-            BUILDCHAIN_PROJECT: "kiegroup/${repository}",
+            BUILDCHAIN_PROJECT: "apache/${repository}",
             BUILDCHAIN_TYPE: buildchainType,
             BUILDCHAIN_CONFIG_REPO: Utils.getBuildChainConfigRepo(script) ?: Utils.getSeedRepo(script),
             BUILDCHAIN_CONFIG_AUTHOR: Utils.getBuildChainConfigAuthor(script) ?: Utils.getSeedAuthor(script),
             BUILDCHAIN_CONFIG_BRANCH: Utils.getBuildChainConfigBranch(script) ?: Utils.getSeedBranch(script),
             BUILDCHAIN_CONFIG_FILE_PATH: Utils.getBuildChainConfigFilePath(script),
+            BUILDCHAIN_CONFIG_GIT_TOKEN_CREDENTIALS_ID: Utils.getBuildChainConfigTokenCredentialsId(script) ?: Utils.getGitAuthorTokenCredsId(script),
             NOTIFICATION_JOB_NAME: notificationJobName,
-            GIT_AUTHOR_TOKEN_CREDENTIALS_ID: Utils.getGitAuthorTokenCredsId(script),
         ])
         addJobParamsEnvIfNotExisting(script, jobParams, 'BUILD_ENVIRONMENT', jobParams.job.folder.getEnvironmentName())
     }
@@ -166,10 +186,16 @@ class JobParamsUtils {
         addJobParamsEnvIfNotExisting(script, jobParams, 'INTEGRATION_BRANCH_CURRENT', "${Utils.getGenerationBranch(script)}-integration-${envName}")
     }
 
-    static def setupJobParamsDeployConfiguration(def script, def jobParams) {
+    static def setupJobParamsDeployConfiguration(def script, JobType jobType, def jobParams) {
         jobParams.env = jobParams.env ?: [:]
         jobParams.env.put('ENABLE_DEPLOY', String.valueOf(!Utils.isDeployDisabled(script)))
         addJobParamsEnvIfNotExisting(script, jobParams, 'MAVEN_DEPLOY_REPOSITORY', Utils.getMavenArtifactsUploadRepositoryUrl(script))
-        addJobParamsEnvIfNotExisting(script, jobParams, 'MAVEN_DEPLOY_REPOSITORY_CREDS_ID', Utils.getMavenArtifactsUploadRepositoryCredentialsId(script))
+        addJobParamsEnvIfNotExisting(script, jobParams, 'MAVEN_DEPLOY_REPOSITORY_CREDS_ID', Utils.getMavenArtifactsUploadRepositoryCredentialsId(script, jobType.name))
+    }
+
+    static def setupJobParamsAgentDockerBuilderImageConfiguration(def script, def jobParams) {
+        jobParams.env = jobParams.env ?: [:]
+        addJobParamsEnvIfNotExisting(script, jobParams, 'AGENT_DOCKER_BUILDER_IMAGE', Utils.getJenkinsAgentDockerImage(script, 'builder'))
+        addJobParamsEnvIfNotExisting(script, jobParams, 'AGENT_DOCKER_BUILDER_ARGS', Utils.getJenkinsAgentDockerArgs(script, 'builder'))
     }
 }

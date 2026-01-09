@@ -5,7 +5,7 @@ on: workflow_dispatch
 
 jobs:
   generate-status-page:
-    if: github.repository_owner == 'kiegroup'
+    if: github.repository_owner == 'apache'
     concurrency:
       group: generate-status-page
       cancel-in-progress: true

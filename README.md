@@ -14,7 +14,11 @@ This repository contains some of the pipelines of Kogito project.
       - [GitHub Action checks](#github-action-checks)
     - [Sonar cloud](#sonar-cloud)
 - [Configuration of pipelines](#configuration-of-pipelines)
+  - [Source Code](#source-code)
+    - [Pipelines](#pipelines)
+    - [Shared Pipeline libraries](#shared-pipeline-libraries)
   - [Jenkins](#jenkins)
+    - [Jenkins KIE folder](#jenkins-kie-folder)
     - [Jenkins jobs generation](#jenkins-jobs-generation)
   - [Zulip notifications](#zulip-notifications)
     - [Format](#format)
@@ -28,8 +32,7 @@ Apart from this repository, pipelines are also concerning those repositories:
 * [kogito-apps](https://github.com/kiegroup/kogito-apps)
 * [kogito-examples](https://github.com/kiegroup/kogito-examples)
 * [kogito-images](https://github.com/kiegroup/kogito-images)
-* [kogito-operator](https://github.com/kiegroup/kogito-operator)
-* [kie-tools](https://github.com/kiegroup/kie-tools)
+* [kie-tools](https://github.com/kiegroup/tools)
 
 # The different Kogito pipelines
 
@@ -92,8 +95,6 @@ There is one check per downstream repository. This allows parallelization and mo
 
 `kogito-images` is run only on Jenkins and is using its own `.ci/jenkins/Jenkinsfile`.
 
-`kogito-operator` is run on another Jenkins and is using its own `.ci/jenkins/Jenkinsfile`.
-
 **NOTE:** PR checks are also available for the different environments listed above. Please read the PR template to know which one are available for a specific repository.
 
 #### Jenkins artifacts PR checks
@@ -132,9 +133,35 @@ NOTE: test coverage analysis is executed only by **Jenkins PR simple build&test*
 
 # Configuration of pipelines
 
+## Source Code
+*Note: Creating separate readme.md documenting how-tos and best practices for implementing pipelines might be useful*
+
+### Pipelines
+In this repository two types of pipelines can be found:
+- **Kogito pipelines** (obviously) - located in the [.ci/jenkins](./.ci/jenkins) folder
+- **Seed jobs library** - see [Jenkins documentation](./docs/jenkins.md)
+
+### Shared pipeline libraries
+Apart from these pipelines, the `jenkins-pipeline-shared-libraries` are also stored in this repository. Functions and classes contained in these libraries can be freely used in all pipelines located under [KIE Jenkins folder](https://ci-builds.apache.org/job/KIE). Just include correct import and annotation in your Jenkinsfile:
+```
+import org.jenkinsci.plugins.workflow.libs.Library
+
+@Library('jenkins-pipeline-shared-libraries')_
+```
+For more details please see our [Jenkins pipelines shared libraries documentation](./jenkins-pipeline-shared-libraries/README.md) and [Jenkins.io documentation](https://www.jenkins.io/doc/book/pipeline/shared-libraries/)
+
 ## Jenkins
 
-All pipelines can be found in [kogito Jenkins folder](https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/kogito).
+### Jenkins KIE folder
+
+All KIE jobs (pipelines) can be found  in [KIE Jenkins folder](https://ci-builds.apache.org/job/KIE)<br />
+For this folder and all its descendants there is several useful things set at this folder level:<br />
+- **Pipeline library** - accessible in pipelines under name `jenkins-pipeline-shared-libraries` it gives access to some useful functions used throughout various KIE pipelines. More details can be found in our [Jenkins pipeline shared libraries documentation](./jenkins-pipeline-shared-libraries/README.md) and in the [previous chapter](#source-code)
+- **Environment Variables** - Environment variables set here are inherited by all the folders and jobs located in the [KIE folder](https://ci-builds.apache.org/job/KIE) tree in Jenkins. However, they can be overridden or extended. You can modify the variables by clicking `Configure` in the left menu (if you have necessary permissions). Currently present Environment Variables are:
+  - **FAULTY_NODES** - Comma separated list of Jenkins execution nodes that are faulty in some way and cause KIE jobs to fail. This variable is expected by the *pipeline-library* function `util.avoidFaultyNodes(String label)`, which extends desired `label` by expression that ensures avoiding these faulty nodes. Use of `util.avoidFaultyNodes()` (without parameter) is also possible for cases where no specific `label` needs to be set. This way we can increase durability of KIE automation by the time the Apache CI team fixes the issue with faulty node. 
+
+
+All pipelines from this repository can be found in [kogito Jenkins folder](https://ci-builds.apache.org/job/KIE/job/kogito/).
 
 ### Jenkins jobs generation
 

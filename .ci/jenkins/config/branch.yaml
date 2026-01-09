@@ -50,22 +50,12 @@ repositories:
 - name: kogito-runtimes
 - name: kogito-apps
 - name: kogito-examples
-- name: kogito-images
-- name: kogito-operator
-- name: kogito-serverless-operator
 #- name: kie-tools
-- name: kogito-docs
-- name: kie-docs
-  branch: main-kogito
 productized_repositories:
 - name: kogito-pipelines
 - name: kogito-runtimes
 - name: kogito-apps
 - name: kogito-examples
-- name: kogito-images
-- name: kogito-serverless-operator
-#- name: kogito-operator
-#- name: kogito-docs
 git:
   author:
     name: kiegroup

@@ -4,7 +4,7 @@ import org.jenkinsci.plugins.workflow.libs.Library
 
 pipeline {
     agent {
-        label 'kie-rhel8 && !built-in'
+        label util.avoidFaultyNodes('ubuntu')
     }
 
     environment {
@@ -99,7 +99,7 @@ String getGitAuthor() {
 }
 
 String getGitAuthorCredsId() {
-    return "${AUTHOR_CREDS_ID}"
+    return "${GIT_AUTHOR_CREDS_ID}"
 }
 
 String getGitAuthorTokenCredsId() {

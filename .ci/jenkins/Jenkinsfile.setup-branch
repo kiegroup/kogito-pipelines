@@ -12,7 +12,7 @@ UNSTABLE_STAGES = [:]
 
 pipeline {
     agent {
-        label 'kie-rhel8 && !built-in'
+        label util.avoidFaultyNodes('ubuntu')
     }
 
     options {
@@ -75,10 +75,10 @@ pipeline {
                         // Update examples nightly branch
                         dir('kogito-examples') {
                             deleteDir()
-                            checkout(githubscm.resolveRepository('kogito-examples', getGitAuthor(), getBuildBranch(), false))
+                            checkout(githubscm.resolveRepository('incubator-kie-kogito-examples', getGitAuthor(), getBuildBranch(), false, getGitAuthorCredsId()))
                             String nightlyBranch = "nightly-${getBuildBranch()}"
                             githubscm.createBranch(nightlyBranch)
-                            githubscm.pushObject('origin', nightlyBranch, getGitAuthorCredsID())
+                            githubscm.pushObject('origin', nightlyBranch, getGitAuthorPushCredsId())
                         }
                     }
                 }
@@ -116,23 +116,21 @@ pipeline {
                 script {
                     def buildParams = getDefaultBuildParams()
                     addBooleanParam(buildParams, 'SKIP_TESTS', true)
-                    addBooleanParam(buildParams, 'SKIP_CLOUD_NIGHTLY', true)
                     build(job: '../nightly/0-kogito-nightly', wait: false, parameters: buildParams, propagate: false)
                 }
             }
         }
 
-        // Launch the nightly to deploy all artifacts from the branch
-        stage('Launch cloud setup branch') {
+        // Launch the weekly to deploy all artifacts from the branch
+        stage('Launch the weekly') {
             when {
-                expression { return !params.SKIP_CLOUD_SETUP_BRANCH }
+                expression { return params.DEPLOY }
             }
             steps {
                 script {
                     def buildParams = getDefaultBuildParams()
-                    addKogitoVersionParam(buildParams)
-                    addBooleanParam(buildParams, 'DEPLOY', params.DEPLOY)
-                    build(job: './0-setup-branch-cloud', wait: false, parameters: buildParams, propagate: false)
+                    addBooleanParam(buildParams, 'SKIP_TESTS', true)
+                    build(job: '../other/0-kogito-weekly', wait: false, parameters: buildParams, propagate: false)
                 }
             }
         }
@@ -231,19 +229,23 @@ String getGitAuthor() {
     return env.GIT_AUTHOR
 }
 
-String getGitAuthorCredsID() {
+String getGitAuthorCredsId() {
     return env.GIT_AUTHOR_CREDS_ID
 }
 
+String getGitAuthorPushCredsId() {
+    return env.GIT_AUTHOR_PUSH_CREDS_ID
+}
+
 String getDroolsVersion() {
-    return params.DROOLS_VERSION ?: getVersionFromReleaseBranch(util.calculateTargetReleaseBranch(getBuildBranch(), 7))
+    return params.DROOLS_VERSION ?: getVersionFromReleaseBranch(getBuildBranch())
 }
 
 String getKogitoVersion() {
     return params.KOGITO_VERSION ?: getVersionFromReleaseBranch(getBuildBranch())
 }
 
-String getVersionFromReleaseBranch(String releaseBranch, int microVersion = 0, String suffix = 'SNAPSHOT') {
+String getVersionFromReleaseBranch(String releaseBranch, int microVersion = 999, String suffix = 'SNAPSHOT') {
     String [] versionSplit = releaseBranch.split("\\.")
     if (versionSplit.length == 3
         && versionSplit[0].isNumber()

@@ -1,3 +1,22 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
 // +++++++++++++++++++++++++++++++++++++++++++ create a seed job ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 import org.kie.jenkins.jobdsl.utils.FolderUtils
@@ -76,7 +95,7 @@ pipelineJob("${GENERATION_BRANCH}/${JOB_NAME}") {
         env('SEED_AUTHOR_CREDS_ID', Utils.getSeedAuthorCredsId(this))
         env('SEED_BRANCH', Utils.getSeedBranch(this))
 
-        env('AGENT_LABEL', Utils.isProdEnvironment(this) ? 'kie-rhel8 && !built-in' : 'kie-rhel8-priority')
+        env('AGENT_LABEL', 'ubuntu')
         env('JENKINS_EMAIL_CREDS_ID', Utils.getJenkinsEmailCredsId(this))
     }
 
@@ -90,6 +109,7 @@ pipelineJob("${GENERATION_BRANCH}/${JOB_NAME}") {
                     }
                     branch('${SEED_BRANCH}')
                     extensions {
+                        wipeWorkspace()
                         cleanBeforeCheckout()
                     }
                 }
@@ -124,10 +144,14 @@ pipelineJob("${GENERATION_BRANCH}/tools/toggle-dsl-triggers") {
         env('SEED_CONFIG_FILE_GIT_REPOSITORY', "${SEED_CONFIG_FILE_GIT_REPOSITORY}")
         env('SEED_CONFIG_FILE_GIT_AUTHOR_NAME', "${SEED_CONFIG_FILE_GIT_AUTHOR_NAME}")
         env('SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID', "${SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}")
+        env('SEED_CONFIG_FILE_GIT_AUTHOR_PUSH_CREDS_ID', "${SEED_CONFIG_FILE_GIT_AUTHOR_PUSH_CREDS_ID}")
         env('SEED_CONFIG_FILE_GIT_BRANCH', "${SEED_CONFIG_FILE_GIT_BRANCH}")
         env('SEED_CONFIG_FILE_PATH', "${SEED_CONFIG_FILE_PATH}")
 
         env('JENKINS_EMAIL_CREDS_ID', Utils.getJenkinsEmailCredsId(this))
+
+        env('AGENT_DOCKER_BUILDER_IMAGE', Utils.getJenkinsAgentDockerImage(this, 'builder'))
+        env('AGENT_DOCKER_BUILDER_ARGS',  Utils.getJenkinsAgentDockerArgs(this, 'builder'))
     }
 
     definition {
@@ -140,6 +164,7 @@ pipelineJob("${GENERATION_BRANCH}/tools/toggle-dsl-triggers") {
                     }
                     branch(Utils.getSeedBranch(this))
                     extensions {
+                        wipeWorkspace()
                         cleanBeforeCheckout()
                     }
                 }

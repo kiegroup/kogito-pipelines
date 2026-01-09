@@ -4,12 +4,12 @@ import org.jenkinsci.plugins.workflow.libs.Library
 
 pipeline {
     agent {
-        label "${env.AGENT_LABEL}"
+        label util.avoidFaultyNodes(env.AGENT_LABEL)
     }
 
     options {
         timestamps()
-        timeout(time: 20, unit: 'MINUTES')
+        timeout(time: 180, unit: 'MINUTES')
     }
 
     stages {
@@ -33,7 +33,7 @@ pipeline {
                 }
             }
             post {
-                always {
+                cleanup {
                     cleanWs()
                 }
             }
