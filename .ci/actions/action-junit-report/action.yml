@@ -18,7 +18,7 @@ runs:
   using: "composite"
   steps: 
     - name: Publish Test Results
-      uses: mikepenz/action-junit-report@v3
+      uses: mikepenz/action-junit-report@v6
       with:
         annotate_only: ${{ inputs.annotate_only }}
         report_paths: ${{ inputs.report_paths }}
