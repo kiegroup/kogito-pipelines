@@ -8,7 +8,7 @@ pipeline {
          label 'kie-rhel8 && podman && kie-mem24g && !built-in'
     }
     tools {
-        maven 'kie-maven-3.9.6'
+        maven 'kie-maven-3.9.12'
         jdk 'kie-jdk17'
         nodejs 'nodejs-22.11.0'
     }
