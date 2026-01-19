@@ -142,8 +142,6 @@ environments:
     ids:
     - List of ids identifying the environment
 
-productized_branch: true
-
 # Used to force the disabling of triggers
 # Useful when a branch is no more maintained but you still want to keep job history
 disable:
@@ -178,9 +176,9 @@ git:
 maven:
   settings_file_id: 2bd418aa-56fa-4403-9232-8c77a50fc528
   nexus:
-    release_url: https://repository.stage.jboss.org/nexus
-    release_repository: jboss-releases-repository
-    staging_profile_url: https://repository.stage.jboss.org/nexus/content/groups/kogito-public/
+    release_url: https://repository.apache.org/
+    release_repository: apache-releases-repository
+    staging_profile_url: https://repository.apache.org/service/local/staging/deploy/maven2/
     staging_profile_id: 2161b7b8da0080
     build_promotion_profile_id: 1966c60aff37d
   artifacts_repository: http://nexus3-tradisso-nexus.apps.kogito-cloud.hosted.psi.rdu2.redhat.com/repository/kogito-test/
@@ -191,16 +189,16 @@ maven:
       creds_id: unpacks-zip-on-qa-nexus
 cloud:
   image:
-    registry_credentials_nightly: tradisso_registry_token
-    registry_credentials_release: tradisso_registry_token
-    registry: quay.io
-    namespace: tradisso
+    registry_user_credentials_id: DOCKERHUB_USER
+    registry_user_credentials_id: DOCKERHUB_TOKEN
+    registry: docker.io
+    namespace: apache
     latest_git_branch: main
 jenkins:
   email_creds_id: KOGITO_CI_EMAIL_TO_PERSO
   default_tools:
-    jdk: kie-jdk11
-    maven: kie-maven-3.8.7
+    jdk: jdk_17_latest
+    maven: maven_3.9.6
 
 ```
 

@@ -1,4 +1,23 @@
 
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
 package org.kie.jenkins.jobdsl
 
 import groovy.json.JsonSlurper
@@ -48,10 +67,6 @@ class Utils {
     static boolean hasBindingValuesStartingWith(def script, String keyPrefix) {
         return getBindingValuesStartingWith(script, keyPrefix).size() > 0
     }
-    
-    static boolean isProductizedBranch(def script) {
-        return getBindingValue(script, 'PRODUCTIZED_BRANCH').toBoolean()
-    }
 
     static String getGenerationBranch(def script) {
         return getBindingValue(script, 'GENERATION_BRANCH')
@@ -65,6 +80,14 @@ class Utils {
 
     static String getRepoName(def script) {
         return getBindingValue(script, 'REPO_NAME')
+    }
+
+    static String getRepositoryJobDisplayName(def script, String repository) {
+        return getBindingValue(script, "${repository.toUpperCase()}_JOB_DISPLAY_NAME") ?: repository
+    }
+
+    static String getJobDisplayName(def script) {
+        return getRepositoryJobDisplayName(script, getRepoName(script))
     }
 
     static String getGitBranch(def script) {
@@ -102,9 +125,9 @@ class Utils {
 
     static boolean isProdEnvironment(def script) {
         // Check for all possible `GIT_AUTHOR_NAME` variables
-        return getSeedAuthor(script) == 'kiegroup' &&
-            (hasGitAuthor(script) ? getGitAuthor(script) == 'kiegroup' : true) &&
-            (hasSeedConfigFileGitAuthor(script) ? getSeedConfigFileGitAuthor(script) == 'kiegroup' : true)
+        return getSeedAuthor(script) == 'apache' &&
+            (hasGitAuthor(script) ? getGitAuthor(script) == 'apache' : true) &&
+            (hasSeedConfigFileGitAuthor(script) ? getSeedConfigFileGitAuthor(script) == 'apache' : true)
     }
 
     static boolean isTestEnvironment(def script) {
@@ -119,12 +142,24 @@ class Utils {
         return getBindingValue(script, 'GIT_AUTHOR_TOKEN_CREDENTIALS_ID')
     }
 
+    static String getGitAuthorPushCredsId(def script) {
+        return getBindingValue(script, 'GIT_AUTHOR_PUSH_CREDENTIALS_ID')
+    }
+
+    static String getGitAuthorPushTokenCredsId(def script) {
+        return getBindingValue(script, 'GIT_AUTHOR_PUSH_TOKEN_CREDENTIALS_ID')
+    }
+
     static String getGitForkAuthorName(def script) {
         return getBindingValue(script, 'GIT_FORK_AUTHOR_NAME')
     }
 
     static String getGitForkAuthorCredsId(def script) {
         return getBindingValue(script, 'GIT_FORK_AUTHOR_CREDENTIALS_ID')
+    }
+
+    static String getGitForkAuthorPushCredsId(def script) {
+        return getBindingValue(script, 'GIT_FORK_AUTHOR_PUSH_CREDENTIALS_ID')
     }
 
     static String getGitQuarkusBranch(def script) {
@@ -149,6 +184,14 @@ class Utils {
 
     static String getRepositoryGitAuthorCredentialsId(def script, String repoName) {
         return getBindingValue(script, "${repoName.toUpperCase()}_GIT_AUTHOR_CREDENTIALS_ID")
+    }
+
+    static String getRepositoryGitAuthorPushCredentialsId(def script, String repoName) {
+        return getBindingValue(script, "${repoName.toUpperCase()}_GIT_AUTHOR_PUSH_CREDENTIALS_ID")
+    }
+
+    static String getRepositoryGitAuthorPushTokenCredentialsId(def script, String repoName) {
+        return getBindingValue(script, "${repoName.toUpperCase()}_GIT_AUTHOR_PUSH_TOKEN_CREDENTIALS_ID")
     }
 
     static String getRepositoryJenkinsConfigPath(def script, String repoName) {
@@ -187,6 +230,10 @@ class Utils {
         return getBindingValue(script, 'SEED_AUTHOR_CREDS_ID')
     }
 
+    static String getSeedAuthorPushCredsId(def script) {
+        return getBindingValue(script, 'SEED_AUTHOR_PUSH_CREDS_ID')
+    }
+
     static String getSeedBranch(def script) {
         return getBindingValue(script, 'SEED_BRANCH')
     }
@@ -207,12 +254,16 @@ class Utils {
         return getBindingValue(script, 'BUILDCHAIN_CONFIG_GIT_FILE_PATH')
     }
 
-    static String getMavenArtifactsUploadRepositoryUrl(def script) {
-        return getBindingValue(script, 'MAVEN_ARTIFACTS_UPLOAD_REPOSITORY_URL')
+    static String getBuildChainConfigTokenCredentialsId(def script) {
+        return getBindingValue(script, 'BUILDCHAIN_CONFIG_GIT_TOKEN_CREDENTIALS_ID')
     }
 
-    static String getMavenArtifactsUploadRepositoryCredentialsId(def script) {
-        return getBindingValue(script, 'MAVEN_ARTIFACTS_UPLOAD_REPOSITORY_CREDS_ID')
+    static String getMavenArtifactsUploadRepositoryUrl(def script, String jobType = "nightly") {
+        return getBindingValue(script, "MAVEN_ARTIFACTS_UPLOAD_REPOSITORY_${jobType.toUpperCase()}_URL")
+    }
+
+    static String getMavenArtifactsUploadRepositoryCredentialsId(def script, String jobType = "nightly") {
+        return getBindingValue(script, "MAVEN_ARTIFACTS_UPLOAD_REPOSITORY_${jobType.toUpperCase()}_CREDS_ID")
     }
 
     static String getMavenQuarkusPlatformRepositoryUrl(def script) {
@@ -221,6 +272,18 @@ class Utils {
 
     static String getMavenQuarkusPlatformRepositoryCredentialsId(def script) {
         return getBindingValue(script, 'MAVEN_QUARKUS_PLATFORM_REPOSITORY_CREDS_ID')
+    }
+
+    static String getMavenSettingsConfigFileId(def script, String jobType = 'nightly') {
+        return getBindingValue(script, "MAVEN_SETTINGS_${jobType.toUpperCase()}_CONFIG_FILE_ID")
+    }
+
+    static String getJenkinsAgentDockerImage(def script, String imageId) {
+        return getBindingValue(script, "JENKINS_AGENT_DOCKER_${imageId.toUpperCase()}_IMAGE")
+    }
+
+    static String getJenkinsAgentDockerArgs(def script, String imageId) {
+        return getBindingValue(script, "JENKINS_AGENT_DOCKER_${imageId.toUpperCase()}_ARGS")
     }
 
     static String getSeedJenkinsfilePath(def script, String jenkinsfileName) {

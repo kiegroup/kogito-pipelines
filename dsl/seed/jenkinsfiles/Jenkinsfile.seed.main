@@ -11,16 +11,16 @@ seedConfig = [:]
 
 pipeline {
     agent {
-        label "${env.AGENT_LABEL}"
+        label util.avoidFaultyNodes(env.AGENT_LABEL)
     }
 
     options {
         timestamps()
-        timeout(time: 20, unit: 'MINUTES')
+        timeout(time: 180, unit: 'MINUTES')
     }
 
     tools {
-        jdk 'kie-jdk11'
+        jdk 'jdk_11_latest'
     }
 
     environment {
@@ -43,21 +43,23 @@ pipeline {
             steps {
                 script {
                     def releaseProjects = readSeedConfig().ecosystem.projects.findAll { ! (it.ignore_release ? it.ignore_release.toBoolean() : false)  }
-                    def productizeProjects = readSeedConfig().ecosystem.projects.findAll { ! (it.ignore_productization ? it.ignore_productization.toBoolean() : false)  }
                     def envProperties = [
                         JENKINS_EMAIL_CREDS_ID: readSeedConfig().jenkins.email_creds_id,
                         RELEASE_PROJECTS: releaseProjects.collect { it.name }.join(','),
-                        PRODUCTIZED_PROJECTS: productizeProjects.collect { it.name }.join(','),
                         DEPENDENCY_PROJECTS: readSeedConfig().ecosystem.dependencies.collect { it.name } .join(','),
                         SEED_REPO: "${SEED_REPO}",
                         SEED_AUTHOR: "${SEED_AUTHOR}",
                         SEED_AUTHOR_CREDS_ID: "${SEED_AUTHOR_CREDS_ID}",
+                        SEED_AUTHOR_PUSH_CREDS_ID: readSeedConfig().seed.config_file.git.author.push.credentials_id, // temporary until extra entry in all configs
                         SEED_BRANCH: "${SEED_BRANCH}",
                         SEED_CONFIG_FILE_GIT_REPOSITORY: "${SEED_CONFIG_FILE_GIT_REPOSITORY}",
                         SEED_CONFIG_FILE_GIT_AUTHOR_NAME: "${SEED_CONFIG_FILE_GIT_AUTHOR_NAME}",
                         SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID: "${SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}",
+                        SEED_CONFIG_FILE_GIT_AUTHOR_PUSH_CREDS_ID: readSeedConfig().seed.config_file.git.author.push.credentials_id,
                         SEED_CONFIG_FILE_GIT_BRANCH: "${SEED_CONFIG_FILE_GIT_BRANCH}",
                         SEED_CONFIG_FILE_PATH: "${SEED_CONFIG_FILE_PATH}",
+                        JENKINS_AGENT_DOCKER_BUILDER_IMAGE: readSeedConfig().jenkins.agent.docker.builder.image,
+                        JENKINS_AGENT_DOCKER_BUILDER_ARGS: readSeedConfig().jenkins.agent.docker.builder.args,
                         ALL_BRANCHES: readSeedConfig().git.branches.collect { it.name }.join(','),
                         MAIN_BRANCH_NAME: readSeedConfig().git.branches.find { it.main_branch }?.name,
                     ]
@@ -95,13 +97,17 @@ pipeline {
                             SEED_REPO: "${SEED_REPO}",
                             SEED_AUTHOR: "${SEED_AUTHOR}",
                             SEED_AUTHOR_CREDS_ID: "${SEED_AUTHOR_CREDS_ID}",
+                            SEED_AUTHOR_PUSH_CREDS_ID: branchConfigFileInfo.push_credentials,
                             SEED_BRANCH: branchInfo.seed?.branch ?: "${SEED_BRANCH}",
                             SEED_JENKINSFILE: branchConfigFileInfo.jenkinsfile,
                             SEED_CONFIG_FILE_GIT_REPOSITORY: branchConfigFileInfo.repository,
                             SEED_CONFIG_FILE_GIT_AUTHOR_NAME: branchConfigFileInfo.author,
                             SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID: branchConfigFileInfo.credentials,
+                            SEED_CONFIG_FILE_GIT_AUTHOR_PUSH_CREDS_ID: branchConfigFileInfo.push_credentials,
                             SEED_CONFIG_FILE_GIT_BRANCH: branchConfigFileInfo.branch,
                             SEED_CONFIG_FILE_PATH: branchConfigFileInfo.filepath,
+                            JENKINS_AGENT_DOCKER_BUILDER_IMAGE: readSeedConfig().jenkins.agent.docker.builder.image,
+                            JENKINS_AGENT_DOCKER_BUILDER_ARGS: readSeedConfig().jenkins.agent.docker.builder.args,
                         ]
                         echo 'Got envProperties for generation'
                         echo "${envProperties}"
@@ -136,6 +142,8 @@ pipeline {
                         SEED_CONFIG_FILE_GIT_BRANCH: "${SEED_CONFIG_FILE_GIT_BRANCH}",
                         SEED_CONFIG_FILE_PATH: "${SEED_CONFIG_FILE_PATH}",
                         JENKINS_EMAIL_CREDS_ID: readSeedConfig().jenkins.email_creds_id,
+                        JENKINS_AGENT_DOCKER_BUILDER_IMAGE: readSeedConfig().jenkins.agent.docker.builder.image,
+                        JENKINS_AGENT_DOCKER_BUILDER_ARGS: readSeedConfig().jenkins.agent.docker.builder.args,
                     ]
                     dir(scriptUtils.getDslSeedFolderAbsolutePath()) {
                         println "[INFO] Generate main seed job with properties ${envProperties}"
@@ -169,7 +177,7 @@ pipeline {
     }
 }
     post {
-        always {
+        cleanup {
             cleanWs()
         }
         unsuccessful {
@@ -228,6 +236,7 @@ def getBranchConfigFileInfo(branchInfo) {
         repository: branchInfo.seed?.config_file?.git?.repository ?: readSeedConfig().seed.config_file.git.repository,
         author: branchInfo.seed?.config_file?.git?.author?.name ?: readSeedConfig().seed.config_file.git.author.name,
         credentials: branchInfo.seed?.config_file?.git?.author?.credentials_id ?: readSeedConfig().seed.config_file.git.author.credentials_id,
+        push_credentials: branchInfo.seed?.config_file?.git?.author?.push?.credentials_id ?: readSeedConfig().seed.config_file.git.author.push.credentials_id,
         branch: branchInfo.seed?.config_file?.git?.branch ?: branchInfo.name,
         filepath: branchInfo.seed?.config_file?.path ?: readSeedConfig().seed.config_file.path,
         jenkinsfile: branchInfo.seed?.jenkinsfile ?: (readSeedConfig().seed.jenkinsfile ?: 'dsl/seed/jenkinsfiles/Jenkinsfile.seed.branch'),

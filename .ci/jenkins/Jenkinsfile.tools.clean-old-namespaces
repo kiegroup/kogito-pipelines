@@ -1,5 +1,15 @@
+import org.jenkinsci.plugins.workflow.libs.Library
+
+@Library('jenkins-pipeline-shared-libraries')_
+
 pipeline {
-    agent { label 'kogito-cloud && !built-in' }
+    agent {
+        docker { 
+            image env.AGENT_DOCKER_BUILDER_IMAGE
+            args env.AGENT_DOCKER_BUILDER_ARGS
+            label util.avoidFaultyNodes()
+        }
+    }
     options {
         timeout(time: 120, unit: 'MINUTES')
     }

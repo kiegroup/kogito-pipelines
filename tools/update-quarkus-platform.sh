@@ -1,5 +1,22 @@
 #!/usr/bin/env bash
 
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
 set -euo pipefail
 
 GITHUB_URL="https://github.com/"
@@ -228,8 +245,8 @@ finalize() {
     fi
 }
 
-JBOSS_NEXUS_REPOSITORY='https://repository.jboss.org/nexus/content/groups/public/'
-KOGITO_STAGING_REPOSITORY='https://repository.jboss.org/nexus/content/groups/kogito-public/'
+JBOSS_NEXUS_REPOSITORY='https://repository.apache.org/content/groups/public/'
+KOGITO_STAGING_REPOSITORY='https://repository.apache.org/service/local/staging/deploy/maven2'
 MAVEN_SETTINGS_FILE='.github/mvn-settings.xml'
 DIFF_FILE="diff --git a/.github/mvn-settings.xml b/.github/mvn-settings.xml
 index d5e4664b4..f3a1f9154 100644
@@ -245,15 +262,15 @@ index d5e4664b4..f3a1f9154 100644
 +          </snapshots>
 +          <id>kogito</id>
 +          <name>kogito</name>
-+          <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
++          <url>https://repository.apache.org/content/groups/public/</url>
 +        </repository>
 +        <repository>
 +          <snapshots>
 +            <enabled>false</enabled>
 +          </snapshots>
-+          <id>jboss-nexus</id>
-+          <name>JBoss Nexus</name>
-+          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
++          <id>apache-nexus</id>
++          <name>Apache Nexus</name>
++          <url>https://repository.apache.org/content/groups/public/</url>
 +        </repository>
          <repository>
            <id>google-maven-central</id>

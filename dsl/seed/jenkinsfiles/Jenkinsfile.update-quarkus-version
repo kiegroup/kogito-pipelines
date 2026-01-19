@@ -7,16 +7,12 @@ failingRepos = []
 
 pipeline {
     agent {
-        label 'rhel8 && !built-in'
+        image env.AGENT_DOCKER_BUILDER_IMAGE
+        args env.AGENT_DOCKER_BUILDER_ARGS
+        label util.avoidFaultyNodes('ubuntu')
     }
 
-    // parameters {
-    // For parameters, check into ./dsl/jobs.groovy file
-    // }
-
     environment {
-        // Static env is defined into .jenkins/dsl/jobs.groovy file
-
         KOGITO_CI_EMAIL_TO = credentials("${JENKINS_EMAIL_CREDS_ID}")
     }
 
@@ -34,25 +30,26 @@ pipeline {
         stage('Update quarkus version in branch config') {
             steps {
                 script {
-                    String prBranch = getSeedPRBranch("${SEED_BRANCH_CONFIG_FILE_GIT_BRANCH}")
-                    dir("${SEED_BRANCH_CONFIG_FILE_GIT_REPOSITORY}") {
+                    String prBranch = getSeedPRBranch("${getSeedConfigFileGitBranch()}")
+                    dir("${getSeedConfigFileGitRepository()}") {
                         deleteDir()
-                        checkout(githubscm.resolveRepository("${SEED_BRANCH_CONFIG_FILE_GIT_REPOSITORY}", "${SEED_BRANCH_CONFIG_FILE_GIT_AUTHOR_NAME}", "${SEED_BRANCH_CONFIG_FILE_GIT_BRANCH}", false, "${SEED_BRANCH_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}"))
+                        checkout(githubscm.resolveRepository("${getSeedConfigFileGitRepository()}", "${getSeedConfigFileGitAuthor()}", "${getSeedConfigFileGitBranch()}", false, "${getSeedConfigFileGitAuthorCredsId()}"))
 
-                        getOrCreateGitBranch(prBranch, "${SEED_BRANCH_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}")
+                        getOrCreateGitBranch(prBranch, "${getSeedConfigFileGitAuthorPushCredsId()}")
 
-                        updateYaml("${SEED_BRANCH_CONFIG_FILE_PATH}") { branchConfig ->
+                        updateYaml("${getSeedConfigFilePath()}") { branchConfig ->
                             if (branchConfig.environments?.'quarkus-branch'?.env_vars?.QUARKUS_BRANCH) {
                                 branchConfig.environments.'quarkus-branch'.env_vars.QUARKUS_BRANCH = getNewVersionBranch()
                             }
                         }
 
                         if (githubscm.isThereAnyChanges()) {
-                            String commitMsg = "[${SEED_BRANCH_CONFIG_FILE_GIT_BRANCH}] ${getJiraNumber() ? "[${getJiraNumber()}] " : ''}Bump quarkus version to ${getNewVersion()}"
+                            String commitMsg = "[${getSeedConfigFileGitBranch()}] ${getJiraNumber() ? "[${getJiraNumber()}] " : ''}Bump quarkus version to ${getNewVersion()}"
+                            githubscm.setUserConfigFromCreds(getGitAuthorPushCredsId())
                             githubscm.commitChanges(commitMsg)
-                            githubscm.pushObject('origin', prBranch, "${SEED_BRANCH_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}")
+                            githubscm.pushObject('origin', prBranch, "${getSeedConfigFileGitAuthorPushCredsId()}")
 
-                            String prLink = githubscm.createPR(commitMsg, 'Please review and merge', "${SEED_BRANCH_CONFIG_FILE_GIT_BRANCH}", "${SEED_BRANCH_CONFIG_FILE_GIT_AUTHOR_CREDS_ID}")
+                            String prLink = githubscm.createPR(commitMsg, 'Please review and merge', "${getSeedConfigFileGitBranch()}", "${getSeedConfigFileGitAuthorCredsId()}")
                             echo "Created PR ${prLink}"
                             prLinks.add(prLink)
                         } else {
@@ -178,6 +175,33 @@ def readPipelineProperties(String jobUrl) {
     return pipelineProperties
 }
 
+String getSeedConfigFileGitRepository() {
+    return env.SEED_CONFIG_FILE_GIT_REPOSITORY
+}
+String getSeedConfigFilePath() {
+    return env.SEED_CONFIG_FILE_PATH
+}
+
+String getSeedConfigFileGitAuthor() {
+    return env.SEED_CONFIG_FILE_GIT_AUTHOR
+}
+
+String getSeedConfigFileGitBranch() {
+    return env.SEED_CONFIG_FILE_GIT_BRANCH
+}
+
+String getSeedConfigFileGitAuthorCredsId() {
+    return env.SEED_CONFIG_FILE_GIT_AUTHOR_CREDS_ID
+}
+
+String getSeedConfigFileGitAuthorPushCredsId() {
+    return env.SEED_CONFIG_FILE_GIT_AUTHOR_PUSH_CREDS_ID
+}
+
+String getGitAuthorTokenCredsId() {
+    return env.GIT_AUTHOR_TOKEN_CREDS_ID
+}
+
 String getNewVersion() {
     return params.NEW_VERSION
 }
@@ -219,7 +243,7 @@ void getOrCreateGitBranch(String branch, String credentialsId) {
 }
 
 void finalizePR(String prLink) {
-    withCredentials([string(credentialsId: "${GITHUB_TOKEN_CREDS_ID}", variable: 'GITHUB_TOKEN')]) {
+    withCredentials([string(credentialsId: "${getGitAuthorTokenCredsId()}", variable: 'GITHUB_TOKEN')]) {
         String currentBodyJson = sh(returnStdout: true, script: "gh pr view ${prLink} --json body").trim()
         echo "currentBodyjson = ${currentBodyJson}"
         String newBody = """
