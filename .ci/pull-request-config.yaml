@@ -10,7 +10,7 @@ pre: |
   echo "QUARKUS_VERSION=${{ env.QUARKUS_VERSION }}"
   echo "ENABLE_DEPLOY=${{ env.ENABLE_DEPLOY }}"
   export REMOVE_MODULES="./productized/remove_modules.sh ./productized/modules"
-  echo "REMOVE_MODULES=${{ env.REMOVE_MODULES }}"
+  echo "REMOVE_MODULES="
 
 default:
   build-command:
@@ -24,7 +24,7 @@ default:
     current: |
       mvn dependency:tree clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }}
     upstream: |
-      ${{ env.REMOVE_MODULES }}; mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }}"
+      ; mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }}"
 
 build:
   - project: kiegroup/drools
@@ -33,27 +33,27 @@ build:
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.DROOLS_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.DROOLS_BUILD_MVN_OPTS }}
       upstream: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_drools }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/drools.maven.log"
         mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.DROOLS_BUILD_MVN_OPTS_UPSTREAM }}
   
   - project: kiegroup/kogito-runtimes
     build-command:
       current: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_runtimes }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_runtimes.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_runtimes }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_runtimes.maven.log"
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_RUNTIMES_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean -Dfull ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS }}
       upstream: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_runtimes }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_runtimes.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_runtimes }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_runtimes.maven.log"
         mvn dependency:tree clean install -Dquickly -Dfull ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS_UPSTREAM }}
 
   - project: kiegroup/kogito-apps
     build-command: 
       current: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_apps }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_apps.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_apps }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_apps.maven.log"
         export MVN_CMD=`bash -c "if [ '${{ env.ENABLE_DEPLOY }}' = 'true' ]; then printf 'deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_APPS_DEPLOY_MVN_OPTS }}'; else printf 'install'; fi"`
         mvn dependency:tree clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS }}
       upstream: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_apps }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_apps.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_apps }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_apps.maven.log"
         mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS_UPSTREAM }}
 
   - project: kiegroup/kogito-examples
@@ -65,5 +65,5 @@ build:
         mvn dependency:tree -pl :kogito-examples clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
         mvn dependency:tree -f ${{ env.KOGITO_EXAMPLES_SUBFOLDER_POM }}pom.xml clean ${{ env.MVN_CMD }} ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
       upstream: |
-        ${{ env.REMOVE_MODULES }} ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_examples }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_examples.maven.log"
+        ; ${{ env.PME_BUILD_SCRIPT_kiegroup_kogito_examples }} ${{ env.BUILD_MVN_OPTS }} | tee ${{ env.WORKSPACE }}/kogito_examples.maven.log"
         mvn dependency:tree clean install -DskipTests -DskipITs ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS_UPSTREAM }}
