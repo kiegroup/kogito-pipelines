@@ -509,7 +509,7 @@ def buildImage(String imageName, String descriptorFilePath, String nightlyBranch
         sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
 
         println "Diff of ${descriptorFile} after replacing branch name and org.kie.kogito.version"
-        sh "git diff --no-index  ${imagesRepository}/${imageFolder}/${descriptorFile} ./${descriptorFile}"
+        sh "git diff --no-index  ${imagesRepository}/${imageFolder}/${descriptorFile} ./${descriptorFile} || true"
 
         println 'Using cekit version'
         util.runWithPythonVirtualEnv('cekit --version', 'cekit')
