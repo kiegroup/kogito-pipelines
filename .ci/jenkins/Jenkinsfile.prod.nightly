@@ -130,9 +130,9 @@ pipeline {
                     // Inital overrides for shared modules YAML descriptors in /images-dist/modules/
 
 
-                    // Override all occurenes of 999-SNAPSHOT in images-dist/modules/kogito-project-versions/module.yaml
+                    // Override all occurenes of 9.105.0 in images-dist/modules/kogito-project-versions/module.yaml
                     // This version must be changed to match java artifacts build in previous steps 
-                    sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
+                    sh """sed -i "s/9.105.0/${env.ARTIFACTS_VERSION}/g" ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
 
                     // Override QUARKUS_PLATFORM_VERSION in images-dist/modules/kogito-project-versions/module.yaml
                     sh """sed -i '/name: "QUARKUS_PLATFORM_VERSION"/{n;s/value: "[^"]*"/value: "${env.QUARKUS_PLATFORM_VERSION}"/;}' ${env.IMAGES_KOGITO_PROJECT_VERSIONS_MODULE_PATH}"""
@@ -475,7 +475,7 @@ def buildOperator(String descriptorFile, String nightlyBranchName, String operat
         sh """sed -i "s/ref:.*/ref: ${reference}/g" ${descriptorFile}"""
 
         // Replace version property in descriptor file so the final image origins can be identified
-        sh """sed -i "s/ version:.*/ version: 999.0.0.nightly/g" ${descriptorFile}"""
+//         sh """sed -i "s/ version:.*/ version: 999.0.0.nightly/g" ${descriptorFile}"""
 
         println "Diff of ${descriptorFile} after replacing branch name and ref"
         sh "git diff ${descriptorFile}"
@@ -505,8 +505,8 @@ def buildImage(String imageName, String descriptorFilePath, String nightlyBranch
         // Replace branch property in descriptor file so it points to nightly build config
         sh """sed -i "s/branch:.*/branch: ${nightlyBranchName}/g" ${descriptorFile}"""
 
-        // Replace 999-SNAPSHOT in label "org.kie.kogito.version" to match already build logic maven artifacts
-        sh """sed -i "s/999-SNAPSHOT/${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
+        // Replace 9.105.0 in label "org.kie.kogito.version" to match already build logic maven artifacts
+        sh """sed -i "s/9.105.0/${env.ARTIFACTS_VERSION}/g" ${descriptorFile}"""
 
         println "Diff of ${descriptorFile} after replacing branch name and org.kie.kogito.version"
         sh "git diff --no-index  ${imagesRepository}/${imageFolder}/${descriptorFile} ./${descriptorFile} || true"
