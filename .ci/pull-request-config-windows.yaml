@@ -1,6 +1,6 @@
 version: "2.1"
 
-dependencies: ./project-dependencies.yaml
+dependencies: .\project-dependencies.yaml
 
 pre: |
   export BUILD_MVN_OPTS="${{ env.BUILD_MVN_OPTS }} -nsu -ntp -fae -e -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
@@ -9,7 +9,7 @@ pre: |
   echo "BUILD_MVN_OPTS_CURRENT=${{ env.BUILD_MVN_OPTS_CURRENT }}"
   echo "QUARKUS_VERSION=${{ env.QUARKUS_VERSION }}"
   echo "ENABLE_DEPLOY=${{ env.ENABLE_DEPLOY }}"
-  export REMOVE_MODULES="./productized/remove_modules.sh ./productized/modules"
+  export REMOVE_MODULES=".\productized\remove_modules.sh .\productized\modules"
   echo "REMOVE_MODULES=${{ env.REMOVE_MODULES }}"
 
 default:
@@ -17,10 +17,10 @@ default:
     before:
       current: |
         export INTEGRATION_BRANCH=${{ env.INTEGRATION_BRANCH_CURRENT }}
-        bash -c "if [ ! -z '${{ env.BUILD_ENVIRONMENT }}' ] && [ -f .ci/environments/update.sh ]; then .ci/environments/update.sh ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_CURRENT }}; fi"
+        bash -c "if [ ! -z '${{ env.BUILD_ENVIRONMENT }}' ] && [ -f .ci\environments\update.sh ]; then .ci\environments\update.sh ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_CURRENT }}; fi"
       upstream: |
         export INTEGRATION_BRANCH=${{ env.INTEGRATION_BRANCH_UPSTREAM }}
-        bash -c "if [ ! -z '${{ env.BUILD_ENVIRONMENT }}' ] && [ -f .ci/environments/update.sh ]; then .ci/environments/update.sh ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_UPSTREAM }}; fi"
+        bash -c "if [ ! -z '${{ env.BUILD_ENVIRONMENT }}' ] && [ -f .ci\environments\update.sh ]; then .ci\environments\update.sh ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_UPSTREAM }}; fi"
     current: |
       mvn dependency:tree clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }}
     upstream: |
