@@ -9,7 +9,7 @@ pre: |
   echo "BUILD_MVN_OPTS_CURRENT=${{ env.BUILD_MVN_OPTS_CURRENT }}"
   echo "QUARKUS_VERSION=${{ env.QUARKUS_VERSION }}"
   echo "ENABLE_DEPLOY=${{ env.ENABLE_DEPLOY }}"
-  export REMOVE_MODULES=".\productized\remove_modules.sh .\productized\modules"
+  export REMOVE_MODULES=".\productized\remove_modules.bat .\productized\modules"
   echo "REMOVE_MODULES=${{ env.REMOVE_MODULES }}"
 
 default:
