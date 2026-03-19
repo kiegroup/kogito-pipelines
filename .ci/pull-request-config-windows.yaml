@@ -1,0 +1,73 @@
+version: "2.1"
+
+dependencies: ./project-dependencies.yaml
+
+pre: |
+  set BUILD_MVN_OPTS=${{ env.BUILD_MVN_OPTS }} -nsu -ntp -fae -e -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3
+  echo BUILD_MVN_OPTS=%BUILD_MVN_OPTS%
+  set BUILD_MVN_OPTS_CURRENT=${{ env.BUILD_MVN_OPTS_CURRENT }}
+  echo BUILD_MVN_OPTS_CURRENT=%BUILD_MVN_OPTS_CURRENT%
+  echo QUARKUS_VERSION=${{ env.QUARKUS_VERSION }}
+  echo ENABLE_DEPLOY=${{ env.ENABLE_DEPLOY }}
+  set REMOVE_MODULES=.\productized\remove_modules.bat .\productized\modules
+  echo REMOVE_MODULES=%REMOVE_MODULES%
+
+default:
+  build-command:
+    before:
+      current: |
+        set INTEGRATION_BRANCH=${{ env.INTEGRATION_BRANCH_CURRENT }}
+        if not "${{ env.BUILD_ENVIRONMENT }}"=="" if exist .ci\environments\update.bat call .ci\environments\update.bat ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_CURRENT }}
+      upstream: |
+        set INTEGRATION_BRANCH=${{ env.INTEGRATION_BRANCH_UPSTREAM }}
+        if not "${{ env.BUILD_ENVIRONMENT }}"=="" if exist .ci\environments\update.bat call .ci\environments\update.bat ${{ env.BUILD_ENVIRONMENT }} ${{ env.BUILD_ENVIRONMENT_OPTIONS_UPSTREAM }}
+    current: |
+      mvn dependency:tree clean install ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }}
+    upstream: |
+      %REMOVE_MODULES% & mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }}
+
+build:
+  - project: kiegroup/drools
+    build-command:
+      current: |
+        %REMOVE_MODULES%
+        if "${{ env.ENABLE_DEPLOY }}"=="true" (set MVN_CMD=deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.DROOLS_DEPLOY_MVN_OPTS }}) else (set MVN_CMD=install)
+        mvn dependency:tree clean %MVN_CMD% ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.DROOLS_BUILD_MVN_OPTS }}
+      upstream: |
+        %REMOVE_MODULES%
+        mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.DROOLS_BUILD_MVN_OPTS_UPSTREAM }}
+  
+  - project: kiegroup/kogito-runtimes
+    build-command:
+      current: |
+        %REMOVE_MODULES%
+        if "${{ env.ENABLE_DEPLOY }}"=="true" (set MVN_CMD=deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_RUNTIMES_DEPLOY_MVN_OPTS }}) else (set MVN_CMD=install)
+        mvn dependency:tree clean -Dfull %MVN_CMD% ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS }}
+      upstream: |
+        %REMOVE_MODULES% 
+        mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_RUNTIMES_BUILD_MVN_OPTS_UPSTREAM }}
+
+  - project: kiegroup/kogito-apps
+    build-command: 
+      current: |
+        %REMOVE_MODULES%
+        if "${{ env.ENABLE_DEPLOY }}"=="true" (set MVN_CMD=deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_APPS_DEPLOY_MVN_OPTS }}) else (set MVN_CMD=install)
+        mvn dependency:tree clean %MVN_CMD% ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS }}
+      upstream: |
+        %REMOVE_MODULES%
+        mvn dependency:tree clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_APPS_BUILD_MVN_OPTS_UPSTREAM }}
+
+  - project: kiegroup/kogito-examples
+    build-command:
+      # First install the main pom
+      # Then build the required submodule pom
+      current: |
+        %REMOVE_MODULES%
+        if "${{ env.ENABLE_DEPLOY }}"=="true" (set MVN_CMD=deploy ${{ env.DEPLOY_MVN_OPTS }} ${{ env.KOGITO_EXAMPLES_DEPLOY_MVN_OPTS }}) else (set MVN_CMD=install)
+        mvn dependency:tree -pl :kogito-examples clean %MVN_CMD% ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
+        mvn dependency:tree -f ${{ env.KOGITO_EXAMPLES_SUBFOLDER_POM }}pom.xml clean %MVN_CMD% ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
+      upstream: |
+        %REMOVE_MODULES% 
+        mvn dependency:tree clean install -DskipTests -DskipITs ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS_UPSTREAM }}
+
+# Made with Bob
