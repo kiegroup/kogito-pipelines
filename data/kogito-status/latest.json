@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-05-21T05:06:18.778Z",
+    "date": "2026-05-21T09:32:25.160Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26206629434"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26217800695"
   },
   "projects": [
     {
@@ -29,93 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-05-21T01:44:14Z",
+      "updated_at": "2026-05-21T07:01:12Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 180,
-          "title": "[SRVLOGIC-962] Update dependabot config.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/180",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/180",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-05-19T12:55:56Z",
-          "updated_at": "2026-05-20T08:54:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "28d98869e1f340d13406df249567ffa356f4bd9a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-update-config",
-            "sha": "907002523e87448739f48d4a10ec705036b873dd",
-            "label": "baldimir:dependabot-update-config"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 76742892110,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26098573743/job/76742892110",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T12:56:09Z",
-              "completed_at": "2026-05-19T13:52:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 76742891863,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26098573743/job/76742891863",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T12:56:08Z",
-              "completed_at": "2026-05-19T13:50:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 76742891738,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26098573626/job/76742891738",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T12:56:09Z",
-              "completed_at": "2026-05-19T13:51:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 179,
           "title": "Removing_uneeded_stuff",
@@ -197,83 +117,13 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2026-05-20T10:22:26Z",
+      "updated_at": "2026-05-21T07:01:20Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 124,
-          "title": "[SRVLOGIC-962] Update dependabot config.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/124",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/124",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-05-19T12:58:31Z",
-          "updated_at": "2026-05-20T08:53:49Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "61a6ac59a2fce3230b18f28b8f694f0cb55a4b2a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-update-config",
-            "sha": "2d1687eb8cca09313605ab59d762fe2f8b52bd70",
-            "label": "baldimir:dependabot-update-config"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 76743377993,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/26098707782/job/76743377993",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T12:58:42Z",
-              "completed_at": "2026-05-19T13:55:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 76743373250,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/26098706819/job/76743373250",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T12:58:41Z",
-              "completed_at": "2026-05-19T13:58:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
@@ -284,77 +134,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-05-18T07:55:20Z",
+      "updated_at": "2026-05-21T07:01:26Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 111,
-          "title": "[SRVLOGIC-962] Update dependabot config.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/111",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/111",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-05-19T13:04:42Z",
-          "updated_at": "2026-05-19T13:04:43Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "c8809d57735ecf909dc3aa61ae289c66bd77f57a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-config-update",
-            "sha": "9b5d0cc1dece3d215ce39419311189eca8970fb3",
-            "label": "baldimir:dependabot-config-update"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 76744585194,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26099041527/job/76744585194",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-19T13:04:54Z",
-              "completed_at": "2026-05-19T14:02:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
