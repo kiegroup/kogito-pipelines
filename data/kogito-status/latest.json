@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-05-22T04:03:25.146Z",
+    "date": "2026-05-22T08:18:40.585Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26267736081"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26276688144"
   },
   "projects": [
     {
@@ -29,13 +29,203 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-05-22T01:44:26Z",
+      "updated_at": "2026-05-22T07:20:52Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 185,
+          "title": "Bump org.apache.tomcat.embed:tomcat-embed-core from 10.1.54 to 10.1.55 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/185",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/185",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-05-22T07:22:06Z",
+          "updated_at": "2026-05-22T07:22:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "911875852044b4cda15e8522b2fc6c03400f4450",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.apache.tomcat.embed-tomcat-embed-core-10.1.55",
+            "sha": "a0d9a63279ff9e613b4cc1f0d7da5963d6564cae",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.apache.tomcat.embed-tomcat-embed-core-10.1.55"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 77334713055,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274281657/job/77334713055",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:14Z",
+              "completed_at": "2026-05-22T08:15:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 77334713004,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274281636/job/77334713004",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:14Z",
+              "completed_at": "2026-05-22T08:16:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 77334712998,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274281636/job/77334712998",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:13Z",
+              "completed_at": "2026-05-22T08:10:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 184,
+          "title": "Bump org.springframework:spring-webmvc from 6.2.17 to 6.2.18 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/184",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/184",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-05-22T07:22:05Z",
+          "updated_at": "2026-05-22T07:22:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "911875852044b4cda15e8522b2fc6c03400f4450",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webmvc-6.2.18",
+            "sha": "df8a2e4974827e72a2c57fc61618ba835a31f29b",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webmvc-6.2.18"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 77334710184,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274280674/job/77334710184",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:12Z",
+              "completed_at": "2026-05-22T08:11:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 77334710129,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274280627/job/77334710129",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:12Z",
+              "completed_at": "2026-05-22T08:11:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 77334710044,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274280627/job/77334710044",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:12Z",
+              "completed_at": "2026-05-22T08:14:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 183,
+          "title": "Bump org.jenkins-ci.plugins:credentials-binding from 1.19 to 720.v3f6decef43ea_ in /.ci/jenkins/tests",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/183",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/183",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-05-22T07:21:51Z",
+          "updated_at": "2026-05-22T07:21:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "911875852044b4cda15e8522b2fc6c03400f4450",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.plugins-credentials-binding-720.v3f6decef43ea_",
+            "sha": "fc6cd24ca9e81f6aba6200696b638b5a21108604",
+            "label": "kiegroup:dependabot/maven/dot-ci/jenkins/tests/org.jenkins-ci.plugins-credentials-binding-720.v3f6decef43ea_"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 77334680847,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274271157/job/77334680847",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-05-22T07:21:59Z",
+              "completed_at": "2026-05-22T07:43:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 77334680826,
+              "name": "DSL",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26274271157/job/77334680826",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:21:59Z",
+              "completed_at": "2026-05-22T07:23:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 182,
           "title": "Bump actions/setup-java from 3 to 5",
@@ -69,13 +259,13 @@
           },
           "checks": [
             {
-              "id": 77149988534,
+              "id": 77334761139,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26219356669/job/77149988534",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26219356669/job/77334761139",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-05-21T10:07:35Z",
-              "completed_at": "2026-05-21T10:55:41Z",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:22:35Z",
+              "completed_at": "2026-05-22T07:52:38Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -98,73 +288,6 @@
               "conclusion": "success",
               "started_at": "2026-05-21T10:18:15Z",
               "completed_at": "2026-05-21T11:14:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 181,
-          "title": "Bump actions/checkout from 3 to 6",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/181",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/181",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "github_actions"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-21T10:04:25Z",
-          "updated_at": "2026-05-21T10:04:26Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a405be059f7c4f0e0b37f2bcb7e0a1dc0856435b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/github_actions/actions/checkout-6",
-            "sha": "e634e817bad30901e851523b1b9d6d6e572d85f7",
-            "label": "kiegroup:dependabot/github_actions/actions/checkout-6"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 77149980201,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26219354099/job/77149980201",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-21T10:23:38Z",
-              "completed_at": "2026-05-21T11:15:10Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 77149980196,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26219354099/job/77149980196",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-21T10:19:46Z",
-              "completed_at": "2026-05-21T11:11:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 77149980179,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/26219354103/job/77149980179",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-21T10:04:56Z",
-              "completed_at": "2026-05-21T10:51:15Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -268,7 +391,7 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-05-21T07:01:26Z",
+      "updated_at": "2026-05-22T07:24:01Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
@@ -276,30 +399,30 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
       "pullRequests": [
         {
-          "number": 112,
-          "title": "Bump org.assertj:assertj-core from 3.22.0 to 3.27.7 in /serverless-workflow-examples/serverless-workflow-newsletter-subscription/subscription-flow",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/112",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/112",
+          "number": 115,
+          "title": "Bump next from 12.2.5 to 15.5.18 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/115",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/115",
           "state": "open",
           "labels": [
             "dependencies",
-            "java"
+            "javascript"
           ],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2026-05-21T10:19:44Z",
-          "updated_at": "2026-05-21T10:19:45Z",
+          "created_at": "2026-05-22T07:25:19Z",
+          "updated_at": "2026-05-22T07:25:20Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "1c35acde3ab65c097b0d6929f17be5c8d0ad8c67",
+            "sha": "502827130dfe20beb42b177d04bdb4125aa58007",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "dependabot/maven/serverless-workflow-examples/serverless-workflow-newsletter-subscription/subscription-flow/org.assertj-assertj-core-3.27.7",
-            "sha": "d9359b2134cf1016cc26a805bc2fa87c5ccf0575",
-            "label": "kiegroup:dependabot/maven/serverless-workflow-examples/serverless-workflow-newsletter-subscription/subscription-flow/org.assertj-assertj-core-3.27.7"
+            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/next-15.5.18",
+            "sha": "cd75f84d484939dca38a43e754f92b23cc6438f8",
+            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/next-15.5.18"
           },
           "user": {
             "login": "dependabot[bot]",
@@ -308,13 +431,103 @@
           },
           "checks": [
             {
-              "id": 77152417187,
+              "id": 77335142489,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26220056115/job/77152417187",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26274415687/job/77335142489",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-05-21T10:24:08Z",
-              "completed_at": "2026-05-21T11:17:08Z",
+              "started_at": "2026-05-22T07:25:27Z",
+              "completed_at": "2026-05-22T08:12:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 114,
+          "title": "Bump io.grpc:grpc-netty-shaded from 1.56.0 to 1.75.0 in /serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-server-rpc-quarkus",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/114",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/114",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-05-22T07:24:50Z",
+          "updated_at": "2026-05-22T07:24:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "502827130dfe20beb42b177d04bdb4125aa58007",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-server-rpc-quarkus/io.grpc-grpc-netty-shaded-1.75.0",
+            "sha": "d735e597e1fe408d858c9ae67350f4d18f347b4f",
+            "label": "kiegroup:dependabot/maven/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-server-rpc-quarkus/io.grpc-grpc-netty-shaded-1.75.0"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 77335075406,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26274395448/job/77335075406",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-05-22T07:24:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 113,
+          "title": "Bump org.assertj:assertj-core from 3.22.0 to 3.27.7 in /serverless-workflow-examples/serverless-workflow-oauth2-orchestration-quarkus/acme-financial-service",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/113",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/113",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-05-22T07:24:44Z",
+          "updated_at": "2026-05-22T07:24:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "502827130dfe20beb42b177d04bdb4125aa58007",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/serverless-workflow-examples/serverless-workflow-oauth2-orchestration-quarkus/acme-financial-service/org.assertj-assertj-core-3.27.7",
+            "sha": "330897b67e5df5ee9841f9d8d257bf6b4c49e630",
+            "label": "kiegroup:dependabot/maven/serverless-workflow-examples/serverless-workflow-oauth2-orchestration-quarkus/acme-financial-service/org.assertj-assertj-core-3.27.7"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 77335066166,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26274392513/job/77335066166",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-22T07:24:53Z",
+              "completed_at": "2026-05-22T08:12:33Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
