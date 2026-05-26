@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-05-26T08:36:29.833Z",
+    "date": "2026-05-26T16:38:11.066Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26441624927"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26461690926"
   },
   "projects": [
     {
@@ -29,84 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-05-26T01:42:05Z",
+      "updated_at": "2026-05-26T12:00:18Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 179,
-          "title": "Removing_unneeded_stuff",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/179",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/179",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            }
-          ],
-          "created_at": "2026-05-14T11:20:39Z",
-          "updated_at": "2026-05-22T14:31:58Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "28d98869e1f340d13406df249567ffa356f4bd9a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Removing_unneeded_stuff",
-            "sha": "0b911a624104664843fac65d1abee8df7b4f20f7",
-            "label": "fjtirado:Removing_unneeded_stuff"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 76953670844,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/25870924341/job/76953670844",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-14T16:08:53Z",
-              "completed_at": "2026-05-14T16:42:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 76953646393,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/25870924341/job/76953646393",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-20T12:19:08Z",
-              "completed_at": "2026-05-20T12:55:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 76025629970,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/25870924234/job/76025629970",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-14T16:08:20Z",
-              "completed_at": "2026-05-14T16:34:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
@@ -117,81 +46,13 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2026-05-21T07:01:20Z",
+      "updated_at": "2026-05-26T13:53:14Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 125,
-          "title": "Bump org.apache.opennlp:opennlp-tools from 2.3.2 to 2.5.9 in /kogito-apps-build-parent",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/125",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/125",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-26T06:58:24Z",
-          "updated_at": "2026-05-26T06:58:24Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "4c50cd9cc4a5411ebcfae45c5aa7d3badb832c86",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/kogito-apps-build-parent/org.apache.opennlp-opennlp-tools-2.5.9",
-            "sha": "55668f8f786f7536b2192950be7af8c5d1918000",
-            "label": "kiegroup:dependabot/maven/kogito-apps-build-parent/org.apache.opennlp-opennlp-tools-2.5.9"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 77823154675,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/26437358099/job/77823154675",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-26T06:58:31Z",
-              "completed_at": "2026-05-26T07:49:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 77823154560,
-              "name": "submit-maven",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/26437357044/job/77823154560",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-05-26T06:58:30Z",
-              "completed_at": "2026-05-26T06:58:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 77823154531,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/26437358067/job/77823154531",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-26T06:58:31Z",
-              "completed_at": "2026-05-26T07:47:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
@@ -202,7 +63,7 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-05-26T06:53:08Z",
+      "updated_at": "2026-05-26T13:53:49Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
@@ -210,10 +71,10 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
       "pullRequests": [
         {
-          "number": 121,
-          "title": "Bump immutable from 4.1.0 to 4.3.8 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/121",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/121",
+          "number": 123,
+          "title": "Bump minimatch from 3.1.2 to 3.1.5 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/123",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/123",
           "state": "open",
           "labels": [
             "dependencies",
@@ -221,19 +82,19 @@
           ],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2026-05-26T06:54:26Z",
-          "updated_at": "2026-05-26T06:54:27Z",
+          "created_at": "2026-05-26T13:43:55Z",
+          "updated_at": "2026-05-26T13:43:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "0839540c8f648671fd444427db61c01006f4dbaa",
+            "sha": "38ebd78a3d14bdad99242d150312080e51d8254d",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/immutable-4.3.8",
-            "sha": "17d8be07670a6276ce5166f193960dd14be67022",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/immutable-4.3.8"
+            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/minimatch-3.1.5",
+            "sha": "84f5c9a10f1cec75befcc6b064675dee345b17ac",
+            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/minimatch-3.1.5"
           },
           "user": {
             "login": "dependabot[bot]",
@@ -242,43 +103,43 @@
           },
           "checks": [
             {
-              "id": 77822627464,
+              "id": 77874708016,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26437198801/job/77822627464",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26451876101/job/77874708016",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-05-26T06:54:33Z",
-              "completed_at": "2026-05-26T07:37:21Z",
+              "started_at": "2026-05-26T13:44:32Z",
+              "completed_at": "2026-05-26T14:47:17Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
         },
         {
-          "number": 120,
-          "title": "Bump socket.io-parser from 4.2.4 to 4.2.6 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/120",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/120",
+          "number": 122,
+          "title": "Bump org.assertj:assertj-core from 3.22.0 to 3.27.7 in /serverless-workflow-examples/serverless-workflow-openvino-quarkus",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/122",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/122",
           "state": "open",
           "labels": [
             "dependencies",
-            "javascript"
+            "java"
           ],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2026-05-26T06:54:21Z",
-          "updated_at": "2026-05-26T06:54:22Z",
+          "created_at": "2026-05-26T13:43:36Z",
+          "updated_at": "2026-05-26T13:43:37Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "0839540c8f648671fd444427db61c01006f4dbaa",
+            "sha": "38ebd78a3d14bdad99242d150312080e51d8254d",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/socket.io-parser-4.2.6",
-            "sha": "af0cb12ccf150d326d6f14d72adc6043975aec33",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/socket.io-parser-4.2.6"
+            "ref": "dependabot/maven/serverless-workflow-examples/serverless-workflow-openvino-quarkus/org.assertj-assertj-core-3.27.7",
+            "sha": "19ab592cde022985a4ce5f7cec8438f3a5754e79",
+            "label": "kiegroup:dependabot/maven/serverless-workflow-examples/serverless-workflow-openvino-quarkus/org.assertj-assertj-core-3.27.7"
           },
           "user": {
             "login": "dependabot[bot]",
@@ -287,58 +148,13 @@
           },
           "checks": [
             {
-              "id": 77822617149,
+              "id": 77874561973,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26437195427/job/77822617149",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26451837602/job/77874561973",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-05-26T06:54:28Z",
-              "completed_at": "2026-05-26T07:42:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 119,
-          "title": "Bump follow-redirects from 1.15.11 to 1.16.0 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/119",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/119",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-26T06:54:16Z",
-          "updated_at": "2026-05-26T06:54:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0839540c8f648671fd444427db61c01006f4dbaa",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/follow-redirects-1.16.0",
-            "sha": "1e2fcbb0084831cb024453613ded92d720183a85",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/follow-redirects-1.16.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 77822607725,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26437192496/job/77822607725",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-26T06:54:23Z",
-              "completed_at": "2026-05-26T07:37:19Z",
+              "started_at": "2026-05-26T13:43:52Z",
+              "completed_at": "2026-05-26T14:31:53Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
