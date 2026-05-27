@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-05-27T07:05:15.884Z",
+    "date": "2026-05-27T11:34:11.610Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26496267559"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26508651145"
   },
   "projects": [
     {
@@ -18,7 +18,67 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 115,
+          "title": "SRVLOGIC-1010: Adjust Jenkinsfile.prod.nightly job definition to use …",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/115",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/115",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2026-05-27T10:58:29Z",
+          "updated_at": "2026-05-27T10:59:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4892f3690636458145380238bac656e843fc6595",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-1010",
+            "sha": "f799f7741848a5f180bdfa242b80d20ec2b050b4",
+            "label": "domhanak:SRVLOGIC-1010"
+          },
+          "user": {
+            "login": "domhanak",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+            "html_url": "https://github.com/domhanak"
+          },
+          "checks": [
+            {
+              "id": 78062162216,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26507088301/job/78062162216",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T10:59:29Z",
+              "completed_at": "2026-05-27T11:00:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 78062162149,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26507088301/job/78062162149",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T10:59:27Z",
+              "completed_at": "2026-05-27T11:01:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
@@ -63,104 +123,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-05-26T13:53:49Z",
+      "updated_at": "2026-05-27T07:06:28Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 123,
-          "title": "Bump minimatch from 3.1.2 to 3.1.5 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/123",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/123",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-26T13:43:55Z",
-          "updated_at": "2026-05-26T13:43:57Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "38ebd78a3d14bdad99242d150312080e51d8254d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/minimatch-3.1.5",
-            "sha": "84f5c9a10f1cec75befcc6b064675dee345b17ac",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/minimatch-3.1.5"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 77874708016,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26451876101/job/77874708016",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-26T13:44:32Z",
-              "completed_at": "2026-05-26T14:47:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 122,
-          "title": "Bump org.assertj:assertj-core from 3.22.0 to 3.27.7 in /serverless-workflow-examples/serverless-workflow-openvino-quarkus",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/122",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/122",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-26T13:43:36Z",
-          "updated_at": "2026-05-26T13:43:37Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "38ebd78a3d14bdad99242d150312080e51d8254d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/serverless-workflow-examples/serverless-workflow-openvino-quarkus/org.assertj-assertj-core-3.27.7",
-            "sha": "19ab592cde022985a4ce5f7cec8438f3a5754e79",
-            "label": "kiegroup:dependabot/maven/serverless-workflow-examples/serverless-workflow-openvino-quarkus/org.assertj-assertj-core-3.27.7"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 77874561973,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26451837602/job/77874561973",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-26T13:43:52Z",
-              "completed_at": "2026-05-26T14:31:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
