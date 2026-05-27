@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-05-27T11:34:11.610Z",
+    "date": "2026-05-27T15:29:34.868Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26508651145"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26521063559"
   },
   "projects": [
     {
@@ -21,21 +21,15 @@
       "pullRequests": [
         {
           "number": 115,
-          "title": "SRVLOGIC-1010: Adjust Jenkinsfile.prod.nightly job definition to use …",
+          "title": "SRVLOGIC-1010: Adjust Jenkinsfile.prod.nightly job to use 111-SNAPSHOT",
           "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/115",
           "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/115",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "baldimir",
-              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-              "html_url": "https://github.com/baldimir"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2026-05-27T10:58:29Z",
-          "updated_at": "2026-05-27T10:59:05Z",
+          "updated_at": "2026-05-27T13:29:35Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -129,7 +123,255 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 127,
+          "title": "[Security] Fix 8 high severity Dependabot alerts in banks project",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/127",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/127",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-05-27T14:31:36Z",
+          "updated_at": "2026-05-27T14:32:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2b43b82ab817f6a6ae9c55c8ce17cefad6393566",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot-autofix/banks-high-severity-1779891701",
+            "sha": "a3d084e3159b363f68d1b06683311ffa37d28026",
+            "label": "baldimir:dependabot-autofix/banks-high-severity-1779891701"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 78099709777,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26517756034/job/78099709777",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T14:31:48Z",
+              "completed_at": "2026-05-27T15:23:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 126,
+          "title": "[Security] Fix Dependabot alerts #40, #39: Update fast-uri to 3.1.2",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/126",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/126",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-05-27T14:20:00Z",
+          "updated_at": "2026-05-27T14:20:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2b43b82ab817f6a6ae9c55c8ce17cefad6393566",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot-autofix/fast-uri-1779891349",
+            "sha": "aa9d7a5e4a2f56ce528b6ed9af72adc8021f4dda",
+            "label": "baldimir:dependabot-autofix/fast-uri-1779891349"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 78097212668,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26517074752/job/78097212668",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T14:20:08Z",
+              "completed_at": "2026-05-27T15:07:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 125,
+          "title": "[Security] Fix Dependabot alert #46: Update ws to 8.21.0",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/125",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/125",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-05-27T14:13:19Z",
+          "updated_at": "2026-05-27T14:13:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2b43b82ab817f6a6ae9c55c8ce17cefad6393566",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot-autofix/ws-1779890968",
+            "sha": "268d70444ff8cb529f3b603c38e099506bbf17ab",
+            "label": "baldimir:dependabot-autofix/ws-1779890968"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 78095796922,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26516696919/job/78095796922",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T14:13:31Z",
+              "completed_at": "2026-05-27T15:17:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 124,
+          "title": "[Security] Fix Dependabot alert #93: Update tensorflow to >=2.12.1",
+          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/124",
+          "html_url": "https://github.com/kiegroup/kogito-examples/pull/124",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            }
+          ],
+          "created_at": "2026-05-27T14:05:57Z",
+          "updated_at": "2026-05-27T14:58:30Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2b43b82ab817f6a6ae9c55c8ce17cefad6393566",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot-autofix/tensorflow-1779889328",
+            "sha": "6af7f88d7c598f40e6777d06284fe7abb39905b3",
+            "label": "baldimir:dependabot-autofix/tensorflow-1779889328"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 78094188487,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26516263792/job/78094188487",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-05-27T14:06:10Z",
+              "completed_at": "2026-05-27T14:57:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
