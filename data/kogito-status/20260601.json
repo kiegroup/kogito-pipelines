@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-01T05:57:51.726Z",
+    "date": "2026-06-01T11:40:18.193Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26737900460"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26752625141"
   },
   "projects": [
     {
@@ -63,104 +63,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-05-28T08:43:41Z",
+      "updated_at": "2026-06-01T07:17:58Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 129,
-          "title": "Bump axios from 1.15.2 to 1.16.0 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/129",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/129",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-29T16:08:07Z",
-          "updated_at": "2026-05-29T16:08:09Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a6cb6f2b2e9857fb0c8997acc3bc58de2aa3530d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/axios-1.16.0",
-            "sha": "d0ff6d1ff4a41e1da30cc55dc8ef78f060b0dfe0",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/loanbroker-js/axios-1.16.0"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 78539327145,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26648177280/job/78539327145",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-29T16:08:22Z",
-              "completed_at": "2026-05-29T16:52:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 128,
-          "title": "Bump picomatch from 2.3.1 to 2.3.2 in /serverless-workflow-examples/serverless-workflow-loanbroker-showcase/credit-bureau",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/128",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/128",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-05-28T07:35:40Z",
-          "updated_at": "2026-05-28T07:35:42Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7b3aa3b0a4e948d51127f6a7f0483d1aee86a405",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/credit-bureau/picomatch-2.3.2",
-            "sha": "36149a66c1f418bb15ec830ac36a477aedc7dde5",
-            "label": "kiegroup:dependabot/npm_and_yarn/serverless-workflow-examples/serverless-workflow-loanbroker-showcase/credit-bureau/picomatch-2.3.2"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 78244898309,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26561348826/job/78244898309",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-05-28T07:35:49Z",
-              "completed_at": "2026-05-28T08:26:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
