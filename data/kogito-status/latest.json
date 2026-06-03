@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-03T11:52:37.170Z",
+    "date": "2026-06-03T16:38:54.953Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26882937680"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26898998447"
   },
   "projects": [
     {
@@ -63,202 +63,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-06-01T07:17:58Z",
+      "updated_at": "2026-06-03T13:19:25Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 133,
-          "title": "🔒 Security Fix: Update postcss and ajv",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/133",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/133",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-01T14:05:39Z",
-          "updated_at": "2026-06-03T10:42:17Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "19814d7a2233e36918259a19e4b8e90ad1a75252",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-autofix/postcss-ajv-1780322464",
-            "sha": "0ce3198fe0d03cd7895464d30627a01b746920a6",
-            "label": "baldimir:dependabot-autofix/postcss-ajv-1780322464"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 78870362655,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26759961081/job/78870362655",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-01T14:05:53Z",
-              "completed_at": "2026-06-01T14:55:19Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 132,
-          "title": "[Security] Fix Dependabot alerts #29, #35, #30: Update fastify to 5.8.3",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/132",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/132",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-01T14:00:26Z",
-          "updated_at": "2026-06-03T10:42:02Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "19814d7a2233e36918259a19e4b8e90ad1a75252",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-autofix/fastify-1780322239",
-            "sha": "d43312e656cc8c43f8419d5cc4b31602d8ef7b23",
-            "label": "baldimir:dependabot-autofix/fastify-1780322239"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 78869282010,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26759670450/job/78869282010",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-01T14:00:44Z",
-              "completed_at": "2026-06-01T14:46:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 131,
-          "title": "[Security] Fix Dependabot alerts #46, #99: Update ws to 8.20.1",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/131",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/131",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-01T13:56:43Z",
-          "updated_at": "2026-06-03T10:41:47Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "19814d7a2233e36918259a19e4b8e90ad1a75252",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-autofix/ws-1780322106",
-            "sha": "17cbb7cdebbe05e85c813c90778f5f007fc80632",
-            "label": "baldimir:dependabot-autofix/ws-1780322106"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 78868487684,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26759453041/job/78868487684",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-01T13:56:54Z",
-              "completed_at": "2026-06-01T14:41:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
         {
           "number": 130,
           "title": "[Security] Fix Dependabot alerts #102, #101, #100: Update uuid to 11.1.1",
@@ -274,11 +85,6 @@
               "html_url": "https://github.com/mareknovotny"
             },
             {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
               "login": "saumya1singh",
               "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
               "html_url": "https://github.com/saumya1singh"
@@ -290,17 +96,17 @@
             }
           ],
           "created_at": "2026-06-01T13:54:19Z",
-          "updated_at": "2026-06-03T10:41:33Z",
+          "updated_at": "2026-06-03T14:22:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "19814d7a2233e36918259a19e4b8e90ad1a75252",
+            "sha": "286085479962f4fad7ab9a7f715c2e57477b4414",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "dependabot-autofix/uuid-1780321651",
-            "sha": "d09b2a7474216569f06948560328b9d27bf19208",
+            "sha": "a2eedff279e4eb1abdac6d404f076ff81483d165",
             "label": "baldimir:dependabot-autofix/uuid-1780321651"
           },
           "user": {
@@ -310,13 +116,13 @@
           },
           "checks": [
             {
-              "id": 78868047895,
+              "id": 79317036685,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26759332201/job/78868047895",
+              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26891104598/job/79317036685",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-06-01T13:54:47Z",
-              "completed_at": "2026-06-01T14:46:57Z",
+              "started_at": "2026-06-03T14:22:31Z",
+              "completed_at": "2026-06-03T14:50:46Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
