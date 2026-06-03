@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-03T16:38:54.953Z",
+    "date": "2026-06-03T20:15:18.093Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26898998447"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26910367155"
   },
   "projects": [
     {
@@ -63,72 +63,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-06-03T13:19:25Z",
+      "updated_at": "2026-06-03T18:27:48Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 130,
-          "title": "[Security] Fix Dependabot alerts #102, #101, #100: Update uuid to 11.1.1",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/130",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/130",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-01T13:54:19Z",
-          "updated_at": "2026-06-03T14:22:21Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "286085479962f4fad7ab9a7f715c2e57477b4414",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot-autofix/uuid-1780321651",
-            "sha": "a2eedff279e4eb1abdac6d404f076ff81483d165",
-            "label": "baldimir:dependabot-autofix/uuid-1780321651"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 79317036685,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/26891104598/job/79317036685",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-03T14:22:31Z",
-              "completed_at": "2026-06-03T14:50:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
