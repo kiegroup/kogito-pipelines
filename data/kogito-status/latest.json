@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-04T08:15:47.545Z",
+    "date": "2026-06-04T11:48:22.965Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26939656759"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26949803564"
   },
   "projects": [
     {
@@ -18,7 +18,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 116,
+          "title": "[SRVLOGIC-707] Add operator bundle build to prod nightly build. ",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/116",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/116",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-06-04T10:09:54Z",
+          "updated_at": "2026-06-04T10:42:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0e8390655c69d1355d126830c1546fae29275ccf",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "bundle-build",
+            "sha": "80dbbf00c38f9191c240fe115817ba81f2f7478d",
+            "label": "baldimir:bundle-build"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 79496639582,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26945294551/job/79496639582",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-04T10:10:05Z",
+              "completed_at": "2026-06-04T10:11:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 79496639562,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/26945294551/job/79496639562",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-04T10:10:05Z",
+              "completed_at": "2026-06-04T10:12:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
