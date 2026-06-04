@@ -294,7 +294,7 @@ pipeline {
                         script {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
 
-                            def descriptorFile = 'osl-operator-image/logic-operator-bundle-image.yaml'
+                            def descriptorFilePath = 'images-dist/logic-operator-bundle-image.yaml'
                             // There are no artifact overrides for the bundle image.
                             def artifacts = [];
                             env.OPERATOR_BUNDLE_REGISTRY = buildImage(env.OPERATOR_BUNDLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
