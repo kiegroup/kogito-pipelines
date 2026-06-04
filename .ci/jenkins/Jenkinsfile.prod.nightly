@@ -116,6 +116,7 @@ pipeline {
                     env.DB_MIGRATOR_TOOL = 'db-migrator-tool'
                     env.MANAGEMENT_CONSOLE = 'management-console'
                     env.OPERATOR = 'operator'
+                    env.OPERATOR_BUNDLE = 'operator-bundle'
 
                     // Images registries placeholders
                     env.DATA_INDEX_EPHEMERAL_REGISTRY = ''
@@ -127,6 +128,7 @@ pipeline {
                     env.DB_MIGRATOR_TOOL_REGISTRY = ''
                     env.MANAGEMENT_CONSOLE_REGISTRY = ''
                     env.OPERATOR_REGISTRY = ''
+                    env.OPERATOR_BUNDLE_REGISTRY = ''
 
                     // Inital overrides for shared modules YAML descriptors in /images-dist/modules/
 
@@ -287,6 +289,18 @@ pipeline {
                         }
                     }
                 }
+                stage('Operator bundle image') {
+                    steps {
+                        script {
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
+
+                            def descriptorFile = 'osl-operator-image/logic-operator-bundle-image.yaml'
+                            // There are no artifact overrides for the bundle image.
+                            def artifacts = [];
+                            env.OPERATOR_BUNDLE_REGISTRY = buildImage(env.OPERATOR_BUNDLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
+                        }
+                    }
+                }
 
             }
         }
@@ -422,7 +436,8 @@ pipeline {
                          "${env.SWF_DEVMODE}": env.SWF_DEVMODE_REGISTRY,
                          "${env.DB_MIGRATOR_TOOL}": env.DB_MIGRATOR_TOOL_REGISTRY,
                          "${env.MANAGEMENT_CONSOLE}" : env.MANAGEMENT_CONSOLE_REGISTRY,
-                         "${env.OPERATOR}": env.OPERATOR_REGISTRY
+                         "${env.OPERATOR}": env.OPERATOR_REGISTRY,
+                         "${env.OPERATOR_BUNDLE}": env.OPERATOR_BUNDLE_REGISTRY
                         ],
                         gitHashesToCollection(env.GIT_INFORMATION_HASHES)
                     )
