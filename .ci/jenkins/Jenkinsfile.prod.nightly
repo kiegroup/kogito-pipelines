@@ -292,7 +292,7 @@ pipeline {
                 stage('Operator bundle image') {
                     steps {
                         script {
-                            sleep(Integer.parseInt(env.SLEEP_TIME) * 7)
+                            sleep(Integer.parseInt(env.SLEEP_TIME) * 8)
 
                             def descriptorFilePath = 'images-dist/logic-operator-bundle-image.yaml'
                             // There are no artifact overrides for the bundle image.
