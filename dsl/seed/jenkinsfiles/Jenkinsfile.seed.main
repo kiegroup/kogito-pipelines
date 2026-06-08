@@ -20,7 +20,7 @@ pipeline {
     }
 
     tools {
-        jdk 'kie-jdk11'
+        jdk 'kie-jdk17'
     }
 
     environment {
