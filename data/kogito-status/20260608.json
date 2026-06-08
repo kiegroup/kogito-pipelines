@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-08T17:19:08.628Z",
+    "date": "2026-06-08T20:08:10.426Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27154680972"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27163851393"
   },
   "projects": [
     {
@@ -255,6 +255,207 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 196,
+          "title": "Bump io.netty:netty-handler from 4.1.132.Final to 4.1.135.Final in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/196",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/196",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-06-08T19:13:37Z",
+          "updated_at": "2026-06-08T19:13:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9ac86025c4d96e6027e12cb338b3cec17e8f92f2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-handler-4.1.135.Final",
+            "sha": "5d17e0b5a902a812ea7b72a3e2bddb3b81cea72d",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-handler-4.1.135.Final"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 80175872404,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160926440/job/80175872404",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:13:46Z",
+              "completed_at": "2026-06-08T20:03:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80175872376,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160926440/job/80175872376",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:16:46Z",
+              "completed_at": "2026-06-08T20:03:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80175872290,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160926414/job/80175872290",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:13:44Z",
+              "completed_at": "2026-06-08T19:50:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 195,
+          "title": "Bump io.netty:netty-codec-haproxy from 4.1.132.Final to 4.1.135.Final in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/195",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/195",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-06-08T19:04:03Z",
+          "updated_at": "2026-06-08T19:04:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9ac86025c4d96e6027e12cb338b3cec17e8f92f2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-codec-haproxy-4.1.135.Final",
+            "sha": "6b0a63d98e09a57e593a1559218f74e93a74f934",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-codec-haproxy-4.1.135.Final"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 80174079581,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160411296/job/80174079581",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:04:11Z",
+              "completed_at": "2026-06-08T19:52:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80174079519,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160411242/job/80174079519",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:04:11Z",
+              "completed_at": "2026-06-08T19:44:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80174079444,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160411296/job/80174079444",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:04:11Z",
+              "completed_at": "2026-06-08T19:46:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 194,
+          "title": "Bump io.netty:netty-codec-redis from 4.1.132.Final to 4.1.135.Final in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/194",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/194",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-06-08T19:03:02Z",
+          "updated_at": "2026-06-08T19:03:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9ac86025c4d96e6027e12cb338b3cec17e8f92f2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-codec-redis-4.1.135.Final",
+            "sha": "373af0892d6b1c411b1a9fbdd59c2ef7b02ce406",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/io.netty-netty-codec-redis-4.1.135.Final"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 80173898339,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160357505/job/80173898339",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:03:13Z",
+              "completed_at": "2026-06-08T19:50:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80173898258,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160357505/job/80173898258",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-06-08T19:03:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 80173898239,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27160357495/job/80173898239",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-08T19:03:13Z",
+              "completed_at": "2026-06-08T19:44:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 193,
           "title": "[Fix #192] Remove Spring template",
