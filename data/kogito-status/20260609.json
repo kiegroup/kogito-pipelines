@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-09T05:01:00.933Z",
+    "date": "2026-06-09T09:33:55.464Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27184926117"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27197191595"
   },
   "projects": [
     {
@@ -248,7 +248,7 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-06-09T01:40:43Z",
+      "updated_at": "2026-06-09T07:41:04Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
@@ -656,166 +656,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
-        },
-        {
-          "number": 193,
-          "title": "[Fix #192] Remove Spring template",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/193",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/193",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "baldimir",
-              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-              "html_url": "https://github.com/baldimir"
-            },
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
-          "created_at": "2026-06-08T15:45:04Z",
-          "updated_at": "2026-06-08T15:45:20Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "9ac86025c4d96e6027e12cb338b3cec17e8f92f2",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Fix_#192",
-            "sha": "8c633cf6544db5fbc37fa7fa608416d5b290ab92",
-            "label": "fjtirado:Fix_#192"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 80135896668,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27149363592/job/80135896668",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T15:45:19Z",
-              "completed_at": "2026-06-08T16:29:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 80135896141,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27149363484/job/80135896141",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-06-08T15:45:19Z",
-              "completed_at": "2026-06-08T16:34:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 80135896009,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27149363484/job/80135896009",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T15:45:19Z",
-              "completed_at": "2026-06-08T16:35:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 190,
-          "title": "[SRVLOGIC-1039] Upgrade Quarkus to 3.27.4.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/190",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/190",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-08T13:24:28Z",
-          "updated_at": "2026-06-08T13:32:35Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "9ac86025c4d96e6027e12cb338b3cec17e8f92f2",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "quarkus-3274",
-            "sha": "08ded7c10a5b03695c2c022e8e97c6731f66fd1d",
-            "label": "baldimir:quarkus-3274"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 80104959671,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27140740572/job/80104959671",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T13:24:37Z",
-              "completed_at": "2026-06-08T14:10:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 80104959546,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27140740580/job/80104959546",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T13:24:37Z",
-              "completed_at": "2026-06-08T14:18:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 80104959525,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27140740580/job/80104959525",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T13:24:36Z",
-              "completed_at": "2026-06-08T14:16:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
         }
       ],
       "branchesComparison": {
@@ -845,77 +685,13 @@
       "name": "kogito-examples",
       "description": "This repository is a fork of apache/incubator-kie-kogito-examples. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-examples",
-      "updated_at": "2026-06-04T13:43:54Z",
+      "updated_at": "2026-06-09T07:41:28Z",
       "homepage": "http://kogito.kie.org",
       "language": "Python",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-examples",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 135,
-          "title": "[SRVLOGIC-1039] Update Quarkus to 3.27.4.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-examples/pulls/135",
-          "html_url": "https://github.com/kiegroup/kogito-examples/pull/135",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "jankrystof-ibm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
-              "html_url": "https://github.com/jankrystof-ibm"
-            }
-          ],
-          "created_at": "2026-06-08T13:26:00Z",
-          "updated_at": "2026-06-08T13:32:47Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "cccd0262037c8524fe7e0dedda6f13870cf45a98",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "quarkus-3274",
-            "sha": "5158fae26a3f988c9e14281ff5a244d44f49df17",
-            "label": "baldimir:quarkus-3274"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 80105287555,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-examples/actions/runs/27140834030/job/80105287555",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-08T13:26:11Z",
-              "completed_at": "2026-06-08T14:22:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
