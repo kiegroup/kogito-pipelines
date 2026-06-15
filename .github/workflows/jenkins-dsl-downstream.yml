@@ -35,7 +35,7 @@ jobs:
           yq --version
 
       - name: Checkout Main Config repo from main branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: kiegroup/kogito-pipelines
           ref: main
@@ -98,7 +98,7 @@ jobs:
 
       - name: Checkout branch config repo
         if: ${{ env.BRANCH_CONFIG_UNKNOWN != 'true' }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: ${{ env.BRANCH_CONFIG_GIT_AUTHOR }}/${{ env.BRANCH_CONFIG_GIT_REPOSITORY }}
           ref: ${{ env.BRANCH_CONFIG_GIT_BRANCH }}
@@ -191,7 +191,7 @@ jobs:
           yq --version
 
       - name: Checkout Main Config repo from main branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: kiegroup/drools
           ref: main
@@ -256,7 +256,7 @@ jobs:
 
       - name: Checkout branch config repo
         if: ${{ env.BRANCH_CONFIG_UNKNOWN != 'true' }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: ${{ env.BRANCH_CONFIG_GIT_AUTHOR }}/${{ env.BRANCH_CONFIG_GIT_REPOSITORY }}
           ref: ${{ env.BRANCH_CONFIG_GIT_BRANCH }}
