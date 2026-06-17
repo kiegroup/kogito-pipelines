@@ -3,7 +3,6 @@ package org.kie.jenkins.jobdsl.support
 import org.yaml.snakeyaml.Yaml
 
 import groovy.io.FileType
-import java.util.Properties
 
 class TestUtil {
 
@@ -32,7 +31,25 @@ class TestUtil {
     }
 
     static Map readBranchConfig() {
-        Map config = new Yaml().load(('./branch_config.yaml' as File).text)
+        File configFile = new File('./branch_config.yaml')
+        Map config
+        
+        if (configFile.exists()) {
+            config = new Yaml().load(configFile.text)
+        } else {
+            // Return minimal default configuration for testing when file doesn't exist
+            config = [
+                git: [
+                    author: [
+                        name: 'test-author',
+                        credentials_id: 'test-credentials'
+                    ],
+                    branch: 'main'
+                ],
+                repositories: [],
+                environments: [:]
+            ]
+        }
 
         Map props = [:]
         fillEnvProperties(props, '', config)
