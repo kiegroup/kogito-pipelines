@@ -79,7 +79,7 @@ runs:
       echo "PIPELINES_TEST_DIR=${pipelines_test_dir}" >> $GITHUB_ENV
 
   - name: Checkout current repo
-    uses: actions/checkout@v3
+    uses: actions/checkout@v6
     with:
       path: dsl-tests-dir
 
