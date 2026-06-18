@@ -295,6 +295,9 @@ pipeline {
                             sleep(Integer.parseInt(env.SLEEP_TIME) * 8)
 
                             def descriptorFilePath = 'images-dist/logic-operator-bundle-image.yaml'
+                            // Disable digest pinning for nightly scratch builds — OSBS cannot resolve
+                            // tags for images that were built as scratch in the same pipeline run.
+                            sh """sed -i 's/enable_digest_pinning: true/enable_digest_pinning: false/g' ${env.IMAGES_REPOSITORY_PATH}/${descriptorFilePath}"""
                             // There are no artifact overrides for the bundle image.
                             def artifacts = [:];
                             env.OPERATOR_BUNDLE_REGISTRY = buildImage(env.OPERATOR_BUNDLE, descriptorFilePath, env.NIGHTLY_BRANCH_NAME, artifacts, env.IMAGES_REPOSITORY_PATH)
