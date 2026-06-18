@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-18T16:25:33.537Z",
+    "date": "2026-06-18T19:23:27.430Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27773873223"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27783839218"
   },
   "projects": [
     {
@@ -160,84 +160,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-06-18T01:55:06Z",
+      "updated_at": "2026-06-18T17:13:17Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 200,
-          "title": "SRVLOGIC-1017 Startup check to validate user provided workflow id and version are available in the runtime",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/200",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/200",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2026-06-16T12:48:37Z",
-          "updated_at": "2026-06-18T16:19:53Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b54f4553875a9aa2151c637efeb6bca7f4518028",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "SRVLOGIC-1017",
-            "sha": "2159d9d2fa9ca61f084e85f057a652afedc686f9",
-            "label": "wmedvede:SRVLOGIC-1017"
-          },
-          "user": {
-            "login": "wmedvede",
-            "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-            "html_url": "https://github.com/wmedvede"
-          },
-          "checks": [
-            {
-              "id": 82179727294,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27773563136/job/82179727294",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-06-18T16:20:03Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 82179725267,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27773562825/job/82179725267",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-06-18T16:20:03Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 82179725160,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/27773562825/job/82179725160",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-06-18T16:20:03Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
