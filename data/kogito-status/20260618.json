@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-18T08:40:43.789Z",
+    "date": "2026-06-18T12:20:29.639Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27747491249"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27758977868"
   },
   "projects": [
     {
@@ -12,13 +12,144 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2026-06-18T08:06:55Z",
+      "updated_at": "2026-06-18T11:55:06Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 120,
+          "title": "Updates actions and deps",
+          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/120",
+          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/120",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-06-18T09:09:45Z",
+          "updated_at": "2026-06-18T09:09:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c31b6cef88fd818878fa428e5f1671be12d2a818",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "updates-actions-and-deps",
+            "sha": "db5c291610051037e5d2a15a97adad67802122bc",
+            "label": "mareknovotny:updates-actions-and-deps"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 82095016266,
+              "name": "Drools DSL Downstream tests - mareknovotny/drools",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82095016266",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-06-18T09:12:03Z",
+              "completed_at": "2026-06-18T09:13:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82095016251,
+              "name": "Drools DSL Downstream tests - mareknovotny/kie-benchmarks",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82095016251",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-18T09:12:05Z",
+              "completed_at": "2026-06-18T09:13:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094998894,
+              "name": "Kogito DSL Downstream tests - mareknovotny/kogito-pipelines",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82094998894",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-06-18T09:11:57Z",
+              "completed_at": "2026-06-18T09:12:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094998874,
+              "name": "Kogito DSL Downstream tests - mareknovotny/kogito-runtimes",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82094998874",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-06-18T09:11:58Z",
+              "completed_at": "2026-06-18T09:12:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094998853,
+              "name": "Kogito DSL Downstream tests - mareknovotny/kogito-apps",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82094998853",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-06-18T09:11:58Z",
+              "completed_at": "2026-06-18T09:12:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094958329,
+              "name": "Get Drools DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82094958329",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-18T09:11:44Z",
+              "completed_at": "2026-06-18T09:12:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094958325,
+              "name": "dsl-tests",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161003/job/82094958325",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-18T09:11:44Z",
+              "completed_at": "2026-06-18T09:13:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094958288,
+              "name": "Get Kogito DSL downstream projects",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161041/job/82094958288",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-18T09:11:50Z",
+              "completed_at": "2026-06-18T09:11:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 82094958254,
+              "name": "Jenkinsfiles",
+              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/27749161003/job/82094958254",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-06-18T09:11:44Z",
+              "completed_at": "2026-06-18T09:13:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
