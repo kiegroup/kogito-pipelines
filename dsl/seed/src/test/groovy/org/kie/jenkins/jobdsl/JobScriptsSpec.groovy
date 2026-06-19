@@ -9,7 +9,6 @@ import javaposse.jobdsl.dsl.GeneratedJob
 import javaposse.jobdsl.dsl.GeneratedView
 import javaposse.jobdsl.dsl.JobManagement
 import javaposse.jobdsl.plugin.JenkinsJobManagement
-import javaposse.jobdsl.dsl.Folder
 import jenkins.model.Jenkins
 import org.junit.ClassRule
 import org.jvnet.hudson.test.JenkinsRule
@@ -20,7 +19,8 @@ import spock.lang.Unroll
 /**
  * Tests that all dsl scripts in the jobs directory will compile. All config.xml's are written to build/debug-xml.
  *
- * This runs against the jenkins test harness. Plugins providing auto-generated DSL must be added to the build dependencies.
+ * This runs against the jenkins test harness.
+ * Plugins providing auto-generated DSL must be added to the build dependencies.
  */
 class JobScriptsSpec extends Specification {
 
@@ -87,14 +87,14 @@ class JobScriptsSpec extends Specification {
         items.jobs.each { GeneratedJob generatedJob ->
             String jobName = generatedJob.jobName
             Item item = jenkins.getItemByFullName(jobName)
-            String text = item.getConfigFile().asString()
+            String text = item.configFile.asString()
             TestUtil.writeFile(new File(outputDir, 'jobs'), jobName, text)
         }
 
         items.views.each { GeneratedView generatedView ->
             String viewName = generatedView.name
             View view = jenkins.getView(viewName)
-            String text = view.getConfigFile().asString()
+            String text = view.configFile.asString()
             TestUtil.writeFile(new File(outputDir, 'views'), viewName, text)
         }
     }
