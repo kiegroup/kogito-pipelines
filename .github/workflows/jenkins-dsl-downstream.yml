@@ -28,7 +28,6 @@ jobs:
           echo "${HOME}/.local/bin" >> $GITHUB_PATH
 
           mkdir -p branch_config_repo
-
       - name: Install yq
         run: |
           wget https://github.com/mikefarah/yq/releases/download/v4.25.1/yq_linux_amd64.tar.gz -O - |  tar xz && ls -al && mv yq_linux_amd64 "${HOME}/.local/bin/yq"
@@ -152,7 +151,7 @@ jobs:
           echo 'BASE_BRANCH=${{ github.base_ref }}' >> $GITHUB_ENV
 
       - name: DSL tests
-        uses: kiegroup/kie-ci/.ci/actions/dsl-tests@main
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
         with:
           project: kogito
           repository: ${{ matrix.repository }}
