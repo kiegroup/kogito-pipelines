@@ -152,7 +152,7 @@ jobs:
           echo 'BASE_BRANCH=${{ github.base_ref }}' >> $GITHUB_ENV
 
       - name: DSL tests
-        uses: kiegroup/kie-ci/.ci/actions/dsl-tests@main
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
         with:
           project: kogito
           repository: ${{ matrix.repository }}
