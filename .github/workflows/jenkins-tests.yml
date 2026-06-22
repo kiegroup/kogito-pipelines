@@ -47,11 +47,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: DSL tests
-      uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
-      env:
-        BASE_BRANCH: ${{ github.base_ref }}
+      uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
       with:
         main-config-file-repo: kiegroup/kogito-pipelines
         main-config-file-path: .ci/jenkins/config/main.yaml
         branch-config-file-repo: kiegroup/kogito-pipelines
-        base-branch: ${{ github.base_ref }}
+        
