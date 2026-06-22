@@ -148,7 +148,7 @@ jobs:
     name: Kogito DSL Downstream tests - ${{ matrix.repository }}
     steps:
       - name: DSL tests
-        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@rhba-and-other-updates
         env:
           BASE_BRANCH: ${{ github.base_ref }}
         with:
@@ -305,7 +305,7 @@ jobs:
     name: Drools DSL Downstream tests - ${{ matrix.repository }}
     steps:
       - name: DSL tests
-        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@rhba-and-other-updates
         env:
           BASE_BRANCH: ${{ github.base_ref }}
         with:
