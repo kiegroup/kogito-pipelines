@@ -147,19 +147,17 @@ jobs:
       fail-fast: false
     name: Kogito DSL Downstream tests - ${{ matrix.repository }}
     steps:
-      - name: Setup default branch
-        run: |
-          echo 'BASE_BRANCH=${{ github.base_ref }}' >> $GITHUB_ENV
-
       - name: DSL tests
-        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
+        env:
+          BASE_BRANCH: ${{ github.base_ref }}
         with:
           project: kogito
           repository: ${{ matrix.repository }}
           main-config-file-repo: kiegroup/kogito-pipelines
           main-config-file-path: .ci/jenkins/config/main.yaml
           branch-config-file-repo: kiegroup/kogito-pipelines
-          base-branch: ${{ env.BASE_BRANCH }}
+          base-branch: ${{ github.base_ref }}
 
    #############################################################################
   # Drools
@@ -306,16 +304,14 @@ jobs:
       cancel-in-progress: true
     name: Drools DSL Downstream tests - ${{ matrix.repository }}
     steps:
-      - name: Setup default base branch
-        run: |
-          echo 'BASE_BRANCH=${{ github.base_ref }}' >> $GITHUB_ENV
-      
       - name: DSL tests
-        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@main
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
+        env:
+          BASE_BRANCH: ${{ github.base_ref }}
         with:
           project: drools
           repository: ${{ matrix.repository }}
           main-config-file-repo: kiegroup/drools
           main-config-file-path: .ci/jenkins/config/main.yaml
           branch-config-file-repo: kiegroup/drools
-          base-branch: ${{ env.BASE_BRANCH }}
+          base-branch: ${{ github.base_ref }}
