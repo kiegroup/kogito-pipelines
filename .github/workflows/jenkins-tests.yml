@@ -46,8 +46,11 @@ jobs:
       cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v6
+
     - name: DSL tests
-      uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
+      uses: ./.ci/actions/dsl-tests
       env:
         BASE_BRANCH: ${{ github.base_ref }}
       with:
