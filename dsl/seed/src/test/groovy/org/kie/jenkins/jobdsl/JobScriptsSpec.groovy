@@ -87,14 +87,14 @@ class JobScriptsSpec extends Specification {
         items.jobs.each { GeneratedJob generatedJob ->
             String jobName = generatedJob.jobName
             Item item = jenkins.getItemByFullName(jobName)
-            String text = item.configFile.asString()
+            String text = item.getConfigFile().asString()
             TestUtil.writeFile(new File(outputDir, 'jobs'), jobName, text)
         }
 
         items.views.each { GeneratedView generatedView ->
             String viewName = generatedView.name
             View view = jenkins.getView(viewName)
-            String text = view.configFile.asString()
+            String text = view.getConfigFile().asString()
             TestUtil.writeFile(new File(outputDir, 'views'), viewName, text)
         }
     }
