@@ -147,11 +147,8 @@ jobs:
       fail-fast: false
     name: Kogito DSL Downstream tests - ${{ matrix.repository }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
       - name: DSL tests
-        uses: ./.ci/actions/dsl-tests
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
         env:
           BASE_BRANCH: ${{ github.base_ref }}
         with:
@@ -307,11 +304,8 @@ jobs:
       cancel-in-progress: true
     name: Drools DSL Downstream tests - ${{ matrix.repository }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
       - name: DSL tests
-        uses: ./.ci/actions/dsl-tests
+        uses: kiegroup/kogito-pipelines/.ci/actions/dsl-tests@${{ github.event.pull_request.head.sha }}
         env:
           BASE_BRANCH: ${{ github.base_ref }}
         with:
