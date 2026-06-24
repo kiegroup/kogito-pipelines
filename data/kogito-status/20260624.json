@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-06-24T10:19:02.005Z",
+    "date": "2026-06-24T13:17:02.316Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28091621242"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28101305712"
   },
   "projects": [
     {
@@ -12,67 +12,13 @@
       "name": "kogito-pipelines",
       "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
       "html_url": "https://github.com/kiegroup/kogito-pipelines",
-      "updated_at": "2026-06-18T11:55:06Z",
+      "updated_at": "2026-06-24T10:27:37Z",
       "homepage": "",
       "language": "Groovy",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-pipelines",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 124,
-          "title": "Update GitHub actions and removal of legacy jobs",
-          "url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls/124",
-          "html_url": "https://github.com/kiegroup/kogito-pipelines/pull/124",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-06-24T09:05:45Z",
-          "updated_at": "2026-06-24T10:15:35Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "f376ee9edc7167731b464da86a902dfd0780b1bc",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "update-github-actions-ONLY",
-            "sha": "e8959376f8e358d9a94702f787ee77439160a637",
-            "label": "kiegroup:update-github-actions-ONLY"
-          },
-          "user": {
-            "login": "mareknovotny",
-            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-            "html_url": "https://github.com/mareknovotny"
-          },
-          "checks": [
-            {
-              "id": 83162366895,
-              "name": "Jenkinsfiles",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28089110672/job/83162366895",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-24T09:32:42Z",
-              "completed_at": "2026-06-24T09:35:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 83162366891,
-              "name": "dsl-tests",
-              "html_url": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28089110672/job/83162366891",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-06-24T09:32:42Z",
-              "completed_at": "2026-06-24T09:33:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
