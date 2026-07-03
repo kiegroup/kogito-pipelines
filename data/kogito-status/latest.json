@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-03T08:05:37.103Z",
+    "date": "2026-07-03T11:28:28.951Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28647263920"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/28657597173"
   },
   "projects": [
     {
@@ -29,81 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-07-03T07:10:56Z",
+      "updated_at": "2026-07-03T11:00:52Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 204,
-          "title": "Bump ch.qos.logback:logback-core from 1.5.25 to 1.5.33 in /kogito-build/kogito-dependencies-bom",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/204",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/204",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-07-03T07:11:43Z",
-          "updated_at": "2026-07-03T07:56:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "3e92a4ccbfe2b5b33731d60835f9afd308d2b36e",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-core-1.5.33",
-            "sha": "4acb9907a43351d74452b1908ba9f27fde19d9af",
-            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/ch.qos.logback-logback-core-1.5.33"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 84948495323,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/28644708733/job/84948495323",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-03T07:11:50Z",
-              "completed_at": "2026-07-03T08:00:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 84948495305,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/28644708733/job/84948495305",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-03T07:11:50Z",
-              "completed_at": "2026-07-03T07:51:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 84948495144,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/28644708674/job/84948495144",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-03T07:11:50Z",
-              "completed_at": "2026-07-03T07:49:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
