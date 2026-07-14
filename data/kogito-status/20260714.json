@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-14T13:29:30.501Z",
+    "date": "2026-07-14T15:20:23.529Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/29336266162"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/29344874844"
   },
   "projects": [
     {
@@ -29,78 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-07-14T01:35:59Z",
+      "updated_at": "2026-07-14T13:51:14Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 209,
-          "title": "[Fix #208] Adding sensitive data filter",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/209",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/209",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-07-13T11:46:40Z",
-          "updated_at": "2026-07-14T12:22:13Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "e4be687cdb395cd2721728da3030b5d6ca7e41f2",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Fix_#208",
-            "sha": "07e1595ab45294702e2f5382e3b622c3838cfda6",
-            "label": "fjtirado:Fix_#208"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 87094314469,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/29332230555/job/87094314469",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-14T12:22:23Z",
-              "completed_at": "2026-07-14T13:13:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 87094313468,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/29332230555/job/87094313468",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-07-14T13:15:18Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 87082687545,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/29332230537/job/87082687545",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-14T12:22:24Z",
-              "completed_at": "2026-07-14T13:08:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
