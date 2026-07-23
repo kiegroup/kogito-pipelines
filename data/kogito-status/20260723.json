@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-23T15:51:57.358Z",
+    "date": "2026-07-23T17:15:57.159Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30022474553"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30028646978"
   },
   "projects": [
     {
@@ -36,6 +36,73 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 215,
+          "title": "Bump org.postgresql:postgresql from 42.7.11 to 42.7.12 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/215",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/215",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-23T16:10:10Z",
+          "updated_at": "2026-07-23T16:10:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cd32ac074dff693421fea68ee5fb49beb40d558c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.postgresql-postgresql-42.7.12",
+            "sha": "a068e64fab1150fad76ccf5ee7d0749e349b8a59",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.postgresql-postgresql-42.7.12"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 89263381214,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30023917033/job/89263381214",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-07-23T16:10:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 89263381114,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30023917033/job/89263381114",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-23T16:10:17Z",
+              "completed_at": "2026-07-23T17:04:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 89263380393,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30023916941/job/89263380393",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-23T16:10:18Z",
+              "completed_at": "2026-07-23T16:54:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 214,
           "title": "[Fix #191] Adding version",
