@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-30T21:03:02.771Z",
+    "date": "2026-07-30T23:00:53.022Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30581777267"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30589095455"
   },
   "projects": [
     {
@@ -29,13 +29,281 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-07-30T11:46:41Z",
+      "updated_at": "2026-07-30T21:19:16Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 221,
+          "title": "Bump org.springframework:spring-webmvc from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/221",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/221",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-30T21:19:53Z",
+          "updated_at": "2026-07-30T21:19:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webmvc-6.2.19",
+            "sha": "b0752332fae832f37722dc59a5c4f8542c312d16",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webmvc-6.2.19"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 91007489356,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954910/job/91007489356",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T21:59:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007489211,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954892/job/91007489211",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T22:12:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007489186,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954892/job/91007489186",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:02Z",
+              "completed_at": "2026-07-30T22:09:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 220,
+          "title": "Bump org.springframework:spring-core from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/220",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/220",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-30T21:19:53Z",
+          "updated_at": "2026-07-30T21:19:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-core-6.2.19",
+            "sha": "0ca47f73d1e23e9e4a23a8d3b555975e988be682",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-core-6.2.19"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 91007491127,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955263/job/91007491127",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T22:10:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007489835,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955060/job/91007489835",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T22:11:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007489791,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955060/job/91007489791",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T22:05:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 219,
+          "title": "Bump org.springframework:spring-webflux from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/219",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/219",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-30T21:19:52Z",
+          "updated_at": "2026-07-30T21:19:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webflux-6.2.19",
+            "sha": "085957301335ee1f76ec6be8b6534ff82ca8b9fc",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-webflux-6.2.19"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 91007488581,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954698/job/91007488581",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:02Z",
+              "completed_at": "2026-07-30T22:06:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007488449,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954698/job/91007488449",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:00Z",
+              "completed_at": "2026-07-30T22:03:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007488439,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582954705/job/91007488439",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:20:01Z",
+              "completed_at": "2026-07-30T22:04:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 218,
+          "title": "Bump org.springframework:spring-expression from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/218",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/218",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-30T21:19:42Z",
+          "updated_at": "2026-07-30T21:19:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-expression-6.2.19",
+            "sha": "4f5b6eab70d6d1b81a971d47aa8b6a045de3a246",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-expression-6.2.19"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 91007459411,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582945889/job/91007459411",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:19:52Z",
+              "completed_at": "2026-07-30T22:03:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007459402,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582945889/job/91007459402",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:19:52Z",
+              "completed_at": "2026-07-30T22:03:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91007456455,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582944893/job/91007456455",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-30T21:19:56Z",
+              "completed_at": "2026-07-30T21:59:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 217,
           "title": "Bump org.springframework:spring-websocket from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
@@ -102,81 +370,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
-        },
-        {
-          "number": 214,
-          "title": "[Fix #191] Adding version",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/214",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/214",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "wmedvede",
-              "avatar_url": "https://avatars.githubusercontent.com/u/2431454?v=4",
-              "html_url": "https://github.com/wmedvede"
-            }
-          ],
-          "created_at": "2026-07-22T10:00:47Z",
-          "updated_at": "2026-07-30T17:40:05Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "ed8f60dceed5b6216ac88425f78223e7b91d3d8f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Fix_#191",
-            "sha": "3d75af741fe5707f4dcf445b7e77820ecdab23ec",
-            "label": "fjtirado:Fix_#191"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 90996632647,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30566989518/job/90996632647",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T17:40:13Z",
-              "completed_at": "2026-07-30T18:15:36Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 90996617154,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30566989518/job/90996617154",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-07-30T20:33:56Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 90953873787,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30566989547/job/90953873787",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T17:40:17Z",
-              "completed_at": "2026-07-30T18:13:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
         }
       ],
       "branchesComparison": {
@@ -189,73 +382,13 @@
       "name": "kogito-apps",
       "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-apps",
-      "updated_at": "2026-07-30T11:46:41Z",
+      "updated_at": "2026-07-30T21:18:41Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 127,
-          "title": "[Fix #191] Adding version",
-          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/127",
-          "html_url": "https://github.com/kiegroup/kogito-apps/pull/127",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
-          "created_at": "2026-07-24T18:35:52Z",
-          "updated_at": "2026-07-30T20:19:19Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "4cc844c513a5cbbd8e8435ed7b619ae3fd4783e5",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Fix_#191",
-            "sha": "affe0651f7254d1180cf245a7b696f532ab0b0f7",
-            "label": "fjtirado:Fix_#191"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 90993131409,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/30578661592/job/90993131409",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T20:19:37Z",
-              "completed_at": "2026-07-30T20:57:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 90993131278,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/30578661594/job/90993131278",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T20:19:38Z",
-              "completed_at": "2026-07-30T20:55:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
