@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-31T13:53:14.190Z",
+    "date": "2026-07-31T15:59:22.561Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30636251768"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30645204920"
   },
   "projects": [
     {
@@ -36,6 +36,70 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 224,
+          "title": "Update OpenAPI generator version to 2.22.0",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/224",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/224",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-07-31T14:26:01Z",
+          "updated_at": "2026-07-31T14:26:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "upgrade-openapi-2.22.0",
+            "sha": "35c5f4e877bbb4f0782417e636143bf651e4a96a",
+            "label": "kiegroup:upgrade-openapi-2.22.0"
+          },
+          "user": {
+            "login": "ricardozanini",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+            "html_url": "https://github.com/ricardozanini"
+          },
+          "checks": [
+            {
+              "id": 91182403275,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576663/job/91182403275",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-31T14:26:10Z",
+              "completed_at": "2026-07-31T15:07:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91182403272,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576663/job/91182403272",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-31T14:26:16Z",
+              "completed_at": "2026-07-31T15:10:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91182402337,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576407/job/91182402337",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-31T14:26:16Z",
+              "completed_at": "2026-07-31T15:04:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 223,
           "title": "[Fix #122] Adding head to check if multi version is supported",
@@ -69,10 +133,10 @@
               "id": 91171844448,
               "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30635469275/job/91171844448",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-07-31T13:41:33Z",
-              "completed_at": null,
+              "completed_at": "2026-07-31T14:27:03Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -80,10 +144,10 @@
               "id": 91171844431,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30635469275/job/91171844431",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-07-31T13:41:29Z",
-              "completed_at": null,
+              "completed_at": "2026-07-31T14:28:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -113,10 +177,10 @@
               "id": 91171841641,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30635468384/job/91171841641",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-07-31T13:41:26Z",
-              "completed_at": null,
+              "completed_at": "2026-07-31T14:20:59Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -488,7 +552,7 @@
       "pullRequests": [
         {
           "number": 129,
-          "title": "[Fix #212] Include version in mutation calls only if version is supported by runtimes",
+          "title": "[Fix #122] Include version in mutation calls only if version is supported by runtimes",
           "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/129",
           "html_url": "https://github.com/kiegroup/kogito-apps/pull/129",
           "state": "open",
@@ -496,7 +560,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2026-07-31T13:36:50Z",
-          "updated_at": "2026-07-31T13:47:58Z",
+          "updated_at": "2026-07-31T15:56:03Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -519,10 +583,10 @@
               "id": 91173356802,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
               "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/30635916194/job/91173356802",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-07-31T13:48:17Z",
-              "completed_at": null,
+              "completed_at": "2026-07-31T14:38:13Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -530,10 +594,10 @@
               "id": 91173356485,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
               "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/30635916133/job/91173356485",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-07-31T13:48:16Z",
-              "completed_at": null,
+              "completed_at": "2026-07-31T14:35:53Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
