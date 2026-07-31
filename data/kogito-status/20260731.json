@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-07-31T19:17:36.953Z",
+    "date": "2026-07-31T20:59:09.365Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30658517462"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30664912215"
   },
   "projects": [
     {
@@ -37,27 +37,27 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
         {
-          "number": 224,
-          "title": "Update OpenAPI generator version to 2.22.0",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/224",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/224",
+          "number": 225,
+          "title": "Update OpenAPI generator version to 2.23.0",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/225",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/225",
           "state": "open",
           "labels": [],
           "draft": false,
           "requested_reviewers": [],
-          "created_at": "2026-07-31T14:26:01Z",
-          "updated_at": "2026-07-31T14:26:16Z",
+          "created_at": "2026-07-31T20:25:08Z",
+          "updated_at": "2026-07-31T20:25:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
+            "sha": "2fe0abe019ecabb53c9a0a340d1fdac26c8a2720",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "upgrade-openapi-2.22.0",
-            "sha": "35c5f4e877bbb4f0782417e636143bf651e4a96a",
-            "label": "kiegroup:upgrade-openapi-2.22.0"
+            "ref": "update-openapio-2.23.0",
+            "sha": "0a62faf7e3099293db99a1951c27969630c82f8e",
+            "label": "kiegroup:update-openapio-2.23.0"
           },
           "user": {
             "login": "ricardozanini",
@@ -66,35 +66,35 @@
           },
           "checks": [
             {
-              "id": 91182403275,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576663/job/91182403275",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-31T14:26:10Z",
-              "completed_at": "2026-07-31T15:07:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 91182403272,
+              "id": 91262702395,
               "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576663/job/91182403272",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-31T14:26:16Z",
-              "completed_at": "2026-07-31T15:10:03Z",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30662794962/job/91262702395",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-07-31T20:25:17Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 91182402337,
+              "id": 91262702287,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30662794962/job/91262702287",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-07-31T20:25:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 91262701285,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30638576407/job/91182402337",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-07-31T14:26:16Z",
-              "completed_at": "2026-07-31T15:04:09Z",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30662794734/job/91262701285",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-07-31T20:25:22Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
