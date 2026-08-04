@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-04T04:08:40.011Z",
+    "date": "2026-08-04T07:33:49.958Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30876768839"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30888297655"
   },
   "projects": [
     {
@@ -29,87 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-08-04T01:36:44Z",
+      "updated_at": "2026-08-04T07:26:21Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 220,
-          "title": "Bump org.springframework:spring-core from 6.2.18 to 6.2.19 in /kogito-build/kogito-dependencies-bom",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/220",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/220",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "java"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            }
-          ],
-          "created_at": "2026-07-30T21:19:53Z",
-          "updated_at": "2026-08-03T08:27:11Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "442772fec1ab605979be84566b1b17dae3308d2d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-core-6.2.19",
-            "sha": "0ca47f73d1e23e9e4a23a8d3b555975e988be682",
-            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/org.springframework-spring-core-6.2.19"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 91007491127,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955263/job/91007491127",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T21:20:01Z",
-              "completed_at": "2026-07-30T22:10:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 91007489835,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955060/job/91007489835",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T21:20:01Z",
-              "completed_at": "2026-07-30T22:11:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 91007489791,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30582955060/job/91007489791",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-07-30T21:20:01Z",
-              "completed_at": "2026-07-30T22:05:19Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
