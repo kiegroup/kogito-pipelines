@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-05T06:25:09.454Z",
+    "date": "2026-08-05T09:32:52.815Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30981279278"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/30993707170"
   },
   "projects": [
     {
@@ -29,78 +29,13 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-08-05T01:35:44Z",
+      "updated_at": "2026-08-05T09:02:49Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 226,
-          "title": "Provide SourceFilesProvider fallback",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/226",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/226",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-08-04T17:56:57Z",
-          "updated_at": "2026-08-04T18:21:43Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "c54baecbdb46e8ce15f5e752a4ecd6411bb4cabe",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "Provide_fallback_source_files_provider",
-            "sha": "791f4b302c0b65e45a1f65b74ad3608ef0e0eb0c",
-            "label": "fjtirado:Provide_fallback_source_files_provider"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 92225524118,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30936293737/job/92225524118",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-08-05T06:22:00Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 92083174305,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30936294073/job/92083174305",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-04T17:57:06Z",
-              "completed_at": "2026-08-04T18:39:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 92083174246,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/30936294073/job/92083174246",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-04T17:57:06Z",
-              "completed_at": "2026-08-04T18:47:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
