@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-14T08:11:01.405Z",
+    "date": "2026-08-14T09:55:10.606Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/31782851515"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/31790058457"
   },
   "projects": [
     {
@@ -152,7 +152,7 @@
             }
           ],
           "created_at": "2026-08-12T11:16:57Z",
-          "updated_at": "2026-08-13T14:05:00Z",
+          "updated_at": "2026-08-14T08:35:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -162,7 +162,7 @@
           },
           "head": {
             "ref": "revert-vertx-dependencies-version-removal",
-            "sha": "a154483e7c78e349beccc87361a90c9b095b1767",
+            "sha": "552bc517b17fa4d05ba2f440c12fe9e58c55ef48",
             "label": "baldimir:revert-vertx-dependencies-version-removal"
           },
           "user": {
@@ -172,35 +172,35 @@
           },
           "checks": [
             {
-              "id": 94096167323,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31591153339/job/94096167323",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-12T11:17:05Z",
-              "completed_at": "2026-08-12T11:57:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 94096167232,
+              "id": 94717206775,
               "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31591153339/job/94096167232",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470356/job/94717206775",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-08-12T11:17:06Z",
-              "completed_at": "2026-08-12T12:04:32Z",
+              "started_at": "2026-08-14T08:34:45Z",
+              "completed_at": "2026-08-14T09:09:01Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 94096166944,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31591153313/job/94096166944",
+              "id": 94717206688,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470356/job/94717206688",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-08-12T11:17:05Z",
-              "completed_at": "2026-08-12T11:53:56Z",
+              "started_at": "2026-08-14T08:34:45Z",
+              "completed_at": "2026-08-14T09:07:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 94717206590,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470346/job/94717206590",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-08-14T08:34:45Z",
+              "completed_at": "2026-08-14T09:02:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
