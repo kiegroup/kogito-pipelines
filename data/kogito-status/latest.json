@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-17T06:43:16.552Z",
+    "date": "2026-08-17T07:47:52.973Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32002761159"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32007364152"
   },
   "projects": [
     {
@@ -142,17 +142,17 @@
             }
           ],
           "created_at": "2026-08-14T11:37:32Z",
-          "updated_at": "2026-08-14T19:48:21Z",
+          "updated_at": "2026-08-17T06:46:40Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "6daa896ac5d691be5bad1ded7ff7922e6ca4d175",
+            "sha": "63e4cd476f2b2289452db9532d80eff69c44fcf6",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "remove-spring-boot-deps",
-            "sha": "3e215fd0a7631b03d8b947b5d81a81a79f671305",
+            "sha": "5c0565d08228a5e41d37fe66919ebc50205c976c",
             "label": "baldimir:remove-spring-boot-deps"
           },
           "user": {
@@ -162,35 +162,35 @@
           },
           "checks": [
             {
-              "id": 94757695105,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31796977394/job/94757695105",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-14T11:45:28Z",
-              "completed_at": "2026-08-14T12:27:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 94757694986,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31796977394/job/94757694986",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-14T11:45:29Z",
-              "completed_at": "2026-08-14T12:30:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 94756096613,
+              "id": 95306869088,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31796977399/job/94756096613",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32003011967/job/95306869088",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2026-08-14T11:37:41Z",
-              "completed_at": "2026-08-14T12:19:13Z",
+              "started_at": "2026-08-17T06:46:45Z",
+              "completed_at": "2026-08-17T07:11:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 95306869017,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32003011963/job/95306869017",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-08-17T06:46:45Z",
+              "completed_at": "2026-08-17T07:19:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 95306868953,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32003011963/job/95306868953",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-08-17T06:46:45Z",
+              "completed_at": "2026-08-17T07:19:28Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
