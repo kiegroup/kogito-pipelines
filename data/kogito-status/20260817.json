@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-17T05:30:34.227Z",
+    "date": "2026-08-17T06:43:16.552Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/31998116013"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32002761159"
   },
   "projects": [
     {
@@ -29,7 +29,7 @@
       "name": "kogito-runtimes",
       "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
       "html_url": "https://github.com/kiegroup/kogito-runtimes",
-      "updated_at": "2026-08-17T01:32:07Z",
+      "updated_at": "2026-08-17T06:31:26Z",
       "homepage": "http://kogito.kie.org",
       "language": "Java",
       "default_branch": "main",
@@ -271,91 +271,6 @@
               "conclusion": "success",
               "started_at": "2026-08-12T21:40:11Z",
               "completed_at": "2026-08-12T22:14:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 237,
-          "title": "Revert vertx version removal.",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/237",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/237",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            },
-            {
-              "login": "saumya1singh",
-              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
-              "html_url": "https://github.com/saumya1singh"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2026-08-12T11:16:57Z",
-          "updated_at": "2026-08-14T15:14:07Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "6daa896ac5d691be5bad1ded7ff7922e6ca4d175",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "revert-vertx-dependencies-version-removal",
-            "sha": "552bc517b17fa4d05ba2f440c12fe9e58c55ef48",
-            "label": "baldimir:revert-vertx-dependencies-version-removal"
-          },
-          "user": {
-            "login": "baldimir",
-            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-            "html_url": "https://github.com/baldimir"
-          },
-          "checks": [
-            {
-              "id": 94717206775,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470356/job/94717206775",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-14T08:34:45Z",
-              "completed_at": "2026-08-14T09:09:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 94717206688,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470356/job/94717206688",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-14T08:34:45Z",
-              "completed_at": "2026-08-14T09:07:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 94717206590,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/31784470346/job/94717206590",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-14T08:34:45Z",
-              "completed_at": "2026-08-14T09:02:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
