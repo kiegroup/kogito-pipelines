@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-18T18:30:31.428Z",
+    "date": "2026-08-18T19:23:09.833Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32171355917"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32176256994"
   },
   "projects": [
     {
@@ -128,7 +128,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 133,
+          "title": "[SRVLOGIC-1137] Restore host in ProcessDefinition serviceUrl",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/133",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/133",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2026-08-18T18:35:19Z",
+          "updated_at": "2026-08-18T18:49:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c3fe8831df34d280406b22b28a49704eeca01148",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "fix-process-definition-service-url",
+            "sha": "26889be0c1691acb30468184ae3a24e151d1e5cc",
+            "label": "mcruzdev:fix-process-definition-service-url"
+          },
+          "user": {
+            "login": "mcruzdev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56329339?v=4",
+            "html_url": "https://github.com/mcruzdev"
+          },
+          "checks": [
+            {
+              "id": 95826752400,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/32171848908/job/95826752400",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-18T18:42:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 95826747877,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/32171848902/job/95826747877",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-18T18:42:35Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
