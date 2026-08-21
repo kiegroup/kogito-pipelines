@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-08-21T17:23:20.451Z",
+    "date": "2026-08-21T18:29:32.535Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32507867345"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/32513581467"
   },
   "projects": [
     {
@@ -36,6 +36,134 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 246,
+          "title": "Mark process-dynamic add-on as experimental and exclude it from the build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/246",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/246",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-08-21T18:23:30Z",
+          "updated_at": "2026-08-21T18:29:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7ce22405fb9bf5813678bc2a6de925f45d0f52cd",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "chore/exclude-experimental-process-dynamic-addon",
+            "sha": "6721bee973d3212fa5d63f906ba624483abe455c",
+            "label": "ricardozanini:chore/exclude-experimental-process-dynamic-addon"
+          },
+          "user": {
+            "login": "ricardozanini",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
+            "html_url": "https://github.com/ricardozanini"
+          },
+          "checks": [
+            {
+              "id": 96870138525,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32513608618/job/96870138525",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:29:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 96870138275,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32513608618/job/96870138275",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:29:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 96870137979,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32513608638/job/96870137979",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:29:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 245,
+          "title": "Remove kie-addons-quarkus-process-dynamic from the build",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/245",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/245",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-08-21T18:10:39Z",
+          "updated_at": "2026-08-21T18:11:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7ce22405fb9bf5813678bc2a6de925f45d0f52cd",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "remove-dynamic-addon-ssrf",
+            "sha": "ecbd6994f94c734ce46e10d0452c34f40565c2b6",
+            "label": "mcruzdev:remove-dynamic-addon-ssrf"
+          },
+          "user": {
+            "login": "mcruzdev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56329339?v=4",
+            "html_url": "https://github.com/mcruzdev"
+          },
+          "checks": [
+            {
+              "id": 96865192710,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32512044695/job/96865192710",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:11:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 96865192490,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32512044695/job/96865192490",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:11:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 96865192032,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32512044683/job/96865192032",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-08-21T18:11:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 243,
           "title": "Bump actions/cache from 4 to 6",
