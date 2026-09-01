@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-09-01T13:00:06.799Z",
+    "date": "2026-09-01T17:17:07.445Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/33510777982"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/33536829085"
   },
   "projects": [
     {
@@ -36,6 +36,70 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 257,
+          "title": "[SRVLOGIC-1165].Remove user task",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/257",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/257",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2026-09-01T16:54:39Z",
+          "updated_at": "2026-09-01T17:16:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e0175bc7bef942afbdd1d4701afd36fd66735e71",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-1165",
+            "sha": "ec58f0006303e5cadc808def692c8b6998c6fc39",
+            "label": "fjtirado:SRVLOGIC-1165"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 99952897477,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/33536774737/job/99952897477",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-01T17:16:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 99952897252,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/33536774737/job/99952897252",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-01T17:16:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 99952896639,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/33536774648/job/99952896639",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-01T17:16:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 256,
           "title": "[NO-ISSUE] bump mvel to 2.5.3.Final",
@@ -167,138 +231,6 @@
           ]
         },
         {
-          "number": 252,
-          "title": "Security hardening: bind user-task identity to authenticated security principal by default",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/252",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/252",
-          "state": "open",
-          "labels": [
-            "DO_NOT_MERGE"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-08-25T17:11:10Z",
-          "updated_at": "2026-08-31T10:35:00Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a3f4ca1c3b92d8e0e772887ffe53a15f226096fa",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "security/fix-auth-default",
-            "sha": "cb45910c3b9e71ea5b47d06d30aaa9a47e1a5bed",
-            "label": "ricardozanini:security/fix-auth-default"
-          },
-          "user": {
-            "login": "ricardozanini",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-            "html_url": "https://github.com/ricardozanini"
-          },
-          "checks": [
-            {
-              "id": 97924100985,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32885260360/job/97924100985",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-25T18:41:51Z",
-              "completed_at": "2026-08-25T19:14:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 97924100850,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32885260293/job/97924100850",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-25T18:41:50Z",
-              "completed_at": "2026-08-25T19:11:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 97924100688,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32885260360/job/97924100688",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-25T18:41:50Z",
-              "completed_at": "2026-08-25T19:11:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 251,
-          "title": "Security hardening: require authentication and SSRF allowlist on dynamic REST call endpoints",
-          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/251",
-          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/251",
-          "state": "open",
-          "labels": [
-            "DO_NOT_MERGE"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2026-08-25T17:10:50Z",
-          "updated_at": "2026-08-31T10:25:25Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a3f4ca1c3b92d8e0e772887ffe53a15f226096fa",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "security/fix-dynamic-ssrf-auth",
-            "sha": "c8aad695133d7cff70f7ac1dc96a9e618ac56fc9",
-            "label": "ricardozanini:security/fix-dynamic-ssrf-auth"
-          },
-          "user": {
-            "login": "ricardozanini",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1538000?v=4",
-            "html_url": "https://github.com/ricardozanini"
-          },
-          "checks": [
-            {
-              "id": 97902942518,
-              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32878758626/job/97902942518",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2026-08-25T17:36:03Z",
-              "completed_at": "2026-08-25T18:16:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 97902942466,
-              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32878758658/job/97902942466",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-08-25T17:35:33Z",
-              "completed_at": "2026-08-25T18:19:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 97902942356,
-              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.11)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/32878758626/job/97902942356",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2026-08-25T17:36:04Z",
-              "completed_at": "2026-08-25T18:15:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 250,
           "title": "Security hardening: gate kogitoprocstartfrom CloudEvent extension behind opt-in flag",
           "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/250",
@@ -374,18 +306,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2026-08-25T17:06:49Z",
-          "updated_at": "2026-08-31T14:36:53Z",
+          "updated_at": "2026-09-01T16:04:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -489,7 +416,61 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-apps",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 135,
+          "title": "SRVLOGIC-1165 Removing User Tasks",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/135",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/135",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2026-09-01T17:03:00Z",
+          "updated_at": "2026-09-01T17:10:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b88b848101cc008775e12faff548161ff75f311c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-1165",
+            "sha": "c9a1ddc8ba3099c651fb699838f7cd33e6852ad0",
+            "label": "fjtirado:SRVLOGIC-1165"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 99948598966,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/33535473515/job/99948598966",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-01T17:03:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 99948597841,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/33535473434/job/99948597841",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-01T17:03:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
