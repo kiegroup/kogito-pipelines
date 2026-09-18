@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-09-18T12:46:04.454Z",
+    "date": "2026-09-18T16:54:36.272Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/35346397526"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/35371208138"
   },
   "projects": [
     {
@@ -87,24 +87,24 @@
           },
           "checks": [
             {
-              "id": 105594447482,
+              "id": 105623364216,
               "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.16)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105594447482",
-              "status": "in_progress",
-              "conclusion": null,
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105623364216",
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-09-18T12:12:38Z",
-              "completed_at": null,
+              "completed_at": "2026-09-18T12:58:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 105594447231,
+              "id": 105623362970,
               "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.16)",
-              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105594447231",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2026-09-18T12:12:38Z",
-              "completed_at": null,
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105623362970",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-09-18T13:48:30Z",
+              "completed_at": "2026-09-18T14:24:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -112,10 +112,10 @@
               "id": 105594447070,
               "name": "ubuntu-latest / Java-17 / Maven-3.9.16",
               "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453425/job/105594447070",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2026-09-18T12:12:38Z",
-              "completed_at": null,
+              "completed_at": "2026-09-18T12:54:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
