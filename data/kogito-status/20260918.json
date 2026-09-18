@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-09-18T07:57:26.162Z",
+    "date": "2026-09-18T12:46:04.454Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/35321916729"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/35346397526"
   },
   "projects": [
     {
@@ -36,6 +36,91 @@
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 265,
+          "title": "[Security] Review of dependency versions.",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/265",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/265",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "saumya1singh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/46818757?v=4",
+              "html_url": "https://github.com/saumya1singh"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-09-18T12:08:27Z",
+          "updated_at": "2026-09-18T12:12:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "edcefcd0ce375b58c2f9957ea1a7953361cf5859",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "security-fixes-16092026",
+            "sha": "097097ad84933a430a1ba464b20b81d4ab5ef672",
+            "label": "baldimir:security-fixes-16092026"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 105594447482,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105594447482",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-18T12:12:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 105594447231,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453369/job/105594447231",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-18T12:12:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 105594447070,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.16",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/35343453425/job/105594447070",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2026-09-18T12:12:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 253,
           "title": "Security hardening: require authentication on management, migration, and source-file endpoints",
