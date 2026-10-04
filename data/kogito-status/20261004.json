@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-10-04T18:58:45.901Z",
+    "date": "2026-10-04T22:15:30.792Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/37226473354"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/37239300626"
   },
   "projects": [
     {
@@ -35,7 +35,86 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 271,
+          "title": "Bump com.fasterxml.jackson.core:jackson-databind from 2.21.6 to 2.21.7 in /kogito-build/kogito-dependencies-bom",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/271",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/271",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-10-04T20:29:48Z",
+          "updated_at": "2026-10-04T20:29:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7a4d9ccc30cdd6e9c8e745c36fa764eade2b0f8b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/kogito-build/kogito-dependencies-bom/com.fasterxml.jackson.core-jackson-databind-2.21.7",
+            "sha": "681ef545424e59203d2d660ae8b10795c63e2f9a",
+            "label": "kiegroup:dependabot/maven/kogito-build/kogito-dependencies-bom/com.fasterxml.jackson.core-jackson-databind-2.21.7"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 111524459081,
+              "name": "submit-maven",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/37232315494/job/111524459081",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-10-04T20:29:56Z",
+              "completed_at": "2026-10-04T20:30:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 111524453365,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/37232314486/job/111524453365",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-10-04T20:29:54Z",
+              "completed_at": "2026-10-04T21:15:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 111524453248,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/37232314486/job/111524453248",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-10-04T20:29:54Z",
+              "completed_at": "2026-10-04T21:13:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 111524453086,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.16",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/37232314460/job/111524453086",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-10-04T20:29:54Z",
+              "completed_at": "2026-10-04T21:09:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
