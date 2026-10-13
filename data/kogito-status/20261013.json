@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "title": "Kogito Status",
+    "subtitle": "Kiegroup Kogito organization repositories CI status",
+    "date": "2026-10-13T05:12:22.324Z",
+    "createdBy": "GitHub Action",
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/38350186849"
+  },
+  "projects": [
+    {
+      "key": "kiegroup/kogito-pipelines",
+      "name": "kogito-pipelines",
+      "description": "Mirror of https://github.com/apache/incubator-kie-kogito-pipelines",
+      "html_url": "https://github.com/kiegroup/kogito-pipelines",
+      "updated_at": "2026-06-24T10:27:37Z",
+      "homepage": "",
+      "language": "Groovy",
+      "default_branch": "main",
+      "repo_url": "https://github.com/kiegroup/kogito-pipelines",
+      "pulls_url": "https://api.github.com/repos/kiegroup/kogito-pipelines/pulls{/number}",
+      "pullRequests": [],
+      "branchesComparison": {
+        "main": {},
+        " 9.10*": {}
+      }
+    },
+    {
+      "key": "kiegroup/kogito-runtimes",
+      "name": "kogito-runtimes",
+      "description": "This repository is a fork of apache/incubator-kie-kogito-runtimes. Please use upstream repository for development. ",
+      "html_url": "https://github.com/kiegroup/kogito-runtimes",
+      "updated_at": "2026-10-12T21:01:55Z",
+      "homepage": "http://kogito.kie.org",
+      "language": "Java",
+      "default_branch": "main",
+      "repo_url": "https://github.com/kiegroup/kogito-runtimes",
+      "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
+      "pullRequests": [],
+      "branchesComparison": {
+        "main": {},
+        " 9.10*": {}
+      }
+    },
+    {
+      "key": "kiegroup/kogito-apps",
+      "name": "kogito-apps",
+      "description": "This repository is a fork of apache/incubator-kie-kogito-apps. Please use upstream repository for development. ",
+      "html_url": "https://github.com/kiegroup/kogito-apps",
+      "updated_at": "2026-09-02T15:22:37Z",
+      "homepage": "http://kogito.kie.org",
+      "language": "Java",
+      "default_branch": "main",
+      "repo_url": "https://github.com/kiegroup/kogito-apps",
+      "pulls_url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls{/number}",
+      "pullRequests": [
+        {
+          "number": 139,
+          "title": "[SRVLOGIC-1275] Overriding max string length",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/139",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/139",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-10-07T15:36:58Z",
+          "updated_at": "2026-10-08T17:18:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e6236b2eaa375c7c548ef0e6857edbbdee97a9d3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "SRVLOGIC-1275",
+            "sha": "2eb8d195e913c555ffc5d9470f62c7a66b7fdda6",
+            "label": "fjtirado:SRVLOGIC-1275"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 113779442931,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/37815489475/job/113779442931",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-10-09T10:32:12Z",
+              "completed_at": "2026-10-09T10:42:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 113778206798,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/37815489477/job/113778206798",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-10-09T10:28:36Z",
+              "completed_at": "2026-10-09T10:38:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 138,
+          "title": "Fix GraphQL test resource loading from packaged test JAR",
+          "url": "https://api.github.com/repos/kiegroup/kogito-apps/pulls/138",
+          "html_url": "https://github.com/kiegroup/kogito-apps/pull/138",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2026-10-01T05:27:53Z",
+          "updated_at": "2026-10-02T11:37:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e6236b2eaa375c7c548ef0e6857edbbdee97a9d3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "graphql_utils",
+            "sha": "ef07e44b0b0d18b32de318d29e0e86cedb7713de",
+            "label": "gmunozfe:graphql_utils"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 110821626219,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.11)",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/37002013986/job/110821626219",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-10-02T11:37:24Z",
+              "completed_at": "2026-10-02T11:46:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 110821626028,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.11",
+              "html_url": "https://github.com/kiegroup/kogito-apps/actions/runs/37002013985/job/110821626028",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-10-02T11:37:24Z",
+              "completed_at": "2026-10-02T11:46:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
+      "branchesComparison": {
+        "main": {},
+        " 9.10*": {}
+      }
+    }
+  ]
+}
