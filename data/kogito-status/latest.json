@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kogito Status",
     "subtitle": "Kiegroup Kogito organization repositories CI status",
-    "date": "2026-11-10T10:42:57.896Z",
+    "date": "2026-11-10T18:26:21.177Z",
     "createdBy": "GitHub Action",
-    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/42801443068"
+    "createdUrl": "https://github.com/kiegroup/kogito-pipelines/actions/runs/42875135905"
   },
   "projects": [
     {
@@ -35,7 +35,83 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kogito-runtimes",
       "pulls_url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 285,
+          "title": "[Security] Update Guava to 33.8.0-jre.",
+          "url": "https://api.github.com/repos/kiegroup/kogito-runtimes/pulls/285",
+          "html_url": "https://github.com/kiegroup/kogito-runtimes/pull/285",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            },
+            {
+              "login": "jankrystof-ibm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/261947334?v=4",
+              "html_url": "https://github.com/jankrystof-ibm"
+            }
+          ],
+          "created_at": "2026-11-10T11:51:37Z",
+          "updated_at": "2026-11-10T11:52:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7bed56f50e374385d8b82040247b204d12c07e57",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "update-guava",
+            "sha": "3d82815fd7bb1f76ffea9fb19decd34de2a14415",
+            "label": "baldimir:update-guava"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 129893706603,
+              "name": "ubuntu-latest / Java-17 / Maven-3.9.16",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/42810900777/job/129893706603",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-11-10T14:30:10Z",
+              "completed_at": "2026-11-10T14:58:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 129811756777,
+              "name": "kogito-apps (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/42810900678/job/129811756777",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-11-10T11:51:44Z",
+              "completed_at": "2026-11-10T12:48:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 129811756382,
+              "name": "serverless-workflow-examples (ubuntu-latest / Java-17 / Maven-3.9.16)",
+              "html_url": "https://github.com/kiegroup/kogito-runtimes/actions/runs/42810900678/job/129811756382",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-11-10T11:51:45Z",
+              "completed_at": "2026-11-10T12:53:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "main": {},
         " 9.10*": {}
